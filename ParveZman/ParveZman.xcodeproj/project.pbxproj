@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; };
-		BB99158C1B1D15D000501DD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99158B1B1D15D000501DD2 /* ViewController.swift */; };
 		BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99158D1B1D15D000501DD2 /* Main.storyboard */; };
 		BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9915901B1D15D000501DD2 /* Images.xcassets */; };
 		BB9915941B1D15D000501DD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9915921B1D15D000501DD2 /* LaunchScreen.xib */; };
 		BB9915A01B1D15D000501DD2 /* ParveZmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99159F1B1D15D000501DD2 /* ParveZmanTests.swift */; };
+		BB9915AE1B1D339200501DD2 /* PZMinhagSettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915AD1B1D339200501DD2 /* PZMinhagSettingsNavigationController.swift */; };
+		BB9915B01B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915AF1B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift */; };
+		BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		BB9915841B1D15D000501DD2 /* ParveZman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParveZman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9915881B1D15D000501DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9915891B1D15D000501DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB99158B1B1D15D000501DD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB99158E1B1D15D000501DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB9915901B1D15D000501DD2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BB9915931B1D15D000501DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BB9915991B1D15D000501DD2 /* ParveZmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParveZmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB99159E1B1D15D000501DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB99159F1B1D15D000501DD2 /* ParveZmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParveZmanTests.swift; sourceTree = "<group>"; };
+		BB9915AD1B1D339200501DD2 /* PZMinhagSettingsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagSettingsNavigationController.swift; sourceTree = "<group>"; };
+		BB9915AF1B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagSettingsTableViewController.swift; sourceTree = "<group>"; };
+		BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				BB9915891B1D15D000501DD2 /* AppDelegate.swift */,
-				BB99158B1B1D15D000501DD2 /* ViewController.swift */,
 				BB99158D1B1D15D000501DD2 /* Main.storyboard */,
 				BB9915901B1D15D000501DD2 /* Images.xcassets */,
 				BB9915921B1D15D000501DD2 /* LaunchScreen.xib */,
 				BB9915871B1D15D000501DD2 /* Supporting Files */,
+				BB9915AD1B1D339200501DD2 /* PZMinhagSettingsNavigationController.swift */,
+				BB9915AF1B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift */,
+				BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */,
 			);
 			path = ParveZman;
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB99158C1B1D15D000501DD2 /* ViewController.swift in Sources */,
+				BB9915AE1B1D339200501DD2 /* PZMinhagSettingsNavigationController.swift in Sources */,
+				BB9915B01B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift in Sources */,
 				BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */,
+				BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,7 @@
 				BB9915A51B1D15D000501DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB9915A61B1D15D000501DD2 /* Build configuration list for PBXNativeTarget "ParveZmanTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				BB9915A81B1D15D000501DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
