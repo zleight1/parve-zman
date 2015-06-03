@@ -77,14 +77,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kso-qc-H4K">
-                        <barButtonItem key="leftBarButtonItem" image="Settings" id="MMK-Xi-9mF">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Settings" id="MMK-Xi-9mF">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="iuY-PU-LJR" kind="show" id="wKy-21-S3G"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="Torah" id="H3m-aD-n5S">
+                        <barButtonItem key="rightBarButtonItem" image="Literature" id="drN-jB-zPd">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="tXX-7t-M7H" kind="presentation" id="hiu-d7-Vce"/>
+                                <segue destination="tXX-7t-M7H" kind="show" id="aZo-VP-Wc1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -114,7 +116,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="hqC-vN-xCE"/>
+                    <navigationItem key="navigationItem" title="Title" id="xt1-Mv-4Tq">
+                        <barButtonItem key="backBarButtonItem" title="Foo" id="UDX-lR-G7c"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EON-hP-cFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +126,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Literature" width="22" height="22"/>
         <image name="Settings" width="22" height="22"/>
-        <image name="Torah" width="22" height="22"/>
     </resources>
 </document>
