@@ -28,10 +28,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="HaI-If-WcZ" kind="relationship" relationship="rootViewController" id="Tdx-Kk-oTO"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWw-aO-ilk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-723" y="-541"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="pkU-Dj-JzM">
+            <objects>
+                <viewController id="HaI-If-WcZ" customClass="PZSettingsViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Be-BF-3Lo"/>
+                        <viewControllerLayoutGuide type="bottom" id="wLc-z4-J7s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="swR-V3-Vab">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tqg-B5-8dc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkB-GJ-pK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2" y="-541"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="Ckg-CR-rhO">
