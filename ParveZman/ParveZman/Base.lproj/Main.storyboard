@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MZx-Tj-DhL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -47,7 +48,47 @@
                     <view key="view" contentMode="scaleToFill" id="swR-V3-Vab">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHT-YT-Wby">
+                                <rect key="frame" x="16" y="117" width="568" height="162"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meat Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWI-z3-Uvp">
+                                <rect key="frame" x="16" y="72" width="568" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="7zx-y6-Jjm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dairy Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-wN-s2N">
+                                <rect key="frame" x="16" y="287" width="568" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Ftb-1R-mIG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKh-i4-FGH">
+                                <rect key="frame" x="16" y="332" width="568" height="162"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oHT-YT-Wby" firstAttribute="top" secondItem="VWI-z3-Uvp" secondAttribute="bottom" constant="8" symbolic="YES" id="0DI-6P-fZ2"/>
+                            <constraint firstItem="gKh-i4-FGH" firstAttribute="trailing" secondItem="bVz-wN-s2N" secondAttribute="trailing" id="0jp-PW-7e0"/>
+                            <constraint firstItem="gKh-i4-FGH" firstAttribute="leading" secondItem="bVz-wN-s2N" secondAttribute="leading" id="2PW-7P-hl0"/>
+                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="trailing" secondItem="oHT-YT-Wby" secondAttribute="trailing" id="FBa-hm-fPo"/>
+                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="trailing" secondItem="swR-V3-Vab" secondAttribute="trailingMargin" id="GaI-lf-e6l"/>
+                            <constraint firstItem="oHT-YT-Wby" firstAttribute="leading" secondItem="VWI-z3-Uvp" secondAttribute="leading" id="Ibl-UX-HfD"/>
+                            <constraint firstItem="bVz-wN-s2N" firstAttribute="top" secondItem="oHT-YT-Wby" secondAttribute="bottom" constant="8" symbolic="YES" id="Vsw-fZ-43F"/>
+                            <constraint firstItem="bVz-wN-s2N" firstAttribute="leading" secondItem="swR-V3-Vab" secondAttribute="leadingMargin" id="aq4-rf-pNf"/>
+                            <constraint firstItem="gKh-i4-FGH" firstAttribute="top" secondItem="bVz-wN-s2N" secondAttribute="bottom" constant="8" symbolic="YES" id="f6t-zi-NhG"/>
+                            <constraint firstItem="oHT-YT-Wby" firstAttribute="leading" secondItem="bVz-wN-s2N" secondAttribute="leading" id="gMK-hL-tee"/>
+                            <constraint firstItem="bVz-wN-s2N" firstAttribute="trailing" secondItem="oHT-YT-Wby" secondAttribute="trailing" id="mHq-af-i2r"/>
+                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="top" secondItem="2Be-BF-3Lo" secondAttribute="bottom" constant="8" symbolic="YES" id="wNl-q8-T8X"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tqg-B5-8dc"/>
                 </viewController>
