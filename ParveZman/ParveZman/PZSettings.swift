@@ -17,19 +17,3 @@ class PZSettings {
     }
     
 }
-
-//enum for milchig and fleishig
-enum PZMeatWaitMinhag {
-    case TwentyFourHours
-    case SixFullHours
-    case SixthHour
-    case FourHalachicHours
-    case ThreeHours
-    case OneHour
-    case None
-}
-
-enum PZDairyWaitMinhag {
-    case OneHour
-    case None
-}

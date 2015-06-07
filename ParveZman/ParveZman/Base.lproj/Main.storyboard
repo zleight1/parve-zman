@@ -51,6 +51,10 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHT-YT-Wby">
                                 <rect key="frame" x="16" y="117" width="568" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HaI-If-WcZ" id="YlL-9V-MPI"/>
+                                    <outlet property="delegate" destination="HaI-If-WcZ" id="NE6-95-xPG"/>
+                                </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meat Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWI-z3-Uvp">
                                 <rect key="frame" x="16" y="72" width="568" height="37"/>
@@ -70,8 +74,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKh-i4-FGH">
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKh-i4-FGH">
                                 <rect key="frame" x="16" y="332" width="568" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HaI-If-WcZ" id="YXf-xt-7md"/>
+                                    <outlet property="delegate" destination="HaI-If-WcZ" id="c9p-Yq-3pg"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

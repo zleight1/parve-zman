@@ -17,6 +17,7 @@
 		BBE611811B24AD7B00B0B800 /* PZNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */; };
 		BBE611831B24AD9A00B0B800 /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettings.swift */; };
 		BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
+		BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZNotificationHandler.swift; sourceTree = "<group>"; };
 		BBE611821B24AD9A00B0B800 /* PZSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettings.swift; sourceTree = "<group>"; };
 		BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsViewController.swift; sourceTree = "<group>"; };
+		BBE611861B24DFA200B0B800 /* PZMinhag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */,
 				BBE611821B24AD9A00B0B800 /* PZSettings.swift */,
 				BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */,
+				BBE611861B24DFA200B0B800 /* PZMinhag.swift */,
 			);
 			path = ParveZman;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				BBE611811B24AD7B00B0B800 /* PZNotificationHandler.swift in Sources */,
 				BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */,
 				BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */,
+				BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */,
 				BBE611831B24AD9A00B0B800 /* PZSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

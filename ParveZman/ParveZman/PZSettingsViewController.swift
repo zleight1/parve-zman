@@ -11,6 +11,9 @@ import UIKit
 
 class PZSettingsViewController: UIViewController {
     
+    var MeatTimeNames = PZMinhag.GetAllMeatNames();
+    var DairyTimeNames = PZMinhag.GetAllDairyNames();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +26,26 @@ class PZSettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1;
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if pickerView.tag == 0 {
+            return MeatTimeNames.count;
+        } else {
+            return DairyTimeNames.count;
+        }
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        if pickerView.tag == 0 {
+            return MeatTimeNames[row];
+        } else {
+            return DairyTimeNames[row];
+        }
+    }
     
     /*
     // MARK: - Navigation
