@@ -15,6 +15,7 @@
 		BB9915AE1B1D339200501DD2 /* PZMinhagSettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915AD1B1D339200501DD2 /* PZMinhagSettingsNavigationController.swift */; };
 		BB9915B01B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915AF1B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift */; };
 		BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */; };
+		BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		BB9915AD1B1D339200501DD2 /* PZMinhagSettingsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagSettingsNavigationController.swift; sourceTree = "<group>"; };
 		BB9915AF1B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagSettingsTableViewController.swift; sourceTree = "<group>"; };
 		BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMainViewController.swift; sourceTree = "<group>"; };
+		BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				BB9915AD1B1D339200501DD2 /* PZMinhagSettingsNavigationController.swift */,
 				BB9915AF1B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift */,
 				BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */,
+				BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */,
 			);
 			path = ParveZman;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				BB9915AE1B1D339200501DD2 /* PZMinhagSettingsNavigationController.swift in Sources */,
 				BB9915B01B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift in Sources */,
 				BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */,
+				BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */,
 				BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

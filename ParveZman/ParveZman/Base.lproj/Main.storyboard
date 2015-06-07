@@ -98,7 +98,7 @@
         <!--Title-->
         <scene sceneID="Ni5-gm-t8w">
             <objects>
-                <viewController id="tXX-7t-M7H" sceneMemberID="viewController">
+                <viewController id="tXX-7t-M7H" customClass="PZMinhagHistoryViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xWJ-eq-ZWS"/>
                         <viewControllerLayoutGuide type="bottom" id="19B-na-rMl"/>
