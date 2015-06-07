@@ -8,8 +8,8 @@
 
 import Foundation
 
-class ParveZmanSettings {
-    static let sharedInstance = ParveZmanSettings();
+class PZSettings {
+    static let sharedInstance = PZSettings();
     
     //Initialize the settings
     init() {
@@ -19,7 +19,7 @@ class ParveZmanSettings {
 }
 
 //enum for milchig and fleishig
-enum MeatWaitMinhag {
+enum PZMeatWaitMinhag {
     case TwentyFourHours
     case SixFullHours
     case SixthHour
@@ -29,7 +29,7 @@ enum MeatWaitMinhag {
     case None
 }
 
-enum DairyWaitMinhag {
+enum PZDairyWaitMinhag {
     case OneHour
     case None
 }
