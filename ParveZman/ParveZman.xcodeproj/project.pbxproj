@@ -16,6 +16,7 @@
 		BB9915B01B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915AF1B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift */; };
 		BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */; };
 		BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */; };
+		BBE6117F1B24A97E00B0B800 /* ParveZmanSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6117E1B24A97E00B0B800 /* ParveZmanSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		BB9915AF1B1D342B00501DD2 /* PZMinhagSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagSettingsTableViewController.swift; sourceTree = "<group>"; };
 		BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMainViewController.swift; sourceTree = "<group>"; };
 		BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagHistoryViewController.swift; sourceTree = "<group>"; };
+		BBE6117E1B24A97E00B0B800 /* ParveZmanSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParveZmanSettings.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		BB9915861B1D15D000501DD2 /* ParveZman */ = {
 			isa = PBXGroup;
 			children = (
+				BBE6117E1B24A97E00B0B800 /* ParveZmanSettings.swift */,
 				BB9915891B1D15D000501DD2 /* AppDelegate.swift */,
 				BB99158D1B1D15D000501DD2 /* Main.storyboard */,
 				BB9915901B1D15D000501DD2 /* Images.xcassets */,
@@ -226,6 +229,7 @@
 				BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */,
 				BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */,
 				BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */,
+				BBE6117F1B24A97E00B0B800 /* ParveZmanSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
