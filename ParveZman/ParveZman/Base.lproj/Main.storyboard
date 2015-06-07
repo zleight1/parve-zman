@@ -21,43 +21,13 @@
             <point key="canvasLocation" x="-723" y="154"/>
         </scene>
         <!--Minhag Settings-->
-        <scene sceneID="x2T-FV-NIn">
-            <objects>
-                <tableViewController title="Minhag Settings" id="fah-YS-kVJ" customClass="PZMinhagSettingsTableViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="olq-0D-kvE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LNF-w8-ZmV">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LNF-w8-ZmV" id="CzK-Ne-hIG">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="fah-YS-kVJ" id="xcV-2a-0ki"/>
-                            <outlet property="delegate" destination="fah-YS-kVJ" id="Vkq-PI-xVg"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vES-A1-TID"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TOA-ZQ-TJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="97" y="-541"/>
-        </scene>
-        <!--Minhag Settings-->
         <scene sceneID="7AK-lC-TXa">
             <objects>
-                <navigationController title="Minhag Settings" id="iuY-PU-LJR" customClass="PZMinhagSettingsNavigationController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Minhag Settings" id="iuY-PU-LJR" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KRr-Cr-oRb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="fah-YS-kVJ" kind="relationship" relationship="rootViewController" id="CgY-sk-rFy"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWw-aO-ilk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
