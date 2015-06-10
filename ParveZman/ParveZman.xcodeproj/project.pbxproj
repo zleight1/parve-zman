@@ -59,6 +59,7 @@
 		BBE6119F1B27C6EE00B0B800 /* KCSunriseAndSunsetCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSunriseAndSunsetCalculator.h; sourceTree = "<group>"; };
 		BBE611A01B27C6EE00B0B800 /* KCSunriseAndSunsetCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSunriseAndSunsetCalculator.m; sourceTree = "<group>"; };
 		BBE611A11B27C6EE00B0B800 /* Solar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solar.h; sourceTree = "<group>"; };
+		BBE611A61B27C77200B0B800 /* PZSolarBridgeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZSolarBridgeHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +113,7 @@
 				BBE611821B24AD9A00B0B800 /* PZSettings.swift */,
 				BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */,
 				BBE611861B24DFA200B0B800 /* PZMinhag.swift */,
+				BBE611A61B27C77200B0B800 /* PZSolarBridgeHeader.h */,
 			);
 			path = ParveZman;
 			sourceTree = "<group>";
