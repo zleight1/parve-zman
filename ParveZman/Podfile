@@ -2,5 +2,5 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'ParveZman' do
-  pod 'KosherCocoa', '~> 2.0.8'
+  pod 'EDSunriseSet', '~> 1.0'
 end

@@ -6,9 +6,9 @@
 // project.
 
 
-// KosherCocoa
-#define COCOAPODS_POD_AVAILABLE_KosherCocoa
-#define COCOAPODS_VERSION_MAJOR_KosherCocoa 2
-#define COCOAPODS_VERSION_MINOR_KosherCocoa 0
-#define COCOAPODS_VERSION_PATCH_KosherCocoa 8
+// EDSunriseSet
+#define COCOAPODS_POD_AVAILABLE_EDSunriseSet
+#define COCOAPODS_VERSION_MAJOR_EDSunriseSet 1
+#define COCOAPODS_VERSION_MINOR_EDSunriseSet 0
+#define COCOAPODS_VERSION_PATCH_EDSunriseSet 0
 
