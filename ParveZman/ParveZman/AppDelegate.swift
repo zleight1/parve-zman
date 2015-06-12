@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))  // types are UIUserNotificationType members
+        //Register for notifications
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil));  // types are UIUserNotificationType members
+        NSLog("Registered for notifications");
         
-        EDSunriseSet.calculate(<#EDSunriseSet#>)
-        
-        return true
+        return true;
     }
 
     func applicationWillResignActive(application: UIApplication) {

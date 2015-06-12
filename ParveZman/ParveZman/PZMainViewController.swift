@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class PZMainViewController: UIViewController {
 
@@ -17,6 +18,33 @@ class PZMainViewController: UIViewController {
         self.title = "Parve Zman";
         
         
+        //Get Location
+        var locManager = CLLocationManager();
+        locManager.requestWhenInUseAuthorization();
+        
+        //Check Authorization of Location
+        var currentLocation : CLLocation!;
+        var authorized : Bool;
+        
+        if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
+            CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways){
+                NSLog("Got authorization to use location");
+                currentLocation = locManager.location;
+                authorized = true;
+        } else {
+            NSLog("Did not get location auth");
+            authorized = false;
+        }
+        
+        //Get TimeZone
+        var timeZone = NSTimeZone.systemTimeZone();
+        NSLog("TimeZone: %@", timeZone.name);
+        
+        
+        
+        //sunInfo.local
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +52,11 @@ class PZMainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+        var locManager = CLLocationManager();
+        locManager.requestWhenInUseAuthorization();
+    }
 
     /*
     // MARK: - Navigation
