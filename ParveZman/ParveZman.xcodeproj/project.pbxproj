@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FFE1EF4876AD74AC39B0912 /* Pods_ParveZman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; };
 		BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99158D1B1D15D000501DD2 /* Main.storyboard */; };
 		BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9915901B1D15D000501DD2 /* Images.xcassets */; };
@@ -18,10 +19,6 @@
 		BBE611831B24AD9A00B0B800 /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettings.swift */; };
 		BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
 		BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; };
-		BBE611A21B27C6EE00B0B800 /* KCAstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE6119A1B27C6EE00B0B800 /* KCAstronomicalCalculator.m */; };
-		BBE611A31B27C6EE00B0B800 /* KCAstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE6119C1B27C6EE00B0B800 /* KCAstronomicalCalendar.m */; };
-		BBE611A41B27C6EE00B0B800 /* KCGeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE6119E1B27C6EE00B0B800 /* KCGeoLocation.m */; };
-		BBE611A51B27C6EE00B0B800 /* KCSunriseAndSunsetCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE611A01B27C6EE00B0B800 /* KCSunriseAndSunsetCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.debug.xcconfig"; sourceTree = "<group>"; };
 		BB9915841B1D15D000501DD2 /* ParveZman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParveZman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9915881B1D15D000501DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9915891B1D15D000501DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,16 +49,7 @@
 		BBE611821B24AD9A00B0B800 /* PZSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettings.swift; sourceTree = "<group>"; };
 		BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsViewController.swift; sourceTree = "<group>"; };
 		BBE611861B24DFA200B0B800 /* PZMinhag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhag.swift; sourceTree = "<group>"; };
-		BBE611991B27C6EE00B0B800 /* KCAstronomicalCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAstronomicalCalculator.h; sourceTree = "<group>"; };
-		BBE6119A1B27C6EE00B0B800 /* KCAstronomicalCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalculator.m; sourceTree = "<group>"; };
-		BBE6119B1B27C6EE00B0B800 /* KCAstronomicalCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAstronomicalCalendar.h; sourceTree = "<group>"; };
-		BBE6119C1B27C6EE00B0B800 /* KCAstronomicalCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalendar.m; sourceTree = "<group>"; };
-		BBE6119D1B27C6EE00B0B800 /* KCGeoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGeoLocation.h; sourceTree = "<group>"; };
-		BBE6119E1B27C6EE00B0B800 /* KCGeoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGeoLocation.m; sourceTree = "<group>"; };
-		BBE6119F1B27C6EE00B0B800 /* KCSunriseAndSunsetCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSunriseAndSunsetCalculator.h; sourceTree = "<group>"; };
-		BBE611A01B27C6EE00B0B800 /* KCSunriseAndSunsetCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSunriseAndSunsetCalculator.m; sourceTree = "<group>"; };
-		BBE611A11B27C6EE00B0B800 /* Solar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solar.h; sourceTree = "<group>"; };
-		BBE611A61B27C77200B0B800 /* PZSolarBridgeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZSolarBridgeHeader.h; sourceTree = "<group>"; };
+		CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFE1EF4876AD74AC39B0912 /* Pods_ParveZman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CDFB675EC2B23D7B51FF2C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB99157B1B1D15D000501DD2 = {
 			isa = PBXGroup;
 			children = (
 				BB9915861B1D15D000501DD2 /* ParveZman */,
 				BB99159C1B1D15D000501DD2 /* ParveZmanTests */,
 				BB9915851B1D15D000501DD2 /* Products */,
+				C7498970632CEBC4F0E98FB0 /* Pods */,
+				8CDFB675EC2B23D7B51FF2C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +102,6 @@
 		BB9915861B1D15D000501DD2 /* ParveZman */ = {
 			isa = PBXGroup;
 			children = (
-				BBE611981B27C6EE00B0B800 /* Solar */,
 				BB9915891B1D15D000501DD2 /* AppDelegate.swift */,
 				BB99158D1B1D15D000501DD2 /* Main.storyboard */,
 				BB9915901B1D15D000501DD2 /* Images.xcassets */,
@@ -113,7 +113,6 @@
 				BBE611821B24AD9A00B0B800 /* PZSettings.swift */,
 				BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */,
 				BBE611861B24DFA200B0B800 /* PZMinhag.swift */,
-				BBE611A61B27C77200B0B800 /* PZSolarBridgeHeader.h */,
 			);
 			path = ParveZman;
 			sourceTree = "<group>";
@@ -143,20 +142,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BBE611981B27C6EE00B0B800 /* Solar */ = {
+		C7498970632CEBC4F0E98FB0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BBE611991B27C6EE00B0B800 /* KCAstronomicalCalculator.h */,
-				BBE6119A1B27C6EE00B0B800 /* KCAstronomicalCalculator.m */,
-				BBE6119B1B27C6EE00B0B800 /* KCAstronomicalCalendar.h */,
-				BBE6119C1B27C6EE00B0B800 /* KCAstronomicalCalendar.m */,
-				BBE6119D1B27C6EE00B0B800 /* KCGeoLocation.h */,
-				BBE6119E1B27C6EE00B0B800 /* KCGeoLocation.m */,
-				BBE6119F1B27C6EE00B0B800 /* KCSunriseAndSunsetCalculator.h */,
-				BBE611A01B27C6EE00B0B800 /* KCSunriseAndSunsetCalculator.m */,
-				BBE611A11B27C6EE00B0B800 /* Solar.h */,
+				633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */,
+				CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */,
 			);
-			path = Solar;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB9915A31B1D15D000501DD2 /* Build configuration list for PBXNativeTarget "ParveZman" */;
 			buildPhases = (
+				D9F34FC0B05745BD48838060 /* Check Pods Manifest.lock */,
 				BB9915801B1D15D000501DD2 /* Sources */,
 				BB9915811B1D15D000501DD2 /* Frameworks */,
 				BB9915821B1D15D000501DD2 /* Resources */,
+				A6E07028529FBA2DADB6C423 /* Copy Pods Resources */,
+				9AA2062BAEFA18D4FEE8B5D3 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,21 +249,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9AA2062BAEFA18D4FEE8B5D3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6E07028529FBA2DADB6C423 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9F34FC0B05745BD48838060 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB9915801B1D15D000501DD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */,
-				BBE611A31B27C6EE00B0B800 /* KCAstronomicalCalendar.m in Sources */,
-				BBE611A41B27C6EE00B0B800 /* KCGeoLocation.m in Sources */,
-				BBE611A21B27C6EE00B0B800 /* KCAstronomicalCalculator.m in Sources */,
 				BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */,
 				BBE611811B24AD7B00B0B800 /* PZNotificationHandler.swift in Sources */,
 				BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */,
 				BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */,
 				BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */,
-				BBE611A51B27C6EE00B0B800 /* KCSunriseAndSunsetCalculator.m in Sources */,
 				BBE611831B24AD9A00B0B800 /* PZSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +433,7 @@
 		};
 		BB9915A41B1D15D000501DD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParveZman/Info.plist;
@@ -404,6 +444,7 @@
 		};
 		BB9915A51B1D15D000501DD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParveZman/Info.plist;
