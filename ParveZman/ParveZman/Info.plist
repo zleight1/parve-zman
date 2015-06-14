@@ -2,7 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationUsageDescription</key>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The application uses this information to calculate halachic times for your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The application uses this information to calculate halachic times for your location</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>

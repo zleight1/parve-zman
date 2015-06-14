@@ -34,6 +34,20 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var latestLocation: AnyObject = locations[locations.count - 1];
+        
+        if startLocation == nil {
+            startLocation = latestLocation as! CLLocation;
+        }
+        
+    }
+    
+    func locationManager(manager: CLLocationManager!,
+        didFailWithError error: NSError!) {
+            
+    }
+    
 
     /*
     // MARK: - Navigation
