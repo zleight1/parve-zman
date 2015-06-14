@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import CoreLocation
 
-class PZMainViewController: UIViewController {
+class PZMainViewController: UIViewController, CLLocationManagerDelegate {
 
+    var locationManager: CLLocationManager = CLLocationManager()
+    var startLocation: CLLocation!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.title = "Parve Zman";
         
+        //Location stuff
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        startLocation = nil
         
     }
 
