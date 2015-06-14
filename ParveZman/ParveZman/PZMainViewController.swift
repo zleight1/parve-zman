@@ -21,11 +21,11 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         self.title = "Parve Zman";
         
         //Location stuff
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        locationManager.delegate = self;
+        locationManager.requestWhenInUseAuthorization();
         locationManager.startUpdatingLocation()
-        startLocation = nil
+        startLocation = nil;
         
     }
 
@@ -41,11 +41,16 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
             startLocation = latestLocation as! CLLocation;
         }
         
+        PZHalachicHelper.sharedInstance.locationEnabled = true;
+        PZHalachicHelper.sharedInstance.updateHalachicTimesByLocation(latestLocation as! CLLocation);
     }
     
     func locationManager(manager: CLLocationManager!,
         didFailWithError error: NSError!) {
             
+        //Display a warning and mark it in the halachic helper that we're using the default
+        
+            PZHalachicHelper.sharedInstance.locationEnabled = false;
     }
     
 

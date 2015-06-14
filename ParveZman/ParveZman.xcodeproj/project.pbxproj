@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1FFE1EF4876AD74AC39B0912 /* Pods_ParveZman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BB2425901B2DFB79003D3C40 /* PZHalachicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */; };
 		BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; };
 		BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99158D1B1D15D000501DD2 /* Main.storyboard */; };
 		BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9915901B1D15D000501DD2 /* Images.xcassets */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.debug.xcconfig"; sourceTree = "<group>"; };
+		BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHalachicHelper.swift; sourceTree = "<group>"; };
 		BB9915841B1D15D000501DD2 /* ParveZman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParveZman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9915881B1D15D000501DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9915891B1D15D000501DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				BBE611821B24AD9A00B0B800 /* PZSettings.swift */,
 				BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */,
 				BBE611861B24DFA200B0B800 /* PZMinhag.swift */,
+				BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */,
 			);
 			path = ParveZman;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2425901B2DFB79003D3C40 /* PZHalachicHelper.swift in Sources */,
 				BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */,
 				BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */,
 				BBE611811B24AD7B00B0B800 /* PZNotificationHandler.swift in Sources */,
@@ -441,7 +445,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"${PODS_ROOT}/Headers/Public/EDSunriseSet\"",
+					"\"${PODS_ROOT}/KosherCocoa\"/**",
 				);
 				INFOPLIST_FILE = ParveZman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -458,7 +462,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"${PODS_ROOT}/Headers/Public/EDSunriseSet\"",
+					"\"${PODS_ROOT}/KosherCocoa\"/**",
 				);
 				INFOPLIST_FILE = ParveZman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
