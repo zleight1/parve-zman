@@ -11,9 +11,16 @@ import CoreLocation
 
 class PZMainViewController: UIViewController, CLLocationManagerDelegate {
 
+    
+    //Buttons
+    @IBOutlet weak var meatButton: UIButton!
+    @IBOutlet weak var dairyButton: UIButton!
+    
+    //Location
     var locationManager: CLLocationManager = CLLocationManager()
     var startLocation: CLLocation!
     
+    //Subroutines
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,6 +50,8 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         
         PZHalachicHelper.sharedInstance.locationEnabled = true;
         PZHalachicHelper.sharedInstance.updateHalachicTimesByLocation(latestLocation as! CLLocation);
+        
+        NSLog("Halachic Times Updated!");
     }
     
     func locationManager(manager: CLLocationManager!,
@@ -53,6 +62,11 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
             PZHalachicHelper.sharedInstance.locationEnabled = false;
     }
     
+    //Button actions
+    
+    @IBAction func timerStart(sender: AnyObject) {
+        
+    }
 
     /*
     // MARK: - Navigation

@@ -115,7 +115,36 @@
                     <view key="view" contentMode="scaleToFill" id="xcP-g4-hlC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-49-OKM">
+                                <rect key="frame" x="16" y="207" width="568" height="30"/>
+                                <state key="normal" title="Meat">
+                                    <color key="titleColor" red="1" green="0.030145655374867797" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="timerStart:" destination="nBO-fO-GoK" eventType="touchUpInside" id="wlm-Mh-FJx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUh-OH-Zdx">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <state key="normal" title="Dairy">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="timerStart:" destination="nBO-fO-GoK" eventType="touchUpInside" id="FcY-bQ-2j7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KeJ-49-OKM" firstAttribute="leading" secondItem="xcP-g4-hlC" secondAttribute="leadingMargin" id="4gr-bN-4OI"/>
+                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="top" secondItem="KeJ-49-OKM" secondAttribute="bottom" constant="48" id="F97-Hr-wZP"/>
+                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="trailing" secondItem="xcP-g4-hlC" secondAttribute="trailingMargin" id="YIx-eK-SI7"/>
+                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="leading" secondItem="KeJ-49-OKM" secondAttribute="leading" id="hVB-if-zCC"/>
+                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="centerY" secondItem="xcP-g4-hlC" secondAttribute="centerY" id="khy-xs-Zfu"/>
+                            <constraint firstItem="KeJ-49-OKM" firstAttribute="trailing" secondItem="DUh-OH-Zdx" secondAttribute="trailing" id="tIq-zv-AYN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kso-qc-H4K">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="Settings" id="MMK-Xi-9mF">
@@ -131,6 +160,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dairyButton" destination="DUh-OH-Zdx" id="Ya7-1B-pfu"/>
+                        <outlet property="meatButton" destination="KeJ-49-OKM" id="Ow2-uq-mbx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Un9-iA-7dQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
