@@ -33,6 +33,8 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization();
         locationManager.startUpdatingLocation()
         startLocation = nil;
+        meatButton.tag = 0;
+        dairyButton.tag = 1;
         
     }
 
@@ -65,7 +67,20 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
     //Button actions
     
     @IBAction func timerStart(sender: AnyObject) {
+        let alert = UIAlertView();
+        alert.title = "Waiting";
+        alert.addButtonWithTitle("Yum");
         
+        let button = sender as! UIButton;
+        if button.tag == 0 {
+            var time = PZMinhag.GetTimeFromMinhag(PZSettings.sharedInstance.currentMeatMinhag);
+            alert.message = NSString(format: "Meat, waiting seconds: %f, minutes %f", time, time/60) as String;
+        } else {
+            var time = PZMinhag.GetTimeFromMinhag(PZSettings.sharedInstance.currentDairyMinhag);
+            alert.message = NSString(format: "Dairy, waiting: %f seconds, minutes: %f", time, time / 60) as String;
+        }
+        
+        alert.show()
     }
 
     /*

@@ -99,6 +99,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tqg-B5-8dc"/>
+                    <connections>
+                        <outlet property="dairyMinhagPicker" destination="gKh-i4-FGH" id="oBc-lM-q85"/>
+                        <outlet property="meatMinhagPicker" destination="oHT-YT-Wby" id="srG-sM-Vvn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkB-GJ-pK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

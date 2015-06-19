@@ -14,11 +14,16 @@ class PZSettingsViewController: UIViewController {
     var MeatTimeNames = PZMinhag.GetAllMeatNames();
     var DairyTimeNames = PZMinhag.GetAllDairyNames();
     
+    @IBOutlet weak var meatMinhagPicker: UIPickerView!
+    @IBOutlet weak var dairyMinhagPicker: UIPickerView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         self.title = "Settings";
+        //meatMinhagPicker.select(PZSettings.sharedInstance.currentMeatMinhag);
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,6 +49,17 @@ class PZSettingsViewController: UIViewController {
             return MeatTimeNames[row];
         } else {
             return DairyTimeNames[row];
+        }
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    {
+        if pickerView.tag == 0 {
+            //meat
+            PZSettings.sharedInstance.currentMeatMinhag = PZMeatWaitMinhag(rawValue: MeatTimeNames[row])!;
+        } else {
+            //dairy
+            PZSettings.sharedInstance.currentDairyMinhag = PZDairyWaitMinhag(rawValue: DairyTimeNames[row])!;
         }
     }
     
