@@ -13,11 +13,12 @@ class PZHalachicHelper {
     static let sharedInstance = PZHalachicHelper();
     
     init() {
-        
+        self.currentHalachicHour =  1.0;
+        self.locationEnabled  = true;
     }
     
-    var currentHalachicHour : Double = 1.0;
-    var locationEnabled : Bool = true;
+    var currentHalachicHour : Double;
+    var locationEnabled : Bool;
     
     func updateHalachicTimesByLocation(latestLocation: CLLocation) {
         var location: KCGeoLocation = KCGeoLocation(latitude: latestLocation.coordinate.latitude, andLongitude: latestLocation.coordinate.longitude, andTimeZone: NSTimeZone.localTimeZone());
@@ -40,5 +41,9 @@ class PZHalachicHelper {
         
         NSLog("Current Halachic Hour : %f in minutes : %f", self.currentHalachicHour, self.currentHalachicHour * 60);
         
+    }
+    
+    func CalculateHalachicHoursToMinutes(hours: Double) -> Int {
+        return Int(ceil(self.currentHalachicHour * hours * 60));
     }
 }

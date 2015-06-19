@@ -29,7 +29,7 @@ class PZMinhag {
     }
     
     static func GetTimeFromMinhag(meatMinhag: PZMeatWaitMinhag) -> NSTimeInterval {
-        var minutes = 0;
+        var minutes: Int = 0;
         
         switch meatMinhag {
         case .TwentyFourHours:
@@ -39,8 +39,7 @@ class PZMinhag {
         case .SixthHour:
             minutes = (5*60)+1;
         case .FourHalachicHours:
-            //            minutes = HalachicHelper.CalculateHalachicHours(4);
-            minutes = -1; //TODO
+            minutes = PZHalachicHelper.sharedInstance.CalculateHalachicHoursToMinutes(4.0);
         case .ThreeHours:
             minutes = 3*60;
         case .OneHour:

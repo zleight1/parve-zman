@@ -13,7 +13,11 @@ class PZSettings {
     
     //Initialize the settings
     init() {
-        
+        self.currentDairyMinhag = PZDairyWaitMinhag.None;
+        self.currentMeatMinhag = PZMeatWaitMinhag.SixFullHours;
     }
     
+    //Properties
+    var currentDairyMinhag: PZDairyWaitMinhag;
+    var currentMeatMinhag: PZMeatWaitMinhag;
 }
