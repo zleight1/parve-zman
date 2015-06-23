@@ -23,7 +23,9 @@ class PZSettingsViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         self.title = "Settings";
-        //meatMinhagPicker.select(PZSettings.sharedInstance.currentMeatMinhag);
+        
+        loadSettings();
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,6 +64,16 @@ class PZSettingsViewController: UIViewController {
             PZSettings.sharedInstance.currentDairyMinhag = PZDairyWaitMinhag(rawValue: DairyTimeNames[row])!;
         }
     }
+    
+    
+    func loadSettings() {
+        let meatIndex: Int = MeatTimeNames.find { $0 == PZSettings.sharedInstance.currentMeatMinhag.rawValue }!;
+        meatMinhagPicker.selectRow(meatIndex, inComponent: 0, animated: false);
+        
+        let dairyIndex: Int = DairyTimeNames.find { $0 == PZSettings.sharedInstance.currentDairyMinhag.rawValue }!;
+        dairyMinhagPicker.selectRow(dairyIndex, inComponent: 0, animated: false);
+    }
+    
     
     /*
     // MARK: - Navigation
