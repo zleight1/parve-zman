@@ -11,65 +11,65 @@ import Foundation
 class PZMinhag {
  
     static func GetAllMeatNames() -> Array<String> {
-        var meatMinhagArray = [String]();
+        var meatMinhagArray = [String]()
         
         for minhag in PZMeatWaitMinhag.allValues {
-            meatMinhagArray.append(minhag.rawValue);
+            meatMinhagArray.append(minhag.rawValue)
         }
-        return meatMinhagArray;
+        return meatMinhagArray
     }
     
     static func GetAllDairyNames() -> Array<String> {
-        var dairyMinhagArray = [String]();
+        var dairyMinhagArray = [String]()
         
         for minhag in PZDairyWaitMinhag.allValues {
-            dairyMinhagArray.append(minhag.rawValue);
+            dairyMinhagArray.append(minhag.rawValue)
         }
-        return dairyMinhagArray;
+        return dairyMinhagArray
     }
     
     static func GetTimeFromMinhag(meatMinhag: PZMeatWaitMinhag) -> NSTimeInterval {
-        var minutes: Int = 0;
+        var minutes: Int = 0
         
         switch meatMinhag {
         case .TwentyFourHours:
-            minutes = 24*60;
+            minutes = 24*60
         case .SixFullHours:
-            minutes = 6*60;
+            minutes = 6*60
         case .SixthHour:
-            minutes = (5*60)+1;
+            minutes = (5*60)+1
         case .FourHalachicHours:
             minutes = PZHalachicHelper.sharedInstance.CalculateHalachicHoursToMinutes(4.0);
         case .ThreeHours:
-            minutes = 3*60;
+            minutes = 3*60
         case .OneHour:
-            minutes = 60;
+            minutes = 60
         case .None:
-            minutes = 0;
+            minutes = 0
         default:
-            minutes = 0;
+            minutes = 0
         }
         
         
-        let waitTime: NSTimeInterval = NSTimeInterval(minutes * 60);
-        return waitTime;
+        let waitTime: NSTimeInterval = NSTimeInterval(minutes * 60)
+        return waitTime
         
     }
     
     static func GetTimeFromMinhag(dairyMinhag: PZDairyWaitMinhag) -> NSTimeInterval {
-        var minutes = 0;
+        var minutes = 0
         
         switch dairyMinhag {
         case .OneHour:
-            minutes = 60;
+            minutes = 60
         case .None:
-            minutes = 0;
+            minutes = 0
         default:
-            minutes = 0;
+            minutes = 0
         }
         
-        let waitTime: NSTimeInterval = NSTimeInterval(minutes * 60);
-        return waitTime;
+        let waitTime: NSTimeInterval = NSTimeInterval(minutes * 60)
+        return waitTime
     }
 }
 

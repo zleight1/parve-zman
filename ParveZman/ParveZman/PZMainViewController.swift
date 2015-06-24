@@ -36,6 +36,9 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         meatButton.tag = 0;
         dairyButton.tag = 1;
         
+        //Load from core data if possible
+        PZSettings.sharedInstance.loadSettings()
+        
     }
 
     override func didReceiveMemoryWarning() {

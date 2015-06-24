@@ -24,8 +24,13 @@ class PZSettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.title = "Settings";
         
-        loadSettings();
+        loadSettings()
         
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        //Save!
+        PZSettings.sharedInstance.saveSettings()
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,17 +45,17 @@ class PZSettingsViewController: UIViewController {
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView.tag == 0 {
-            return MeatTimeNames.count;
+            return MeatTimeNames.count
         } else {
-            return DairyTimeNames.count;
+            return DairyTimeNames.count
         }
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         if pickerView.tag == 0 {
-            return MeatTimeNames[row];
+            return MeatTimeNames[row]
         } else {
-            return DairyTimeNames[row];
+            return DairyTimeNames[row]
         }
     }
     
@@ -58,20 +63,21 @@ class PZSettingsViewController: UIViewController {
     {
         if pickerView.tag == 0 {
             //meat
-            PZSettings.sharedInstance.currentMeatMinhag = PZMeatWaitMinhag(rawValue: MeatTimeNames[row])!;
+            PZSettings.sharedInstance.currentMeatMinhag = PZMeatWaitMinhag(rawValue: MeatTimeNames[row])!
         } else {
             //dairy
-            PZSettings.sharedInstance.currentDairyMinhag = PZDairyWaitMinhag(rawValue: DairyTimeNames[row])!;
+            PZSettings.sharedInstance.currentDairyMinhag = PZDairyWaitMinhag(rawValue: DairyTimeNames[row])!
         }
     }
     
     
     func loadSettings() {
-        let meatIndex: Int = MeatTimeNames.find { $0 == PZSettings.sharedInstance.currentMeatMinhag.rawValue }!;
-        meatMinhagPicker.selectRow(meatIndex, inComponent: 0, animated: false);
+        PZSettings.sharedInstance.loadSettings()
+        let meatIndex: Int = MeatTimeNames.find { $0 == PZSettings.sharedInstance.currentMeatMinhag.rawValue }!
+        meatMinhagPicker.selectRow(meatIndex, inComponent: 0, animated: false)
         
-        let dairyIndex: Int = DairyTimeNames.find { $0 == PZSettings.sharedInstance.currentDairyMinhag.rawValue }!;
-        dairyMinhagPicker.selectRow(dairyIndex, inComponent: 0, animated: false);
+        let dairyIndex: Int = DairyTimeNames.find { $0 == PZSettings.sharedInstance.currentDairyMinhag.rawValue }!
+        dairyMinhagPicker.selectRow(dairyIndex, inComponent: 0, animated: false)
     }
     
     
