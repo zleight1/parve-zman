@@ -52,7 +52,8 @@ class PZSettings {
         
         let managedContext = appDelegate.managedObjectContext!
         
-        let fetchRequest = NSFetchRequest(entityName:"PZSettings" )
+        let fetchRequest = NSFetchRequest(entityName: "PZSettings" )
+        fetchRequest.returnsObjectsAsFaults = false
         
         var error: NSError?
         
