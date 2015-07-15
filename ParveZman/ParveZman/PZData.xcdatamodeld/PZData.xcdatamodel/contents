@@ -2,9 +2,10 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="PZSettings" representedClassName="ParveZman.PZSettings" syncable="YES">
         <attribute name="dairyMinhag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 16" minValueString="0" maxValueString="1" defaultValueString="1" indexed="YES" syncable="YES"/>
         <attribute name="meatMinhag" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PZSettings" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="PZSettings" positionX="-54" positionY="-9" width="128" height="90"/>
     </elements>
 </model>

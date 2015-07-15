@@ -13,5 +13,6 @@ class PZSettings: NSManagedObject {
 
     @NSManaged var dairyMinhag: String
     @NSManaged var meatMinhag: String
-
+    @NSManaged var id: Int16
+    
 }
