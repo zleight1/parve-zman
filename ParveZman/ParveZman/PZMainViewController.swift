@@ -37,7 +37,7 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         dairyButton.tag = 1;
         
         //Load from core data if possible
-        PZSettings.sharedInstance.loadSettings()
+        PZSettingsManager.sharedInstance.loadPZSettings()
         
     }
 
@@ -76,10 +76,10 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         
         let button = sender as! UIButton;
         if button.tag == 0 {
-            var time = PZMinhag.GetTimeFromMinhag(PZSettings.sharedInstance.currentMeatMinhag);
+            var time = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentMeatMinhag);
             alert.message = NSString(format: "Meat, waiting seconds: %f, minutes %f", time, time/60) as String;
         } else {
-            var time = PZMinhag.GetTimeFromMinhag(PZSettings.sharedInstance.currentDairyMinhag);
+            var time = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentDairyMinhag);
             alert.message = NSString(format: "Dairy, waiting: %f seconds, minutes: %f", time, time / 60) as String;
         }
         

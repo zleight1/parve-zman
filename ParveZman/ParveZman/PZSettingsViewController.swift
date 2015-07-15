@@ -30,7 +30,7 @@ class PZSettingsViewController: UIViewController {
     
     override func viewDidDisappear(animated: Bool) {
         //Save!
-        PZSettings.sharedInstance.saveSettings()
+        PZSettings.sharedInstance.savePZSettings()
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,7 +72,7 @@ class PZSettingsViewController: UIViewController {
     
     
     func loadSettings() {
-        PZSettings.sharedInstance.loadSettings()
+        PZSettings.sharedInstance.loadPZSettings()
         let meatIndex: Int = MeatTimeNames.find { $0 == PZSettings.sharedInstance.currentMeatMinhag.rawValue }!
         meatMinhagPicker.selectRow(meatIndex, inComponent: 0, animated: false)
         
