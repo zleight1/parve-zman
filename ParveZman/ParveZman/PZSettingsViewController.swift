@@ -30,7 +30,7 @@ class PZSettingsViewController: UIViewController {
     
     override func viewDidDisappear(animated: Bool) {
         //Save!
-        PZSettings.sharedInstance.savePZSettings()
+        PZSettingsManager.sharedInstance.savePZSettings()
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,20 +63,20 @@ class PZSettingsViewController: UIViewController {
     {
         if pickerView.tag == 0 {
             //meat
-            PZSettings.sharedInstance.currentMeatMinhag = PZMeatWaitMinhag(rawValue: MeatTimeNames[row])!
+            PZSettingsManager.sharedInstance.currentMeatMinhag = PZMeatWaitMinhag(rawValue: MeatTimeNames[row])!
         } else {
             //dairy
-            PZSettings.sharedInstance.currentDairyMinhag = PZDairyWaitMinhag(rawValue: DairyTimeNames[row])!
+            PZSettingsManager.sharedInstance.currentDairyMinhag = PZDairyWaitMinhag(rawValue: DairyTimeNames[row])!
         }
     }
     
     
     func loadSettings() {
-        PZSettings.sharedInstance.loadPZSettings()
-        let meatIndex: Int = MeatTimeNames.find { $0 == PZSettings.sharedInstance.currentMeatMinhag.rawValue }!
+        PZSettingsManager.sharedInstance.loadPZSettings()
+        let meatIndex: Int = MeatTimeNames.find { $0 == PZSettingsManager.sharedInstance.currentMeatMinhag.rawValue }!
         meatMinhagPicker.selectRow(meatIndex, inComponent: 0, animated: false)
         
-        let dairyIndex: Int = DairyTimeNames.find { $0 == PZSettings.sharedInstance.currentDairyMinhag.rawValue }!
+        let dairyIndex: Int = DairyTimeNames.find { $0 == PZSettingsManager.sharedInstance.currentDairyMinhag.rawValue }!
         dairyMinhagPicker.selectRow(dairyIndex, inComponent: 0, animated: false)
     }
     
