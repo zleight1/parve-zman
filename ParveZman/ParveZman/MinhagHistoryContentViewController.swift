@@ -1,20 +1,19 @@
 //
-//  PZMinhagHistoryViewController.swift
+//  MinhagHistoryContentViewController.swift
 //  ParveZman
 //
-//  Created by Zachary Leighton on 6/7/15.
+//  Created by Zachary Leighton on 7/22/15.
 //  Copyright (c) 2015 Zachary Leighton. All rights reserved.
 //
 
 import UIKit
 
-class PZMinhagHistoryViewController: UIPageViewController {
+class MinhagHistoryContentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "Minhag History";
     }
 
     override func didReceiveMemoryWarning() {

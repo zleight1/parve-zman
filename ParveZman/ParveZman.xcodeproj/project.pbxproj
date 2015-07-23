@@ -23,6 +23,7 @@
 		BBE611831B24AD9A00B0B800 /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; };
 		BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
 		BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; };
+		BBE65D281B6066BB001AF18F /* MinhagHistoryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D271B6066BB001AF18F /* MinhagHistoryContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsViewController.swift; sourceTree = "<group>"; };
 		BBE611861B24DFA200B0B800 /* PZMinhag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhag.swift; sourceTree = "<group>"; };
 		BBE6129D1B2A6D8D00B0B800 /* PZBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZBridgingHeader.h; sourceTree = "<group>"; };
+		BBE65D271B6066BB001AF18F /* MinhagHistoryContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinhagHistoryContentViewController.swift; sourceTree = "<group>"; };
 		CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */,
 				BB24269F1B38E1AD003D3C40 /* PZUtils.swift */,
 				BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */,
+				BBE65D271B6066BB001AF18F /* MinhagHistoryContentViewController.swift */,
 			);
 			path = ParveZman;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				BB2425901B2DFB79003D3C40 /* PZHalachicHelper.swift in Sources */,
 				BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */,
 				BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */,
+				BBE65D281B6066BB001AF18F /* MinhagHistoryContentViewController.swift in Sources */,
 				BBE611811B24AD7B00B0B800 /* PZNotificationHandler.swift in Sources */,
 				BBC043C61B55DF9500CD5474 /* PZSettings.swift in Sources */,
 				BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */,
