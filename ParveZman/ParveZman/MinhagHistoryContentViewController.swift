@@ -8,11 +8,19 @@
 
 import UIKit
 
-class MinhagHistoryContentViewController: UIViewController {
+class PZMinhagHistoryContentViewController: UIViewController {
 
+    
+    var pageIndex : Int = 0
+    var minhagTitle : String = ""
+    
+    @IBOutlet weak var minhagTitleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.minhagTitleLabel.text = minhagTitle
+        
         // Do any additional setup after loading the view.
     }
 

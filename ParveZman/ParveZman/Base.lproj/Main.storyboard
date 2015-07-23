@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkB-GJ-pK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2" y="-541"/>
+            <point key="canvasLocation" x="97" y="-541"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="Ckg-CR-rhO">
@@ -160,7 +160,7 @@
                         <barButtonItem key="rightBarButtonItem" image="Literature" id="drN-jB-zPd">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="pQV-X2-xjD" kind="show" id="7zU-FA-Kjc"/>
+                                <segue destination="LJB-on-MBr" kind="show" id="488-e3-FeY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -173,20 +173,38 @@
             </objects>
             <point key="canvasLocation" x="97" y="154"/>
         </scene>
+        <!--Minhag History View Controller-->
+        <scene sceneID="Kof-34-s0a">
+            <objects>
+                <viewController id="LJB-on-MBr" customClass="PZMinhagHistoryViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cpr-rI-3FG"/>
+                        <viewControllerLayoutGuide type="bottom" id="XsH-Jq-btS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yn0-AE-5WZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZdP-fJ-wd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="154"/>
+        </scene>
         <!--Minhag History-->
         <scene sceneID="YfP-Ts-R6p">
             <objects>
-                <pageViewController storyboardIdentifier="PZMinhagHistoryViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="pQV-X2-xjD" customClass="PZMinhagHistoryViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNw-oh-V02" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pageViewController storyboardIdentifier="PZMinhagHistoryViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="pQV-X2-xjD" customClass="PZMinhagHistoryPageViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Minhag History" id="u1M-Dw-DYh"/>
                 </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NNw-oh-V02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="154"/>
+            <point key="canvasLocation" x="1501" y="154"/>
         </scene>
         <!--Minhag History Content View Controller-->
         <scene sceneID="2dy-Nh-6ho">
             <objects>
-                <viewController storyboardIdentifier="MinhagHistoryContentViewController" id="AbL-V4-tYH" customClass="MinhagHistoryContentViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MinhagHistoryContentViewController" id="AbL-V4-tYH" customClass="PZMinhagHistoryContentViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yp1-ei-fms"/>
                         <viewControllerLayoutGuide type="bottom" id="XSD-CJ-g9U"/>
@@ -194,12 +212,23 @@
                     <view key="view" contentMode="scaleToFill" id="vvC-Ol-Yzj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkl-lF-kEk">
+                                <rect key="frame" x="279" y="28" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="minhagTitleLabel" destination="vkl-lF-kEk" id="SPN-xg-aDj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhQ-SX-u59" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="885"/>
+            <point key="canvasLocation" x="1501" y="869"/>
         </scene>
     </scenes>
     <resources>
