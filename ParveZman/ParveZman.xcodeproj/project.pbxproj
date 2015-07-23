@@ -23,12 +23,20 @@
 		BBE611831B24AD9A00B0B800 /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; };
 		BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
 		BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; };
-		BBE65D281B6066BB001AF18F /* MinhagHistoryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D271B6066BB001AF18F /* MinhagHistoryContentViewController.swift */; };
 		BBE65D2C1B607370001AF18F /* PZMinhagHistoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D2B1B607370001AF18F /* PZMinhagHistoryPageViewController.swift */; };
+		BBE65D2E1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D2D1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift */; };
+		BBE65D3A1B608998001AF18F /* ParveZman_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D391B608998001AF18F /* ParveZman_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BB99159A1B1D15D000501DD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB99157C1B1D15D000501DD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB9915831B1D15D000501DD2;
+			remoteInfo = ParveZman;
+		};
+		BBE65D3B1B608998001AF18F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB99157C1B1D15D000501DD2 /* Project object */;
 			proxyType = 1;
@@ -60,8 +68,11 @@
 		BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsViewController.swift; sourceTree = "<group>"; };
 		BBE611861B24DFA200B0B800 /* PZMinhag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhag.swift; sourceTree = "<group>"; };
 		BBE6129D1B2A6D8D00B0B800 /* PZBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZBridgingHeader.h; sourceTree = "<group>"; };
-		BBE65D271B6066BB001AF18F /* MinhagHistoryContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinhagHistoryContentViewController.swift; sourceTree = "<group>"; };
 		BBE65D2B1B607370001AF18F /* PZMinhagHistoryPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagHistoryPageViewController.swift; sourceTree = "<group>"; };
+		BBE65D2D1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagHistoryContentViewController.swift; sourceTree = "<group>"; };
+		BBE65D351B608998001AF18F /* ParveZman Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParveZman Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE65D381B608998001AF18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE65D391B608998001AF18F /* ParveZman_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParveZman_Tests.swift; sourceTree = "<group>"; };
 		CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +86,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BB9915961B1D15D000501DD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE65D321B608998001AF18F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -97,6 +115,7 @@
 			children = (
 				BB9915861B1D15D000501DD2 /* ParveZman */,
 				BB99159C1B1D15D000501DD2 /* ParveZmanTests */,
+				BBE65D361B608998001AF18F /* ParveZman Tests */,
 				BB9915851B1D15D000501DD2 /* Products */,
 				C7498970632CEBC4F0E98FB0 /* Pods */,
 				8CDFB675EC2B23D7B51FF2C7 /* Frameworks */,
@@ -108,6 +127,7 @@
 			children = (
 				BB9915841B1D15D000501DD2 /* ParveZman.app */,
 				BB9915991B1D15D000501DD2 /* ParveZmanTests.xctest */,
+				BBE65D351B608998001AF18F /* ParveZman Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +135,8 @@
 		BB9915861B1D15D000501DD2 /* ParveZman */ = {
 			isa = PBXGroup;
 			children = (
+				BBE65D301B607DF0001AF18F /* PZSettings */,
+				BBE65D2F1B607DE4001AF18F /* PZMinhag */,
 				BB9915891B1D15D000501DD2 /* AppDelegate.swift */,
 				BBE6129D1B2A6D8D00B0B800 /* PZBridgingHeader.h */,
 				BB99158D1B1D15D000501DD2 /* Main.storyboard */,
@@ -122,17 +144,10 @@
 				BB9915921B1D15D000501DD2 /* LaunchScreen.xib */,
 				BB9915871B1D15D000501DD2 /* Supporting Files */,
 				BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */,
-				BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */,
 				BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */,
-				BBC043C51B55DF9500CD5474 /* PZSettings.swift */,
-				BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */,
-				BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */,
-				BBE611861B24DFA200B0B800 /* PZMinhag.swift */,
 				BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */,
 				BB24269F1B38E1AD003D3C40 /* PZUtils.swift */,
 				BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */,
-				BBE65D271B6066BB001AF18F /* MinhagHistoryContentViewController.swift */,
-				BBE65D2B1B607370001AF18F /* PZMinhagHistoryPageViewController.swift */,
 			);
 			path = ParveZman;
 			sourceTree = "<group>";
@@ -158,6 +173,44 @@
 			isa = PBXGroup;
 			children = (
 				BB99159E1B1D15D000501DD2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BBE65D2F1B607DE4001AF18F /* PZMinhag */ = {
+			isa = PBXGroup;
+			children = (
+				BBE611861B24DFA200B0B800 /* PZMinhag.swift */,
+				BBE65D2D1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift */,
+				BBE65D2B1B607370001AF18F /* PZMinhagHistoryPageViewController.swift */,
+				BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */,
+			);
+			name = PZMinhag;
+			sourceTree = "<group>";
+		};
+		BBE65D301B607DF0001AF18F /* PZSettings */ = {
+			isa = PBXGroup;
+			children = (
+				BBC043C51B55DF9500CD5474 /* PZSettings.swift */,
+				BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */,
+				BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */,
+			);
+			name = PZSettings;
+			sourceTree = "<group>";
+		};
+		BBE65D361B608998001AF18F /* ParveZman Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BBE65D391B608998001AF18F /* ParveZman_Tests.swift */,
+				BBE65D371B608998001AF18F /* Supporting Files */,
+			);
+			path = "ParveZman Tests";
+			sourceTree = "<group>";
+		};
+		BBE65D371B608998001AF18F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBE65D381B608998001AF18F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,6 +265,24 @@
 			productReference = BB9915991B1D15D000501DD2 /* ParveZmanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BBE65D341B608998001AF18F /* ParveZman Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBE65D3D1B608998001AF18F /* Build configuration list for PBXNativeTarget "ParveZman Tests" */;
+			buildPhases = (
+				BBE65D311B608998001AF18F /* Sources */,
+				BBE65D321B608998001AF18F /* Frameworks */,
+				BBE65D331B608998001AF18F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBE65D3C1B608998001AF18F /* PBXTargetDependency */,
+			);
+			name = "ParveZman Tests";
+			productName = "ParveZman Tests";
+			productReference = BBE65D351B608998001AF18F /* ParveZman Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,6 +297,10 @@
 					};
 					BB9915981B1D15D000501DD2 = {
 						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = BB9915831B1D15D000501DD2;
+					};
+					BBE65D341B608998001AF18F = {
+						CreatedOnToolsVersion = 6.4;
 						TestTargetID = BB9915831B1D15D000501DD2;
 					};
 				};
@@ -245,6 +320,7 @@
 			targets = (
 				BB9915831B1D15D000501DD2 /* ParveZman */,
 				BB9915981B1D15D000501DD2 /* ParveZmanTests */,
+				BBE65D341B608998001AF18F /* ParveZman Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +337,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BB9915971B1D15D000501DD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE65D331B608998001AF18F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,10 +409,10 @@
 				BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */,
 				BBE65D2C1B607370001AF18F /* PZMinhagHistoryPageViewController.swift in Sources */,
 				BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */,
-				BBE65D281B6066BB001AF18F /* MinhagHistoryContentViewController.swift in Sources */,
 				BBE611811B24AD7B00B0B800 /* PZNotificationHandler.swift in Sources */,
 				BBC043C61B55DF9500CD5474 /* PZSettings.swift in Sources */,
 				BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */,
+				BBE65D2E1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift in Sources */,
 				BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */,
 				BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */,
 				BBE611831B24AD9A00B0B800 /* PZSettingsManager.swift in Sources */,
@@ -346,6 +429,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBE65D311B608998001AF18F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE65D3A1B608998001AF18F /* ParveZman_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -353,6 +444,11 @@
 			isa = PBXTargetDependency;
 			target = BB9915831B1D15D000501DD2 /* ParveZman */;
 			targetProxy = BB99159A1B1D15D000501DD2 /* PBXContainerItemProxy */;
+		};
+		BBE65D3C1B608998001AF18F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB9915831B1D15D000501DD2 /* ParveZman */;
+			targetProxy = BBE65D3B1B608998001AF18F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -525,6 +621,42 @@
 			};
 			name = Release;
 		};
+		BBE65D3E1B608998001AF18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParveZman Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParveZman.app/ParveZman";
+			};
+			name = Debug;
+		};
+		BBE65D3F1B608998001AF18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParveZman Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParveZman.app/ParveZman";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -554,6 +686,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BBE65D3D1B608998001AF18F /* Build configuration list for PBXNativeTarget "ParveZman Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE65D3E1B608998001AF18F /* Debug */,
+				BBE65D3F1B608998001AF18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
