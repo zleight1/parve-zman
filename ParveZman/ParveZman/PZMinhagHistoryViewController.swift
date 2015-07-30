@@ -35,7 +35,7 @@ class PZMinhagHistoryViewController: UIViewController, UIPageViewControllerDataS
         
         self.pageViewController!.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         
-        self.pageViewController!.view.frame = CGRectMake(0,0, self.view.frame.size.width, self.view.frame.size.height)
+        self.pageViewController!.view.frame = CGRectMake(0,0, self.view.frame.size.width * 1.0, self.view.frame.size.height * 1.0)
         
         self.addChildViewController(pageViewController!)
         self.view.addSubview(pageViewController!.view)

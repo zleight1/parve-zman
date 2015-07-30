@@ -20,7 +20,6 @@ class PZMinhagHistoryContentViewController: UIViewController {
         super.viewDidLoad()
 
         self.minhagTitleLabel.text = minhagTitle
-        
         // Do any additional setup after loading the view.
     }
 

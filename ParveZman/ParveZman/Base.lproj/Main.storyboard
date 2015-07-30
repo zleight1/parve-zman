@@ -194,10 +194,10 @@
         <!--Minhag History-->
         <scene sceneID="YfP-Ts-R6p">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NNw-oh-V02" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pageViewController storyboardIdentifier="PZMinhagHistoryViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="pQV-X2-xjD" customClass="PZMinhagHistoryPageViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Minhag History" id="u1M-Dw-DYh"/>
                 </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNw-oh-V02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1501" y="154"/>
         </scene>
@@ -213,7 +213,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkl-lF-kEk">
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="vkl-lF-kEk">
                                 <rect key="frame" x="279" y="289" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -222,9 +222,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vkl-lF-kEk" firstAttribute="centerX" secondItem="vvC-Ol-Yzj" secondAttribute="centerX" id="JnS-0K-b00"/>
-                            <constraint firstItem="vkl-lF-kEk" firstAttribute="top" secondItem="yp1-ei-fms" secondAttribute="bottom" constant="269" id="OSQ-Cq-eJh"/>
-                            <constraint firstItem="XSD-CJ-g9U" firstAttribute="top" secondItem="vkl-lF-kEk" secondAttribute="bottom" constant="290" id="hav-0l-Gqa"/>
+                            <constraint firstItem="XSD-CJ-g9U" firstAttribute="top" secondItem="vkl-lF-kEk" secondAttribute="bottom" constant="290" id="PHV-CK-CYr"/>
+                            <constraint firstItem="vkl-lF-kEk" firstAttribute="centerX" secondItem="vvC-Ol-Yzj" secondAttribute="centerX" id="UZk-dX-LkS"/>
                         </constraints>
                     </view>
                     <connections>
