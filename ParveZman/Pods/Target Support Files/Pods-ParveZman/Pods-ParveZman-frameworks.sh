@@ -48,8 +48,8 @@ code_sign() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework 'EDSunriseSet.framework'
+  install_framework 'JTImageButton.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework 'EDSunriseSet.framework'
+  install_framework 'JTImageButton.framework'
 fi

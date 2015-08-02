@@ -1,10 +1,10 @@
 PODS:
-  - EDSunriseSet (1.0)
+  - JTImageButton (1.0.2)
 
 DEPENDENCIES:
-  - EDSunriseSet (~> 1.0)
+  - JTImageButton
 
 SPEC CHECKSUMS:
-  EDSunriseSet: bdc4760f496c8e6f9b9a727ffa645b6048aa2a09
+  JTImageButton: d214ff9ee6e01865368a9f749c5a16e6abbf6409
 
 COCOAPODS: 0.37.2

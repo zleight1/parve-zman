@@ -6,9 +6,9 @@
 // project.
 
 
-// EDSunriseSet
-#define COCOAPODS_POD_AVAILABLE_EDSunriseSet
-#define COCOAPODS_VERSION_MAJOR_EDSunriseSet 1
-#define COCOAPODS_VERSION_MINOR_EDSunriseSet 0
-#define COCOAPODS_VERSION_PATCH_EDSunriseSet 0
+// JTImageButton
+#define COCOAPODS_POD_AVAILABLE_JTImageButton
+#define COCOAPODS_VERSION_MAJOR_JTImageButton 1
+#define COCOAPODS_VERSION_MINOR_JTImageButton 0
+#define COCOAPODS_VERSION_PATCH_JTImageButton 2
 
