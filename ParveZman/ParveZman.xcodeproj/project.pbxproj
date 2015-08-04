@@ -7,50 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB2425901B2DFB79003D3C40 /* PZHalachicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */; };
-		BB2426A01B38E1AD003D3C40 /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
-		BB2426D71B3A27CF003D3C40 /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
-		BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; };
+		BB12F4831B7044DC0087447E /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC043C51B55DF9500CD5474 /* PZSettings.swift */; };
+		BB12F4841B7044DC0087447E /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; };
+		BB12F4851B7044DC0087447E /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
+		BB12F4861B7044DC0087447E /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; };
+		BB12F4871B7044DC0087447E /* PZMinhagHistoryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D2D1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift */; };
+		BB12F4881B7044DC0087447E /* PZMinhagHistoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D2B1B607370001AF18F /* PZMinhagHistoryPageViewController.swift */; };
+		BB12F4891B7044DC0087447E /* PZMinhagHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */; };
+		BB12F48A1B7044DC0087447E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; };
+		BB12F48B1B7044DC0087447E /* PZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */; };
+		BB12F48C1B7044DC0087447E /* PZNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */; };
+		BB12F48D1B7044DC0087447E /* PZHalachicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */; };
+		BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
+		BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
 		BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99158D1B1D15D000501DD2 /* Main.storyboard */; };
 		BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9915901B1D15D000501DD2 /* Images.xcassets */; };
 		BB9915941B1D15D000501DD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9915921B1D15D000501DD2 /* LaunchScreen.xib */; };
 		BB9915A01B1D15D000501DD2 /* ParveZmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99159F1B1D15D000501DD2 /* ParveZmanTests.swift */; };
-		BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */; };
-		BBC043C61B55DF9500CD5474 /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC043C51B55DF9500CD5474 /* PZSettings.swift */; };
-		BBD0B1E01B6EBC7E0099718A /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1901B6EBC7E0099718A /* NSCalendar+Components.m */; };
-		BBD0B1E11B6EBC7E0099718A /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1921B6EBC7E0099718A /* NSCalendar+DateComparison.m */; };
-		BBD0B1E21B6EBC7E0099718A /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1941B6EBC7E0099718A /* NSCalendar+DateManipulation.m */; };
-		BBD0B1E31B6EBC7E0099718A /* NSCalendar+hebrewYearTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1961B6EBC7E0099718A /* NSCalendar+hebrewYearTypes.m */; };
-		BBD0B1E41B6EBC7E0099718A /* NSCalendar+Juncture.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1981B6EBC7E0099718A /* NSCalendar+Juncture.m */; };
-		BBD0B1E51B6EBC7E0099718A /* NSCalendar+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B19A1B6EBC7E0099718A /* NSCalendar+Ranges.m */; };
-		BBD0B1E61B6EBC7E0099718A /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B19D1B6EBC7E0099718A /* NSDate+Components.m */; };
-		BBD0B1E71B6EBC7E0099718A /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B19F1B6EBC7E0099718A /* NSDate+ConvenientDates.m */; };
-		BBD0B1E81B6EBC7E0099718A /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1A11B6EBC7E0099718A /* NSDate+Description.m */; };
-		BBD0B1E91B6EBC7E0099718A /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1A41B6EBC7E0099718A /* NSDateComponents+AllComponents.m */; };
-		BBD0B1EA1B6EBC7E0099718A /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1A71B6EBC7E0099718A /* KCAstronomicalCalendar+DateManipulation.m */; };
-		BBD0B1EB1B6EBC7E0099718A /* KCJewishCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1AD1B6EBC7E0099718A /* KCJewishCalendar.m */; };
-		BBD0B1EC1B6EBC7E0099718A /* KCJewishHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1AF1B6EBC7E0099718A /* KCJewishHoliday.m */; };
-		BBD0B1ED1B6EBC7E0099718A /* KCDaf.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1B21B6EBC7E0099718A /* KCDaf.m */; };
-		BBD0B1EE1B6EBC7E0099718A /* KCDafYomiCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1B41B6EBC7E0099718A /* KCDafYomiCalculator.m */; };
-		BBD0B1EF1B6EBC7E0099718A /* KCParasha.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1B71B6EBC7E0099718A /* KCParasha.m */; };
-		BBD0B1F01B6EBC7E0099718A /* KCParashatHashavuaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1B91B6EBC7E0099718A /* KCParashatHashavuaCalculator.m */; };
-		BBD0B1F11B6EBC7E0099718A /* KCSefiraFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1BC1B6EBC7E0099718A /* KCSefiraFormatter.m */; };
-		BBD0B1F21B6EBC7E0099718A /* KCSefiratHaomerCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1BE1B6EBC7E0099718A /* KCSefiratHaomerCalculator.m */; };
-		BBD0B1F31B6EBC7E0099718A /* KCComplexZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1C11B6EBC7E0099718A /* KCComplexZmanimCalendar.m */; };
-		BBD0B1F41B6EBC7E0099718A /* KCZman.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1C31B6EBC7E0099718A /* KCZman.m */; };
-		BBD0B1F51B6EBC7E0099718A /* KCZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1C51B6EBC7E0099718A /* KCZmanimCalendar.m */; };
-		BBD0B1F61B6EBC7E0099718A /* KCAstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1C81B6EBC7E0099718A /* KCAstronomicalCalculator.m */; };
-		BBD0B1F71B6EBC7E0099718A /* KCAstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1CA1B6EBC7E0099718A /* KCAstronomicalCalendar.m */; };
-		BBD0B1F81B6EBC7E0099718A /* KCGeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1CC1B6EBC7E0099718A /* KCGeoLocation.m */; };
-		BBD0B1F91B6EBC7E0099718A /* KCSunriseAndSunsetCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1CE1B6EBC7E0099718A /* KCSunriseAndSunsetCalculator.m */; };
-		BBD0B1FA1B6EBC7E0099718A /* trigonometry.c in Sources */ = {isa = PBXBuildFile; fileRef = BBD0B1D11B6EBC7E0099718A /* trigonometry.c */; };
-		BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */; };
-		BBE611811B24AD7B00B0B800 /* PZNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */; };
-		BBE611831B24AD9A00B0B800 /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; };
-		BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
-		BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; };
-		BBE65D2C1B607370001AF18F /* PZMinhagHistoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D2B1B607370001AF18F /* PZMinhagHistoryPageViewController.swift */; };
-		BBE65D2E1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D2D1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift */; };
 		BBE65D3A1B608998001AF18F /* ParveZman_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D391B608998001AF18F /* ParveZman_Tests.swift */; };
 /* End PBXBuildFile section */
 
@@ -534,9 +507,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB9915A31B1D15D000501DD2 /* Build configuration list for PBXNativeTarget "ParveZman" */;
 			buildPhases = (
-				D9F34FC0B05745BD48838060 /* Check Pods Manifest.lock */,
-				BB9915801B1D15D000501DD2 /* Sources */,
 				BB9915811B1D15D000501DD2 /* Frameworks */,
+				BB12F4821B7044B20087447E /* Sources */,
 				BB9915821B1D15D000501DD2 /* Resources */,
 			);
 			buildRules = (
@@ -653,69 +625,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D9F34FC0B05745BD48838060 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		BB9915801B1D15D000501DD2 /* Sources */ = {
+		BB12F4821B7044B20087447E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2425901B2DFB79003D3C40 /* PZHalachicHelper.swift in Sources */,
-				BBD0B1E91B6EBC7E0099718A /* NSDateComponents+AllComponents.m in Sources */,
-				BBD0B1EA1B6EBC7E0099718A /* KCAstronomicalCalendar+DateManipulation.m in Sources */,
-				BBD0B1F41B6EBC7E0099718A /* KCZman.m in Sources */,
-				BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */,
-				BBD0B1E41B6EBC7E0099718A /* NSCalendar+Juncture.m in Sources */,
-				BBD0B1E51B6EBC7E0099718A /* NSCalendar+Ranges.m in Sources */,
-				BBE65D2C1B607370001AF18F /* PZMinhagHistoryPageViewController.swift in Sources */,
-				BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */,
-				BBE611811B24AD7B00B0B800 /* PZNotificationHandler.swift in Sources */,
-				BBC043C61B55DF9500CD5474 /* PZSettings.swift in Sources */,
-				BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */,
-				BBD0B1F71B6EBC7E0099718A /* KCAstronomicalCalendar.m in Sources */,
-				BBD0B1F31B6EBC7E0099718A /* KCComplexZmanimCalendar.m in Sources */,
-				BBE65D2E1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift in Sources */,
-				BBD0B1E01B6EBC7E0099718A /* NSCalendar+Components.m in Sources */,
-				BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */,
-				BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */,
-				BBE611831B24AD9A00B0B800 /* PZSettingsManager.swift in Sources */,
-				BBD0B1EB1B6EBC7E0099718A /* KCJewishCalendar.m in Sources */,
-				BBD0B1EF1B6EBC7E0099718A /* KCParasha.m in Sources */,
-				BBD0B1E61B6EBC7E0099718A /* NSDate+Components.m in Sources */,
-				BBD0B1ED1B6EBC7E0099718A /* KCDaf.m in Sources */,
-				BBD0B1F11B6EBC7E0099718A /* KCSefiraFormatter.m in Sources */,
-				BBD0B1EC1B6EBC7E0099718A /* KCJewishHoliday.m in Sources */,
-				BBD0B1E81B6EBC7E0099718A /* NSDate+Description.m in Sources */,
-				BBD0B1FA1B6EBC7E0099718A /* trigonometry.c in Sources */,
-				BBD0B1F61B6EBC7E0099718A /* KCAstronomicalCalculator.m in Sources */,
-				BBD0B1EE1B6EBC7E0099718A /* KCDafYomiCalculator.m in Sources */,
-				BBD0B1F21B6EBC7E0099718A /* KCSefiratHaomerCalculator.m in Sources */,
-				BBD0B1E31B6EBC7E0099718A /* NSCalendar+hebrewYearTypes.m in Sources */,
-				BB2426A01B38E1AD003D3C40 /* PZUtils.swift in Sources */,
-				BBD0B1E21B6EBC7E0099718A /* NSCalendar+DateManipulation.m in Sources */,
-				BBD0B1E11B6EBC7E0099718A /* NSCalendar+DateComparison.m in Sources */,
-				BB2426D71B3A27CF003D3C40 /* PZData.xcdatamodeld in Sources */,
-				BBD0B1F01B6EBC7E0099718A /* KCParashatHashavuaCalculator.m in Sources */,
-				BBD0B1E71B6EBC7E0099718A /* NSDate+ConvenientDates.m in Sources */,
-				BBD0B1F91B6EBC7E0099718A /* KCSunriseAndSunsetCalculator.m in Sources */,
-				BBD0B1F81B6EBC7E0099718A /* KCGeoLocation.m in Sources */,
-				BBD0B1F51B6EBC7E0099718A /* KCZmanimCalendar.m in Sources */,
+				BB12F4831B7044DC0087447E /* PZSettings.swift in Sources */,
+				BB12F4841B7044DC0087447E /* PZSettingsManager.swift in Sources */,
+				BB12F4851B7044DC0087447E /* PZSettingsViewController.swift in Sources */,
+				BB12F4861B7044DC0087447E /* PZMinhag.swift in Sources */,
+				BB12F4871B7044DC0087447E /* PZMinhagHistoryContentViewController.swift in Sources */,
+				BB12F4881B7044DC0087447E /* PZMinhagHistoryPageViewController.swift in Sources */,
+				BB12F4891B7044DC0087447E /* PZMinhagHistoryViewController.swift in Sources */,
+				BB12F48A1B7044DC0087447E /* AppDelegate.swift in Sources */,
+				BB12F48B1B7044DC0087447E /* PZMainViewController.swift in Sources */,
+				BB12F48C1B7044DC0087447E /* PZNotificationHandler.swift in Sources */,
+				BB12F48D1B7044DC0087447E /* PZHalachicHelper.swift in Sources */,
+				BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */,
+				BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,10 +783,7 @@
 			baseConfigurationReference = 633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -879,10 +803,7 @@
 			baseConfigurationReference = CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
