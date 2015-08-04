@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB01D4451B6EC3810067C028 /* Pods_ParveZman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB01D4441B6EC3810067C028 /* Pods_ParveZman.framework */; };
 		BB2425901B2DFB79003D3C40 /* PZHalachicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */; };
 		BB2426A01B38E1AD003D3C40 /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
 		BB2426D71B3A27CF003D3C40 /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
@@ -76,6 +75,7 @@
 		26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.debug.xcconfig"; sourceTree = "<group>"; };
 		BB01D4441B6EC3810067C028 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParveZman.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParveZman.framework"; sourceTree = "<group>"; };
+		BB01D4461B703AB60067C028 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParveZman.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParveZman.framework"; sourceTree = "<group>"; };
 		BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHalachicHelper.swift; sourceTree = "<group>"; };
 		BB24269F1B38E1AD003D3C40 /* PZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZUtils.swift; sourceTree = "<group>"; };
 		BB2426D61B3A27CF003D3C40 /* PZData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PZData.xcdatamodel; sourceTree = "<group>"; };
@@ -178,7 +178,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB01D4451B6EC3810067C028 /* Pods_ParveZman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +201,7 @@
 		8CDFB675EC2B23D7B51FF2C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB01D4461B703AB60067C028 /* Pods_ParveZman.framework */,
 				BB01D4441B6EC3810067C028 /* Pods_ParveZman.framework */,
 				26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */,
 			);
@@ -538,8 +538,6 @@
 				BB9915801B1D15D000501DD2 /* Sources */,
 				BB9915811B1D15D000501DD2 /* Frameworks */,
 				BB9915821B1D15D000501DD2 /* Resources */,
-				A6E07028529FBA2DADB6C423 /* Copy Pods Resources */,
-				9AA2062BAEFA18D4FEE8B5D3 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -656,36 +654,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9AA2062BAEFA18D4FEE8B5D3 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6E07028529FBA2DADB6C423 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D9F34FC0B05745BD48838060 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -895,10 +863,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"${SRCROOT}/KosherCocoa\"/**",
 				);
 				INFOPLIST_FILE = ParveZman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
@@ -918,10 +886,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"${SRCROOT}/KosherCocoa\"/**",
 				);
 				INFOPLIST_FILE = ParveZman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;

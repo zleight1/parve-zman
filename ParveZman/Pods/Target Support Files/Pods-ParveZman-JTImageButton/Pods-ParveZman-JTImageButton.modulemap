@@ -1,6 +1,0 @@
-framework module JTImageButton {
-  umbrella header "Pods-ParveZman-JTImageButton-umbrella.h"
-
-  export *
-  module * { export * }
-}
