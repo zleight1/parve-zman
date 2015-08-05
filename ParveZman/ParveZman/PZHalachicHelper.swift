@@ -37,9 +37,9 @@ class PZHalachicHelper {
 //        var dayTimeInterval: NSTimeInterval = sunset.timeIntervalSinceDate(sunrise);
 //        NSLog("Time Interval %f", dayTimeInterval);
 //
-//        self.currentHalachicHour = CDouble(((dayTimeInterval/60)/60)/12);
+        self.currentHalachicHour = 1.0 //CDouble(((dayTimeInterval/60)/60)/12);
 //        
-//        NSLog("Current Halachic Hour : %f in minutes : %f", self.currentHalachicHour, self.currentHalachicHour * 60);
+        NSLog("Current Halachic Hour : %f in minutes : %f", self.currentHalachicHour, self.currentHalachicHour * 60);
         
     }
     

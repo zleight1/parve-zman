@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3347B9C2721DE5BFD48CE91B /* Pods_ParveZman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BB12F4831B7044DC0087447E /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC043C51B55DF9500CD5474 /* PZSettings.swift */; };
 		BB12F4841B7044DC0087447E /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; };
 		BB12F4851B7044DC0087447E /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
@@ -24,18 +25,10 @@
 		BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9915901B1D15D000501DD2 /* Images.xcassets */; };
 		BB9915941B1D15D000501DD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9915921B1D15D000501DD2 /* LaunchScreen.xib */; };
 		BB9915A01B1D15D000501DD2 /* ParveZmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99159F1B1D15D000501DD2 /* ParveZmanTests.swift */; };
-		BBE65D3A1B608998001AF18F /* ParveZman_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D391B608998001AF18F /* ParveZman_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BB99159A1B1D15D000501DD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BB99157C1B1D15D000501DD2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BB9915831B1D15D000501DD2;
-			remoteInfo = ParveZman;
-		};
-		BBE65D3B1B608998001AF18F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB99157C1B1D15D000501DD2 /* Project object */;
 			proxyType = 1;
@@ -63,75 +56,6 @@
 		BB99159F1B1D15D000501DD2 /* ParveZmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParveZmanTests.swift; sourceTree = "<group>"; };
 		BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMainViewController.swift; sourceTree = "<group>"; };
 		BBC043C51B55DF9500CD5474 /* PZSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettings.swift; sourceTree = "<group>"; };
-		BBD0B18D1B6EBC7E0099718A /* MBCalendarCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCalendarCategories.h; sourceTree = "<group>"; };
-		BBD0B18F1B6EBC7E0099718A /* NSCalendar+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Components.h"; sourceTree = "<group>"; };
-		BBD0B1901B6EBC7E0099718A /* NSCalendar+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Components.m"; sourceTree = "<group>"; };
-		BBD0B1911B6EBC7E0099718A /* NSCalendar+DateComparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+DateComparison.h"; sourceTree = "<group>"; };
-		BBD0B1921B6EBC7E0099718A /* NSCalendar+DateComparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+DateComparison.m"; sourceTree = "<group>"; };
-		BBD0B1931B6EBC7E0099718A /* NSCalendar+DateManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+DateManipulation.h"; sourceTree = "<group>"; };
-		BBD0B1941B6EBC7E0099718A /* NSCalendar+DateManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+DateManipulation.m"; sourceTree = "<group>"; };
-		BBD0B1951B6EBC7E0099718A /* NSCalendar+hebrewYearTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+hebrewYearTypes.h"; sourceTree = "<group>"; };
-		BBD0B1961B6EBC7E0099718A /* NSCalendar+hebrewYearTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+hebrewYearTypes.m"; sourceTree = "<group>"; };
-		BBD0B1971B6EBC7E0099718A /* NSCalendar+Juncture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Juncture.h"; sourceTree = "<group>"; };
-		BBD0B1981B6EBC7E0099718A /* NSCalendar+Juncture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Juncture.m"; sourceTree = "<group>"; };
-		BBD0B1991B6EBC7E0099718A /* NSCalendar+Ranges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Ranges.h"; sourceTree = "<group>"; };
-		BBD0B19A1B6EBC7E0099718A /* NSCalendar+Ranges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Ranges.m"; sourceTree = "<group>"; };
-		BBD0B19C1B6EBC7E0099718A /* NSDate+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Components.h"; sourceTree = "<group>"; };
-		BBD0B19D1B6EBC7E0099718A /* NSDate+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Components.m"; sourceTree = "<group>"; };
-		BBD0B19E1B6EBC7E0099718A /* NSDate+ConvenientDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ConvenientDates.h"; sourceTree = "<group>"; };
-		BBD0B19F1B6EBC7E0099718A /* NSDate+ConvenientDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ConvenientDates.m"; sourceTree = "<group>"; };
-		BBD0B1A01B6EBC7E0099718A /* NSDate+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Description.h"; sourceTree = "<group>"; };
-		BBD0B1A11B6EBC7E0099718A /* NSDate+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Description.m"; sourceTree = "<group>"; };
-		BBD0B1A31B6EBC7E0099718A /* NSDateComponents+AllComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+AllComponents.h"; sourceTree = "<group>"; };
-		BBD0B1A41B6EBC7E0099718A /* NSDateComponents+AllComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+AllComponents.m"; sourceTree = "<group>"; };
-		BBD0B1A61B6EBC7E0099718A /* KCAstronomicalCalendar+DateManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KCAstronomicalCalendar+DateManipulation.h"; sourceTree = "<group>"; };
-		BBD0B1A71B6EBC7E0099718A /* KCAstronomicalCalendar+DateManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KCAstronomicalCalendar+DateManipulation.m"; sourceTree = "<group>"; };
-		BBD0B1AA1B6EBC7E0099718A /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
-		BBD0B1AC1B6EBC7E0099718A /* KCJewishCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishCalendar.h; sourceTree = "<group>"; };
-		BBD0B1AD1B6EBC7E0099718A /* KCJewishCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishCalendar.m; sourceTree = "<group>"; };
-		BBD0B1AE1B6EBC7E0099718A /* KCJewishHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHoliday.h; sourceTree = "<group>"; };
-		BBD0B1AF1B6EBC7E0099718A /* KCJewishHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishHoliday.m; sourceTree = "<group>"; };
-		BBD0B1B11B6EBC7E0099718A /* KCDaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCDaf.h; sourceTree = "<group>"; };
-		BBD0B1B21B6EBC7E0099718A /* KCDaf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCDaf.m; sourceTree = "<group>"; };
-		BBD0B1B31B6EBC7E0099718A /* KCDafYomiCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCDafYomiCalculator.h; sourceTree = "<group>"; };
-		BBD0B1B41B6EBC7E0099718A /* KCDafYomiCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCDafYomiCalculator.m; sourceTree = "<group>"; };
-		BBD0B1B61B6EBC7E0099718A /* KCParasha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParasha.h; sourceTree = "<group>"; };
-		BBD0B1B71B6EBC7E0099718A /* KCParasha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParasha.m; sourceTree = "<group>"; };
-		BBD0B1B81B6EBC7E0099718A /* KCParashatHashavuaCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashatHashavuaCalculator.h; sourceTree = "<group>"; };
-		BBD0B1B91B6EBC7E0099718A /* KCParashatHashavuaCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParashatHashavuaCalculator.m; sourceTree = "<group>"; };
-		BBD0B1BB1B6EBC7E0099718A /* KCSefiraFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiraFormatter.h; sourceTree = "<group>"; };
-		BBD0B1BC1B6EBC7E0099718A /* KCSefiraFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiraFormatter.m; sourceTree = "<group>"; };
-		BBD0B1BD1B6EBC7E0099718A /* KCSefiratHaomerCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiratHaomerCalculator.h; sourceTree = "<group>"; };
-		BBD0B1BE1B6EBC7E0099718A /* KCSefiratHaomerCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiratHaomerCalculator.m; sourceTree = "<group>"; };
-		BBD0B1C01B6EBC7E0099718A /* KCComplexZmanimCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCComplexZmanimCalendar.h; sourceTree = "<group>"; };
-		BBD0B1C11B6EBC7E0099718A /* KCComplexZmanimCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCComplexZmanimCalendar.m; sourceTree = "<group>"; };
-		BBD0B1C21B6EBC7E0099718A /* KCZman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZman.h; sourceTree = "<group>"; };
-		BBD0B1C31B6EBC7E0099718A /* KCZman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCZman.m; sourceTree = "<group>"; };
-		BBD0B1C41B6EBC7E0099718A /* KCZmanimCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZmanimCalendar.h; sourceTree = "<group>"; };
-		BBD0B1C51B6EBC7E0099718A /* KCZmanimCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCZmanimCalendar.m; sourceTree = "<group>"; };
-		BBD0B1C71B6EBC7E0099718A /* KCAstronomicalCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAstronomicalCalculator.h; sourceTree = "<group>"; };
-		BBD0B1C81B6EBC7E0099718A /* KCAstronomicalCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalculator.m; sourceTree = "<group>"; };
-		BBD0B1C91B6EBC7E0099718A /* KCAstronomicalCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAstronomicalCalendar.h; sourceTree = "<group>"; };
-		BBD0B1CA1B6EBC7E0099718A /* KCAstronomicalCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalendar.m; sourceTree = "<group>"; };
-		BBD0B1CB1B6EBC7E0099718A /* KCGeoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGeoLocation.h; sourceTree = "<group>"; };
-		BBD0B1CC1B6EBC7E0099718A /* KCGeoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGeoLocation.m; sourceTree = "<group>"; };
-		BBD0B1CD1B6EBC7E0099718A /* KCSunriseAndSunsetCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSunriseAndSunsetCalculator.h; sourceTree = "<group>"; };
-		BBD0B1CE1B6EBC7E0099718A /* KCSunriseAndSunsetCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSunriseAndSunsetCalculator.m; sourceTree = "<group>"; };
-		BBD0B1CF1B6EBC7E0099718A /* Solar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solar.h; sourceTree = "<group>"; };
-		BBD0B1D11B6EBC7E0099718A /* trigonometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trigonometry.c; sourceTree = "<group>"; };
-		BBD0B1D21B6EBC7E0099718A /* trigonometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trigonometry.h; sourceTree = "<group>"; };
-		BBD0B1D41B6EBC7E0099718A /* KCAstronomical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAstronomical.h; sourceTree = "<group>"; };
-		BBD0B1D51B6EBC7E0099718A /* KCBearing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBearing.h; sourceTree = "<group>"; };
-		BBD0B1D61B6EBC7E0099718A /* KCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCConstants.h; sourceTree = "<group>"; };
-		BBD0B1D71B6EBC7E0099718A /* KCHebrewYear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCHebrewYear.h; sourceTree = "<group>"; };
-		BBD0B1D81B6EBC7E0099718A /* KCJewishHolidays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHolidays.h; sourceTree = "<group>"; };
-		BBD0B1D91B6EBC7E0099718A /* KCMolad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMolad.h; sourceTree = "<group>"; };
-		BBD0B1DA1B6EBC7E0099718A /* KCParashaReadings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashaReadings.h; sourceTree = "<group>"; };
-		BBD0B1DB1B6EBC7E0099718A /* KCSunCalculationTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSunCalculationTypes.h; sourceTree = "<group>"; };
-		BBD0B1DC1B6EBC7E0099718A /* KCTractates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTractates.h; sourceTree = "<group>"; };
-		BBD0B1DD1B6EBC7E0099718A /* KCZenith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZenith.h; sourceTree = "<group>"; };
-		BBD0B1DE1B6EBC7E0099718A /* KCZenithExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZenithExtended.h; sourceTree = "<group>"; };
-		BBD0B1DF1B6EBC7E0099718A /* KosherCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KosherCocoa.h; sourceTree = "<group>"; };
 		BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagHistoryViewController.swift; sourceTree = "<group>"; };
 		BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZNotificationHandler.swift; sourceTree = "<group>"; };
 		BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsManager.swift; sourceTree = "<group>"; };
@@ -140,9 +64,6 @@
 		BBE6129D1B2A6D8D00B0B800 /* PZBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZBridgingHeader.h; sourceTree = "<group>"; };
 		BBE65D2B1B607370001AF18F /* PZMinhagHistoryPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagHistoryPageViewController.swift; sourceTree = "<group>"; };
 		BBE65D2D1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagHistoryContentViewController.swift; sourceTree = "<group>"; };
-		BBE65D351B608998001AF18F /* ParveZman Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParveZman Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBE65D381B608998001AF18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBE65D391B608998001AF18F /* ParveZman_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParveZman_Tests.swift; sourceTree = "<group>"; };
 		CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,17 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3347B9C2721DE5BFD48CE91B /* Pods_ParveZman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BB9915961B1D15D000501DD2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BBE65D321B608998001AF18F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -184,10 +99,8 @@
 		BB99157B1B1D15D000501DD2 = {
 			isa = PBXGroup;
 			children = (
-				BBD0B18A1B6EBC7E0099718A /* KosherCocoa */,
 				BB9915861B1D15D000501DD2 /* ParveZman */,
 				BB99159C1B1D15D000501DD2 /* ParveZmanTests */,
-				BBE65D361B608998001AF18F /* ParveZman Tests */,
 				BB9915851B1D15D000501DD2 /* Products */,
 				C7498970632CEBC4F0E98FB0 /* Pods */,
 				8CDFB675EC2B23D7B51FF2C7 /* Frameworks */,
@@ -199,7 +112,6 @@
 			children = (
 				BB9915841B1D15D000501DD2 /* ParveZman.app */,
 				BB9915991B1D15D000501DD2 /* ParveZmanTests.xctest */,
-				BBE65D351B608998001AF18F /* ParveZman Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,210 +161,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BBD0B18A1B6EBC7E0099718A /* KosherCocoa */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B18B1B6EBC7E0099718A /* Categories */,
-				BBD0B1A81B6EBC7E0099718A /* Core */,
-				BBD0B1D31B6EBC7E0099718A /* Headers */,
-				BBD0B1DF1B6EBC7E0099718A /* KosherCocoa.h */,
-			);
-			path = KosherCocoa;
-			sourceTree = "<group>";
-		};
-		BBD0B18B1B6EBC7E0099718A /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B18C1B6EBC7E0099718A /* Foundation */,
-				BBD0B1A51B6EBC7E0099718A /* KosherCocoa */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		BBD0B18C1B6EBC7E0099718A /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B18D1B6EBC7E0099718A /* MBCalendarCategories.h */,
-				BBD0B18E1B6EBC7E0099718A /* NSCalendar */,
-				BBD0B19B1B6EBC7E0099718A /* NSDate */,
-				BBD0B1A21B6EBC7E0099718A /* NSDateComponents */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		BBD0B18E1B6EBC7E0099718A /* NSCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B18F1B6EBC7E0099718A /* NSCalendar+Components.h */,
-				BBD0B1901B6EBC7E0099718A /* NSCalendar+Components.m */,
-				BBD0B1911B6EBC7E0099718A /* NSCalendar+DateComparison.h */,
-				BBD0B1921B6EBC7E0099718A /* NSCalendar+DateComparison.m */,
-				BBD0B1931B6EBC7E0099718A /* NSCalendar+DateManipulation.h */,
-				BBD0B1941B6EBC7E0099718A /* NSCalendar+DateManipulation.m */,
-				BBD0B1951B6EBC7E0099718A /* NSCalendar+hebrewYearTypes.h */,
-				BBD0B1961B6EBC7E0099718A /* NSCalendar+hebrewYearTypes.m */,
-				BBD0B1971B6EBC7E0099718A /* NSCalendar+Juncture.h */,
-				BBD0B1981B6EBC7E0099718A /* NSCalendar+Juncture.m */,
-				BBD0B1991B6EBC7E0099718A /* NSCalendar+Ranges.h */,
-				BBD0B19A1B6EBC7E0099718A /* NSCalendar+Ranges.m */,
-			);
-			path = NSCalendar;
-			sourceTree = "<group>";
-		};
-		BBD0B19B1B6EBC7E0099718A /* NSDate */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B19C1B6EBC7E0099718A /* NSDate+Components.h */,
-				BBD0B19D1B6EBC7E0099718A /* NSDate+Components.m */,
-				BBD0B19E1B6EBC7E0099718A /* NSDate+ConvenientDates.h */,
-				BBD0B19F1B6EBC7E0099718A /* NSDate+ConvenientDates.m */,
-				BBD0B1A01B6EBC7E0099718A /* NSDate+Description.h */,
-				BBD0B1A11B6EBC7E0099718A /* NSDate+Description.m */,
-			);
-			path = NSDate;
-			sourceTree = "<group>";
-		};
-		BBD0B1A21B6EBC7E0099718A /* NSDateComponents */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1A31B6EBC7E0099718A /* NSDateComponents+AllComponents.h */,
-				BBD0B1A41B6EBC7E0099718A /* NSDateComponents+AllComponents.m */,
-			);
-			path = NSDateComponents;
-			sourceTree = "<group>";
-		};
-		BBD0B1A51B6EBC7E0099718A /* KosherCocoa */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1A61B6EBC7E0099718A /* KCAstronomicalCalendar+DateManipulation.h */,
-				BBD0B1A71B6EBC7E0099718A /* KCAstronomicalCalendar+DateManipulation.m */,
-			);
-			path = KosherCocoa;
-			sourceTree = "<group>";
-		};
-		BBD0B1A81B6EBC7E0099718A /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1A91B6EBC7E0099718A /* Calendar */,
-				BBD0B1C61B6EBC7E0099718A /* Solar */,
-				BBD0B1D01B6EBC7E0099718A /* Utilities */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		BBD0B1A91B6EBC7E0099718A /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1AA1B6EBC7E0099718A /* Calendar.h */,
-				BBD0B1AB1B6EBC7E0099718A /* Chagim */,
-				BBD0B1B01B6EBC7E0099718A /* Daf Yomi */,
-				BBD0B1B51B6EBC7E0099718A /* Parasha */,
-				BBD0B1BA1B6EBC7E0099718A /* Sefira */,
-				BBD0B1BF1B6EBC7E0099718A /* Zmanim */,
-			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
-		BBD0B1AB1B6EBC7E0099718A /* Chagim */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1AC1B6EBC7E0099718A /* KCJewishCalendar.h */,
-				BBD0B1AD1B6EBC7E0099718A /* KCJewishCalendar.m */,
-				BBD0B1AE1B6EBC7E0099718A /* KCJewishHoliday.h */,
-				BBD0B1AF1B6EBC7E0099718A /* KCJewishHoliday.m */,
-			);
-			path = Chagim;
-			sourceTree = "<group>";
-		};
-		BBD0B1B01B6EBC7E0099718A /* Daf Yomi */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1B11B6EBC7E0099718A /* KCDaf.h */,
-				BBD0B1B21B6EBC7E0099718A /* KCDaf.m */,
-				BBD0B1B31B6EBC7E0099718A /* KCDafYomiCalculator.h */,
-				BBD0B1B41B6EBC7E0099718A /* KCDafYomiCalculator.m */,
-			);
-			path = "Daf Yomi";
-			sourceTree = "<group>";
-		};
-		BBD0B1B51B6EBC7E0099718A /* Parasha */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1B61B6EBC7E0099718A /* KCParasha.h */,
-				BBD0B1B71B6EBC7E0099718A /* KCParasha.m */,
-				BBD0B1B81B6EBC7E0099718A /* KCParashatHashavuaCalculator.h */,
-				BBD0B1B91B6EBC7E0099718A /* KCParashatHashavuaCalculator.m */,
-			);
-			path = Parasha;
-			sourceTree = "<group>";
-		};
-		BBD0B1BA1B6EBC7E0099718A /* Sefira */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1BB1B6EBC7E0099718A /* KCSefiraFormatter.h */,
-				BBD0B1BC1B6EBC7E0099718A /* KCSefiraFormatter.m */,
-				BBD0B1BD1B6EBC7E0099718A /* KCSefiratHaomerCalculator.h */,
-				BBD0B1BE1B6EBC7E0099718A /* KCSefiratHaomerCalculator.m */,
-			);
-			path = Sefira;
-			sourceTree = "<group>";
-		};
-		BBD0B1BF1B6EBC7E0099718A /* Zmanim */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1C01B6EBC7E0099718A /* KCComplexZmanimCalendar.h */,
-				BBD0B1C11B6EBC7E0099718A /* KCComplexZmanimCalendar.m */,
-				BBD0B1C21B6EBC7E0099718A /* KCZman.h */,
-				BBD0B1C31B6EBC7E0099718A /* KCZman.m */,
-				BBD0B1C41B6EBC7E0099718A /* KCZmanimCalendar.h */,
-				BBD0B1C51B6EBC7E0099718A /* KCZmanimCalendar.m */,
-			);
-			path = Zmanim;
-			sourceTree = "<group>";
-		};
-		BBD0B1C61B6EBC7E0099718A /* Solar */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1C71B6EBC7E0099718A /* KCAstronomicalCalculator.h */,
-				BBD0B1C81B6EBC7E0099718A /* KCAstronomicalCalculator.m */,
-				BBD0B1C91B6EBC7E0099718A /* KCAstronomicalCalendar.h */,
-				BBD0B1CA1B6EBC7E0099718A /* KCAstronomicalCalendar.m */,
-				BBD0B1CB1B6EBC7E0099718A /* KCGeoLocation.h */,
-				BBD0B1CC1B6EBC7E0099718A /* KCGeoLocation.m */,
-				BBD0B1CD1B6EBC7E0099718A /* KCSunriseAndSunsetCalculator.h */,
-				BBD0B1CE1B6EBC7E0099718A /* KCSunriseAndSunsetCalculator.m */,
-				BBD0B1CF1B6EBC7E0099718A /* Solar.h */,
-			);
-			path = Solar;
-			sourceTree = "<group>";
-		};
-		BBD0B1D01B6EBC7E0099718A /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1D11B6EBC7E0099718A /* trigonometry.c */,
-				BBD0B1D21B6EBC7E0099718A /* trigonometry.h */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		BBD0B1D31B6EBC7E0099718A /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				BBD0B1D41B6EBC7E0099718A /* KCAstronomical.h */,
-				BBD0B1D51B6EBC7E0099718A /* KCBearing.h */,
-				BBD0B1D61B6EBC7E0099718A /* KCConstants.h */,
-				BBD0B1D71B6EBC7E0099718A /* KCHebrewYear.h */,
-				BBD0B1D81B6EBC7E0099718A /* KCJewishHolidays.h */,
-				BBD0B1D91B6EBC7E0099718A /* KCMolad.h */,
-				BBD0B1DA1B6EBC7E0099718A /* KCParashaReadings.h */,
-				BBD0B1DB1B6EBC7E0099718A /* KCSunCalculationTypes.h */,
-				BBD0B1DC1B6EBC7E0099718A /* KCTractates.h */,
-				BBD0B1DD1B6EBC7E0099718A /* KCZenith.h */,
-				BBD0B1DE1B6EBC7E0099718A /* KCZenithExtended.h */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
 		BBE65D2F1B607DE4001AF18F /* PZMinhag */ = {
 			isa = PBXGroup;
 			children = (
@@ -474,23 +182,6 @@
 			name = PZSettings;
 			sourceTree = "<group>";
 		};
-		BBE65D361B608998001AF18F /* ParveZman Tests */ = {
-			isa = PBXGroup;
-			children = (
-				BBE65D391B608998001AF18F /* ParveZman_Tests.swift */,
-				BBE65D371B608998001AF18F /* Supporting Files */,
-			);
-			path = "ParveZman Tests";
-			sourceTree = "<group>";
-		};
-		BBE65D371B608998001AF18F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BBE65D381B608998001AF18F /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		C7498970632CEBC4F0E98FB0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB9915A31B1D15D000501DD2 /* Build configuration list for PBXNativeTarget "ParveZman" */;
 			buildPhases = (
+				898CAFB2183CAC97FF7A6886 /* Check Pods Manifest.lock */,
 				BB9915811B1D15D000501DD2 /* Frameworks */,
 				BB12F4821B7044B20087447E /* Sources */,
 				BB9915821B1D15D000501DD2 /* Resources */,
+				E454AD80245B47425CEDB75D /* Embed Pods Frameworks */,
+				B1F7ACDF2CB651423C5873E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -538,24 +232,6 @@
 			productReference = BB9915991B1D15D000501DD2 /* ParveZmanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BBE65D341B608998001AF18F /* ParveZman Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BBE65D3D1B608998001AF18F /* Build configuration list for PBXNativeTarget "ParveZman Tests" */;
-			buildPhases = (
-				BBE65D311B608998001AF18F /* Sources */,
-				BBE65D321B608998001AF18F /* Frameworks */,
-				BBE65D331B608998001AF18F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BBE65D3C1B608998001AF18F /* PBXTargetDependency */,
-			);
-			name = "ParveZman Tests";
-			productName = "ParveZman Tests";
-			productReference = BBE65D351B608998001AF18F /* ParveZman Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -570,10 +246,6 @@
 					};
 					BB9915981B1D15D000501DD2 = {
 						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = BB9915831B1D15D000501DD2;
-					};
-					BBE65D341B608998001AF18F = {
-						CreatedOnToolsVersion = 6.4;
 						TestTargetID = BB9915831B1D15D000501DD2;
 					};
 				};
@@ -593,7 +265,6 @@
 			targets = (
 				BB9915831B1D15D000501DD2 /* ParveZman */,
 				BB9915981B1D15D000501DD2 /* ParveZmanTests */,
-				BBE65D341B608998001AF18F /* ParveZman Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -616,14 +287,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBE65D331B608998001AF18F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		898CAFB2183CAC97FF7A6886 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		B1F7ACDF2CB651423C5873E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E454AD80245B47425CEDB75D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB12F4821B7044B20087447E /* Sources */ = {
@@ -654,14 +366,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBE65D311B608998001AF18F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BBE65D3A1B608998001AF18F /* ParveZman_Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -669,11 +373,6 @@
 			isa = PBXTargetDependency;
 			target = BB9915831B1D15D000501DD2 /* ParveZman */;
 			targetProxy = BB99159A1B1D15D000501DD2 /* PBXContainerItemProxy */;
-		};
-		BBE65D3C1B608998001AF18F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BB9915831B1D15D000501DD2 /* ParveZman */;
-			targetProxy = BBE65D3B1B608998001AF18F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -790,8 +489,7 @@
 				);
 				INFOPLIST_FILE = ParveZman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = ParveZman/PZBridgingHeader.h;
@@ -811,7 +509,6 @@
 				INFOPLIST_FILE = ParveZman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = ParveZman/PZBridgingHeader.h;
@@ -852,42 +549,6 @@
 			};
 			name = Release;
 		};
-		BBE65D3E1B608998001AF18F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ParveZman Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParveZman.app/ParveZman";
-			};
-			name = Debug;
-		};
-		BBE65D3F1B608998001AF18F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ParveZman Tests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParveZman.app/ParveZman";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -914,15 +575,6 @@
 			buildConfigurations = (
 				BB9915A71B1D15D000501DD2 /* Debug */,
 				BB9915A81B1D15D000501DD2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BBE65D3D1B608998001AF18F /* Build configuration list for PBXNativeTarget "ParveZman Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BBE65D3E1B608998001AF18F /* Debug */,
-				BBE65D3F1B608998001AF18F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
