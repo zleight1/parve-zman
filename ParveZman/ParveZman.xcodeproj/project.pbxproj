@@ -21,6 +21,7 @@
 		BB12F48D1B7044DC0087447E /* PZHalachicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */; };
 		BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
 		BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
+		BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; };
 		BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99158D1B1D15D000501DD2 /* Main.storyboard */; };
 		BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9915901B1D15D000501DD2 /* Images.xcassets */; };
 		BB9915941B1D15D000501DD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9915921B1D15D000501DD2 /* LaunchScreen.xib */; };
@@ -42,6 +43,7 @@
 		633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.debug.xcconfig"; sourceTree = "<group>"; };
 		BB01D4441B6EC3810067C028 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParveZman.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParveZman.framework"; sourceTree = "<group>"; };
 		BB01D4461B703AB60067C028 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParveZman.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParveZman.framework"; sourceTree = "<group>"; };
+		BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZTimerViewController.swift; sourceTree = "<group>"; };
 		BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHalachicHelper.swift; sourceTree = "<group>"; };
 		BB24269F1B38E1AD003D3C40 /* PZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZUtils.swift; sourceTree = "<group>"; };
 		BB2426D61B3A27CF003D3C40 /* PZData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PZData.xcdatamodel; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BB12F5A11B72EAC30087447E /* PZTimer */ = {
+			isa = PBXGroup;
+			children = (
+				BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */,
+			);
+			name = PZTimer;
+			sourceTree = "<group>";
+		};
 		BB99157B1B1D15D000501DD2 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		BB9915861B1D15D000501DD2 /* ParveZman */ = {
 			isa = PBXGroup;
 			children = (
+				BB12F5A11B72EAC30087447E /* PZTimer */,
 				BBE65D301B607DF0001AF18F /* PZSettings */,
 				BBE65D2F1B607DE4001AF18F /* PZMinhag */,
 				BB9915891B1D15D000501DD2 /* AppDelegate.swift */,
@@ -354,6 +365,7 @@
 				BB12F48C1B7044DC0087447E /* PZNotificationHandler.swift in Sources */,
 				BB12F48D1B7044DC0087447E /* PZHalachicHelper.swift in Sources */,
 				BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */,
+				BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */,
 				BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

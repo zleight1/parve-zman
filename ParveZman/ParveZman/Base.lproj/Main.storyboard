@@ -120,34 +120,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-49-OKM">
-                                <rect key="frame" x="16" y="207" width="568" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-49-OKM" customClass="JTImageButton">
+                                <rect key="frame" x="16" y="205" width="568" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1rA-BC-yzZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <state key="normal" title="Meat">
                                     <color key="titleColor" red="1" green="0.030145655374867797" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="timerStart:" destination="nBO-fO-GoK" eventType="touchUpInside" id="wlm-Mh-FJx"/>
+                                    <action selector="timerStart:" destination="nBO-fO-GoK" eventType="touchUpInside" id="8gn-n1-4N4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUh-OH-Zdx">
-                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUh-OH-Zdx" customClass="JTImageButton">
+                                <rect key="frame" x="16" y="313" width="568" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="w0k-LL-9Af"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <state key="normal" title="Dairy">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="timerStart:" destination="nBO-fO-GoK" eventType="touchUpInside" id="FcY-bQ-2j7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I ate..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViP-PG-Knl">
+                                <rect key="frame" x="16" y="97" width="568" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KeJ-49-OKM" firstAttribute="leading" secondItem="xcP-g4-hlC" secondAttribute="leadingMargin" id="4gr-bN-4OI"/>
-                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="top" secondItem="KeJ-49-OKM" secondAttribute="bottom" constant="48" id="F97-Hr-wZP"/>
-                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="trailing" secondItem="xcP-g4-hlC" secondAttribute="trailingMargin" id="YIx-eK-SI7"/>
-                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="leading" secondItem="KeJ-49-OKM" secondAttribute="leading" id="hVB-if-zCC"/>
-                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="centerY" secondItem="xcP-g4-hlC" secondAttribute="centerY" id="khy-xs-Zfu"/>
-                            <constraint firstItem="KeJ-49-OKM" firstAttribute="trailing" secondItem="DUh-OH-Zdx" secondAttribute="trailing" id="tIq-zv-AYN"/>
+                            <constraint firstItem="KeJ-49-OKM" firstAttribute="top" secondItem="FSf-TT-Me6" secondAttribute="bottom" constant="141" id="84P-Zz-XjP"/>
+                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="top" secondItem="KeJ-49-OKM" secondAttribute="bottom" constant="8" symbolic="YES" id="Knb-3a-FDB"/>
+                            <constraint firstItem="KeJ-49-OKM" firstAttribute="top" secondItem="ViP-PG-Knl" secondAttribute="bottom" constant="8" symbolic="YES" id="Kzg-cC-idv"/>
+                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="leading" secondItem="KeJ-49-OKM" secondAttribute="leading" id="Mfa-dw-fMK"/>
+                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="trailing" secondItem="xcP-g4-hlC" secondAttribute="trailingMargin" id="Z2X-r1-diF"/>
+                            <constraint firstItem="KeJ-49-OKM" firstAttribute="leading" secondItem="xcP-g4-hlC" secondAttribute="leadingMargin" id="hPB-Un-cUk"/>
+                            <constraint firstItem="ViP-PG-Knl" firstAttribute="trailing" secondItem="KeJ-49-OKM" secondAttribute="trailing" id="ioJ-tg-YQy"/>
+                            <constraint firstItem="ViP-PG-Knl" firstAttribute="leading" secondItem="KeJ-49-OKM" secondAttribute="leading" id="mxj-uW-Eg7"/>
+                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="trailing" secondItem="KeJ-49-OKM" secondAttribute="trailing" id="nkf-Ob-4N1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kso-qc-H4K">
@@ -165,13 +183,44 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="dairyButton" destination="DUh-OH-Zdx" id="Ya7-1B-pfu"/>
-                        <outlet property="meatButton" destination="KeJ-49-OKM" id="Ow2-uq-mbx"/>
+                        <outlet property="dairyButton" destination="DUh-OH-Zdx" id="fxt-wi-dY2"/>
+                        <outlet property="meatButton" destination="KeJ-49-OKM" id="zN9-QH-QRJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Un9-iA-7dQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="97" y="154"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="Nb1-rc-hUe">
+            <objects>
+                <viewController storyboardIdentifier="PZTimerViewController" id="wkB-gB-Lj4" customClass="PZTimerViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bnh-R5-gK0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fy5-Kn-ea3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u0A-QR-u1B">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yr-qF-xOb">
+                                <rect key="frame" x="279" y="213" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fy5-Kn-ea3" firstAttribute="top" secondItem="8yr-qF-xOb" secondAttribute="bottom" constant="366" id="9sC-IP-ZNQ"/>
+                            <constraint firstItem="8yr-qF-xOb" firstAttribute="centerX" secondItem="u0A-QR-u1B" secondAttribute="centerX" id="FOz-WS-X8m"/>
+                            <constraint firstItem="8yr-qF-xOb" firstAttribute="top" secondItem="Bnh-R5-gK0" secondAttribute="bottom" constant="193" id="g01-LD-hzO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Slu-vm-bQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="857"/>
         </scene>
         <!--Minhag History View Controller-->
         <scene sceneID="Kof-34-s0a">

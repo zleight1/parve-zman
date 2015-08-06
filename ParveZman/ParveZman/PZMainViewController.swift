@@ -8,18 +8,19 @@
 
 import UIKit
 import CoreLocation
+import JTImageButton
 
 class PZMainViewController: UIViewController, CLLocationManagerDelegate {
 
     
     //Buttons
-    @IBOutlet weak var meatButton: UIButton!
-    @IBOutlet weak var dairyButton: UIButton!
+    @IBOutlet weak var meatButton: JTImageButton!
+    @IBOutlet weak var dairyButton: JTImageButton!
     
     //Location
     var locationManager: CLLocationManager = CLLocationManager()
     var startLocation: CLLocation!
-    
+
     //Subroutines
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +40,27 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         //Load from core data if possible
         PZSettingsManager.sharedInstance.loadPZSettings()
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        //create colors
+        var flatRedColor: UIColor = UIColor(red: 231 / 255.0, green: 76 / 255.0, blue: 60 / 255.0, alpha: 1.0)
+        var flatBlueColor: UIColor = UIColor(red: 52 / 255.0, green: 152 / 255.0, blue: 219 / 255.0, alpha: 1.0)
+        
+        //setup buttons
+        self.meatButton.createTitle("Meat", withIcon: nil, font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
+        self.meatButton.titleColor = flatRedColor
+        self.meatButton.iconColor = flatRedColor
+        self.meatButton.borderColor = flatRedColor
+        self.meatButton.borderWidth = 2.0
+        self.meatButton.sizeToFit()
+        
+        self.dairyButton.createTitle("Dairy", withIcon: nil, font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
+        self.dairyButton.titleColor = flatBlueColor
+        self.dairyButton.iconColor = flatBlueColor
+        self.dairyButton.borderColor = flatBlueColor
+        self.dairyButton.borderWidth = 2.0
+        self.dairyButton.sizeToFit()
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,6 +95,12 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         let alert = UIAlertView();
         alert.title = "Waiting";
         alert.addButtonWithTitle("Yum");
+        
+        var vc = storyboard!.instantiateViewControllerWithIdentifier("PZTimerViewController") as! PZTimerViewController
+        
+        self.navigationController!.pushViewController(vc, animated: false)
+        
+        return
         
         let button = sender as! UIButton;
         if button.tag == 0 {
