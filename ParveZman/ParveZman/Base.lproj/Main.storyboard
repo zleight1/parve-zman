@@ -203,20 +203,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yr-qF-xOb">
-                                <rect key="frame" x="279" y="213" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yr-qF-xOb">
+                                <rect key="frame" x="16" y="213" width="568" height="90"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0c-qp-AfX" customClass="JTImageButton">
+                                <rect key="frame" x="16" y="320" width="568" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dMe-Ac-jL6"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="wkB-gB-Lj4" eventType="touchUpInside" id="tqz-X5-Me1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Fy5-Kn-ea3" firstAttribute="top" secondItem="8yr-qF-xOb" secondAttribute="bottom" constant="366" id="9sC-IP-ZNQ"/>
-                            <constraint firstItem="8yr-qF-xOb" firstAttribute="centerX" secondItem="u0A-QR-u1B" secondAttribute="centerX" id="FOz-WS-X8m"/>
-                            <constraint firstItem="8yr-qF-xOb" firstAttribute="top" secondItem="Bnh-R5-gK0" secondAttribute="bottom" constant="193" id="g01-LD-hzO"/>
+                            <constraint firstItem="w0c-qp-AfX" firstAttribute="top" secondItem="8yr-qF-xOb" secondAttribute="bottom" constant="17" id="AdI-a7-hQN"/>
+                            <constraint firstItem="8yr-qF-xOb" firstAttribute="top" secondItem="Bnh-R5-gK0" secondAttribute="bottom" constant="193" id="Gxl-i3-fAf"/>
+                            <constraint firstItem="8yr-qF-xOb" firstAttribute="leading" secondItem="u0A-QR-u1B" secondAttribute="leadingMargin" id="HdN-8W-euN"/>
+                            <constraint firstItem="8yr-qF-xOb" firstAttribute="trailing" secondItem="u0A-QR-u1B" secondAttribute="trailingMargin" id="Kag-ft-AHd"/>
+                            <constraint firstItem="Fy5-Kn-ea3" firstAttribute="top" secondItem="8yr-qF-xOb" secondAttribute="bottom" constant="297" id="T3d-BY-cSE"/>
+                            <constraint firstItem="w0c-qp-AfX" firstAttribute="trailing" secondItem="8yr-qF-xOb" secondAttribute="trailing" id="a1k-bd-RVN"/>
+                            <constraint firstItem="w0c-qp-AfX" firstAttribute="leading" secondItem="8yr-qF-xOb" secondAttribute="leading" id="gcO-sL-Zi6"/>
+                            <constraint firstItem="Fy5-Kn-ea3" firstAttribute="top" secondItem="w0c-qp-AfX" secondAttribute="bottom" constant="180" id="xys-Ck-6gl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stopTimerButton" destination="w0c-qp-AfX" id="hje-mk-LnV"/>
+                        <outlet property="timerLabel" destination="8yr-qF-xOb" id="nfA-Zt-Vx5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Slu-vm-bQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -92,26 +92,27 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
     //Button actions
     
     @IBAction func timerStart(sender: AnyObject) {
-        let alert = UIAlertView();
-        alert.title = "Waiting";
-        alert.addButtonWithTitle("Yum");
+        //check if we're in timer mode currently?
         
-        var vc = storyboard!.instantiateViewControllerWithIdentifier("PZTimerViewController") as! PZTimerViewController
+        //get the time
+        let button = sender as! UIButton;
+        var time: Double
+        if button.tag == 0 {
+            time = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentMeatMinhag)
+        } else {
+            time = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentDairyMinhag)
+        }
         
-        self.navigationController!.pushViewController(vc, animated: false)
+        //get the timer view
+        var pzTimerViewController = storyboard!.instantiateViewControllerWithIdentifier("PZTimerViewController") as! PZTimerViewController
+        
+        //pass the view controller all the information it needs here
+        pzTimerViewController.endTime = NSDate.timeIntervalSinceReferenceDate() + time
+        
+        self.presentViewController(pzTimerViewController, animated: true, completion: nil)
         
         return
         
-        let button = sender as! UIButton;
-        if button.tag == 0 {
-            var time = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentMeatMinhag);
-            alert.message = NSString(format: "Meat, waiting seconds: %f, minutes %f", time, time/60) as String;
-        } else {
-            var time = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentDairyMinhag);
-            alert.message = NSString(format: "Dairy, waiting: %f seconds, minutes: %f", time, time / 60) as String;
-        }
-        
-        alert.show()
     }
 
     /*
