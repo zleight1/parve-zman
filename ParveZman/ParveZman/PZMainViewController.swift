@@ -17,6 +17,7 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
     //Buttons
     @IBOutlet weak var meatButton: JTImageButton!
     @IBOutlet weak var dairyButton: JTImageButton!
+    @IBOutlet weak var settingsButton: JTImageButton!
     
     //Location
     var locationManager: CLLocationManager = CLLocationManager()
@@ -45,14 +46,15 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewWillAppear(animated: Bool) {
         //create colors
-        //read
+        //red
         var flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
-        //var borderRedColor: UIColor = UIColor.colorWithCSS("#CD160C")
         //blue
         var flatBlueColor: UIColor = UIColor.colorWithCSS("#1A7CF9")
-        //var borderBlueColor: UIColor = UIColor.colorWithCSS("#0D6080")
+        //gray
+        var flatGrayColor: UIColor = UIColor.colorWithCSS("#A9A9A9")
         
         //setup buttons
+        //meat
         self.meatButton.createTitle("I Ate Meat", withIcon: UIImage(named: "Steak"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
         self.meatButton.titleColor = flatRedColor
         self.meatButton.iconColor = flatRedColor
@@ -62,6 +64,7 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         self.meatButton.cornerRadius = 50.0
         self.meatButton.sizeToFit()
         
+        //dairy
         self.dairyButton.createTitle("I Ate Dairy", withIcon: UIImage(named: "Cheese"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
         self.dairyButton.titleColor = flatBlueColor
         self.dairyButton.iconColor = flatBlueColor
@@ -70,6 +73,16 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         self.dairyButton.borderWidth = 3.0
         self.dairyButton.cornerRadius = 50.0
         self.dairyButton.sizeToFit()
+        
+        //settings
+        self.settingsButton.createTitle("Settings", withIcon: UIImage(named: "Settings"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
+        self.settingsButton.titleColor = flatGrayColor
+        self.settingsButton.iconColor = flatGrayColor
+        self.settingsButton.borderColor = flatGrayColor
+        self.settingsButton.bgColor = UIColor.whiteColor()
+        self.settingsButton.borderWidth = 3.0
+        self.settingsButton.cornerRadius = 50.0
+        self.settingsButton.sizeToFit()
     }
 
     override func didReceiveMemoryWarning() {
@@ -123,15 +136,15 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         return
         
     }
+    
+    //show settings
+    @IBAction func showSettings(sender: AnyObject) {
+        //get the timer view
+        var pzSettingsViewController = storyboard!.instantiateViewControllerWithIdentifier("PZSettingsViewController") as! PZSettingsViewController
+        
+        self.presentViewController(pzSettingsViewController, animated: true, completion: nil)
+        
+        return
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }

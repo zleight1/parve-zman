@@ -8,15 +8,22 @@
 
 import Foundation
 import UIKit
+import JTImageButton
+import UIColor_Hex_Swift
 
 class PZSettingsViewController: UIViewController {
     
     var MeatTimeNames = PZMinhag.GetAllMeatNames();
     var DairyTimeNames = PZMinhag.GetAllDairyNames();
     
+    var tempMeatWaitMinhag = PZSettingsManager.sharedInstance.currentMeatMinhag
+    var tempDairyWaitMinhag = PZSettingsManager.sharedInstance.currentDairyMinhag
+    
     @IBOutlet weak var meatMinhagPicker: UIPickerView!
     @IBOutlet weak var dairyMinhagPicker: UIPickerView!
     
+    @IBOutlet weak var cancelButton: JTImageButton!
+    @IBOutlet weak var saveButton: JTImageButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +33,35 @@ class PZSettingsViewController: UIViewController {
         
         loadSettings()
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        //create colors
+        //red
+        var flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
+        //green
+        var flatGreenColor: UIColor = UIColor.colorWithCSS("#7CFC00")
+        
+        //setup buttons
+        //cancel
+        self.cancelButton.createTitle("", withIcon: UIImage(named: "Cancel"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
+        self.cancelButton.titleColor = flatRedColor
+        self.cancelButton.iconColor = flatRedColor
+        self.cancelButton.borderColor = flatRedColor
+        self.cancelButton.bgColor = UIColor.whiteColor()
+        self.cancelButton.borderWidth = 3.0
+        self.cancelButton.cornerRadius = 37.5
+        self.cancelButton.sizeToFit()
+        
+        //save
+        self.saveButton.createTitle("", withIcon: UIImage(named: "Accept"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
+        self.saveButton.titleColor = flatGreenColor
+        self.saveButton.iconColor = flatGreenColor
+        self.saveButton.borderColor = flatGreenColor
+        self.saveButton.bgColor = UIColor.whiteColor()
+        self.saveButton.borderWidth = 3.0
+        self.saveButton.cornerRadius = 37.5
+        self.saveButton.sizeToFit()
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -63,13 +99,12 @@ class PZSettingsViewController: UIViewController {
     {
         if pickerView.tag == 0 {
             //meat
-            PZSettingsManager.sharedInstance.currentMeatMinhag = PZMeatWaitMinhag(rawValue: MeatTimeNames[row])!
+            tempMeatWaitMinhag = PZMeatWaitMinhag(rawValue: MeatTimeNames[row])!
         } else {
             //dairy
-            PZSettingsManager.sharedInstance.currentDairyMinhag = PZDairyWaitMinhag(rawValue: DairyTimeNames[row])!
+            tempDairyWaitMinhag = PZDairyWaitMinhag(rawValue: DairyTimeNames[row])!
         }
     }
-    
     
     func loadSettings() {
         PZSettingsManager.sharedInstance.loadPZSettings()
@@ -80,14 +115,19 @@ class PZSettingsViewController: UIViewController {
         dairyMinhagPicker.selectRow(dairyIndex, inComponent: 0, animated: false)
     }
     
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    func saveSettings() {
+        PZSettingsManager.sharedInstance.currentMeatMinhag = tempMeatWaitMinhag
+        PZSettingsManager.sharedInstance.currentDairyMinhag = tempDairyWaitMinhag
     }
-    */
+    
+    @IBAction func acceptClicked(sender: AnyObject) {
+        saveSettings()
+        
+        self.dismissViewControllerAnimated(false, completion: nil)
+    }
+    
+    @IBAction func cancelClicked(sender: AnyObject) {
+        self.dismissViewControllerAnimated(false, completion: nil)
+    }
+    
 }

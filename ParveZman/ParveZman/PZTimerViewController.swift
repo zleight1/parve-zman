@@ -28,14 +28,17 @@ class PZTimerViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         //create colors
-        var flatRedColor: UIColor = UIColor(red: 231 / 255.0, green: 76 / 255.0, blue: 60 / 255.0, alpha: 1.0)
-
+        var flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
+        
         //setup buttons
-        self.stopTimerButton.createTitle("Stop", withIcon: nil, font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
+        //stop timer
+        self.stopTimerButton.createTitle("", withIcon: UIImage(named: "Cancel"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
         self.stopTimerButton.titleColor = flatRedColor
         self.stopTimerButton.iconColor = flatRedColor
         self.stopTimerButton.borderColor = flatRedColor
-        self.stopTimerButton.borderWidth = 2.0
+        self.stopTimerButton.bgColor = UIColor.whiteColor()
+        self.stopTimerButton.borderWidth = 3.0
+        self.stopTimerButton.cornerRadius = 37.5
         self.stopTimerButton.sizeToFit()
 
     }
