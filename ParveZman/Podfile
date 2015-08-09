@@ -3,5 +3,5 @@ use_frameworks!
 
 target 'ParveZman' do
   pod 'JTImageButton'
-  pod 'KosherCocoa', '~> 2.0'
+  pod "UIColor-Hex-Swift"
 end

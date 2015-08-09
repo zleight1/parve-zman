@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import JTImageButton
+import UIColor_Hex_Swift
 
 class PZMainViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -44,22 +45,30 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewWillAppear(animated: Bool) {
         //create colors
-        var flatRedColor: UIColor = UIColor(red: 231 / 255.0, green: 76 / 255.0, blue: 60 / 255.0, alpha: 1.0)
-        var flatBlueColor: UIColor = UIColor(red: 52 / 255.0, green: 152 / 255.0, blue: 219 / 255.0, alpha: 1.0)
+        //read
+        var flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
+        //var borderRedColor: UIColor = UIColor.colorWithCSS("#CD160C")
+        //blue
+        var flatBlueColor: UIColor = UIColor.colorWithCSS("#1A7CF9")
+        //var borderBlueColor: UIColor = UIColor.colorWithCSS("#0D6080")
         
         //setup buttons
-        self.meatButton.createTitle("Meat", withIcon: nil, font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
+        self.meatButton.createTitle("I Ate Meat", withIcon: UIImage(named: "Steak"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
         self.meatButton.titleColor = flatRedColor
         self.meatButton.iconColor = flatRedColor
         self.meatButton.borderColor = flatRedColor
-        self.meatButton.borderWidth = 2.0
+        self.meatButton.bgColor = UIColor.whiteColor()
+        self.meatButton.borderWidth = 3.0
+        self.meatButton.cornerRadius = 50.0
         self.meatButton.sizeToFit()
         
-        self.dairyButton.createTitle("Dairy", withIcon: nil, font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
+        self.dairyButton.createTitle("I Ate Dairy", withIcon: UIImage(named: "Cheese"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
         self.dairyButton.titleColor = flatBlueColor
         self.dairyButton.iconColor = flatBlueColor
         self.dairyButton.borderColor = flatBlueColor
-        self.dairyButton.borderWidth = 2.0
+        self.dairyButton.bgColor = UIColor.whiteColor()
+        self.dairyButton.borderWidth = 3.0
+        self.dairyButton.cornerRadius = 50.0
         self.dairyButton.sizeToFit()
     }
 

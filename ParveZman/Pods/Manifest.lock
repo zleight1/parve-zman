@@ -1,13 +1,13 @@
 PODS:
   - JTImageButton (1.0.2)
-  - KosherCocoa (2.0.8)
+  - UIColor-Hex-Swift (0.1.0)
 
 DEPENDENCIES:
   - JTImageButton
-  - KosherCocoa (~> 2.0)
+  - UIColor-Hex-Swift
 
 SPEC CHECKSUMS:
   JTImageButton: d214ff9ee6e01865368a9f749c5a16e6abbf6409
-  KosherCocoa: f57cf67692914f0114a09506b1ca2b7a19d73ac0
+  UIColor-Hex-Swift: 385114fc0e26d2e390d4ae2cfd4178d17924339e
 
 COCOAPODS: 0.37.2

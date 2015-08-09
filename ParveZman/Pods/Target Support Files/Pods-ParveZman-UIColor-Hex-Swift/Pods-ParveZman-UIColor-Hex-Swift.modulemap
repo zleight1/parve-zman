@@ -1,0 +1,6 @@
+framework module UIColor_Hex_Swift {
+  umbrella header "Pods-ParveZman-UIColor-Hex-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

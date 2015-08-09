@@ -49,7 +49,9 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'JTImageButton.framework'
+  install_framework 'UIColor_Hex_Swift.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'JTImageButton.framework'
+  install_framework 'UIColor_Hex_Swift.framework'
 fi

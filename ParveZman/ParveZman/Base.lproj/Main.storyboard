@@ -148,23 +148,14 @@
                                     <action selector="timerStart:" destination="nBO-fO-GoK" eventType="touchUpInside" id="FcY-bQ-2j7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I ate..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViP-PG-Knl">
-                                <rect key="frame" x="16" y="97" width="568" height="100"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.95697206439393934" green="0.95697206439393934" blue="0.95697206439393934" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="KeJ-49-OKM" firstAttribute="top" secondItem="FSf-TT-Me6" secondAttribute="bottom" constant="141" id="84P-Zz-XjP"/>
                             <constraint firstItem="DUh-OH-Zdx" firstAttribute="top" secondItem="KeJ-49-OKM" secondAttribute="bottom" constant="8" symbolic="YES" id="Knb-3a-FDB"/>
-                            <constraint firstItem="KeJ-49-OKM" firstAttribute="top" secondItem="ViP-PG-Knl" secondAttribute="bottom" constant="8" symbolic="YES" id="Kzg-cC-idv"/>
                             <constraint firstItem="DUh-OH-Zdx" firstAttribute="leading" secondItem="KeJ-49-OKM" secondAttribute="leading" id="Mfa-dw-fMK"/>
                             <constraint firstItem="DUh-OH-Zdx" firstAttribute="trailing" secondItem="xcP-g4-hlC" secondAttribute="trailingMargin" id="Z2X-r1-diF"/>
                             <constraint firstItem="KeJ-49-OKM" firstAttribute="leading" secondItem="xcP-g4-hlC" secondAttribute="leadingMargin" id="hPB-Un-cUk"/>
-                            <constraint firstItem="ViP-PG-Knl" firstAttribute="trailing" secondItem="KeJ-49-OKM" secondAttribute="trailing" id="ioJ-tg-YQy"/>
-                            <constraint firstItem="ViP-PG-Knl" firstAttribute="leading" secondItem="KeJ-49-OKM" secondAttribute="leading" id="mxj-uW-Eg7"/>
                             <constraint firstItem="DUh-OH-Zdx" firstAttribute="trailing" secondItem="KeJ-49-OKM" secondAttribute="trailing" id="nkf-Ob-4N1"/>
                         </constraints>
                     </view>

@@ -12,9 +12,9 @@
 #define COCOAPODS_VERSION_MINOR_JTImageButton 0
 #define COCOAPODS_VERSION_PATCH_JTImageButton 2
 
-// KosherCocoa
-#define COCOAPODS_POD_AVAILABLE_KosherCocoa
-#define COCOAPODS_VERSION_MAJOR_KosherCocoa 2
-#define COCOAPODS_VERSION_MINOR_KosherCocoa 0
-#define COCOAPODS_VERSION_PATCH_KosherCocoa 8
+// UIColor-Hex-Swift
+#define COCOAPODS_POD_AVAILABLE_UIColor_Hex_Swift
+#define COCOAPODS_VERSION_MAJOR_UIColor_Hex_Swift 0
+#define COCOAPODS_VERSION_MINOR_UIColor_Hex_Swift 1
+#define COCOAPODS_VERSION_PATCH_UIColor_Hex_Swift 0
 
