@@ -81,17 +81,17 @@ class PZSettingsViewController: UIViewController {
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView.tag == 0 {
-            return MeatTimeNames.count
+            return self.MeatTimeNames.count
         } else {
-            return DairyTimeNames.count
+            return self.DairyTimeNames.count
         }
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         if pickerView.tag == 0 {
-            return MeatTimeNames[row]
+            return self.MeatTimeNames[row]
         } else {
-            return DairyTimeNames[row]
+            return self.DairyTimeNames[row]
         }
     }
     
@@ -99,10 +99,12 @@ class PZSettingsViewController: UIViewController {
     {
         if pickerView.tag == 0 {
             //meat
-            tempMeatWaitMinhag = PZMeatWaitMinhag(rawValue: MeatTimeNames[row])!
+            var value = self.MeatTimeNames[row];
+            self.tempMeatWaitMinhag = PZMeatWaitMinhag(rawValue: value)!
         } else {
             //dairy
-            tempDairyWaitMinhag = PZDairyWaitMinhag(rawValue: DairyTimeNames[row])!
+            var value = self.DairyTimeNames[row];
+            self.tempDairyWaitMinhag = PZDairyWaitMinhag(rawValue: value)!
         }
     }
     
@@ -116,8 +118,8 @@ class PZSettingsViewController: UIViewController {
     }
     
     func saveSettings() {
-        PZSettingsManager.sharedInstance.currentMeatMinhag = tempMeatWaitMinhag
-        PZSettingsManager.sharedInstance.currentDairyMinhag = tempDairyWaitMinhag
+        PZSettingsManager.sharedInstance.currentMeatMinhag = self.tempMeatWaitMinhag
+        PZSettingsManager.sharedInstance.currentDairyMinhag = self.tempDairyWaitMinhag
     }
     
     @IBAction func acceptClicked(sender: AnyObject) {

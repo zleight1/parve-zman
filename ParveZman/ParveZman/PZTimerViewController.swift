@@ -17,6 +17,7 @@ class PZTimerViewController: UIViewController {
     //variables
     var endTime = NSTimeInterval()
     var timer = NSTimer()
+    var timerUUID: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,21 @@ class PZTimerViewController: UIViewController {
         // Do any additional setup after loading the view.
         let aSelector : Selector = "updateTime"
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
+        
+        //init the uuid
+        timerUUID = NSUUID().UUIDString
+        
+        //init the notification
+        var notification = UILocalNotification()
+        notification.alertBody = "Congrats, you're now Parve!"
+        notification.alertTitle = "Parve Zman!"
+        notification.fireDate = NSDate(timeIntervalSinceReferenceDate: endTime)
+        notification.soundName = UILocalNotificationDefaultSoundName // default sound
+        notification.userInfo = [ "UUID" : timerUUID ]
+        notification.category = "PARVE_CATEGORY"
+        
+        //schedule it
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -88,6 +104,14 @@ class PZTimerViewController: UIViewController {
     
     @IBAction func stop(sender: AnyObject) {
         timer.invalidate()
+        
+        //cancel the notification
+        for notification in UIApplication.sharedApplication().scheduledLocalNotifications as! [UILocalNotification] { // loop through notifications...
+            if (notification.userInfo!["UUID"] as! String == timerUUID) { // ...and cancel the notification when you find it...
+                UIApplication.sharedApplication().cancelLocalNotification(notification)
+                break
+            }
+        }
         
         //quit the view
         self.dismissViewControllerAnimated(true, completion: nil)

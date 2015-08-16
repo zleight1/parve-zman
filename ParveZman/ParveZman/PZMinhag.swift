@@ -46,6 +46,10 @@ class PZMinhag {
             minutes = 60
         case .None:
             minutes = 0
+        //Test
+        case .Test:
+            minutes = 1
+        //EndTest
         default:
             minutes = 0
         }
@@ -64,6 +68,10 @@ class PZMinhag {
             minutes = 60
         case .None:
             minutes = 0
+        //Test
+        case .Test:
+            minutes = 1
+        //EndTest
         default:
             minutes = 0
         }
@@ -82,14 +90,27 @@ enum PZMeatWaitMinhag : String {
     case ThreeHours = "3 Hours"
     case OneHour = "1 Hour"
     case None = "None"
+    //Test
+    case Test = "Test"
+    //EndTest
     
     static let allValues = [TwentyFourHours, SixFullHours, SixthHour, ThreeHours, OneHour, None //,FourHalachicHours
+        //Test
+        ,Test
+        //EndTest
     ]
 }
 
 enum PZDairyWaitMinhag : String {
     case OneHour = "1 Hour"
     case None = "None"
+    //Test
+    case Test = "Test"
+    //EndTest
     
-    static let allValues = [OneHour, None]
+    static let allValues = [OneHour, None
+        //Test
+        ,Test
+        //EndTest
+    ]
 }
