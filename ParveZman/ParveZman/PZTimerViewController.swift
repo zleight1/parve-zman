@@ -8,6 +8,7 @@
 
 import UIKit
 import JTImageButton
+import AudioToolbox
 
 class PZTimerViewController: UIViewController {
 
@@ -24,10 +25,10 @@ class PZTimerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         let aSelector : Selector = "updateTime"
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
         
         //init the uuid
-        timerUUID = NSUUID().UUIDString
+        self.timerUUID = NSUUID().UUIDString
         
         //init the notification
         var notification = UILocalNotification()
@@ -60,7 +61,7 @@ class PZTimerViewController: UIViewController {
     }
     
     func updateTime() {
-        if !timer.valid {
+        if !self.timer.valid {
             return
         }
         
@@ -68,10 +69,10 @@ class PZTimerViewController: UIViewController {
         
         //Find the difference between current time and end time.
         
-        var elapsedTime: NSTimeInterval = endTime - currentTime
+        var elapsedTime: NSTimeInterval = self.endTime - currentTime
         
         if elapsedTime <= 0 {
-            return
+            return timerDidEnd(self.timer)
         }
         
         //calculate the hours in elapsed time.
@@ -98,16 +99,22 @@ class PZTimerViewController: UIViewController {
         
         //concatenate hours, minutes, seconds and assign it to the UILabel
         
-        timerLabel.text = "\(strHours):\(strMinutes):\(strSeconds)"
+        self.timerLabel.text = "\(strHours):\(strMinutes):\(strSeconds)"
         
     }
     
-    @IBAction func stop(sender: AnyObject) {
+    func timerDidEnd(timer: NSTimer) {
         timer.invalidate()
+        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        self.timerLabel.text = "Parve Zman!"
+    }
+    
+    @IBAction func stop(sender: AnyObject) {
+        self.timer.invalidate()
         
         //cancel the notification
         for notification in UIApplication.sharedApplication().scheduledLocalNotifications as! [UILocalNotification] { // loop through notifications...
-            if (notification.userInfo!["UUID"] as! String == timerUUID) { // ...and cancel the notification when you find it...
+            if (notification.userInfo!["UUID"] as! String == self.timerUUID) { // ...and cancel the notification when you find it...
                 UIApplication.sharedApplication().cancelLocalNotification(notification)
                 break
             }

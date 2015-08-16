@@ -17,7 +17,6 @@
 		BB12F4891B7044DC0087447E /* PZMinhagHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */; };
 		BB12F48A1B7044DC0087447E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; };
 		BB12F48B1B7044DC0087447E /* PZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */; };
-		BB12F48C1B7044DC0087447E /* PZNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */; };
 		BB12F48D1B7044DC0087447E /* PZHalachicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */; };
 		BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
 		BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
@@ -59,7 +58,6 @@
 		BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMainViewController.swift; sourceTree = "<group>"; };
 		BBC043C51B55DF9500CD5474 /* PZSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettings.swift; sourceTree = "<group>"; };
 		BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagHistoryViewController.swift; sourceTree = "<group>"; };
-		BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZNotificationHandler.swift; sourceTree = "<group>"; };
 		BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsManager.swift; sourceTree = "<group>"; };
 		BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsViewController.swift; sourceTree = "<group>"; };
 		BBE611861B24DFA200B0B800 /* PZMinhag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhag.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				BB9915921B1D15D000501DD2 /* LaunchScreen.xib */,
 				BB9915871B1D15D000501DD2 /* Supporting Files */,
 				BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */,
-				BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */,
 				BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */,
 				BB24269F1B38E1AD003D3C40 /* PZUtils.swift */,
 				BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */,
@@ -363,7 +360,6 @@
 				BB12F4891B7044DC0087447E /* PZMinhagHistoryViewController.swift in Sources */,
 				BB12F48A1B7044DC0087447E /* AppDelegate.swift in Sources */,
 				BB12F48B1B7044DC0087447E /* PZMainViewController.swift in Sources */,
-				BB12F48C1B7044DC0087447E /* PZNotificationHandler.swift in Sources */,
 				BB12F48D1B7044DC0087447E /* PZHalachicHelper.swift in Sources */,
 				BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */,
 				BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */,
