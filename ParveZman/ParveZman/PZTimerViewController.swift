@@ -50,10 +50,9 @@ class PZTimerViewController: UIViewController {
         //setup buttons
         //stop timer
         self.stopTimerButton.createTitle("", withIcon: UIImage(named: "Cancel"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
-        self.stopTimerButton.titleColor = flatRedColor
-        self.stopTimerButton.iconColor = flatRedColor
+        self.stopTimerButton.iconColor = UIColor.whiteColor()
         self.stopTimerButton.borderColor = flatRedColor
-        self.stopTimerButton.bgColor = UIColor.whiteColor()
+        self.stopTimerButton.bgColor = flatRedColor
         self.stopTimerButton.borderWidth = 3.0
         self.stopTimerButton.cornerRadius = 37.5
         self.stopTimerButton.sizeToFit()

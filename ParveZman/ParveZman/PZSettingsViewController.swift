@@ -40,25 +40,23 @@ class PZSettingsViewController: UIViewController {
         //red
         var flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
         //green
-        var flatGreenColor: UIColor = UIColor.colorWithCSS("#7CFC00")
+        var flatGreenColor: UIColor = UIColor.colorWithCSS("#66AA33")
         
         //setup buttons
         //cancel
         self.cancelButton.createTitle("", withIcon: UIImage(named: "Cancel"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
-        self.cancelButton.titleColor = flatRedColor
-        self.cancelButton.iconColor = flatRedColor
+        self.cancelButton.iconColor = UIColor.whiteColor()
         self.cancelButton.borderColor = flatRedColor
-        self.cancelButton.bgColor = UIColor.whiteColor()
+        self.cancelButton.bgColor = flatRedColor
         self.cancelButton.borderWidth = 3.0
         self.cancelButton.cornerRadius = 37.5
         self.cancelButton.sizeToFit()
         
         //save
         self.saveButton.createTitle("", withIcon: UIImage(named: "Accept"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
-        self.saveButton.titleColor = flatGreenColor
-        self.saveButton.iconColor = flatGreenColor
+        self.saveButton.iconColor = UIColor.whiteColor()
         self.saveButton.borderColor = flatGreenColor
-        self.saveButton.bgColor = UIColor.whiteColor()
+        self.saveButton.bgColor = flatGreenColor
         self.saveButton.borderWidth = 3.0
         self.saveButton.cornerRadius = 37.5
         self.saveButton.sizeToFit()

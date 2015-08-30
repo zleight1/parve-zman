@@ -31,10 +31,10 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         self.title = "Parve Zman";
         
         //Location stuff
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-        locationManager.delegate = self;
-        locationManager.requestWhenInUseAuthorization();
-        locationManager.startUpdatingLocation()
+        //locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        //locationManager.delegate = self;
+        //locationManager.requestWhenInUseAuthorization();
+        //locationManager.startUpdatingLocation()
         startLocation = nil;
         meatButton.tag = 0;
         dairyButton.tag = 1;
@@ -56,33 +56,27 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         //setup buttons
         //meat
         self.meatButton.createTitle("I Ate Meat", withIcon: UIImage(named: "Steak"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
-        self.meatButton.titleColor = flatRedColor
-        self.meatButton.iconColor = flatRedColor
-        self.meatButton.borderColor = flatRedColor
-        self.meatButton.bgColor = UIColor.whiteColor()
-        self.meatButton.borderWidth = 3.0
-        self.meatButton.cornerRadius = 50.0
-        self.meatButton.sizeToFit()
+        setupButton(self.meatButton, color: flatRedColor)
         
         //dairy
         self.dairyButton.createTitle("I Ate Dairy", withIcon: UIImage(named: "Cheese"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
-        self.dairyButton.titleColor = flatBlueColor
-        self.dairyButton.iconColor = flatBlueColor
-        self.dairyButton.borderColor = flatBlueColor
-        self.dairyButton.bgColor = UIColor.whiteColor()
-        self.dairyButton.borderWidth = 3.0
-        self.dairyButton.cornerRadius = 50.0
-        self.dairyButton.sizeToFit()
+        setupButton(self.dairyButton, color: flatBlueColor)
         
         //settings
         self.settingsButton.createTitle("Settings", withIcon: UIImage(named: "Settings"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
-        self.settingsButton.titleColor = flatGrayColor
-        self.settingsButton.iconColor = flatGrayColor
-        self.settingsButton.borderColor = flatGrayColor
-        self.settingsButton.bgColor = UIColor.whiteColor()
-        self.settingsButton.borderWidth = 3.0
-        self.settingsButton.cornerRadius = 50.0
-        self.settingsButton.sizeToFit()
+        setupButton(self.settingsButton, color: flatGrayColor)
+    }
+    
+    func setupButton(button: JTImageButton, color:UIColor){
+        //white text
+        button.titleColor = UIColor.whiteColor()
+        button.iconColor = UIColor.whiteColor()
+        //gray background
+        button.borderColor = color
+        button.bgColor = color
+        button.borderWidth = 0.0
+        button.cornerRadius = 5.0
+        button.sizeToFit()
     }
 
     override func didReceiveMemoryWarning() {

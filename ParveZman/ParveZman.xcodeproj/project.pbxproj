@@ -21,6 +21,7 @@
 		BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
 		BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
 		BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; };
+		BB7F00891B81448600C7613D /* BeepNoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7F00881B81448600C7613D /* BeepNoise.mp3 */; };
 		BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99158D1B1D15D000501DD2 /* Main.storyboard */; };
 		BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9915901B1D15D000501DD2 /* Images.xcassets */; };
 		BB9915941B1D15D000501DD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9915921B1D15D000501DD2 /* LaunchScreen.xib */; };
@@ -46,6 +47,7 @@
 		BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHalachicHelper.swift; sourceTree = "<group>"; };
 		BB24269F1B38E1AD003D3C40 /* PZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZUtils.swift; sourceTree = "<group>"; };
 		BB2426D61B3A27CF003D3C40 /* PZData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PZData.xcdatamodel; sourceTree = "<group>"; };
+		BB7F00881B81448600C7613D /* BeepNoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeepNoise.mp3; sourceTree = "<group>"; };
 		BB9915841B1D15D000501DD2 /* ParveZman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParveZman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9915881B1D15D000501DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9915891B1D15D000501DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,9 +106,18 @@
 			name = PZTimer;
 			sourceTree = "<group>";
 		};
+		BB7F00871B81448600C7613D /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BB7F00881B81448600C7613D /* BeepNoise.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		BB99157B1B1D15D000501DD2 = {
 			isa = PBXGroup;
 			children = (
+				BB7F00871B81448600C7613D /* sounds */,
 				BB9915861B1D15D000501DD2 /* ParveZman */,
 				BB99159C1B1D15D000501DD2 /* ParveZmanTests */,
 				BB9915851B1D15D000501DD2 /* Products */,
@@ -284,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */,
+				BB7F00891B81448600C7613D /* BeepNoise.mp3 in Resources */,
 				BB9915941B1D15D000501DD2 /* LaunchScreen.xib in Resources */,
 				BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */,
 			);
