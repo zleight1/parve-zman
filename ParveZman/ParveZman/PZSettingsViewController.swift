@@ -40,7 +40,7 @@ class PZSettingsViewController: UIViewController {
         //red
         var flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
         //green
-        var flatGreenColor: UIColor = UIColor.colorWithCSS("#66AA33")
+        var flatGreenColor: UIColor = UIColor.colorWithCSS("#76EE00")
         
         //setup buttons
         //cancel

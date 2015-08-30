@@ -109,6 +109,10 @@ class PZTimerViewController: UIViewController {
     }
     
     @IBAction func stop(sender: AnyObject) {
+        //Confirm
+        
+        
+        
         self.timer.invalidate()
         
         //cancel the notification
