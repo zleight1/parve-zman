@@ -64,6 +64,8 @@ class PZMinhag {
             minutes = 6*60
         case .OneHour:
             minutes = 60
+        case .HalfHour:
+            minutes = 30
         case .None:
             minutes = 0
         default:
@@ -92,8 +94,9 @@ enum PZMeatWaitMinhag : String {
 enum PZDairyWaitMinhag : String {
     case SixFullHours = "6 Hours"
     case OneHour = "1 Hour"
+    case HalfHour = "1/2 Hour"
     case None = "None"
     
-    static let allValues = [SixFullHours, OneHour, None
+    static let allValues = [SixFullHours, OneHour, HalfHour, None
     ]
 }
