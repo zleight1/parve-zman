@@ -127,7 +127,11 @@ class PZSettingsViewController: UIViewController {
     }
     
     @IBAction func cancelClicked(sender: AnyObject) {
-        self.dismissViewControllerAnimated(false, completion: nil)
+        var alert = buildAlert("Discard Changes", message: "Discard any changes made to minhag settings?", yesText: "Yes", noText: "No", yesAction: ({self.dismissViewControllerAnimated(false, completion: nil)}), noAction: nil)
+        
+        presentViewController(alert, animated: false, completion: nil)
+        
     }
     
+
 }

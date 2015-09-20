@@ -21,6 +21,7 @@
 		BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
 		BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
 		BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; };
+		BB74D7081BA90E6B00BF9BC2 /* PZAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */; };
 		BB7F00891B81448600C7613D /* BeepNoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7F00881B81448600C7613D /* BeepNoise.mp3 */; };
 		BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99158D1B1D15D000501DD2 /* Main.storyboard */; };
 		BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9915901B1D15D000501DD2 /* Images.xcassets */; };
@@ -47,6 +48,7 @@
 		BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHalachicHelper.swift; sourceTree = "<group>"; };
 		BB24269F1B38E1AD003D3C40 /* PZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZUtils.swift; sourceTree = "<group>"; };
 		BB2426D61B3A27CF003D3C40 /* PZData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PZData.xcdatamodel; sourceTree = "<group>"; };
+		BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZAlert.swift; sourceTree = "<group>"; };
 		BB7F00881B81448600C7613D /* BeepNoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeepNoise.mp3; sourceTree = "<group>"; };
 		BB9915841B1D15D000501DD2 /* ParveZman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParveZman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9915881B1D15D000501DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +108,16 @@
 			name = PZTimer;
 			sourceTree = "<group>";
 		};
+		BB74D7061BA90E2400BF9BC2 /* PZUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */,
+				BB24269F1B38E1AD003D3C40 /* PZUtils.swift */,
+				BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */,
+			);
+			name = PZUtils;
+			sourceTree = "<group>";
+		};
 		BB7F00871B81448600C7613D /* sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +150,7 @@
 		BB9915861B1D15D000501DD2 /* ParveZman */ = {
 			isa = PBXGroup;
 			children = (
+				BB74D7061BA90E2400BF9BC2 /* PZUtils */,
 				BB12F5A11B72EAC30087447E /* PZTimer */,
 				BBE65D301B607DF0001AF18F /* PZSettings */,
 				BBE65D2F1B607DE4001AF18F /* PZMinhag */,
@@ -148,8 +161,6 @@
 				BB9915921B1D15D000501DD2 /* LaunchScreen.xib */,
 				BB9915871B1D15D000501DD2 /* Supporting Files */,
 				BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */,
-				BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */,
-				BB24269F1B38E1AD003D3C40 /* PZUtils.swift */,
 				BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */,
 			);
 			path = ParveZman;
@@ -257,6 +268,7 @@
 		BB99157C1B1D15D000501DD2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Zachary Leighton";
 				TargetAttributes = {
@@ -373,6 +385,7 @@
 				BB12F48A1B7044DC0087447E /* AppDelegate.swift in Sources */,
 				BB12F48B1B7044DC0087447E /* PZMainViewController.swift in Sources */,
 				BB12F48D1B7044DC0087447E /* PZHalachicHelper.swift in Sources */,
+				BB74D7081BA90E6B00BF9BC2 /* PZAlert.swift in Sources */,
 				BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */,
 				BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */,
 				BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */,
