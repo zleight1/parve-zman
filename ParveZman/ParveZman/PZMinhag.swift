@@ -46,8 +46,6 @@ class PZMinhag {
             minutes = 60
         case .None:
             minutes = 0
-        default:
-            minutes = 0
         }
         
         
@@ -67,8 +65,6 @@ class PZMinhag {
         case .HalfHour:
             minutes = 30
         case .None:
-            minutes = 0
-        default:
             minutes = 0
         }
         

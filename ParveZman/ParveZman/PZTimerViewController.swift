@@ -31,7 +31,7 @@ class PZTimerViewController: UIViewController {
         self.timerUUID = NSUUID().UUIDString
         
         //init the notification
-        var notification = UILocalNotification()
+        let notification = UILocalNotification()
         notification.alertBody = "Congrats, you're now Parve!"
         notification.alertTitle = "Parve Zman!"
         notification.fireDate = NSDate(timeIntervalSinceReferenceDate: endTime)
@@ -45,7 +45,7 @@ class PZTimerViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         //create colors
-        var flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
+        let flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
         
         //setup buttons
         //stop timer
@@ -64,7 +64,7 @@ class PZTimerViewController: UIViewController {
             return
         }
         
-        var currentTime = NSDate.timeIntervalSinceReferenceDate()
+        let currentTime = NSDate.timeIntervalSinceReferenceDate()
         
         //Find the difference between current time and end time.
         
@@ -116,7 +116,7 @@ class PZTimerViewController: UIViewController {
         self.timer.invalidate()
         
         //cancel the notification
-        for notification in UIApplication.sharedApplication().scheduledLocalNotifications as! [UILocalNotification] { // loop through notifications...
+        for notification in (UIApplication.sharedApplication().scheduledLocalNotifications as [UILocalNotification]?)! { // loop through notifications...
             if (notification.userInfo!["UUID"] as! String == self.timerUUID) { // ...and cancel the notification when you find it...
                 UIApplication.sharedApplication().cancelLocalNotification(notification)
                 break

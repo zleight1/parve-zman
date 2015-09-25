@@ -33,7 +33,10 @@ class PZSettingsManager {
             PZSettings.setValue(self.currentMeatMinhag.rawValue, forKey: "meatMinhag")
             PZSettings.setValue(self.currentDairyMinhag.rawValue, forKey: "dairyMinhag")
             
-            managedContext.save(nil)
+            do {
+                try managedContext.save()
+            } catch _ {
+            }
             
         } else {
             
@@ -50,10 +53,12 @@ class PZSettingsManager {
             settings.setValue(1, forKey: "id")
             
             var error: NSError?
-            if !managedContext.save(&error) {
-                NSLog("Could not save \(error), \(error?.userInfo)")
-            } else {
+            do {
+                try managedContext.save()
                 NSLog("Settings Saved.")
+            } catch let error1 as NSError {
+                error = error1
+                NSLog("Could not save \(error), \(error?.userInfo)")
             }
         }
         
@@ -61,8 +66,8 @@ class PZSettingsManager {
     
     func loadPZSettings() {
         if let PZSettings = loadPZSettingsData() {
-            var dairyMinhag = PZSettings.valueForKey("dairyMinhag") as! String
-            var meatMinhag = PZSettings.valueForKey("meatMinhag") as! String
+            let dairyMinhag = PZSettings.valueForKey("dairyMinhag") as! String
+            let meatMinhag = PZSettings.valueForKey("meatMinhag") as! String
             
             NSLog("%@ %@", dairyMinhag, meatMinhag)
             PZSettingsManager.sharedInstance.currentMeatMinhag = PZMeatWaitMinhag(rawValue: meatMinhag)!
@@ -86,7 +91,13 @@ class PZSettingsManager {
         
         var error: NSError?
         
-        let fetchedResults = managedContext.executeFetchRequest(fetchRequest, error: &error)
+        let fetchedResults: [AnyObject]?
+        do {
+            fetchedResults = try managedContext.executeFetchRequest(fetchRequest)
+        } catch let error1 as NSError {
+            error = error1
+            fetchedResults = nil
+        }
         
         if let results = fetchedResults {
             //unwrap the results, Happy Channukah!
@@ -97,7 +108,7 @@ class PZSettingsManager {
             }
             NSLog("%@", fetchedResults!)
         } else {
-            println("Could not fetch \(error), \(error!.userInfo)")
+            print("Could not fetch \(error), \(error!.userInfo)")
         }
         return nil
     }

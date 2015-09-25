@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 func buildAlert(title: NSString, message: NSString, yesText: NSString, noText: NSString, yesAction: (), noAction: () ) -> UIAlertController {
-    var alert = UIAlertController(title: title as String, message: message as String, preferredStyle: UIAlertControllerStyle.Alert)
+    let alert = UIAlertController(title: title as String, message: message as String, preferredStyle: UIAlertControllerStyle.Alert)
     
-    alert.addAction(UIAlertAction(title: yesText as String, style: .Default, handler: { (action: UIAlertAction!) in
+    alert.addAction(UIAlertAction(title: yesText as String, style: .Default, handler: { (action: UIAlertAction) in
         yesAction
     }))
     
-    alert.addAction(UIAlertAction(title: noText as String, style: .Default, handler: { (action: UIAlertAction!) in
+    alert.addAction(UIAlertAction(title: noText as String, style: .Default, handler: { (action: UIAlertAction) in
         noAction
     }))
     

@@ -38,9 +38,9 @@ class PZSettingsViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         //create colors
         //red
-        var flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
+        let flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
         //green
-        var flatGreenColor: UIColor = UIColor.colorWithCSS("#76EE00")
+        let flatGreenColor: UIColor = UIColor.colorWithCSS("#76EE00")
         
         //setup buttons
         //cancel
@@ -97,11 +97,11 @@ class PZSettingsViewController: UIViewController {
     {
         if pickerView.tag == 0 {
             //meat
-            var value = self.MeatTimeNames[row];
+            let value = self.MeatTimeNames[row];
             self.tempMeatWaitMinhag = PZMeatWaitMinhag(rawValue: value)!
         } else {
             //dairy
-            var value = self.DairyTimeNames[row];
+            let value = self.DairyTimeNames[row];
             self.tempDairyWaitMinhag = PZDairyWaitMinhag(rawValue: value)!
         }
     }
@@ -127,9 +127,9 @@ class PZSettingsViewController: UIViewController {
     }
     
     @IBAction func cancelClicked(sender: AnyObject) {
-        var alert = buildAlert("Discard Changes", message: "Discard any changes made to minhag settings?", yesText: "Yes", noText: "No", yesAction: ({self.dismissViewControllerAnimated(false, completion: nil)}), noAction: nil)
+       // var alert = buildAlert("Discard Changes", message: "Discard any changes made to minhag settings?", yesText: "Yes", noText: "No", yesAction: ({self.dismissViewControllerAnimated(false, completion: nil)})(), noAction: nil)
         
-        presentViewController(alert, animated: false, completion: nil)
+        //presentViewController(alert, animated: false, completion: nil)
         
     }
     

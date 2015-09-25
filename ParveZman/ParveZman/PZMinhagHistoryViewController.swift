@@ -29,9 +29,11 @@ class PZMinhagHistoryViewController: UIViewController, UIPageViewControllerDataS
         
         self.pageViewController?.dataSource = self
         
-        var startingViewController = self.viewControllerAtIndex(0)
+        let startingViewController = self.viewControllerAtIndex(0)
         
-        var viewControllers: [AnyObject!] = [startingViewController]
+        var viewControllers: [UIViewController]?
+        
+        viewControllers?.append(startingViewController!)
         
         self.pageViewController!.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         
@@ -74,7 +76,7 @@ class PZMinhagHistoryViewController: UIViewController, UIPageViewControllerDataS
             return nil;
         }
         
-        var minhagContentViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PZMinhagHistoryContentViewController") as! PZMinhagHistoryContentViewController
+        let minhagContentViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PZMinhagHistoryContentViewController") as! PZMinhagHistoryContentViewController
         
         minhagContentViewController.minhagTitle = self.minhagTitles[index]
         minhagContentViewController.pageIndex = index

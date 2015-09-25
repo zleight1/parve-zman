@@ -47,11 +47,11 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
     override func viewWillAppear(animated: Bool) {
         //create colors
         //red
-        var flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
+        let flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
         //blue
-        var flatBlueColor: UIColor = UIColor.colorWithCSS("#1A7CF9")
+        let flatBlueColor: UIColor = UIColor.colorWithCSS("#1A7CF9")
         //gray
-        var flatGrayColor: UIColor = UIColor.colorWithCSS("#A9A9A9")
+        let flatGrayColor: UIColor = UIColor.colorWithCSS("#A9A9A9")
         
         //setup buttons
         //meat
@@ -84,8 +84,8 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        var latestLocation: AnyObject = locations[locations.count - 1];
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let latestLocation: AnyObject = locations[locations.count - 1];
         
         if startLocation == nil {
             startLocation = latestLocation as! CLLocation;
@@ -97,8 +97,8 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         NSLog("Halachic Times Updated!");
     }
     
-    func locationManager(manager: CLLocationManager!,
-        didFailWithError error: NSError!) {
+    func locationManager(manager: CLLocationManager,
+        didFailWithError error: NSError) {
             
         //Display a warning and mark it in the halachic helper that we're using the default
         
@@ -120,7 +120,7 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         }
         
         //get the timer view
-        var pzTimerViewController = storyboard!.instantiateViewControllerWithIdentifier("PZTimerViewController") as! PZTimerViewController
+        let pzTimerViewController = storyboard!.instantiateViewControllerWithIdentifier("PZTimerViewController") as! PZTimerViewController
         
         //pass the view controller all the information it needs here
         pzTimerViewController.endTime = NSDate.timeIntervalSinceReferenceDate() + time
@@ -134,7 +134,7 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
     //show settings
     @IBAction func showSettings(sender: AnyObject) {
         //get the timer view
-        var pzSettingsViewController = storyboard!.instantiateViewControllerWithIdentifier("PZSettingsViewController") as! PZSettingsViewController
+        let pzSettingsViewController = storyboard!.instantiateViewControllerWithIdentifier("PZSettingsViewController") as! PZSettingsViewController
         
         self.presentViewController(pzSettingsViewController, animated: true, completion: nil)
         
