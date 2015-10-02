@@ -127,11 +127,18 @@ class PZSettingsViewController: UIViewController {
     }
     
     @IBAction func cancelClicked(sender: AnyObject) {
-       // var alert = buildAlert("Discard Changes", message: "Discard any changes made to minhag settings?", yesText: "Yes", noText: "No", yesAction: ({self.dismissViewControllerAnimated(false, completion: nil)})(), noAction: nil)
         
-        //presentViewController(alert, animated: false, completion: nil)
+        let alert = UIAlertController(title: "Discard Changes", message: "Discard any changes made to minhag settings?", preferredStyle: UIAlertControllerStyle.Alert)
         
+        alert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (alert) -> Void in
+            self.dismissViewControllerAnimated(false, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "No", style: .Default, handler: nil))
+
+        
+        presentViewController(alert, animated: false, completion: nil)
     }
     
-
+    
 }
