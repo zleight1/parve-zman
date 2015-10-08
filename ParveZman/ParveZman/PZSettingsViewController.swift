@@ -19,6 +19,8 @@ class PZSettingsViewController: UIViewController {
     var tempMeatWaitMinhag = PZSettingsManager.sharedInstance.currentMeatMinhag
     var tempDairyWaitMinhag = PZSettingsManager.sharedInstance.currentDairyMinhag
     
+    var settingsChanged = false
+    
     @IBOutlet weak var meatMinhagPicker: UIPickerView!
     @IBOutlet weak var dairyMinhagPicker: UIPickerView!
     
@@ -104,6 +106,7 @@ class PZSettingsViewController: UIViewController {
             let value = self.DairyTimeNames[row];
             self.tempDairyWaitMinhag = PZDairyWaitMinhag(rawValue: value)!
         }
+        settingsChanged = true
     }
     
     func loadSettings() {
@@ -127,6 +130,10 @@ class PZSettingsViewController: UIViewController {
     }
     
     @IBAction func cancelClicked(sender: AnyObject) {
+        //bail out if settings haven't changed
+        if(!settingsChanged) {
+            self.dismissViewControllerAnimated(false, completion: nil)
+        }
         
         let alert = UIAlertController(title: "Discard Changes", message: "Discard any changes made to minhag settings?", preferredStyle: UIAlertControllerStyle.Alert)
         
