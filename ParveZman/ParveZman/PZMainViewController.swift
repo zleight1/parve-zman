@@ -20,7 +20,7 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var settingsButton: JTImageButton!
     
     //Location
-    var locationManager: CLLocationManager = CLLocationManager()
+    var locationManager: CLLocationManager! = CLLocationManager()
     var startLocation: CLLocation!
 
     //Subroutines
@@ -113,11 +113,16 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         //get the time
         let button = sender as! UIButton;
         var time: Double
+        var type: String
         if button.tag == 0 {
             time = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentMeatMinhag)
+            type = "meat"
         } else {
             time = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentDairyMinhag)
+            type = "dairy"
         }
+        
+        //check if
         
         //get the timer view
         let pzTimerViewController = storyboard!.instantiateViewControllerWithIdentifier("PZTimerViewController") as! PZTimerViewController

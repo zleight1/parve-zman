@@ -21,6 +21,7 @@
 		BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
 		BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
 		BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; };
+		BB360E961BC6005400438BAC /* PZMainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360E951BC6005400438BAC /* PZMainViewControllerTests.swift */; settings = {ASSET_TAGS = (); }; };
 		BB74D7081BA90E6B00BF9BC2 /* PZAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */; };
 		BB7F00891B81448600C7613D /* BeepNoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7F00881B81448600C7613D /* BeepNoise.mp3 */; };
 		BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99158D1B1D15D000501DD2 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHalachicHelper.swift; sourceTree = "<group>"; };
 		BB24269F1B38E1AD003D3C40 /* PZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZUtils.swift; sourceTree = "<group>"; };
 		BB2426D61B3A27CF003D3C40 /* PZData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PZData.xcdatamodel; sourceTree = "<group>"; };
+		BB360E951BC6005400438BAC /* PZMainViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMainViewControllerTests.swift; sourceTree = "<group>"; };
 		BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZAlert.swift; sourceTree = "<group>"; };
 		BB7F00881B81448600C7613D /* BeepNoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeepNoise.mp3; sourceTree = "<group>"; };
 		BB9915841B1D15D000501DD2 /* ParveZman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParveZman.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				BB99159F1B1D15D000501DD2 /* ParveZmanTests.swift */,
+				BB360E951BC6005400438BAC /* PZMainViewControllerTests.swift */,
 				BB99159D1B1D15D000501DD2 /* Supporting Files */,
 			);
 			path = ParveZmanTests;
@@ -398,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB9915A01B1D15D000501DD2 /* ParveZmanTests.swift in Sources */,
+				BB360E961BC6005400438BAC /* PZMainViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
