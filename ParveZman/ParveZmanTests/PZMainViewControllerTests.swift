@@ -24,10 +24,11 @@ class PZMainViewControllerTests: XCTestCase {
         XCUIApplication().launch()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-        var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
-        vc = storyboard.instantiateViewControllerWithIdentifier("PZMainViewController") as PZMainViewController
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
+        vc = storyboard.instantiateViewControllerWithIdentifier("PZMainViewController") as! PZMainViewController
         vc.loadView()
         
+        assert(true);
     }
     
     override func tearDown() {

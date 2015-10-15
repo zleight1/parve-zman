@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nBO-fO-GoK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nBO-fO-GoK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -19,6 +19,7 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHT-YT-Wby">
                                 <rect key="frame" x="16" y="117" width="568" height="162"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="cpZ-j7-6dJ"/>
                                 </constraints>
@@ -29,12 +30,14 @@
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Meat Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWI-z3-Uvp">
                                 <rect key="frame" x="16" y="72" width="568" height="37"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.03014565537" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dairy Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-wN-s2N">
                                 <rect key="frame" x="16" y="287" width="568" height="37"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="tFE-wP-qPz"/>
                                 </constraints>
@@ -44,6 +47,7 @@
                             </label>
                             <pickerView tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKh-i4-FGH">
                                 <rect key="frame" x="16" y="332" width="568" height="162"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="uaC-h8-vAc"/>
                                 </constraints>
@@ -54,6 +58,7 @@
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPP-hf-99u" customClass="JTImageButton">
                                 <rect key="frame" x="16" y="507" width="73" height="73"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="LO2-qf-qr2"/>
                                     <constraint firstAttribute="width" constant="75" id="Wbo-cF-kTG"/>
@@ -67,6 +72,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWo-r2-Pi8" customClass="JTImageButton">
                                 <rect key="frame" x="510" y="506" width="74" height="74"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Wcp-hZ-GSw"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="bsP-Af-m5y"/>
@@ -80,6 +86,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="bVz-wN-s2N" firstAttribute="top" secondItem="oHT-YT-Wby" secondAttribute="bottom" constant="8" symbolic="YES" id="1Jn-ey-dz5"/>
@@ -122,17 +129,18 @@
         <!--Main View Controller-->
         <scene sceneID="Ckg-CR-rhO">
             <objects>
-                <viewController id="nBO-fO-GoK" customClass="PZMainViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PZMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nBO-fO-GoK" customClass="PZMainViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FSf-TT-Me6"/>
                         <viewControllerLayoutGuide type="bottom" id="jVd-nR-l4j"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xcP-g4-hlC">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="PZMainViewController" id="xcP-g4-hlC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-49-OKM" customClass="JTImageButton">
                                 <rect key="frame" x="16" y="205" width="568" height="100"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1rA-BC-yzZ"/>
                                 </constraints>
@@ -147,6 +155,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUh-OH-Zdx" customClass="JTImageButton">
                                 <rect key="frame" x="16" y="313" width="568" height="100"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="w0k-LL-9Af"/>
                                 </constraints>
@@ -161,6 +170,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZr-Ag-8Tq" customClass="JTImageButton">
                                 <rect key="frame" x="16" y="421" width="568" height="100"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Pee-KN-SMa"/>
                                     <constraint firstAttribute="height" constant="100" id="ZTH-eK-EWw"/>
@@ -175,6 +185,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="KeJ-49-OKM" firstAttribute="top" secondItem="FSf-TT-Me6" secondAttribute="bottom" constant="100" id="84P-Zz-XjP"/>
@@ -220,6 +231,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0c-qp-AfX" customClass="JTImageButton">
                                 <rect key="frame" x="16" y="505" width="75" height="75"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="1eh-Be-T8V"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="2nt-5s-5RK"/>
@@ -235,11 +247,13 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yr-qF-xOb">
                                 <rect key="frame" x="16" y="213" width="568" height="90"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="8yr-qF-xOb" firstAttribute="top" secondItem="Bnh-R5-gK0" secondAttribute="bottom" constant="193" id="Gxl-i3-fAf"/>
@@ -270,6 +284,7 @@
                     <view key="view" contentMode="scaleToFill" id="Yn0-AE-5WZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -301,11 +316,13 @@
                         <subviews>
                             <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="vkl-lF-kEk">
                                 <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XSD-CJ-g9U" firstAttribute="top" secondItem="vkl-lF-kEk" secondAttribute="bottom" constant="290" id="PHV-CK-CYr"/>

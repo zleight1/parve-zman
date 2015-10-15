@@ -122,7 +122,15 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
             type = "dairy"
         }
         
-        //check if
+        //check if time is less than one
+        if time < 1 {
+            let alert = UIAlertController(title: "No Wait For Your Minhag", message: "You don't have a minhag to wait, just eat something parve before in between.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "Okay", style: .Default, handler: nil))
+            
+            
+            return self.presentViewController(alert, animated: true, completion: nil)
+        }
         
         //get the timer view
         let pzTimerViewController = storyboard!.instantiateViewControllerWithIdentifier("PZTimerViewController") as! PZTimerViewController
