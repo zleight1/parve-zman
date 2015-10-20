@@ -110,37 +110,33 @@ class PZTimerViewController: UIViewController {
     
     @IBAction func stop(sender: AnyObject) {
         //Confirm
+        let alert = UIAlertController(title: "Cancel Timer?", message: "Cancel current timer and any scheduled alerts?", preferredStyle: UIAlertControllerStyle.Alert)
         
-        
-        
-        self.timer.invalidate()
-        
-        //cancel the notification
-        for notification in (UIApplication.sharedApplication().scheduledLocalNotifications as [UILocalNotification]?)! { // loop through notifications...
-            if (notification.userInfo!["UUID"] as! String == self.timerUUID) { // ...and cancel the notification when you find it...
-                UIApplication.sharedApplication().cancelLocalNotification(notification)
-                break
+        alert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (alert) -> Void in
+            
+            self.timer.invalidate()
+            
+            //cancel the notification
+            for notification in (UIApplication.sharedApplication().scheduledLocalNotifications as [UILocalNotification]?)! { // loop through notifications...
+                if (notification.userInfo!["UUID"] as! String == self.timerUUID) { // ...and cancel the notification when you find it...
+                    UIApplication.sharedApplication().cancelLocalNotification(notification)
+                    break
+                }
             }
-        }
+            
+            //quit the view
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
+        }))
         
-        //quit the view
-        self.dismissViewControllerAnimated(true, completion: nil)
+        alert.addAction(UIAlertAction(title: "No", style: .Default, handler: nil))
+        
+        
+        presentViewController(alert, animated: false, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
