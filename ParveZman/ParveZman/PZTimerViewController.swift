@@ -11,8 +11,10 @@ import JTImageButton
 import AudioToolbox
 
 class PZTimerViewController: UIViewController {
-
+    
+    @IBOutlet weak var parveLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var timerAtLabel: UILabel!
     @IBOutlet weak var stopTimerButton: JTImageButton!
     
     //variables
@@ -41,6 +43,7 @@ class PZTimerViewController: UIViewController {
         
         //schedule it
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -57,6 +60,10 @@ class PZTimerViewController: UIViewController {
         self.stopTimerButton.cornerRadius = 37.5
         self.stopTimerButton.sizeToFit()
 
+    }
+    
+    func setParveEndTime(endTimeInterval: NSTimeInterval){
+        
     }
     
     func updateTime() {

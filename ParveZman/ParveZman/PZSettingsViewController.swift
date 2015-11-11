@@ -144,7 +144,7 @@ class PZSettingsViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "No", style: .Default, handler: nil))
 
         
-        presentViewController(alert, animated: false, completion: nil)
+        presentViewController(alert, animated: true, completion: nil)
     }
     
     

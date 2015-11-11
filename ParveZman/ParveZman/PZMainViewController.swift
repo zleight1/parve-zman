@@ -124,7 +124,7 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         
         //check if time is less than one
         if time < 1 {
-            let alert = UIAlertController(title: "No Wait For Your Minhag", message: "You don't have a minhag to wait, just eat something parve before in between.", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "No Wait Time For Your Minhag", message: "You don't have a minhag to wait, just eat something parve before in between.", preferredStyle: UIAlertControllerStyle.Alert)
             
             alert.addAction(UIAlertAction(title: "Okay", style: .Default, handler: nil))
             
