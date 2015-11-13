@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import CoreLocation
 import JTImageButton
 import UIColor_Hex_Swift
 
-class PZMainViewController: UIViewController, CLLocationManagerDelegate {
+class PZMainViewController: UIViewController { //, CLLocationManagerDelegate {
 
     
     //Buttons
@@ -20,8 +19,8 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var settingsButton: JTImageButton!
     
     //Location
-    var locationManager: CLLocationManager! = CLLocationManager()
-    var startLocation: CLLocation!
+   // var locationManager: CLLocationManager! = CLLocationManager()
+    //var startLocation: CLLocation!
 
     //Subroutines
     override func viewDidLoad() {
@@ -35,12 +34,13 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         //locationManager.delegate = self;
         //locationManager.requestWhenInUseAuthorization();
         //locationManager.startUpdatingLocation()
-        startLocation = nil;
+        //startLocation = nil;
         meatButton.tag = 0;
         dairyButton.tag = 1;
         
         //Load from core data if possible
         PZSettingsManager.sharedInstance.loadPZSettings()
+
         
     }
     
@@ -65,7 +65,9 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         //settings
         self.settingsButton.createTitle("Settings", withIcon: UIImage(named: "Settings"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
         setupButton(self.settingsButton, color: flatGrayColor)
-    }
+        
+        
+           }
     
     func setupButton(button: JTImageButton, color:UIColor){
         //white text
@@ -83,32 +85,37 @@ class PZMainViewController: UIViewController, CLLocationManagerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let latestLocation: AnyObject = locations[locations.count - 1];
-        
-        if startLocation == nil {
-            startLocation = latestLocation as! CLLocation;
-        }
-        
-        PZHalachicHelper.sharedInstance.locationEnabled = true;
-        PZHalachicHelper.sharedInstance.updateHalachicTimesByLocation(latestLocation as! CLLocation);
-        
-        NSLog("Halachic Times Updated!");
-    }
-    
-    func locationManager(manager: CLLocationManager,
-        didFailWithError error: NSError) {
-            
-        //Display a warning and mark it in the halachic helper that we're using the default
-        
-            PZHalachicHelper.sharedInstance.locationEnabled = false;
-    }
+//    
+//    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        let latestLocation: AnyObject = locations[locations.count - 1];
+//        
+//        if startLocation == nil {
+//            startLocation = latestLocation as! CLLocation;
+//        }
+//        
+//        PZHalachicHelper.sharedInstance.locationEnabled = true;
+//        PZHalachicHelper.sharedInstance.updateHalachicTimesByLocation(latestLocation as! CLLocation);
+//        
+//        NSLog("Halachic Times Updated!");
+//    }
+//    
+//    func locationManager(manager: CLLocationManager,
+//        didFailWithError error: NSError) {
+//            
+//        //Display a warning and mark it in the halachic helper that we're using the default
+//        
+//            PZHalachicHelper.sharedInstance.locationEnabled = false;
+//    }
     
     //Button actions
     
     @IBAction func timerStart(sender: AnyObject) {
         //check if we're in timer mode currently?
+        
+        let pzTableViewController = storyboard!.instantiateViewControllerWithIdentifier("ParveZmanHomeTableViewController") as! ParveZmanHomeTableViewController
+        self.presentViewController(pzTableViewController, animated: true, completion: nil)
+        return
+
         
         //get the time
         let button = sender as! UIButton;

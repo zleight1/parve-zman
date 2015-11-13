@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3347B9C2721DE5BFD48CE91B /* Pods_ParveZman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */; };
-		BB05261C1BCF1C7F0026C6A4 /* PZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB05261D1BCF1C890026C6A4 /* PZHalachicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */; settings = {ASSET_TAGS = (); }; };
-		BB05261E1BCF1C890026C6A4 /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; settings = {ASSET_TAGS = (); }; };
-		BB05261F1BCF1C890026C6A4 /* PZAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */; settings = {ASSET_TAGS = (); }; };
-		BB0526201BCF1C8B0026C6A4 /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB0526211BCF1C8E0026C6A4 /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC043C51B55DF9500CD5474 /* PZSettings.swift */; settings = {ASSET_TAGS = (); }; };
-		BB0526221BCF1C8E0026C6A4 /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; settings = {ASSET_TAGS = (); }; };
-		BB0526231BCF1C8E0026C6A4 /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB0526241BCF1C930026C6A4 /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; settings = {ASSET_TAGS = (); }; };
-		BB0526251BCF1C930026C6A4 /* PZMinhagHistoryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D2D1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB0526261BCF1C930026C6A4 /* PZMinhagHistoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D2B1B607370001AF18F /* PZMinhagHistoryPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB0526271BCF1C930026C6A4 /* PZMinhagHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB0526281BCF1C930026C6A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		BB05261C1BCF1C7F0026C6A4 /* PZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */; };
+		BB05261D1BCF1C890026C6A4 /* PZHalachicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */; };
+		BB05261E1BCF1C890026C6A4 /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
+		BB05261F1BCF1C890026C6A4 /* PZAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */; };
+		BB0526201BCF1C8B0026C6A4 /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; };
+		BB0526211BCF1C8E0026C6A4 /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC043C51B55DF9500CD5474 /* PZSettings.swift */; };
+		BB0526221BCF1C8E0026C6A4 /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; };
+		BB0526231BCF1C8E0026C6A4 /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
+		BB0526241BCF1C930026C6A4 /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; };
+		BB0526251BCF1C930026C6A4 /* PZMinhagHistoryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D2D1B607DAE001AF18F /* PZMinhagHistoryContentViewController.swift */; };
+		BB0526261BCF1C930026C6A4 /* PZMinhagHistoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE65D2B1B607370001AF18F /* PZMinhagHistoryPageViewController.swift */; };
+		BB0526271BCF1C930026C6A4 /* PZMinhagHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */; };
+		BB0526281BCF1C930026C6A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; };
 		BB12F4831B7044DC0087447E /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC043C51B55DF9500CD5474 /* PZSettings.swift */; };
 		BB12F4841B7044DC0087447E /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; };
 		BB12F4851B7044DC0087447E /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
@@ -34,7 +34,13 @@
 		BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
 		BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
 		BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; };
-		BB360E961BC6005400438BAC /* PZMainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360E951BC6005400438BAC /* PZMainViewControllerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BB360E961BC6005400438BAC /* PZMainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360E951BC6005400438BAC /* PZMainViewControllerTests.swift */; };
+		BB7223381BF2DD7300EE547C /* DAExpandAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7223371BF2DD7300EE547C /* DAExpandAnimation.swift */; };
+		BB72233B1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233A1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift */; };
+		BB72233C1BF2E49000EE547C /* ParveZmanHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233A1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift */; };
+		BB72233D1BF2E4A100EE547C /* DAExpandAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7223371BF2DD7300EE547C /* DAExpandAnimation.swift */; };
+		BB7223401BF4247500EE547C /* PZHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */; };
+		BB7223411BF4247900EE547C /* PZHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */; };
 		BB74D7081BA90E6B00BF9BC2 /* PZAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */; };
 		BB7F00891B81448600C7613D /* BeepNoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7F00881B81448600C7613D /* BeepNoise.mp3 */; };
 		BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99158D1B1D15D000501DD2 /* Main.storyboard */; };
@@ -63,6 +69,9 @@
 		BB24269F1B38E1AD003D3C40 /* PZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZUtils.swift; sourceTree = "<group>"; };
 		BB2426D61B3A27CF003D3C40 /* PZData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PZData.xcdatamodel; sourceTree = "<group>"; };
 		BB360E951BC6005400438BAC /* PZMainViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMainViewControllerTests.swift; sourceTree = "<group>"; };
+		BB7223371BF2DD7300EE547C /* DAExpandAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAExpandAnimation.swift; sourceTree = "<group>"; };
+		BB72233A1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParveZmanHomeTableViewController.swift; sourceTree = "<group>"; };
+		BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHomeTableViewCell.swift; sourceTree = "<group>"; };
 		BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZAlert.swift; sourceTree = "<group>"; };
 		BB7F00881B81448600C7613D /* BeepNoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeepNoise.mp3; sourceTree = "<group>"; };
 		BB9915841B1D15D000501DD2 /* ParveZman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParveZman.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +132,22 @@
 			name = PZTimer;
 			sourceTree = "<group>";
 		};
+		BB7223391BF2DD7C00EE547C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				BB7223371BF2DD7300EE547C /* DAExpandAnimation.swift */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		BB72233E1BF4244800EE547C /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
 		BB74D7061BA90E2400BF9BC2 /* PZUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +190,8 @@
 		BB9915861B1D15D000501DD2 /* ParveZman */ = {
 			isa = PBXGroup;
 			children = (
+				BB72233E1BF4244800EE547C /* TableCells */,
+				BB7223391BF2DD7C00EE547C /* Libraries */,
 				BB74D7061BA90E2400BF9BC2 /* PZUtils */,
 				BB12F5A11B72EAC30087447E /* PZTimer */,
 				BBE65D301B607DF0001AF18F /* PZSettings */,
@@ -176,6 +203,7 @@
 				BB9915921B1D15D000501DD2 /* LaunchScreen.xib */,
 				BB9915871B1D15D000501DD2 /* Supporting Files */,
 				BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */,
+				BB72233A1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift */,
 				BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */,
 			);
 			path = ParveZman;
@@ -395,10 +423,13 @@
 				BB12F4831B7044DC0087447E /* PZSettings.swift in Sources */,
 				BB12F4841B7044DC0087447E /* PZSettingsManager.swift in Sources */,
 				BB12F4851B7044DC0087447E /* PZSettingsViewController.swift in Sources */,
+				BB7223401BF4247500EE547C /* PZHomeTableViewCell.swift in Sources */,
 				BB12F4861B7044DC0087447E /* PZMinhag.swift in Sources */,
 				BB12F4871B7044DC0087447E /* PZMinhagHistoryContentViewController.swift in Sources */,
+				BB72233B1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift in Sources */,
 				BB12F4881B7044DC0087447E /* PZMinhagHistoryPageViewController.swift in Sources */,
 				BB12F4891B7044DC0087447E /* PZMinhagHistoryViewController.swift in Sources */,
+				BB7223381BF2DD7300EE547C /* DAExpandAnimation.swift in Sources */,
 				BB12F48A1B7044DC0087447E /* AppDelegate.swift in Sources */,
 				BB12F48B1B7044DC0087447E /* PZMainViewController.swift in Sources */,
 				BB12F48D1B7044DC0087447E /* PZHalachicHelper.swift in Sources */,
@@ -413,11 +444,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7223411BF4247900EE547C /* PZHomeTableViewCell.swift in Sources */,
 				BB0526221BCF1C8E0026C6A4 /* PZSettingsManager.swift in Sources */,
 				BB05261D1BCF1C890026C6A4 /* PZHalachicHelper.swift in Sources */,
+				BB72233D1BF2E4A100EE547C /* DAExpandAnimation.swift in Sources */,
 				BB0526261BCF1C930026C6A4 /* PZMinhagHistoryPageViewController.swift in Sources */,
 				BB0526281BCF1C930026C6A4 /* AppDelegate.swift in Sources */,
 				BB9915A01B1D15D000501DD2 /* ParveZmanTests.swift in Sources */,
+				BB72233C1BF2E49000EE547C /* ParveZmanHomeTableViewController.swift in Sources */,
 				BB0526231BCF1C8E0026C6A4 /* PZSettingsViewController.swift in Sources */,
 				BB360E961BC6005400438BAC /* PZMainViewControllerTests.swift in Sources */,
 				BB05261E1BCF1C890026C6A4 /* PZUtils.swift in Sources */,
