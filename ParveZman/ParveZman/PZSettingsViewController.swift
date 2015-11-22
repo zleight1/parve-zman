@@ -40,9 +40,9 @@ class PZSettingsViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         //create colors
         //red
-        let flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
+        let flatRedColor: UIColor = UIColor.init(hexString: "#F2362C")
         //green
-        let flatGreenColor: UIColor = UIColor.colorWithCSS("#76EE00")
+        let flatGreenColor: UIColor = UIColor.init(hexString: "#76EE00")
         
         //setup buttons
         //cancel

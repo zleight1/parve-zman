@@ -3,7 +3,6 @@ use_frameworks!
 
 target 'ParveZman' do
   pod 'JTImageButton'
-  pod "UIColor-Hex-Swift"
 end
 
 link_with 'ParveZman', 'ParveZmanTests'

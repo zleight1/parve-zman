@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nBO-fO-GoK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tZ6-WT-tPH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -215,57 +215,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Un9-iA-7dQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="154"/>
+            <point key="canvasLocation" x="-452" y="139"/>
         </scene>
         <!--Parve Zman Home Table View Controller-->
         <scene sceneID="te9-oh-Ipe">
             <objects>
                 <tableViewController storyboardIdentifier="ParveZmanHomeTableViewController" id="tZ6-WT-tPH" customClass="ParveZmanHomeTableViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="A27-2I-hrM">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="A27-2I-hrM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jv7-8i-Mfg">
-                                <rect key="frame" x="0.0" y="28" width="600" height="100"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jv7-8i-Mfg" id="P9u-F9-rVW">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                </tableViewCellContentView>
-                                <animations/>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PZHomeCell" rowHeight="200" id="Vrd-kk-TuI" customClass="PZHomeTableViewCell" customModule="ParveZman" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="128" width="600" height="200"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PZHomeCell" textLabel="8IY-7T-KQi" rowHeight="200" style="IBUITableViewCellStyleDefault" id="Vrd-kk-TuI" customClass="PZHomeTableViewCell" customModule="ParveZman" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vrd-kk-TuI" id="dr8-aL-TPU">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="199.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxD-3j-cjQ">
-                                            <rect key="frame" x="0.0" y="88" width="600" height="24"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8IY-7T-KQi">
+                                            <rect key="frame" x="15" y="0.0" width="550" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <animations/>
-                                    <constraints>
-                                        <constraint firstItem="uxD-3j-cjQ" firstAttribute="top" secondItem="dr8-aL-TPU" secondAttribute="topMargin" id="9SA-vF-m2G"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="uxD-3j-cjQ" secondAttribute="trailing" id="HM6-qG-8aw"/>
-                                        <constraint firstItem="uxD-3j-cjQ" firstAttribute="centerX" secondItem="dr8-aL-TPU" secondAttribute="centerX" id="a9k-fK-t3n"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="uxD-3j-cjQ" secondAttribute="bottom" id="caQ-BZ-owb"/>
-                                        <constraint firstItem="uxD-3j-cjQ" firstAttribute="leading" secondItem="dr8-aL-TPU" secondAttribute="leadingMargin" id="fJW-MF-ZXw"/>
-                                        <constraint firstItem="uxD-3j-cjQ" firstAttribute="centerY" secondItem="dr8-aL-TPU" secondAttribute="centerY" id="hS9-VQ-VeZ"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
-                                <connections>
-                                    <outlet property="titleLabel" destination="uxD-3j-cjQ" id="b2x-Nd-0jS"/>
-                                </connections>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -47,11 +47,11 @@ class PZMainViewController: UIViewController { //, CLLocationManagerDelegate {
     override func viewWillAppear(animated: Bool) {
         //create colors
         //red
-        let flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
+        var flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
         //blue
-        let flatBlueColor: UIColor = UIColor.colorWithCSS("#1A7CF9")
+        var flatBlueColor: UIColor = UIColor.colorWithCSS("#1A7CF9")
         //gray
-        let flatGrayColor: UIColor = UIColor.colorWithCSS("#A9A9A9")
+        var flatGrayColor: UIColor = UIColor.colorWithCSS("#A9A9A9")
         
         //setup buttons
         //meat

@@ -48,7 +48,7 @@ class PZTimerViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         //create colors
-        let flatRedColor: UIColor = UIColor.colorWithCSS("#F2362C")
+        let flatRedColor: UIColor = UIColor.init(hexString: "#F2362C")
         
         //setup buttons
         //stop timer

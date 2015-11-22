@@ -8,20 +8,20 @@
 
 import UIKit
 
-class ParveZmanHomeTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
+class ParveZmanHomeTableViewController: UITableViewController {
     
     private struct NavItems {
         static let RowsCount = 3
         static let DemoAnimationDuration = 1.0
         static let buttons: [(String, UIColor)] = [
             (   title:"Meat",
-                color:UIColor.redColor()
+                color:UIColor.init(hexString: "#F2362C")
             ),
             (   title:"Dairy",
-                color:UIColor.blueColor()
+                color:UIColor.init(hexString: "#1A7CF9")
             ),
             (   title:"Settings",
-                color:UIColor.grayColor()
+                color:UIColor.init(hexString: "#A9A9A9")
             )
         ]
     }
@@ -60,7 +60,8 @@ class ParveZmanHomeTableViewController: UITableViewController, UIViewControllerT
         let item = self.getButtonItemAtIndex(colorIndex)
         cell.backgroundColor = item.color
         cell.textLabel?.text = item.title
-        
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.font = UIFont.systemFontOfSize(CGFloat(36.0))
         return cell
     }
     
@@ -90,20 +91,13 @@ class ParveZmanHomeTableViewController: UITableViewController, UIViewControllerT
     
     // MARK: - Navigation
     
-    private let animationController = DAExpandAnimation()
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let toViewController = segue.destinationViewController
         
         if let selectedCell = sender as? UITableViewCell {
-            toViewController.transitioningDelegate = self
             toViewController.modalPresentationStyle = .Custom
-            toViewController.view.backgroundColor = selectedCell.backgroundColor
+            //toViewController.view.backgroundColor = selectedCell.backgroundColor
             
-            animationController.collapsedViewFrame = {
-                return selectedCell.frame
-            }
-            animationController.animationDuration = NavItems.DemoAnimationDuration
             
             if let indexPath = tableView.indexPathForCell(selectedCell) {
                 tableView.deselectRowAtIndexPath(indexPath, animated: false)
@@ -111,17 +105,28 @@ class ParveZmanHomeTableViewController: UITableViewController, UIViewControllerT
         }
     }
     
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return animationController
-    }
-    
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return animationController
-    }
-    
     func configureTableView() {
-        tableView.rowHeight = view.frame.height / CGFloat(NavItems.buttons.count)
+        let headerHeight = CGFloat(60.0)
+        
+        let tableHeight = view.frame.height - headerHeight
+        tableView.rowHeight = tableHeight / CGFloat(NavItems.buttons.count)
         tableView.estimatedRowHeight = 160.0
+        
+        let tableViewHeader = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: headerHeight))
+        
+        let tableViewHeaderText = UILabel(frame: CGRect(x: 0, y: 10, width: view.frame.width, height: headerHeight))
+        tableViewHeaderText.textColor = UIColor.whiteColor()
+        tableViewHeaderText.backgroundColor = UIColor.clearColor()
+        tableViewHeaderText.font = UIFont.boldSystemFontOfSize(CGFloat(24.0))
+        tableViewHeaderText.text = "ParveZman"
+        tableViewHeaderText.textAlignment = .Center
+        
+        tableViewHeader.addSubview(tableViewHeaderText)
+        
+        
+        tableViewHeader.backgroundColor = UIColor.greenColor()
+        tableView.tableHeaderView  = tableViewHeader
+        
     }
     
 }

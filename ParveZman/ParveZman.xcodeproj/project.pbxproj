@@ -35,10 +35,10 @@
 		BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
 		BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; };
 		BB360E961BC6005400438BAC /* PZMainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360E951BC6005400438BAC /* PZMainViewControllerTests.swift */; };
-		BB7223381BF2DD7300EE547C /* DAExpandAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7223371BF2DD7300EE547C /* DAExpandAnimation.swift */; };
+		BB6D071B1C022B700072B4AD /* ColorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6D071A1C022B700072B4AD /* ColorHelpers.swift */; };
+		BB6D071C1C022B700072B4AD /* ColorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6D071A1C022B700072B4AD /* ColorHelpers.swift */; };
 		BB72233B1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233A1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift */; };
 		BB72233C1BF2E49000EE547C /* ParveZmanHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233A1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift */; };
-		BB72233D1BF2E4A100EE547C /* DAExpandAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7223371BF2DD7300EE547C /* DAExpandAnimation.swift */; };
 		BB7223401BF4247500EE547C /* PZHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */; };
 		BB7223411BF4247900EE547C /* PZHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */; };
 		BB74D7081BA90E6B00BF9BC2 /* PZAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */; };
@@ -69,7 +69,7 @@
 		BB24269F1B38E1AD003D3C40 /* PZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZUtils.swift; sourceTree = "<group>"; };
 		BB2426D61B3A27CF003D3C40 /* PZData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PZData.xcdatamodel; sourceTree = "<group>"; };
 		BB360E951BC6005400438BAC /* PZMainViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMainViewControllerTests.swift; sourceTree = "<group>"; };
-		BB7223371BF2DD7300EE547C /* DAExpandAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAExpandAnimation.swift; sourceTree = "<group>"; };
+		BB6D071A1C022B700072B4AD /* ColorHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelpers.swift; sourceTree = "<group>"; };
 		BB72233A1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParveZmanHomeTableViewController.swift; sourceTree = "<group>"; };
 		BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHomeTableViewCell.swift; sourceTree = "<group>"; };
 		BB74D7071BA90E6B00BF9BC2 /* PZAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZAlert.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		BB7223391BF2DD7C00EE547C /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				BB7223371BF2DD7300EE547C /* DAExpandAnimation.swift */,
+				BB6D071A1C022B700072B4AD /* ColorHelpers.swift */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -429,7 +429,6 @@
 				BB72233B1BF2E07800EE547C /* ParveZmanHomeTableViewController.swift in Sources */,
 				BB12F4881B7044DC0087447E /* PZMinhagHistoryPageViewController.swift in Sources */,
 				BB12F4891B7044DC0087447E /* PZMinhagHistoryViewController.swift in Sources */,
-				BB7223381BF2DD7300EE547C /* DAExpandAnimation.swift in Sources */,
 				BB12F48A1B7044DC0087447E /* AppDelegate.swift in Sources */,
 				BB12F48B1B7044DC0087447E /* PZMainViewController.swift in Sources */,
 				BB12F48D1B7044DC0087447E /* PZHalachicHelper.swift in Sources */,
@@ -437,6 +436,7 @@
 				BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */,
 				BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */,
 				BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */,
+				BB6D071B1C022B700072B4AD /* ColorHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,9 +447,9 @@
 				BB7223411BF4247900EE547C /* PZHomeTableViewCell.swift in Sources */,
 				BB0526221BCF1C8E0026C6A4 /* PZSettingsManager.swift in Sources */,
 				BB05261D1BCF1C890026C6A4 /* PZHalachicHelper.swift in Sources */,
-				BB72233D1BF2E4A100EE547C /* DAExpandAnimation.swift in Sources */,
 				BB0526261BCF1C930026C6A4 /* PZMinhagHistoryPageViewController.swift in Sources */,
 				BB0526281BCF1C930026C6A4 /* AppDelegate.swift in Sources */,
+				BB6D071C1C022B700072B4AD /* ColorHelpers.swift in Sources */,
 				BB9915A01B1D15D000501DD2 /* ParveZmanTests.swift in Sources */,
 				BB72233C1BF2E49000EE547C /* ParveZmanHomeTableViewController.swift in Sources */,
 				BB0526231BCF1C8E0026C6A4 /* PZSettingsViewController.swift in Sources */,
