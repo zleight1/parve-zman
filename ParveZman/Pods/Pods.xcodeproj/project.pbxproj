@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		219DC13DB7F9919A1C1762A1A073B04A /* Pods-ParveZman-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB20462FBE00181CCCB4FC4ECC5CE57 /* Pods-ParveZman-dummy.m */; };
-		74454A7C2F4CA246676125341140153D /* JTImageButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A751A07F69589E9E8774971E5B0B17F /* JTImageButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A6C85B7CE63519A9A648C3749A799E7 /* Pods-ParveZman-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE2A9D440F8E4C69B29780F9B8D06AB /* Pods-ParveZman-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A3732A7C4F06D56AE9920B3603402ED /* JTImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 984BE8D5CC361A541ADCE463F2522381 /* JTImageButton.m */; };
-		BA33A0EFC44A66E028FD2FF54A10B6EF /* JTImageButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C7373E2F59F24239E3083AB9354D7C /* JTImageButton-dummy.m */; };
-		C5E1FE8872F6B9EEE53550AF62EE2682 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		0C1171A7047726A0151121C1902D2605 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		14E96810AA2D49BE373296DC37565206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		2C5EEBF50725D8C15D7FB1BA14ED97D5 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 745F624164F919202D7EC39632F681C2 /* Info.plist */; };
+		2DEE23D704BB625F9B612397E715C29F /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D2652B8A6AF900214E3D7CC301828 /* SCLAlertView-dummy.m */; };
+		74454A7C2F4CA246676125341140153D /* JTImageButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0D9B52EA144947DEAB739BE4865B27 /* JTImageButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A3732A7C4F06D56AE9920B3603402ED /* JTImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EC9DF8C19ABB18382FB76B77E8101A /* JTImageButton.m */; };
+		A2E6D86F4A06BB6CB28AC24BEF0B632A /* Pods-ParveZman-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB20462FBE00181CCCB4FC4ECC5CE57 /* Pods-ParveZman-dummy.m */; };
+		B9137D6C95E3DF5E7EE1FE024E8AAA8C /* Pods-ParveZman-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE2A9D440F8E4C69B29780F9B8D06AB /* Pods-ParveZman-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA33A0EFC44A66E028FD2FF54A10B6EF /* JTImageButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8F49C7C8E88EF803660EAA5FC2E0D3 /* JTImageButton-dummy.m */; };
+		BFC83398F785A765D3420CD4E0CA0DDB /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645388C2DB4B85FF0FD7BEF0CA1DD421 /* SCLAlertView.swift */; };
 		CB85831F79527BD561865D128CDA5C72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		CD4F4A8DB24B43DD2C7F50AD9350E36C /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8AA197413CEC0C477EE71C562EF91C /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D76D672430C164D358E7F1DD16792C9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
-		E5DC7AC2E3438DEAD43C67E3793F3E68 /* JTImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C317D0F2BB9F9350C963BF2E98FACE9 /* JTImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5DC7AC2E3438DEAD43C67E3793F3E68 /* JTImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 47FC36FE9C450936A7B5E5999E798EFC /* JTImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2403E684631980299904F84F0BF12769 /* PBXContainerItemProxy */ = {
+		2B620798C36F4CAB3A79F6326FD31775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41A4920DE52B4EBA6AB913CA256365B2;
+			remoteInfo = SCLAlertView;
+		};
+		3834A669D0A11D967A3237503D1F27DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -29,29 +41,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A751A07F69589E9E8774971E5B0B17F /* JTImageButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTImageButton-umbrella.h"; sourceTree = "<group>"; };
-		1C317D0F2BB9F9350C963BF2E98FACE9 /* JTImageButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JTImageButton.h; path = JTImageButton/JTImageButton.h; sourceTree = "<group>"; };
+		1D0D9B52EA144947DEAB739BE4865B27 /* JTImageButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTImageButton-umbrella.h"; sourceTree = "<group>"; };
 		1FB20462FBE00181CCCB4FC4ECC5CE57 /* Pods-ParveZman-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParveZman-dummy.m"; sourceTree = "<group>"; };
 		2433C78F8B16A0A90516975CEB93B5B4 /* Pods-ParveZman.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParveZman.modulemap"; sourceTree = "<group>"; };
 		2E3FAC27DD3EB01A5DE3ED1B62457C42 /* Pods-ParveZman-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParveZman-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F1D2652B8A6AF900214E3D7CC301828 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
 		35DF4124ABD52351B5A6BADE6C70AF08 /* Pods-ParveZman-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParveZman-frameworks.sh"; sourceTree = "<group>"; };
+		3D719D419C602A800E5B7809D3390481 /* JTImageButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTImageButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		454598A8D57F4D47E122AA6EB96502FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4764A9362357869E1431ECB28FB07A20 /* Pods-ParveZman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParveZman.debug.xcconfig"; sourceTree = "<group>"; };
-		5ACA17505151DBA46962565943DA42C6 /* JTImageButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTImageButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FC36FE9C450936A7B5E5999E798EFC /* JTImageButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JTImageButton.h; path = JTImageButton/JTImageButton.h; sourceTree = "<group>"; };
+		4BDF6B3657D1A4EA8286B5C5CAEFCAD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EE505C5C173A36267CD55036F34C3BA /* JTImageButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTImageButton-prefix.pch"; sourceTree = "<group>"; };
 		5EE2A9D440F8E4C69B29780F9B8D06AB /* Pods-ParveZman-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParveZman-umbrella.h"; sourceTree = "<group>"; };
+		645388C2DB4B85FF0FD7BEF0CA1DD421 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
 		6ACFD199AD980CEF14EC6680E019150F /* Pods-ParveZman-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParveZman-resources.sh"; sourceTree = "<group>"; };
 		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7555E9EBB74652EA0BED8F7ACD9CFC73 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		745F624164F919202D7EC39632F681C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SCLAlertView/Info.plist; sourceTree = "<group>"; };
 		7C61DD0851AC7E381A073FCB988C737A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E8AA197413CEC0C477EE71C562EF91C /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
 		82691D48D4C66DB5CA30AC1470ADAE92 /* Pods-ParveZman-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParveZman-acknowledgements.markdown"; sourceTree = "<group>"; };
-		984BE8D5CC361A541ADCE463F2522381 /* JTImageButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JTImageButton.m; path = JTImageButton/JTImageButton.m; sourceTree = "<group>"; };
-		A9C4EEBF3D9B8122A8967006A57F7F5E /* JTImageButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTImageButton.modulemap; sourceTree = "<group>"; };
+		A2A618CD2AC1D2BA94615F993E1FBD34 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		B55E5EEE7590B1DA31A174F2BDC077D9 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C198D6E69337675A91C72365886D03C8 /* JTImageButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTImageButton.modulemap; sourceTree = "<group>"; };
 		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		CD9ECDF1DBF2520A73B011C197451783 /* JTImageButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTImageButton-prefix.pch"; sourceTree = "<group>"; };
-		D8C7373E2F59F24239E3083AB9354D7C /* JTImageButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTImageButton-dummy.m"; sourceTree = "<group>"; };
-		D8E8C95D5CBBACDFB9BBAD6715098A30 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EC9DF8C19ABB18382FB76B77E8101A /* JTImageButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JTImageButton.m; path = JTImageButton/JTImageButton.m; sourceTree = "<group>"; };
+		D75BC05EEC4FBEFBBB35B690EE20D3B9 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		D78BC150C575853F57B0AF43B76AA359 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D5E31F399183F77E9B17D4DF0ED30E /* Pods-ParveZman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParveZman.release.xcconfig"; sourceTree = "<group>"; };
-		E3EA10AFCFFE4492DA08DF742D5A8FC4 /* JTImageButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTImageButton.xcconfig; sourceTree = "<group>"; };
+		DB0632DF07487E8BB50900A038DF5A3D /* JTImageButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTImageButton.xcconfig; sourceTree = "<group>"; };
+		DE8F49C7C8E88EF803660EAA5FC2E0D3 /* JTImageButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTImageButton-dummy.m"; sourceTree = "<group>"; };
+		E841882DE4A39A257CA07BF81DDC0718 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,17 +85,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E14E1F96B2DF07CF6752AAD428C84078 /* Frameworks */ = {
+		4DF2CDBBD2C6F2448B6D8591D6B9E3E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5E1FE8872F6B9EEE53550AF62EE2682 /* Foundation.framework in Frameworks */,
+				0C1171A7047726A0151121C1902D2605 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8278FC323B20AA910F1753944CFBF9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E96810AA2D49BE373296DC37565206 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C519B6340E2A946506525442550C13D /* JTImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				47FC36FE9C450936A7B5E5999E798EFC /* JTImageButton.h */,
+				C6EC9DF8C19ABB18382FB76B77E8101A /* JTImageButton.m */,
+				C63C70F94A69D2A255C753FEB2E42E36 /* Support Files */,
+			);
+			path = JTImageButton;
+			sourceTree = "<group>";
+		};
 		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,20 +121,6 @@
 				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		42F5D61BE09CE3B96A174D2E82D5C7FE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7555E9EBB74652EA0BED8F7ACD9CFC73 /* Info.plist */,
-				A9C4EEBF3D9B8122A8967006A57F7F5E /* JTImageButton.modulemap */,
-				E3EA10AFCFFE4492DA08DF742D5A8FC4 /* JTImageButton.xcconfig */,
-				D8C7373E2F59F24239E3083AB9354D7C /* JTImageButton-dummy.m */,
-				CD9ECDF1DBF2520A73B011C197451783 /* JTImageButton-prefix.pch */,
-				1A751A07F69589E9E8774971E5B0B17F /* JTImageButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JTImageButton";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -124,25 +149,6 @@
 			path = "Target Support Files/Pods-ParveZman";
 			sourceTree = "<group>";
 		};
-		61FD97D1F06F0FED356BDBB609EF58DD /* JTImageButton */ = {
-			isa = PBXGroup;
-			children = (
-				1C317D0F2BB9F9350C963BF2E98FACE9 /* JTImageButton.h */,
-				984BE8D5CC361A541ADCE463F2522381 /* JTImageButton.m */,
-				42F5D61BE09CE3B96A174D2E82D5C7FE /* Support Files */,
-			);
-			path = JTImageButton;
-			sourceTree = "<group>";
-		};
-		77DEC0F504E850A7996E6EDCE01BDFC3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5ACA17505151DBA46962565943DA42C6 /* JTImageButton.framework */,
-				D8E8C95D5CBBACDFB9BBAD6715098A30 /* Pods_ParveZman.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7D08AD85008F551F3F85DFE53AC47BF3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,16 +162,65 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				7FF577F724D343026B79550C5BDC0622 /* Pods */,
-				77DEC0F504E850A7996E6EDCE01BDFC3 /* Products */,
+				ED2E60811C76243BBE60DCD3E3932482 /* Pods */,
+				C25EBF823D0D3C983B958C3D4F69C1F6 /* Products */,
 				7D08AD85008F551F3F85DFE53AC47BF3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7FF577F724D343026B79550C5BDC0622 /* Pods */ = {
+		8DE751588F37CC153CEBB270D5A7B9EB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				61FD97D1F06F0FED356BDBB609EF58DD /* JTImageButton */,
+				454598A8D57F4D47E122AA6EB96502FF /* Info.plist */,
+				D75BC05EEC4FBEFBBB35B690EE20D3B9 /* SCLAlertView.modulemap */,
+				E841882DE4A39A257CA07BF81DDC0718 /* SCLAlertView.xcconfig */,
+				2F1D2652B8A6AF900214E3D7CC301828 /* SCLAlertView-dummy.m */,
+				A2A618CD2AC1D2BA94615F993E1FBD34 /* SCLAlertView-prefix.pch */,
+				7E8AA197413CEC0C477EE71C562EF91C /* SCLAlertView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView";
+			sourceTree = "<group>";
+		};
+		C25EBF823D0D3C983B958C3D4F69C1F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D719D419C602A800E5B7809D3390481 /* JTImageButton.framework */,
+				D78BC150C575853F57B0AF43B76AA359 /* Pods_ParveZman.framework */,
+				B55E5EEE7590B1DA31A174F2BDC077D9 /* SCLAlertView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C63C70F94A69D2A255C753FEB2E42E36 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BDF6B3657D1A4EA8286B5C5CAEFCAD1 /* Info.plist */,
+				C198D6E69337675A91C72365886D03C8 /* JTImageButton.modulemap */,
+				DB0632DF07487E8BB50900A038DF5A3D /* JTImageButton.xcconfig */,
+				DE8F49C7C8E88EF803660EAA5FC2E0D3 /* JTImageButton-dummy.m */,
+				4EE505C5C173A36267CD55036F34C3BA /* JTImageButton-prefix.pch */,
+				1D0D9B52EA144947DEAB739BE4865B27 /* JTImageButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JTImageButton";
+			sourceTree = "<group>";
+		};
+		DDC7DF0BFDFFF7FEEB347CE5023B28CC /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				745F624164F919202D7EC39632F681C2 /* Info.plist */,
+				645388C2DB4B85FF0FD7BEF0CA1DD421 /* SCLAlertView.swift */,
+				8DE751588F37CC153CEBB270D5A7B9EB /* Support Files */,
+			);
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
+		ED2E60811C76243BBE60DCD3E3932482 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C519B6340E2A946506525442550C13D /* JTImageButton */,
+				DDC7DF0BFDFFF7FEEB347CE5023B28CC /* SCLAlertView */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -182,17 +237,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C6BD1127548E812398CFF2D1D214F3E /* Headers */ = {
+		BBCC34E86FA279CF2C37310FB497A8E8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A6C85B7CE63519A9A648C3749A799E7 /* Pods-ParveZman-umbrella.h in Headers */,
+				B9137D6C95E3DF5E7EE1FE024E8AAA8C /* Pods-ParveZman-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7010EC5C8A1CBB3D404676B3C896FFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4F4A8DB24B43DD2C7F50AD9350E36C /* SCLAlertView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		41A4920DE52B4EBA6AB913CA256365B2 /* SCLAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9305892EC324D7FF2B383B219C28B79 /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildPhases = (
+				97A65F8D0DA44781C560C8B1F331A5E0 /* Sources */,
+				4DF2CDBBD2C6F2448B6D8591D6B9E3E7 /* Frameworks */,
+				C7010EC5C8A1CBB3D404676B3C896FFE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = B55E5EEE7590B1DA31A174F2BDC077D9 /* SCLAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		82EF69D13B4135D1BA5CBC1721AF8FBE /* Pods-ParveZman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C4BF993897476EAB52235A37C38245 /* Build configuration list for PBXNativeTarget "Pods-ParveZman" */;
+			buildPhases = (
+				0A5248D8C4BA2331CB182B803B74BA93 /* Sources */,
+				8278FC323B20AA910F1753944CFBF9DC /* Frameworks */,
+				BBCC34E86FA279CF2C37310FB497A8E8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5981E994E6CE1D3C81E5BE6320E7606A /* PBXTargetDependency */,
+				4939FD7620D508F490F2FCB3057F375F /* PBXTargetDependency */,
+			);
+			name = "Pods-ParveZman";
+			productName = "Pods-ParveZman";
+			productReference = D78BC150C575853F57B0AF43B76AA359 /* Pods_ParveZman.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		98E6C2103FDC77D30FCCF6B40146DEB8 /* JTImageButton */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67B08D87BAFEBF01842DEF2A39FA9247 /* Build configuration list for PBXNativeTarget "JTImageButton" */;
@@ -207,25 +306,7 @@
 			);
 			name = JTImageButton;
 			productName = JTImageButton;
-			productReference = 5ACA17505151DBA46962565943DA42C6 /* JTImageButton.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DD659C75264AEA192DC5A29DE41B9CCC /* Pods-ParveZman */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E84DA8B3A18BDAD871D4105B567D2A8D /* Build configuration list for PBXNativeTarget "Pods-ParveZman" */;
-			buildPhases = (
-				FFC615AA409F56B3B04D50001C8C6DB5 /* Sources */,
-				E14E1F96B2DF07CF6752AAD428C84078 /* Frameworks */,
-				5C6BD1127548E812398CFF2D1D214F3E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				266B397FE9D33C6BFA0D0629AE0E4F90 /* PBXTargetDependency */,
-			);
-			name = "Pods-ParveZman";
-			productName = "Pods-ParveZman";
-			productReference = D8E8C95D5CBBACDFB9BBAD6715098A30 /* Pods_ParveZman.framework */;
+			productReference = 3D719D419C602A800E5B7809D3390481 /* JTImageButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -245,17 +326,36 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 77DEC0F504E850A7996E6EDCE01BDFC3 /* Products */;
+			productRefGroup = C25EBF823D0D3C983B958C3D4F69C1F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				98E6C2103FDC77D30FCCF6B40146DEB8 /* JTImageButton */,
-				DD659C75264AEA192DC5A29DE41B9CCC /* Pods-ParveZman */,
+				82EF69D13B4135D1BA5CBC1721AF8FBE /* Pods-ParveZman */,
+				41A4920DE52B4EBA6AB913CA256365B2 /* SCLAlertView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A5248D8C4BA2331CB182B803B74BA93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E6D86F4A06BB6CB28AC24BEF0B632A /* Pods-ParveZman-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A65F8D0DA44781C560C8B1F331A5E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5EEBF50725D8C15D7FB1BA14ED97D5 /* Info.plist in Sources */,
+				2DEE23D704BB625F9B612397E715C29F /* SCLAlertView-dummy.m in Sources */,
+				BFC83398F785A765D3420CD4E0CA0DDB /* SCLAlertView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCA708EF4ABA00FD2C3CF48B844B04FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,29 +365,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFC615AA409F56B3B04D50001C8C6DB5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				219DC13DB7F9919A1C1762A1A073B04A /* Pods-ParveZman-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		266B397FE9D33C6BFA0D0629AE0E4F90 /* PBXTargetDependency */ = {
+		4939FD7620D508F490F2FCB3057F375F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCLAlertView;
+			target = 41A4920DE52B4EBA6AB913CA256365B2 /* SCLAlertView */;
+			targetProxy = 2B620798C36F4CAB3A79F6326FD31775 /* PBXContainerItemProxy */;
+		};
+		5981E994E6CE1D3C81E5BE6320E7606A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JTImageButton;
 			target = 98E6C2103FDC77D30FCCF6B40146DEB8 /* JTImageButton */;
-			targetProxy = 2403E684631980299904F84F0BF12769 /* PBXContainerItemProxy */;
+			targetProxy = 3834A669D0A11D967A3237503D1F27DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1F63B5FAF1100897103079E0CFBEC7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4764A9362357869E1431ECB28FB07A20 /* Pods-ParveZman.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParveZman/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParveZman/Pods-ParveZman.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ParveZman;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5607F77C986E48DCBADF920329E953BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E841882DE4A39A257CA07BF81DDC0718 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5A5AF4394C603E421F2BC28AA02642D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3EA10AFCFFE4492DA08DF742D5A8FC4 /* JTImageButton.xcconfig */;
+			baseConfigurationReference = DB0632DF07487E8BB50900A038DF5A3D /* JTImageButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -314,7 +470,7 @@
 		};
 		64627AD4DDC077CCDA891E2F845EAD05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3EA10AFCFFE4492DA08DF742D5A8FC4 /* JTImageButton.xcconfig */;
+			baseConfigurationReference = DB0632DF07487E8BB50900A038DF5A3D /* JTImageButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -331,66 +487,6 @@
 				MODULEMAP_FILE = "Target Support Files/JTImageButton/JTImageButton.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = JTImageButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7AEA9401EB5805D5873F0ABEC01AE49D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4764A9362357869E1431ECB28FB07A20 /* Pods-ParveZman.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ParveZman/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParveZman/Pods-ParveZman.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ParveZman;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8B2D68F18E32DB678F9B2CE92A5EF1A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9D5E31F399183F77E9B17D4DF0ED30E /* Pods-ParveZman.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ParveZman/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParveZman/Pods-ParveZman.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ParveZman;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,6 +534,64 @@
 			};
 			name = Debug;
 		};
+		E98AD27053D4017510599880B2931359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D5E31F399183F77E9B17D4DF0ED30E /* Pods-ParveZman.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParveZman/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParveZman/Pods-ParveZman.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ParveZman;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F67FD8B7339FFB4CE291E84C8FF60EB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E841882DE4A39A257CA07BF81DDC0718 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -475,6 +629,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		21C4BF993897476EAB52235A37C38245 /* Build configuration list for PBXNativeTarget "Pods-ParveZman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F63B5FAF1100897103079E0CFBEC7BD /* Debug */,
+				E98AD27053D4017510599880B2931359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -493,11 +656,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E84DA8B3A18BDAD871D4105B567D2A8D /* Build configuration list for PBXNativeTarget "Pods-ParveZman" */ = {
+		C9305892EC324D7FF2B383B219C28B79 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AEA9401EB5805D5873F0ABEC01AE49D /* Debug */,
-				8B2D68F18E32DB678F9B2CE92A5EF1A6 /* Release */,
+				F67FD8B7339FFB4CE291E84C8FF60EB5 /* Debug */,
+				5607F77C986E48DCBADF920329E953BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

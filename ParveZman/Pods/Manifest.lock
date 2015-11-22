@@ -1,10 +1,13 @@
 PODS:
   - JTImageButton (1.0.2)
+  - SCLAlertView (0.4.3)
 
 DEPENDENCIES:
   - JTImageButton
+  - SCLAlertView
 
 SPEC CHECKSUMS:
   JTImageButton: d214ff9ee6e01865368a9f749c5a16e6abbf6409
+  SCLAlertView: a5c726a80a938fd3127edd7dbc19da33fb936ca3
 
 COCOAPODS: 0.39.0

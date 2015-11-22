@@ -13,15 +13,18 @@ class ParveZmanHomeTableViewController: UITableViewController {
     private struct NavItems {
         static let RowsCount = 3
         static let DemoAnimationDuration = 1.0
-        static let buttons: [(String, UIColor)] = [
+        static let buttons: [(String, UIColor, Int)] = [
             (   title:"Meat",
-                color:UIColor.init(hexString: "#F2362C")
+                color:UIColor.init(hexString: "#F2362C"),
+                tag: 0
             ),
             (   title:"Dairy",
-                color:UIColor.init(hexString: "#1A7CF9")
+                color:UIColor.init(hexString: "#1A7CF9"),
+                tag: 1
             ),
             (   title:"Settings",
-                color:UIColor.init(hexString: "#A9A9A9")
+                color:UIColor.init(hexString: "#A9A9A9"),
+                tag:2
             )
         ]
     }
@@ -31,6 +34,9 @@ class ParveZmanHomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureTableView()
+        
+        //Load from core data if possible
+        PZSettingsManager.sharedInstance.loadPZSettings()
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,7 +54,7 @@ class ParveZmanHomeTableViewController: UITableViewController {
         return NavItems.RowsCount
     }
     
-    func getButtonItemAtIndex(index: Int) -> (title:String, color:UIColor) {
+    func getButtonItemAtIndex(index: Int) -> (title:String, color:UIColor, tag:Int) {
         return NavItems.buttons[index]
     }
     
@@ -62,6 +68,7 @@ class ParveZmanHomeTableViewController: UITableViewController {
         cell.textLabel?.text = item.title
         cell.textLabel?.textColor = UIColor.whiteColor()
         cell.textLabel?.font = UIFont.systemFontOfSize(CGFloat(36.0))
+        cell.tag = item.tag
         return cell
     }
     
@@ -86,23 +93,62 @@ class ParveZmanHomeTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath)
         
-        self.performSegueWithIdentifier("ShowSettings", sender: cell)
+        switch cell.tag {
+        case 0, 1:
+            self.showTimer(cell.tag)
+        case 2:
+            self.showSettings()
+        default:
+            return
+        }
+        return
     }
     
-    // MARK: - Navigation
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let toViewController = segue.destinationViewController
+    func showTimer(tag: Int){
+        //check if we're in timer mode currently?
+
         
-        if let selectedCell = sender as? UITableViewCell {
-            toViewController.modalPresentationStyle = .Custom
-            //toViewController.view.backgroundColor = selectedCell.backgroundColor
-            
-            
-            if let indexPath = tableView.indexPathForCell(selectedCell) {
-                tableView.deselectRowAtIndexPath(indexPath, animated: false)
-            }
+        
+        //get the time
+        var time: Double
+        var type: String
+        if tag == 0 {
+            time = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentMeatMinhag)
+            type = "meat"
+        } else {
+            time = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentDairyMinhag)
+            type = "dairy"
         }
+        
+        //check if time is less than one
+        if time < 1 {
+            let alert = UIAlertController(title: "No Wait Time For Your Minhag", message: "You don't have a minhag to wait, just eat something parve before in between.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "Okay", style: .Default, handler: nil))
+            
+            
+            return self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        //get the timer view
+        let pzTimerViewController = storyboard!.instantiateViewControllerWithIdentifier("PZTimerViewController") as! PZTimerViewController
+        
+        //pass the view controller all the information it needs here
+        pzTimerViewController.endTime = NSDate.timeIntervalSinceReferenceDate() + time
+        
+        self.presentViewController(pzTimerViewController, animated: true, completion: nil)
+        
+        return
+
+    }
+    
+    func showSettings() {
+        //get the timer view
+        let pzSettingsViewController = storyboard!.instantiateViewControllerWithIdentifier("PZSettingsViewController") as! PZSettingsViewController
+        
+        self.presentViewController(pzSettingsViewController, animated: true, completion: nil)
+        
+        return
     }
     
     func configureTableView() {
