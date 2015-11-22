@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SCLAlertView
 
-class ParveZmanHomeTableViewController: UITableViewController {
+class PZHomeTableViewController: UITableViewController {
     
     private struct NavItems {
         static let RowsCount = 3
@@ -122,12 +123,9 @@ class ParveZmanHomeTableViewController: UITableViewController {
         
         //check if time is less than one
         if time < 1 {
-            let alert = UIAlertController(title: "No Wait Time For Your Minhag", message: "You don't have a minhag to wait, just eat something parve before in between.", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            alert.addAction(UIAlertAction(title: "Okay", style: .Default, handler: nil))
-            
-            
-            return self.presentViewController(alert, animated: true, completion: nil)
+            let alert = SCLAlertView()
+            alert.showInfo("No Wait Time", subTitle:"You don't have a minhag to wait, just eat something parve before in between.")
+            return
         }
         
         //get the timer view

@@ -126,101 +126,10 @@
             </objects>
             <point key="canvasLocation" x="-57" y="-545"/>
         </scene>
-        <!--Main View Controller-->
-        <scene sceneID="Ckg-CR-rhO">
-            <objects>
-                <viewController storyboardIdentifier="PZMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nBO-fO-GoK" customClass="PZMainViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FSf-TT-Me6"/>
-                        <viewControllerLayoutGuide type="bottom" id="jVd-nR-l4j"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="PZMainViewController" id="xcP-g4-hlC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-49-OKM" customClass="JTImageButton">
-                                <rect key="frame" x="16" y="205" width="568" height="100"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="1rA-BC-yzZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                <state key="normal" title="Meat">
-                                    <color key="titleColor" red="1" green="0.030145655374867797" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="timerStart:" destination="nBO-fO-GoK" eventType="touchUpInside" id="8gn-n1-4N4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUh-OH-Zdx" customClass="JTImageButton">
-                                <rect key="frame" x="16" y="313" width="568" height="100"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="w0k-LL-9Af"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                <state key="normal" title="Dairy">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="timerStart:" destination="nBO-fO-GoK" eventType="touchUpInside" id="FcY-bQ-2j7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZr-Ag-8Tq" customClass="JTImageButton">
-                                <rect key="frame" x="16" y="421" width="568" height="100"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Pee-KN-SMa"/>
-                                    <constraint firstAttribute="height" constant="100" id="ZTH-eK-EWw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                <state key="normal" title="Settings">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showSettings:" destination="nBO-fO-GoK" eventType="touchUpInside" id="CoG-KH-GWL"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="KeJ-49-OKM" firstAttribute="top" secondItem="FSf-TT-Me6" secondAttribute="bottom" constant="100" id="84P-Zz-XjP"/>
-                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="top" secondItem="KeJ-49-OKM" secondAttribute="bottom" constant="8" symbolic="YES" id="Knb-3a-FDB"/>
-                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="leading" secondItem="KeJ-49-OKM" secondAttribute="leading" id="Mfa-dw-fMK"/>
-                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="trailing" secondItem="xcP-g4-hlC" secondAttribute="trailingMargin" id="Z2X-r1-diF"/>
-                            <constraint firstItem="bZr-Ag-8Tq" firstAttribute="top" secondItem="DUh-OH-Zdx" secondAttribute="bottom" constant="8" symbolic="YES" id="bwW-Wv-KlS"/>
-                            <constraint firstItem="bZr-Ag-8Tq" firstAttribute="trailing" secondItem="DUh-OH-Zdx" secondAttribute="trailing" id="dvV-98-KoC"/>
-                            <constraint firstItem="KeJ-49-OKM" firstAttribute="leading" secondItem="xcP-g4-hlC" secondAttribute="leadingMargin" id="hPB-Un-cUk"/>
-                            <constraint firstItem="DUh-OH-Zdx" firstAttribute="trailing" secondItem="KeJ-49-OKM" secondAttribute="trailing" id="nkf-Ob-4N1"/>
-                            <constraint firstItem="bZr-Ag-8Tq" firstAttribute="leading" secondItem="DUh-OH-Zdx" secondAttribute="leading" id="wb5-6P-GAZ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="kso-qc-H4K">
-                        <barButtonItem key="leftBarButtonItem" image="Settings" id="MMK-Xi-9mF">
-                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="Literature" id="drN-jB-zPd">
-                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="dairyButton" destination="DUh-OH-Zdx" id="fxt-wi-dY2"/>
-                        <outlet property="meatButton" destination="KeJ-49-OKM" id="zN9-QH-QRJ"/>
-                        <outlet property="settingsButton" destination="bZr-Ag-8Tq" id="A0s-tf-rX6"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Un9-iA-7dQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-452" y="139"/>
-        </scene>
-        <!--Parve Zman Home Table View Controller-->
+        <!--Home Table View Controller-->
         <scene sceneID="te9-oh-Ipe">
             <objects>
-                <tableViewController storyboardIdentifier="ParveZmanHomeTableViewController" id="tZ6-WT-tPH" customClass="ParveZmanHomeTableViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ParveZmanHomeTableViewController" id="tZ6-WT-tPH" customClass="PZHomeTableViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="A27-2I-hrM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,14 +164,10 @@
                             <outlet property="delegate" destination="tZ6-WT-tPH" id="2x5-WB-iiN"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <segue destination="HaI-If-WcZ" kind="presentation" identifier="ShowSettings" id="gTG-PD-gkA"/>
-                        <segue destination="wkB-gB-Lj4" kind="presentation" identifier="ShowTimer" id="1Q5-Fb-85H"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANZ-I9-bIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="623" y="154"/>
+            <point key="canvasLocation" x="-57" y="214"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="Nb1-rc-hUe">
@@ -366,11 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Slu-vm-bQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="855"/>
+            <point key="canvasLocation" x="-57" y="987"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Literature" width="22" height="22"/>
-        <image name="Settings" width="22" height="22"/>
-    </resources>
 </document>

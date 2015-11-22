@@ -9,6 +9,7 @@
 import UIKit
 import JTImageButton
 import AudioToolbox
+import SCLAlertView
 
 class PZTimerViewController: UIViewController {
     
@@ -117,10 +118,9 @@ class PZTimerViewController: UIViewController {
     
     @IBAction func stop(sender: AnyObject) {
         //Confirm
-        let alert = UIAlertController(title: "Cancel Timer?", message: "Cancel current timer and any scheduled alerts?", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        alert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (alert) -> Void in
-            
+        let alert = SCLAlertView()
+        alert.showCloseButton = false
+        alert.addButton("Yes"){
             self.timer.invalidate()
             
             //cancel the notification
@@ -133,13 +133,12 @@ class PZTimerViewController: UIViewController {
             
             //quit the view
             self.dismissViewControllerAnimated(true, completion: nil)
-            
-        }))
+        }
+        alert.addButton("No"){
+            return
+        }
         
-        alert.addAction(UIAlertAction(title: "No", style: .Default, handler: nil))
-        
-        
-        presentViewController(alert, animated: false, completion: nil)
+        alert.showWarning("Cancel Timer?", subTitle: "Cancel current timer and any scheduled alerts?")
     }
     
     override func didReceiveMemoryWarning() {

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import JTImageButton
-import UIColor_Hex_Swift
+import SCLAlertView
 
 class PZSettingsViewController: UIViewController {
     
@@ -133,18 +133,20 @@ class PZSettingsViewController: UIViewController {
         //bail out if settings haven't changed
         if(!settingsChanged) {
             self.dismissViewControllerAnimated(false, completion: nil)
+            return
         }
         
-        let alert = UIAlertController(title: "Discard Changes", message: "Discard any changes made to minhag settings?", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = SCLAlertView()
+        alert.showCloseButton = false
+        alert.addButton("Yes"){
+             self.dismissViewControllerAnimated(false, completion: nil)
+             return
+        }
+        alert.addButton("No"){
+            return
+        }
         
-        alert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (alert) -> Void in
-            self.dismissViewControllerAnimated(false, completion: nil)
-        }))
-        
-        alert.addAction(UIAlertAction(title: "No", style: .Default, handler: nil))
-
-        
-        presentViewController(alert, animated: true, completion: nil)
+        alert.showWarning("Discard Changes?", subTitle: "Discard any changes made to minhag settings?")
     }
     
     
