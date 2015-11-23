@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tZ6-WT-tPH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oF6-Lj-Ld1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,112 +17,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHT-YT-Wby">
-                                <rect key="frame" x="16" y="117" width="568" height="162"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="162" id="cpZ-j7-6dJ"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="HaI-If-WcZ" id="YlL-9V-MPI"/>
-                                    <outlet property="delegate" destination="HaI-If-WcZ" id="NE6-95-xPG"/>
-                                </connections>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Meat Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWI-z3-Uvp">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meat Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWI-z3-Uvp">
                                 <rect key="frame" x="16" y="72" width="568" height="37"/>
                                 <animations/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="HMm-xy-zDr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.03014565537" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iej-C9-IOh" appends="YES" id="jVi-O6-2jD"/>
+                                </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dairy Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-wN-s2N">
+                            <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dairy Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-wN-s2N">
                                 <rect key="frame" x="16" y="287" width="568" height="37"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="tFE-wP-qPz"/>
+                                    <constraint firstAttribute="height" constant="37" id="661-fL-Vpc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cyV-Sg-ecZ" appends="YES" id="zLa-n9-WCB"/>
+                                </connections>
                             </label>
-                            <pickerView tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKh-i4-FGH">
-                                <rect key="frame" x="16" y="332" width="568" height="162"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="162" id="uaC-h8-vAc"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="HaI-If-WcZ" id="YXf-xt-7md"/>
-                                    <outlet property="delegate" destination="HaI-If-WcZ" id="c9p-Yq-3pg"/>
-                                </connections>
-                            </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPP-hf-99u" customClass="JTImageButton">
-                                <rect key="frame" x="16" y="507" width="73" height="73"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="LO2-qf-qr2"/>
-                                    <constraint firstAttribute="width" constant="75" id="Wbo-cF-kTG"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancelClicked:" destination="HaI-If-WcZ" eventType="touchUpInside" id="LpE-ZM-mhM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWo-r2-Pi8" customClass="JTImageButton">
-                                <rect key="frame" x="510" y="506" width="74" height="74"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="Wcp-hZ-GSw"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="bsP-Af-m5y"/>
-                                    <constraint firstAttribute="height" constant="75" id="ucw-dA-e6u"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="acceptClicked:" destination="HaI-If-WcZ" eventType="touchUpInside" id="Wby-qP-qWG"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="bVz-wN-s2N" firstAttribute="top" secondItem="oHT-YT-Wby" secondAttribute="bottom" constant="8" symbolic="YES" id="1Jn-ey-dz5"/>
-                            <constraint firstItem="dPP-hf-99u" firstAttribute="leading" secondItem="gKh-i4-FGH" secondAttribute="leading" id="6NE-JZ-gJr"/>
-                            <constraint firstItem="oHT-YT-Wby" firstAttribute="top" secondItem="swR-V3-Vab" secondAttribute="top" constant="117" id="79F-8r-sNU"/>
-                            <constraint firstItem="oHT-YT-Wby" firstAttribute="leading" secondItem="bVz-wN-s2N" secondAttribute="leading" id="8PS-rk-3f6"/>
-                            <constraint firstItem="gKh-i4-FGH" firstAttribute="top" secondItem="bVz-wN-s2N" secondAttribute="bottom" constant="8" symbolic="YES" id="CHx-09-Lll"/>
-                            <constraint firstItem="bVz-wN-s2N" firstAttribute="leading" secondItem="swR-V3-Vab" secondAttribute="leadingMargin" id="JaT-x0-3gf"/>
-                            <constraint firstItem="uWo-r2-Pi8" firstAttribute="trailing" secondItem="gKh-i4-FGH" secondAttribute="trailing" id="Slu-lw-4fE"/>
-                            <constraint firstItem="bVz-wN-s2N" firstAttribute="top" secondItem="oHT-YT-Wby" secondAttribute="bottom" constant="8" symbolic="YES" id="XKM-qg-z86"/>
-                            <constraint firstItem="oHT-YT-Wby" firstAttribute="trailing" secondItem="bVz-wN-s2N" secondAttribute="trailing" id="XcW-lR-Obx"/>
-                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="top" secondItem="2Be-BF-3Lo" secondAttribute="bottom" constant="52" id="YIO-v2-c4A"/>
-                            <constraint firstItem="gKh-i4-FGH" firstAttribute="leading" secondItem="bVz-wN-s2N" secondAttribute="leading" id="dgD-cT-gQK"/>
-                            <constraint firstItem="oHT-YT-Wby" firstAttribute="leading" secondItem="VWI-z3-Uvp" secondAttribute="leading" id="kjD-Sr-JGb"/>
-                            <constraint firstAttribute="bottom" secondItem="dPP-hf-99u" secondAttribute="bottom" constant="20" symbolic="YES" id="lRG-dg-rEf"/>
-                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="trailing" secondItem="swR-V3-Vab" secondAttribute="trailingMargin" id="pIe-Mz-N91"/>
-                            <constraint firstItem="gKh-i4-FGH" firstAttribute="trailing" secondItem="bVz-wN-s2N" secondAttribute="trailing" id="ped-YD-iK1"/>
-                            <constraint firstItem="uWo-r2-Pi8" firstAttribute="baseline" secondItem="dPP-hf-99u" secondAttribute="baseline" id="sCR-yD-OBa"/>
-                            <constraint firstItem="oHT-YT-Wby" firstAttribute="trailing" secondItem="VWI-z3-Uvp" secondAttribute="trailing" id="x7S-Xg-vSk"/>
-                            <constraint firstItem="oHT-YT-Wby" firstAttribute="top" secondItem="VWI-z3-Uvp" secondAttribute="bottom" constant="8" symbolic="YES" id="zNa-f6-bcK"/>
+                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="leading" secondItem="bVz-wN-s2N" secondAttribute="leading" id="C6r-Y1-kcM"/>
+                            <constraint firstItem="wLc-z4-J7s" firstAttribute="top" secondItem="bVz-wN-s2N" secondAttribute="bottom" constant="276" id="CGs-Tc-q8Q"/>
+                            <constraint firstItem="bVz-wN-s2N" firstAttribute="centerX" secondItem="swR-V3-Vab" secondAttribute="centerX" id="Ghx-yp-nOl"/>
+                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="trailing" secondItem="bVz-wN-s2N" secondAttribute="trailing" id="NDC-ZO-x1s"/>
+                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="top" secondItem="2Be-BF-3Lo" secondAttribute="bottom" constant="52" id="QBs-ic-fg2"/>
+                            <constraint firstItem="bVz-wN-s2N" firstAttribute="leading" secondItem="swR-V3-Vab" secondAttribute="leadingMargin" constant="-4" id="dUC-jv-h0A"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="XKM-qg-z86"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Tqg-B5-8dc"/>
-                    <connections>
-                        <outlet property="cancelButton" destination="dPP-hf-99u" id="bdJ-LQ-Wxw"/>
-                        <outlet property="dairyMinhagPicker" destination="gKh-i4-FGH" id="oBc-lM-q85"/>
-                        <outlet property="meatMinhagPicker" destination="oHT-YT-Wby" id="srG-sM-Vvn"/>
-                        <outlet property="saveButton" destination="uWo-r2-Pi8" id="Nvr-ED-hYN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkB-GJ-pK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cyV-Sg-ecZ">
+                    <connections>
+                        <action selector="Tapped:" destination="HaI-If-WcZ" id="BlW-ah-Yrp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="iej-C9-IOh">
+                    <connections>
+                        <action selector="Tapped:" destination="HaI-If-WcZ" id="tqb-If-ZCb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-57" y="-545"/>
         </scene>
@@ -138,7 +85,7 @@
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PZHomeCell" textLabel="8IY-7T-KQi" rowHeight="200" style="IBUITableViewCellStyleDefault" id="Vrd-kk-TuI" customClass="PZHomeTableViewCell" customModule="ParveZman" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="200"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vrd-kk-TuI" id="dr8-aL-TPU">
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="200"/>
@@ -164,10 +111,28 @@
                             <outlet property="delegate" destination="tZ6-WT-tPH" id="2x5-WB-iiN"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="O3O-XC-9SH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANZ-I9-bIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-57" y="214"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tVi-Cv-ySN">
+            <objects>
+                <navigationController id="oF6-Lj-Ld1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W6c-vq-fMn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tZ6-WT-tPH" kind="relationship" relationship="rootViewController" id="QkK-3o-lkj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YhG-eu-LfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-937" y="214"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="Nb1-rc-hUe">

@@ -10,22 +10,15 @@ import Foundation
 import UIKit
 import JTImageButton
 import SCLAlertView
+import CZPicker
 
-class PZSettingsViewController: UIViewController {
+class PZSettingsViewController: UIViewController, CZPickerViewDelegate, CZPickerViewDataSource {
     
     var MeatTimeNames = PZMinhag.GetAllMeatNames();
     var DairyTimeNames = PZMinhag.GetAllDairyNames();
     
-    var tempMeatWaitMinhag = PZSettingsManager.sharedInstance.currentMeatMinhag
-    var tempDairyWaitMinhag = PZSettingsManager.sharedInstance.currentDairyMinhag
     
     var settingsChanged = false
-    
-    @IBOutlet weak var meatMinhagPicker: UIPickerView!
-    @IBOutlet weak var dairyMinhagPicker: UIPickerView!
-    
-    @IBOutlet weak var cancelButton: JTImageButton!
-    @IBOutlet weak var saveButton: JTImageButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,35 +26,76 @@ class PZSettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.title = "Settings";
         
-        loadSettings()
+        //loadSettings()
+    }
+    
+    @IBAction func Tapped(sender: AnyObject) {
+        var title = ""
+        let tag = sender.view!!.tag
         
+        //create colors
+        var headerBackgroundColor: UIColor = UIColor.clearColor()
+        let flatRedColor: UIColor = UIColor.init(hexString: "#F2362C")
+        let flatGreenColor: UIColor = UIColor.init(hexString: "#76EE00")
+        let flatBlueColor: UIColor = UIColor.init(hexString: "#1A7CF9")
+        
+        if tag == 0 {
+            title = "Meat Minhag"
+            headerBackgroundColor = flatRedColor
+        } else if tag == 1 {
+            title = "Dairy Minhag"
+            headerBackgroundColor = flatBlueColor
+        }
+        
+        let picker = CZPickerView(headerTitle: title, cancelButtonTitle: "Cancel", confirmButtonTitle: "Confirm")
+        picker.delegate = self
+        picker.dataSource = self
+        picker.needFooterView = true
+        picker.tag = tag
+        picker.allowMultipleSelection = false
+        picker.headerBackgroundColor = headerBackgroundColor
+        //picker.confirmButtonBackgroundColor = flatGreenColor
+        
+        loadSettings(picker)
+        
+        picker.show()
+    }
+    
+    func numberOfRowsInPickerView(pickerView: CZPickerView!) -> Int {
+        if pickerView.tag == 0 {
+            return self.MeatTimeNames.count
+        } else {
+            return self.DairyTimeNames.count
+        }
+    }
+    
+    func czpickerView(pickerView: CZPickerView!, titleForRow row: Int) -> String! {
+        if pickerView.tag == 0 {
+            return self.MeatTimeNames[row]
+        } else {
+            return self.DairyTimeNames[row]
+        }
+    }
+    
+    func czpickerView(pickerView: CZPickerView!, didConfirmWithItemAtRow row: Int){
+         NSLog("Clicked \(row)")
+        if pickerView.tag == 0 {
+            //meat
+            let value = self.MeatTimeNames[row];
+            PZSettingsManager.sharedInstance.currentMeatMinhag = PZMeatWaitMinhag(rawValue: value)!
+        } else {
+            //dairy
+            let value = self.DairyTimeNames[row];
+            PZSettingsManager.sharedInstance.currentDairyMinhag = PZDairyWaitMinhag(rawValue: value)!
+        }
+        PZSettingsManager.sharedInstance.savePZSettings()
     }
     
     override func viewWillAppear(animated: Bool) {
-        //create colors
-        //red
-        let flatRedColor: UIColor = UIColor.init(hexString: "#F2362C")
-        //green
-        let flatGreenColor: UIColor = UIColor.init(hexString: "#76EE00")
         
-        //setup buttons
-        //cancel
-        self.cancelButton.createTitle("", withIcon: UIImage(named: "Cancel"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
-        self.cancelButton.iconColor = UIColor.whiteColor()
-        self.cancelButton.borderColor = flatRedColor
-        self.cancelButton.bgColor = flatRedColor
-        self.cancelButton.borderWidth = 3.0
-        self.cancelButton.cornerRadius = 37.5
-        self.cancelButton.sizeToFit()
         
-        //save
-        self.saveButton.createTitle("", withIcon: UIImage(named: "Accept"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
-        self.saveButton.iconColor = UIColor.whiteColor()
-        self.saveButton.borderColor = flatGreenColor
-        self.saveButton.bgColor = flatGreenColor
-        self.saveButton.borderWidth = 3.0
-        self.saveButton.cornerRadius = 37.5
-        self.saveButton.sizeToFit()
+        self.navigationController!.navigationBar.backgroundColor = UIColor.init(hexString: "#A9A9A9")
+        self.navigationController!.navigationBar.barTintColor = UIColor.init(hexString: "#A9A9A9")
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -74,80 +108,17 @@ class PZSettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1;
-    }
-    
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if pickerView.tag == 0 {
-            return self.MeatTimeNames.count
-        } else {
-            return self.DairyTimeNames.count
-        }
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-        if pickerView.tag == 0 {
-            return self.MeatTimeNames[row]
-        } else {
-            return self.DairyTimeNames[row]
-        }
-    }
-    
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
-    {
-        if pickerView.tag == 0 {
-            //meat
-            let value = self.MeatTimeNames[row];
-            self.tempMeatWaitMinhag = PZMeatWaitMinhag(rawValue: value)!
-        } else {
-            //dairy
-            let value = self.DairyTimeNames[row];
-            self.tempDairyWaitMinhag = PZDairyWaitMinhag(rawValue: value)!
-        }
-        settingsChanged = true
-    }
-    
-    func loadSettings() {
+    func loadSettings(picker: CZPickerView!) {
         PZSettingsManager.sharedInstance.loadPZSettings()
         let meatIndex: Int = MeatTimeNames.find { $0 == PZSettingsManager.sharedInstance.currentMeatMinhag.rawValue }!
-        meatMinhagPicker.selectRow(meatIndex, inComponent: 0, animated: false)
         
         let dairyIndex: Int = DairyTimeNames.find { $0 == PZSettingsManager.sharedInstance.currentDairyMinhag.rawValue }!
-        dairyMinhagPicker.selectRow(dairyIndex, inComponent: 0, animated: false)
-    }
-    
-    func saveSettings() {
-        PZSettingsManager.sharedInstance.currentMeatMinhag = self.tempMeatWaitMinhag
-        PZSettingsManager.sharedInstance.currentDairyMinhag = self.tempDairyWaitMinhag
-    }
-    
-    @IBAction func acceptClicked(sender: AnyObject) {
-        saveSettings()
         
-        self.dismissViewControllerAnimated(false, completion: nil)
-    }
-    
-    @IBAction func cancelClicked(sender: AnyObject) {
-        //bail out if settings haven't changed
-        if(!settingsChanged) {
-            self.dismissViewControllerAnimated(false, completion: nil)
-            return
+       if picker.tag == 0 {
+            picker.setSelectedRows([meatIndex])
+        } else if picker.tag == 1 {
+            picker.setSelectedRows([dairyIndex])
         }
         
-        let alert = SCLAlertView()
-        alert.showCloseButton = false
-        alert.addButton("Yes"){
-             self.dismissViewControllerAnimated(false, completion: nil)
-             return
-        }
-        alert.addButton("No"){
-            return
-        }
-        
-        alert.showWarning("Discard Changes?", subTitle: "Discard any changes made to minhag settings?")
     }
-    
-    
 }

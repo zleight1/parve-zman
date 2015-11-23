@@ -38,6 +38,24 @@ class PZHomeTableViewController: UITableViewController {
         
         //Load from core data if possible
         PZSettingsManager.sharedInstance.loadPZSettings()
+        
+        self.title = "ParveZman"
+        self.navigationController!.navigationBar.backgroundColor = UIColor.greenColor()
+        self.navigationController!.navigationBar.barTintColor = UIColor.greenColor()
+
+        
+        self.navigationController!.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName : UIColor.whiteColor(),
+            NSFontAttributeName: UIFont.boldSystemFontOfSize(CGFloat(24.0))
+        ]
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.title = "ParveZman"
+        self.navigationController!.navigationBar.backgroundColor = UIColor.greenColor()
+        self.navigationController!.navigationBar.barTintColor = UIColor.greenColor()
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -134,7 +152,7 @@ class PZHomeTableViewController: UITableViewController {
         //pass the view controller all the information it needs here
         pzTimerViewController.endTime = NSDate.timeIntervalSinceReferenceDate() + time
         
-        self.presentViewController(pzTimerViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(pzTimerViewController, animated: true)
         
         return
 
@@ -144,32 +162,32 @@ class PZHomeTableViewController: UITableViewController {
         //get the timer view
         let pzSettingsViewController = storyboard!.instantiateViewControllerWithIdentifier("PZSettingsViewController") as! PZSettingsViewController
         
-        self.presentViewController(pzSettingsViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(pzSettingsViewController, animated: true)
         
         return
     }
     
     func configureTableView() {
-        let headerHeight = CGFloat(60.0)
+       // let headerHeight = CGFloat(60.0)
         
-        let tableHeight = view.frame.height - headerHeight
+        let tableHeight = view.frame.height - self.navigationController!.toolbar.frame.height
         tableView.rowHeight = tableHeight / CGFloat(NavItems.buttons.count)
         tableView.estimatedRowHeight = 160.0
         
-        let tableViewHeader = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: headerHeight))
+       // let tableViewHeader = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: headerHeight))
         
-        let tableViewHeaderText = UILabel(frame: CGRect(x: 0, y: 10, width: view.frame.width, height: headerHeight))
-        tableViewHeaderText.textColor = UIColor.whiteColor()
-        tableViewHeaderText.backgroundColor = UIColor.clearColor()
-        tableViewHeaderText.font = UIFont.boldSystemFontOfSize(CGFloat(24.0))
-        tableViewHeaderText.text = "ParveZman"
-        tableViewHeaderText.textAlignment = .Center
+      //  let tableViewHeaderText = UILabel(frame: CGRect(x: 0, y: 10, width: view.frame.width, height: headerHeight))
+      //  tableViewHeaderText.textColor = UIColor.whiteColor()
+      //  tableViewHeaderText.backgroundColor = UIColor.clearColor()
+      //  tableViewHeaderText.font = UIFont.boldSystemFontOfSize(CGFloat(24.0))
+      //  tableViewHeaderText.text = "ParveZman"
+      //  tableViewHeaderText.textAlignment = .Center
         
-        tableViewHeader.addSubview(tableViewHeaderText)
+      //  tableViewHeader.addSubview(tableViewHeaderText)
         
         
-        tableViewHeader.backgroundColor = UIColor.greenColor()
-        tableView.tableHeaderView  = tableViewHeader
+      //  tableViewHeader.backgroundColor = UIColor.greenColor()
+       // tableView.tableHeaderView  = tableViewHeader
         
     }
     

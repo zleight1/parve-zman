@@ -19,14 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)) // types are UIUserNotificationType members
-        
-        
-        //Fix page indicator
-        let pageControl = UIPageControl.appearance()
-        pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
-        pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
-        pageControl.backgroundColor = UIColor.whiteColor()
-    
+
         return true
     }
 

@@ -1,12 +1,15 @@
 PODS:
+  - CZPicker (0.3.6)
   - JTImageButton (1.0.2)
   - SCLAlertView (0.4.3)
 
 DEPENDENCIES:
+  - CZPicker
   - JTImageButton
   - SCLAlertView
 
 SPEC CHECKSUMS:
+  CZPicker: bf966778ebd3af6c291b4a4190d08a0e2c5c6974
   JTImageButton: d214ff9ee6e01865368a9f749c5a16e6abbf6409
   SCLAlertView: a5c726a80a938fd3127edd7dbc19da33fb936ca3
 
