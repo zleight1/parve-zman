@@ -45,6 +45,7 @@ class PZTimerViewController: UIViewController {
         //schedule it
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
         
+        self.title = "Timer"
     }
 
     override func viewWillAppear(animated: Bool) {

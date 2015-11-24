@@ -5,74 +5,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Settings View Controller-->
-        <scene sceneID="pkU-Dj-JzM">
-            <objects>
-                <viewController storyboardIdentifier="PZSettingsViewController" id="HaI-If-WcZ" customClass="PZSettingsViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2Be-BF-3Lo"/>
-                        <viewControllerLayoutGuide type="bottom" id="wLc-z4-J7s"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="swR-V3-Vab">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meat Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWI-z3-Uvp">
-                                <rect key="frame" x="16" y="72" width="568" height="37"/>
-                                <animations/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="HMm-xy-zDr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.03014565537" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="iej-C9-IOh" appends="YES" id="jVi-O6-2jD"/>
-                                </connections>
-                            </label>
-                            <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dairy Minhag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-wN-s2N">
-                                <rect key="frame" x="16" y="287" width="568" height="37"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="661-fL-Vpc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="cyV-Sg-ecZ" appends="YES" id="zLa-n9-WCB"/>
-                                </connections>
-                            </label>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="leading" secondItem="bVz-wN-s2N" secondAttribute="leading" id="C6r-Y1-kcM"/>
-                            <constraint firstItem="wLc-z4-J7s" firstAttribute="top" secondItem="bVz-wN-s2N" secondAttribute="bottom" constant="276" id="CGs-Tc-q8Q"/>
-                            <constraint firstItem="bVz-wN-s2N" firstAttribute="centerX" secondItem="swR-V3-Vab" secondAttribute="centerX" id="Ghx-yp-nOl"/>
-                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="trailing" secondItem="bVz-wN-s2N" secondAttribute="trailing" id="NDC-ZO-x1s"/>
-                            <constraint firstItem="VWI-z3-Uvp" firstAttribute="top" secondItem="2Be-BF-3Lo" secondAttribute="bottom" constant="52" id="QBs-ic-fg2"/>
-                            <constraint firstItem="bVz-wN-s2N" firstAttribute="leading" secondItem="swR-V3-Vab" secondAttribute="leadingMargin" constant="-4" id="dUC-jv-h0A"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Tqg-B5-8dc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qkB-GJ-pK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="cyV-Sg-ecZ">
-                    <connections>
-                        <action selector="Tapped:" destination="HaI-If-WcZ" id="BlW-ah-Yrp"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="iej-C9-IOh">
-                    <connections>
-                        <action selector="Tapped:" destination="HaI-If-WcZ" id="tqb-If-ZCb"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="-57" y="-545"/>
-        </scene>
         <!--Home Table View Controller-->
         <scene sceneID="te9-oh-Ipe">
             <objects>
@@ -237,6 +169,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Slu-vm-bQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-57" y="987"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="XhW-1I-ctm">
+            <objects>
+                <tableViewController storyboardIdentifier="PZSettingsViewController" id="Nzc-nu-SMD" customClass="PZSettingsViewController" customModule="ParveZman" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="IEC-gt-zKp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PZSettingsCell" textLabel="M5K-B6-Nl3" rowHeight="200" style="IBUITableViewCellStyleDefault" id="chz-80-mRV" customClass="PZHomeTableViewCell" customModule="ParveZman" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="chz-80-mRV" id="8HQ-I1-EMc">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M5K-B6-Nl3">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Nzc-nu-SMD" id="zOf-gP-RC2"/>
+                            <outlet property="delegate" destination="Nzc-nu-SMD" id="sTt-U0-weh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="7RL-r6-VNA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9G-Ec-teG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="-519"/>
         </scene>
     </scenes>
 </document>

@@ -42,12 +42,19 @@ class PZHomeTableViewController: UITableViewController {
         self.title = "ParveZman"
         self.navigationController!.navigationBar.backgroundColor = UIColor.greenColor()
         self.navigationController!.navigationBar.barTintColor = UIColor.greenColor()
-
+        
         
         self.navigationController!.navigationBar.titleTextAttributes = [
             NSForegroundColorAttributeName : UIColor.whiteColor(),
             NSFontAttributeName: UIFont.boldSystemFontOfSize(CGFloat(24.0))
         ]
+        
+        //Set this back button
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        backButton.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.whiteColor(),
+            NSFontAttributeName: UIFont.boldSystemFontOfSize(CGFloat(24.0))], forState: UIControlState.Normal)
+        navigationItem.backBarButtonItem = backButton
+        
         
     }
     
@@ -168,27 +175,9 @@ class PZHomeTableViewController: UITableViewController {
     }
     
     func configureTableView() {
-       // let headerHeight = CGFloat(60.0)
-        
-        let tableHeight = view.frame.height - self.navigationController!.toolbar.frame.height
+        let tableHeight = view.frame.height - self.navigationController!.navigationBar.frame.height
         tableView.rowHeight = tableHeight / CGFloat(NavItems.buttons.count)
         tableView.estimatedRowHeight = 160.0
-        
-       // let tableViewHeader = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: headerHeight))
-        
-      //  let tableViewHeaderText = UILabel(frame: CGRect(x: 0, y: 10, width: view.frame.width, height: headerHeight))
-      //  tableViewHeaderText.textColor = UIColor.whiteColor()
-      //  tableViewHeaderText.backgroundColor = UIColor.clearColor()
-      //  tableViewHeaderText.font = UIFont.boldSystemFontOfSize(CGFloat(24.0))
-      //  tableViewHeaderText.text = "ParveZman"
-      //  tableViewHeaderText.textAlignment = .Center
-        
-      //  tableViewHeader.addSubview(tableViewHeaderText)
-        
-        
-      //  tableViewHeader.backgroundColor = UIColor.greenColor()
-       // tableView.tableHeaderView  = tableViewHeader
-        
     }
     
 }

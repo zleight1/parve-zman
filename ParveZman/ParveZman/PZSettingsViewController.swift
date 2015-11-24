@@ -12,26 +12,92 @@ import JTImageButton
 import SCLAlertView
 import CZPicker
 
-class PZSettingsViewController: UIViewController, CZPickerViewDelegate, CZPickerViewDataSource {
+class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZPickerViewDataSource {
     
     var MeatTimeNames = PZMinhag.GetAllMeatNames();
     var DairyTimeNames = PZMinhag.GetAllDairyNames();
     
+    private struct NavItems {
+        static let RowsCount = 2
+        static let buttons: [(String, UIColor, Int)] = [
+            (   title:"Meat Minhag",
+                color:UIColor.init(hexString: "#F2362C"),
+                tag: 0
+            ),
+            (   title:"Dairy Minhag",
+                color:UIColor.init(hexString: "#1A7CF9"),
+                tag: 1
+            )
+        ]
+    }
+    
+    let pzCellIdentifier: String = "PZSettingsCell"
     
     var settingsChanged = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.configureTableView()
         // Do any additional setup after loading the view.
         self.title = "Settings";
         
-        //loadSettings()
     }
     
-    @IBAction func Tapped(sender: AnyObject) {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return NavItems.RowsCount
+    }
+    
+    func getButtonItemAtIndex(index: Int) -> (title:String, color:UIColor, tag:Int) {
+        return NavItems.buttons[index]
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(pzCellIdentifier, forIndexPath: indexPath)
+        
+        let colorIndex = indexPath.row % NavItems.buttons.count
+        
+        let item = self.getButtonItemAtIndex(colorIndex)
+        cell.backgroundColor = item.color
+        cell.textLabel?.text = item.title
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.font = UIFont.systemFontOfSize(CGFloat(36.0))
+        cell.tag = item.tag
+        return cell
+    }
+    
+    
+    func navCellAtIndexPath(indexPath:NSIndexPath) -> PZHomeTableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(pzCellIdentifier) as! PZHomeTableViewCell
+        setTitleForCell(cell, indexPath: indexPath)
+        setColorForCell(cell, indexPath: indexPath)
+        return cell
+    }
+    
+    func setTitleForCell(cell:PZHomeTableViewCell, indexPath:NSIndexPath) {
+        let item = self.getButtonItemAtIndex(indexPath.row)
+        cell.titleLabel.text = item.title
+    }
+    
+    func setColorForCell(cell:PZHomeTableViewCell, indexPath:NSIndexPath) {
+        let item = self.getButtonItemAtIndex(indexPath.row)
+        cell.backgroundColor = item.color
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath)
+        
+        showSettings(cell.tag)
+        
+        return
+    }
+
+    
+    func showSettings(tag: Int) {
         var title = ""
-        let tag = sender.view!!.tag
         
         //create colors
         var headerBackgroundColor: UIColor = UIColor.clearColor()
@@ -92,8 +158,6 @@ class PZSettingsViewController: UIViewController, CZPickerViewDelegate, CZPicker
     }
     
     override func viewWillAppear(animated: Bool) {
-        
-        
         self.navigationController!.navigationBar.backgroundColor = UIColor.init(hexString: "#A9A9A9")
         self.navigationController!.navigationBar.barTintColor = UIColor.init(hexString: "#A9A9A9")
     }
@@ -121,4 +185,11 @@ class PZSettingsViewController: UIViewController, CZPickerViewDelegate, CZPicker
         }
         
     }
+    
+    func configureTableView() {
+        let tableHeight = view.frame.height - self.navigationController!.navigationBar.frame.height
+        tableView.rowHeight = tableHeight / CGFloat(NavItems.buttons.count)
+        tableView.estimatedRowHeight = 160.0
+    }
+    
 }
