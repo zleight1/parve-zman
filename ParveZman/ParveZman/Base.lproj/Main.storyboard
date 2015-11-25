@@ -78,22 +78,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0c-qp-AfX" customClass="JTImageButton">
-                                <rect key="frame" x="16" y="505" width="75" height="75"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="1eh-Be-T8V"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="2nt-5s-5RK"/>
-                                    <constraint firstAttribute="width" constant="75" id="30e-EM-lGD"/>
-                                    <constraint firstAttribute="height" constant="75" id="qbt-yF-QUB"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="stop:" destination="wkB-gB-Lj4" eventType="touchUpInside" id="tqz-X5-Me1"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yr-qF-xOb">
                                 <rect key="frame" x="334" y="213" width="250" height="90"/>
                                 <animations/>
@@ -151,17 +135,14 @@
                             <constraint firstItem="8yr-qF-xOb" firstAttribute="top" secondItem="jXN-xW-qMf" secondAttribute="top" id="PBl-8q-0xQ"/>
                             <constraint firstItem="8yr-qF-xOb" firstAttribute="leading" secondItem="HBS-u6-l8i" secondAttribute="leading" id="PYV-cW-Vdv"/>
                             <constraint firstItem="Rif-ha-YNp" firstAttribute="trailing" secondItem="u0A-QR-u1B" secondAttribute="trailingMargin" id="QAw-Xe-xUN"/>
-                            <constraint firstAttribute="bottom" secondItem="w0c-qp-AfX" secondAttribute="bottom" constant="20" symbolic="YES" id="Rlc-K3-Kbj"/>
                             <constraint firstItem="Rif-ha-YNp" firstAttribute="leading" secondItem="jXN-xW-qMf" secondAttribute="leading" id="azM-e9-Wcm"/>
                             <constraint firstItem="Fy5-Kn-ea3" firstAttribute="top" secondItem="HBS-u6-l8i" secondAttribute="bottom" constant="199" id="e1e-e7-veG"/>
-                            <constraint firstItem="w0c-qp-AfX" firstAttribute="leading" secondItem="u0A-QR-u1B" secondAttribute="leadingMargin" constant="-4" id="gT2-xt-KDe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8yr-qF-xOb" secondAttribute="trailing" constant="-4" id="szN-jx-XBs"/>
                             <constraint firstItem="QJN-Fd-67y" firstAttribute="bottom" secondItem="HBS-u6-l8i" secondAttribute="bottom" id="xkg-jq-qLx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="parveLabel" destination="Rif-ha-YNp" id="dLd-it-yBX"/>
-                        <outlet property="stopTimerButton" destination="w0c-qp-AfX" id="hje-mk-LnV"/>
                         <outlet property="timerAtLabel" destination="HBS-u6-l8i" id="wAp-4n-cxK"/>
                         <outlet property="timerLabel" destination="8yr-qF-xOb" id="nfA-Zt-Vx5"/>
                     </connections>

@@ -16,12 +16,13 @@ class PZTimerViewController: UIViewController {
     @IBOutlet weak var parveLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var timerAtLabel: UILabel!
-    @IBOutlet weak var stopTimerButton: JTImageButton!
     
     //variables
     var endTime = NSTimeInterval()
     var timer = NSTimer()
     var timerUUID: String = ""
+    
+    var type = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,17 +52,25 @@ class PZTimerViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         //create colors
         let flatRedColor: UIColor = UIColor.init(hexString: "#F2362C")
+        let flatBlueColor: UIColor = UIColor.init(hexString: "#1A7CF9")
         
-        //setup buttons
-        //stop timer
-        self.stopTimerButton.createTitle("", withIcon: UIImage(named: "Cancel"), font: nil, iconHeight: CGFloat(0.0), iconOffsetY: CGFloat(0.0))
-        self.stopTimerButton.iconColor = UIColor.whiteColor()
-        self.stopTimerButton.borderColor = flatRedColor
-        self.stopTimerButton.bgColor = flatRedColor
-        self.stopTimerButton.borderWidth = 3.0
-        self.stopTimerButton.cornerRadius = 37.5
-        self.stopTimerButton.sizeToFit()
-
+        var navBarColor: UIColor
+        
+        if type == "meat" {
+            navBarColor = flatRedColor
+            self.title = "Meat Timer"
+        } else {
+            navBarColor = flatBlueColor
+            self.title = "Dairy Timer"
+        }
+        
+        self.navigationController!.navigationBar.backgroundColor = navBarColor
+        self.navigationController!.navigationBar.barTintColor = navBarColor
+        
+        self.navigationController!.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName : UIColor.whiteColor(),
+            NSFontAttributeName: UIFont.boldSystemFontOfSize(CGFloat(24.0))
+        ]
     }
     
     func setParveEndTime(endTimeInterval: NSTimeInterval){
@@ -117,7 +126,7 @@ class PZTimerViewController: UIViewController {
         self.timerLabel.text = "Parve Zman!"
     }
     
-    @IBAction func stop(sender: AnyObject) {
+    func stop(sender: AnyObject) {
         //Confirm
         let alert = SCLAlertView()
         alert.showCloseButton = false

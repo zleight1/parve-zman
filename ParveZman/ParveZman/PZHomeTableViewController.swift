@@ -158,6 +158,7 @@ class PZHomeTableViewController: UITableViewController {
         
         //pass the view controller all the information it needs here
         pzTimerViewController.endTime = NSDate.timeIntervalSinceReferenceDate() + time
+        pzTimerViewController.type = type
         
         self.navigationController?.pushViewController(pzTimerViewController, animated: true)
         
