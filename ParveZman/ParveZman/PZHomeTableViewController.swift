@@ -41,7 +41,7 @@ class PZHomeTableViewController: UITableViewController {
         
         self.title = "ParveZman"
         self.navigationController!.navigationBar.backgroundColor = UIColor.greenColor()
-        self.navigationController!.navigationBar.barTintColor = UIColor.greenColor()
+        self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         
         
         self.navigationController!.navigationBar.titleTextAttributes = [
