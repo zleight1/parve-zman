@@ -52,17 +52,13 @@ class PZTimerViewController: UIViewController   {
     }
 
     override func viewWillAppear(animated: Bool) {
-        //create colors
-        let flatRedColor: UIColor = PZUtils.sharedInstance.flatRedColor
-        let flatBlueColor: UIColor = PZUtils.sharedInstance.flatBlueColor
-        
         var color: UIColor
         
-        if type == "meat" {
-            color = flatRedColor
+        if self.type == "meat" {
+            color = PZUtils.sharedInstance.flatRedColor
             self.title = "Meat Timer"
         } else {
-            color = flatBlueColor
+            color = PZUtils.sharedInstance.flatBlueColor
             self.title = "Dairy Timer"
         }
         self.setupNavigationBar(color)
@@ -82,7 +78,15 @@ class PZTimerViewController: UIViewController   {
     
     func setupGauge(color: UIColor){
         self.timerGauge.startColor = color
-        self.timerGauge.endColor = color
+        self.timerGauge.endColor = PZUtils.sharedInstance.flatGreenColor
+        
+        //set the max value as the minutes of the minhag
+        let currentTime = NSDate.timeIntervalSinceReferenceDate()
+        let maxTime: NSTimeInterval = self.endTime - currentTime
+        
+        self.timerGauge.maxValue = CGFloat(maxTime / 60.0)
+        self.timerGauge.rate = CGFloat(maxTime / 60.0)
+        self.timerGauge.reverse = true
     }
     
     func updateTime() {
@@ -99,6 +103,8 @@ class PZTimerViewController: UIViewController   {
         if elapsedTime <= 0 {
             return timerDidEnd(self.timer)
         }
+        
+        self.timerGauge.rate = CGFloat(elapsedTime / 60.0)
         
         //calculate the hours in elapsed time.
         
