@@ -10,12 +10,14 @@ import UIKit
 import JTImageButton
 import AudioToolbox
 import SCLAlertView
+import GaugeKit
 
 class PZTimerViewController: UIViewController   {
     
     @IBOutlet weak var parveLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var timerAtLabel: UILabel!
+    @IBOutlet weak var timerGauge: Gauge!
     
     //variables
     var endTime = NSTimeInterval()
@@ -51,21 +53,26 @@ class PZTimerViewController: UIViewController   {
 
     override func viewWillAppear(animated: Bool) {
         //create colors
-        let flatRedColor: UIColor = UIColor.init(hexString: "#F2362C")
-        let flatBlueColor: UIColor = UIColor.init(hexString: "#1A7CF9")
+        let flatRedColor: UIColor = PZUtils.sharedInstance.flatRedColor
+        let flatBlueColor: UIColor = PZUtils.sharedInstance.flatBlueColor
         
-        var navBarColor: UIColor
+        var color: UIColor
         
         if type == "meat" {
-            navBarColor = flatRedColor
+            color = flatRedColor
             self.title = "Meat Timer"
         } else {
-            navBarColor = flatBlueColor
+            color = flatBlueColor
             self.title = "Dairy Timer"
         }
+        self.setupNavigationBar(color)
+        self.setupGauge(color)
         
-        self.navigationController!.navigationBar.backgroundColor = navBarColor
-        self.navigationController!.navigationBar.barTintColor = navBarColor
+    }
+    
+    func setupNavigationBar(color: UIColor) {
+        self.navigationController!.navigationBar.backgroundColor = color
+        self.navigationController!.navigationBar.barTintColor = color
         
         self.navigationController!.navigationBar.titleTextAttributes = [
             NSForegroundColorAttributeName : UIColor.whiteColor(),
@@ -73,8 +80,9 @@ class PZTimerViewController: UIViewController   {
         ]
     }
     
-    func setParveEndTime(endTimeInterval: NSTimeInterval){
-        
+    func setupGauge(color: UIColor){
+        self.timerGauge.startColor = color
+        self.timerGauge.endColor = color
     }
     
     func updateTime() {
@@ -142,7 +150,7 @@ class PZTimerViewController: UIViewController   {
             return
         }
         
-        alert.showWarning("Cancel Timer?", subTitle: "Cancel current timer and any scheduled alerts?")
+        alert.showWarning("Cancel Timer?", subTitle: "Cancel current timer and all notifications?")
         
         return false
     }

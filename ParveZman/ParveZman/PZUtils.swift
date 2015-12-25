@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension Array {
     func find(includedElement: Element -> Bool) -> Int? {
@@ -17,4 +18,24 @@ extension Array {
         }
         return nil
     }
+}
+
+class PZUtils {
+    static let sharedInstance = PZUtils();
+    
+    init() {
+        flatRedColor = UIColor.init(hexString: "#F2362C")
+        flatBlueColor = UIColor.init(hexString: "#1A7CF9")
+        flatGrayColor = UIColor.init(hexString: "#A9A9A9")
+        flatGreenColor = UIColor.init(hexString: "#76EE00")
+        meatTitle = "Meat Minhag"
+        dairyTitle = "Dairy Minhag"
+    }
+
+    var flatRedColor: UIColor
+    var flatBlueColor: UIColor
+    var flatGrayColor: UIColor
+    var flatGreenColor: UIColor
+    var meatTitle: String
+    var dairyTitle: String
 }

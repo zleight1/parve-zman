@@ -21,11 +21,11 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         static let RowsCount = 2
         static let buttons: [(String, UIColor, Int)] = [
             (   title:"Meat Minhag",
-                color:UIColor.init(hexString: "#F2362C"),
+                color:PZUtils.sharedInstance.flatRedColor,
                 tag: 0
             ),
             (   title:"Dairy Minhag",
-                color:UIColor.init(hexString: "#1A7CF9"),
+                color:PZUtils.sharedInstance.flatBlueColor,
                 tag: 1
             )
         ]
@@ -101,16 +101,13 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         
         //create colors
         var headerBackgroundColor: UIColor = UIColor.clearColor()
-        let flatRedColor: UIColor = UIColor.init(hexString: "#F2362C")
-        let flatGreenColor: UIColor = UIColor.init(hexString: "#76EE00")
-        let flatBlueColor: UIColor = UIColor.init(hexString: "#1A7CF9")
         
         if tag == 0 {
             title = "Meat Minhag"
-            headerBackgroundColor = flatRedColor
+            headerBackgroundColor = PZUtils.sharedInstance.flatRedColor
         } else if tag == 1 {
             title = "Dairy Minhag"
-            headerBackgroundColor = flatBlueColor
+            headerBackgroundColor = PZUtils.sharedInstance.flatBlueColor
         }
         
         let picker = CZPickerView(headerTitle: title, cancelButtonTitle: "Cancel", confirmButtonTitle: "Confirm")
@@ -120,7 +117,6 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         picker.tag = tag
         picker.allowMultipleSelection = false
         picker.headerBackgroundColor = headerBackgroundColor
-        //picker.confirmButtonBackgroundColor = flatGreenColor
         
         loadSettings(picker)
         
@@ -158,8 +154,8 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.navigationController!.navigationBar.backgroundColor = UIColor.init(hexString: "#A9A9A9")
-        self.navigationController!.navigationBar.barTintColor = UIColor.init(hexString: "#A9A9A9")
+        self.navigationController!.navigationBar.backgroundColor = PZUtils.sharedInstance.flatGrayColor
+        self.navigationController!.navigationBar.barTintColor = PZUtils.sharedInstance.flatGrayColor
     }
     
     override func viewDidDisappear(animated: Bool) {
