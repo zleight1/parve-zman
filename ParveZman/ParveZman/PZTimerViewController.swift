@@ -137,11 +137,13 @@ class PZTimerViewController: UIViewController   {
     func timerDidEnd(timer: NSTimer) {
         timer.invalidate()
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        
         self.timerLabel.text = "Parve Zman!"
-    }
-    
-    func confirmStopTimer() {
-       
+        
+        //Set the gauge to red
+        self.timerGauge.startColor = PZUtils.sharedInstance.flatGreenColor
+        self.timerGauge.maxValue = 1
+        self.timerGauge.rate = 1
     }
     
     override func navigationShouldPopOnBackButton() -> Bool {
