@@ -2,6 +2,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'ParveZman' do
+  pod 'GaugeKit'
   pod 'CZPicker'
   pod 'SCLAlertView'
   pod 'JTImageButton'

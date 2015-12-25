@@ -28,7 +28,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -78,72 +78,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yr-qF-xOb">
-                                <rect key="frame" x="334" y="213" width="250" height="90"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="0cu-5u-xBN"/>
-                                    <constraint firstAttribute="height" constant="90" id="FbM-G0-uwz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXN-xW-qMf">
-                                <rect key="frame" x="20" y="213" width="250" height="90"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBS-u6-l8i">
-                                <rect key="frame" x="334" y="311" width="250" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yr-qF-xOb">
+                                <rect key="frame" x="20" y="255" width="560" height="90"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="At:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJN-Fd-67y">
-                                <rect key="frame" x="20" y="311" width="250" height="90"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ul-qK-4OE" customClass="Gauge" customModule="GaugeKit">
+                                <rect key="frame" x="20" y="28" width="560" height="552"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ParveZman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rif-ha-YNp">
-                                <rect key="frame" x="20" y="125" width="560" height="84"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gaugeTypeInt">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="jXN-xW-qMf" firstAttribute="top" secondItem="Rif-ha-YNp" secondAttribute="bottom" constant="4" id="55J-44-76y"/>
-                            <constraint firstItem="HBS-u6-l8i" firstAttribute="leading" secondItem="QJN-Fd-67y" secondAttribute="trailing" constant="64" id="8a3-rF-8wp"/>
-                            <constraint firstItem="QJN-Fd-67y" firstAttribute="top" secondItem="jXN-xW-qMf" secondAttribute="bottom" constant="8" symbolic="YES" id="BaJ-wS-ZM8"/>
-                            <constraint firstItem="jXN-xW-qMf" firstAttribute="leading" secondItem="u0A-QR-u1B" secondAttribute="leadingMargin" id="C88-7v-nBJ"/>
-                            <constraint firstItem="8yr-qF-xOb" firstAttribute="top" secondItem="Bnh-R5-gK0" secondAttribute="bottom" constant="193" id="F70-gW-h65"/>
-                            <constraint firstItem="QJN-Fd-67y" firstAttribute="leading" secondItem="jXN-xW-qMf" secondAttribute="leading" id="FSK-v9-qva"/>
-                            <constraint firstItem="Rif-ha-YNp" firstAttribute="top" secondItem="Bnh-R5-gK0" secondAttribute="bottom" constant="105" id="IJZ-ck-8da"/>
-                            <constraint firstItem="8yr-qF-xOb" firstAttribute="trailing" secondItem="HBS-u6-l8i" secondAttribute="trailing" id="ILH-bP-vrM"/>
-                            <constraint firstItem="HBS-u6-l8i" firstAttribute="top" secondItem="8yr-qF-xOb" secondAttribute="bottom" constant="8" symbolic="YES" id="Ipw-Hd-1Tl"/>
-                            <constraint firstItem="QJN-Fd-67y" firstAttribute="top" secondItem="HBS-u6-l8i" secondAttribute="top" id="LSa-XY-heD"/>
-                            <constraint firstItem="QJN-Fd-67y" firstAttribute="trailing" secondItem="jXN-xW-qMf" secondAttribute="trailing" id="Lc1-DX-hUO"/>
-                            <constraint firstItem="8yr-qF-xOb" firstAttribute="top" secondItem="jXN-xW-qMf" secondAttribute="top" id="PBl-8q-0xQ"/>
-                            <constraint firstItem="8yr-qF-xOb" firstAttribute="leading" secondItem="HBS-u6-l8i" secondAttribute="leading" id="PYV-cW-Vdv"/>
-                            <constraint firstItem="Rif-ha-YNp" firstAttribute="trailing" secondItem="u0A-QR-u1B" secondAttribute="trailingMargin" id="QAw-Xe-xUN"/>
-                            <constraint firstItem="Rif-ha-YNp" firstAttribute="leading" secondItem="jXN-xW-qMf" secondAttribute="leading" id="azM-e9-Wcm"/>
-                            <constraint firstItem="Fy5-Kn-ea3" firstAttribute="top" secondItem="HBS-u6-l8i" secondAttribute="bottom" constant="199" id="e1e-e7-veG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8yr-qF-xOb" secondAttribute="trailing" constant="-4" id="szN-jx-XBs"/>
-                            <constraint firstItem="QJN-Fd-67y" firstAttribute="bottom" secondItem="HBS-u6-l8i" secondAttribute="bottom" id="xkg-jq-qLx"/>
+                            <constraint firstItem="7Ul-qK-4OE" firstAttribute="trailing" secondItem="u0A-QR-u1B" secondAttribute="trailingMargin" id="AdZ-Vz-ejg"/>
+                            <constraint firstItem="7Ul-qK-4OE" firstAttribute="trailing" secondItem="8yr-qF-xOb" secondAttribute="trailing" id="Paz-Gw-B9m"/>
+                            <constraint firstItem="7Ul-qK-4OE" firstAttribute="top" secondItem="Bnh-R5-gK0" secondAttribute="bottom" constant="8" symbolic="YES" id="bxd-7d-UM3"/>
+                            <constraint firstItem="7Ul-qK-4OE" firstAttribute="leading" secondItem="8yr-qF-xOb" secondAttribute="leading" id="cBr-Vc-9Xw"/>
+                            <constraint firstItem="8yr-qF-xOb" firstAttribute="centerY" secondItem="u0A-QR-u1B" secondAttribute="centerY" id="m39-hy-blE"/>
+                            <constraint firstAttribute="bottom" secondItem="7Ul-qK-4OE" secondAttribute="bottom" constant="20" symbolic="YES" id="ooV-b8-K9V"/>
+                            <constraint firstItem="7Ul-qK-4OE" firstAttribute="leading" secondItem="u0A-QR-u1B" secondAttribute="leadingMargin" id="raK-sg-xk9"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="parveLabel" destination="Rif-ha-YNp" id="dLd-it-yBX"/>
-                        <outlet property="timerAtLabel" destination="HBS-u6-l8i" id="wAp-4n-cxK"/>
                         <outlet property="timerLabel" destination="8yr-qF-xOb" id="nfA-Zt-Vx5"/>
                     </connections>
                 </viewController>
@@ -174,7 +139,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>

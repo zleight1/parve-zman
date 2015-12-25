@@ -11,7 +11,7 @@ import JTImageButton
 import AudioToolbox
 import SCLAlertView
 
-class PZTimerViewController: UIViewController {
+class PZTimerViewController: UIViewController   {
     
     @IBOutlet weak var parveLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
@@ -126,33 +126,40 @@ class PZTimerViewController: UIViewController {
         self.timerLabel.text = "Parve Zman!"
     }
     
-    func stop(sender: AnyObject) {
+    func confirmStopTimer() {
+       
+    }
+    
+    override func navigationShouldPopOnBackButton() -> Bool {
         //Confirm
         let alert = SCLAlertView()
         alert.showCloseButton = false
         alert.addButton("Yes"){
-            self.timer.invalidate()
-            
-            //cancel the notification
-            for notification in (UIApplication.sharedApplication().scheduledLocalNotifications as [UILocalNotification]?)! { // loop through notifications...
-                if (notification.userInfo!["UUID"] as! String == self.timerUUID) { // ...and cancel the notification when you find it...
-                    UIApplication.sharedApplication().cancelLocalNotification(notification)
-                    break
-                }
-            }
-            
-            //quit the view
-            self.dismissViewControllerAnimated(true, completion: nil)
+            self.navigationController!.popViewControllerAnimated(true)
+            return
         }
         alert.addButton("No"){
             return
         }
         
         alert.showWarning("Cancel Timer?", subTitle: "Cancel current timer and any scheduled alerts?")
+        
+        return false
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillDisappear(animated: Bool) {
+        self.timer.invalidate()
+        
+        //cancel the notification
+        for notification in (UIApplication.sharedApplication().scheduledLocalNotifications as [UILocalNotification]?)! { // loop through notifications...
+            if (notification.userInfo!["UUID"] as! String == self.timerUUID) { // ...and cancel the notification when you find it...
+                UIApplication.sharedApplication().cancelLocalNotification(notification)
+                break
+            }
+        }
+        
+        //quit the view
+        super.viewWillDisappear(animated)
     }
+    
 }

@@ -85,11 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-ParveZman/CZPicker.framework"
+  install_framework "Pods-ParveZman/GaugeKit.framework"
   install_framework "Pods-ParveZman/JTImageButton.framework"
   install_framework "Pods-ParveZman/SCLAlertView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ParveZman/CZPicker.framework"
+  install_framework "Pods-ParveZman/GaugeKit.framework"
   install_framework "Pods-ParveZman/JTImageButton.framework"
   install_framework "Pods-ParveZman/SCLAlertView.framework"
 fi
