@@ -16,15 +16,15 @@ class PZHomeTableViewController: UITableViewController {
         static let DemoAnimationDuration = 1.0
         static let buttons: [(String, UIColor, Int)] = [
             (   title:"Meat",
-                color:UIColor.init(hexString: "#F2362C"),
+                color:PZUtils.sharedInstance.flatRedColor,
                 tag: 0
             ),
             (   title:"Dairy",
-                color:UIColor.init(hexString: "#1A7CF9"),
+                color:PZUtils.sharedInstance.flatBlueColor,
                 tag: 1
             ),
             (   title:"Settings",
-                color:UIColor.init(hexString: "#A9A9A9"),
+                color:PZUtils.sharedInstance.flatGrayColor,
                 tag:2
             )
         ]
@@ -60,8 +60,8 @@ class PZHomeTableViewController: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         self.title = "ParveZman"
-        self.navigationController!.navigationBar.backgroundColor = UIColor.greenColor()
-        self.navigationController!.navigationBar.barTintColor = UIColor.greenColor()
+        self.navigationController!.navigationBar.backgroundColor = PZUtils.sharedInstance.flatGreenColor
+        self.navigationController!.navigationBar.barTintColor = PZUtils.sharedInstance.flatGreenColor
 
     }
     
