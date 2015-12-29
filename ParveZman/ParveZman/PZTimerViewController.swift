@@ -147,6 +147,11 @@ class PZTimerViewController: UIViewController   {
     }
     
     override func navigationShouldPopOnBackButton() -> Bool {
+        //Check if the timer is finished
+        if !self.timer.valid {
+            return true
+        }
+        
         //Confirm
         let alert = SCLAlertView()
         alert.showCloseButton = false

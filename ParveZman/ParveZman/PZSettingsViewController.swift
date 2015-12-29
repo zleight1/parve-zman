@@ -39,8 +39,7 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         super.viewDidLoad()
         self.configureTableView()
         // Do any additional setup after loading the view.
-        self.title = "Settings";
-        
+        self.title = "Settings"
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -68,8 +67,7 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         cell.tag = item.tag
         return cell
     }
-    
-    
+
     func navCellAtIndexPath(indexPath:NSIndexPath) -> PZHomeTableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(pzCellIdentifier) as! PZHomeTableViewCell
         setTitleForCell(cell, indexPath: indexPath)
@@ -95,7 +93,6 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         return
     }
 
-    
     func showSettings(tag: Int) {
         var title = ""
         

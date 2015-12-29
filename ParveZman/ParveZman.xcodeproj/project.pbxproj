@@ -36,6 +36,7 @@
 		BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9915901B1D15D000501DD2 /* Images.xcassets */; };
 		BB9915941B1D15D000501DD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9915921B1D15D000501DD2 /* LaunchScreen.xib */; };
 		BB9915A01B1D15D000501DD2 /* ParveZmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99159F1B1D15D000501DD2 /* ParveZmanTests.swift */; };
+		BBDB846E1C307F270020709A /* PZTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDB846D1C307F270020709A /* PZTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		BB99159E1B1D15D000501DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB99159F1B1D15D000501DD2 /* ParveZmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParveZmanTests.swift; sourceTree = "<group>"; };
 		BBC043C51B55DF9500CD5474 /* PZSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettings.swift; sourceTree = "<group>"; };
+		BBDB846D1C307F270020709A /* PZTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZTimer.swift; sourceTree = "<group>"; };
 		BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsManager.swift; sourceTree = "<group>"; };
 		BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsViewController.swift; sourceTree = "<group>"; };
 		BBE611861B24DFA200B0B800 /* PZMinhag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhag.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */,
+				BBDB846D1C307F270020709A /* PZTimer.swift */,
 			);
 			name = PZTimer;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */,
 				BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */,
 				BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */,
+				BBDB846E1C307F270020709A /* PZTimer.swift in Sources */,
 				BB6D071B1C022B700072B4AD /* ColorHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
