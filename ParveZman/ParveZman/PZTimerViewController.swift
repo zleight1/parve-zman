@@ -40,13 +40,17 @@ class PZTimerViewController: UIViewController   {
         let notification = UILocalNotification()
         notification.alertBody = "Congrats, you're now Parve!"
         notification.alertTitle = "Parve Zman!"
-        notification.fireDate = NSDate(timeIntervalSinceReferenceDate: endTime)
+        notification.fireDate = NSDate(timeIntervalSinceReferenceDate: self.endTime)
         notification.soundName = UILocalNotificationDefaultSoundName // default sound
         notification.userInfo = [ "UUID" : timerUUID ]
         notification.category = "PARVE_CATEGORY"
         
         //schedule it
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        
+        //save timer        
+        let timerManager = PZTimerManager()
+        timerManager.savePZTimer(self.endTime, timerType: self.type)
         
         self.title = "Timer"
     }
@@ -63,7 +67,6 @@ class PZTimerViewController: UIViewController   {
         }
         self.setupNavigationBar(color)
         self.setupGauge(color)
-        
     }
     
     func setupNavigationBar(color: UIColor) {
@@ -144,6 +147,9 @@ class PZTimerViewController: UIViewController   {
         self.timerGauge.startColor = PZUtils.sharedInstance.flatGreenColor
         self.timerGauge.maxValue = 1
         self.timerGauge.rate = 1
+        
+        let timerManager = PZTimerManager()
+        timerManager.clearPZTimer()
     }
     
     override func navigationShouldPopOnBackButton() -> Bool {
@@ -170,6 +176,10 @@ class PZTimerViewController: UIViewController   {
     
     override func viewWillDisappear(animated: Bool) {
         self.timer.invalidate()
+        
+        //clear the timer
+        let timerManager = PZTimerManager()
+        timerManager.clearPZTimer()
         
         //cancel the notification
         for notification in (UIApplication.sharedApplication().scheduledLocalNotifications as [UILocalNotification]?)! { // loop through notifications...

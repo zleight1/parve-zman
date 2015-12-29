@@ -11,7 +11,7 @@ import CoreData
 
 class PZTimer: NSManagedObject {
     
-    @NSManaged var endTime: NSTimeInterval
+    @NSManaged var endTime: NSDate
     @NSManaged var timerType: String
     @NSManaged var id: Int16
     

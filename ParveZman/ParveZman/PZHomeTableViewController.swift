@@ -55,6 +55,20 @@ class PZHomeTableViewController: UITableViewController {
             NSFontAttributeName: UIFont.boldSystemFontOfSize(CGFloat(24.0))], forState: UIControlState.Normal)
         navigationItem.backBarButtonItem = backButton
         
+        //Once all the view information has been set up try and load an existing timer if possible
+        
+        //check if a timer was active before
+        let timerManager = PZTimerManager()
+        if timerManager.isTimerActive() {
+            
+            let data = timerManager.loadPZTimerData()
+            
+            let endDate: NSDate = data!.valueForKey("endTime") as! NSDate;
+            let endTime = endDate.timeIntervalSinceReferenceDate
+            let timerType = data?.valueForKey("timerType") as! String
+            
+            return showTimer(endTime, timerType: timerType)
+        }
         
     }
     
@@ -153,12 +167,16 @@ class PZHomeTableViewController: UITableViewController {
             return
         }
         
+        return showTimer(NSDate.timeIntervalSinceReferenceDate() + time, timerType: type)
+    }
+    
+    func showTimer(endTime: NSTimeInterval, timerType: String){
         //get the timer view
         let pzTimerViewController = storyboard!.instantiateViewControllerWithIdentifier("PZTimerViewController") as! PZTimerViewController
         
         //pass the view controller all the information it needs here
-        pzTimerViewController.endTime = NSDate.timeIntervalSinceReferenceDate() + time
-        pzTimerViewController.type = type
+        pzTimerViewController.endTime = endTime
+        pzTimerViewController.type = timerType
         
         self.navigationController?.pushViewController(pzTimerViewController, animated: true)
         
