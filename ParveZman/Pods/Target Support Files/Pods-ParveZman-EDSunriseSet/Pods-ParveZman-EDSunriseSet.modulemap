@@ -1,6 +1,0 @@
-framework module EDSunriseSet {
-  umbrella header "Pods-ParveZman-EDSunriseSet-umbrella.h"
-
-  export *
-  module * { export * }
-}

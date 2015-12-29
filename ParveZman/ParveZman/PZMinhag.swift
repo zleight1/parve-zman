@@ -38,15 +38,13 @@ class PZMinhag {
             minutes = 6*60
         case .SixthHour:
             minutes = (5*60)+1
-        case .FourHalachicHours:
-            minutes = PZHalachicHelper.sharedInstance.CalculateHalachicHoursToMinutes(4.0);
+        //case .FourHalachicHours:
+            //minutes = PZHalachicHelper.sharedInstance.CalculateHalachicHoursToMinutes(4.0);
         case .ThreeHours:
             minutes = 3*60
         case .OneHour:
             minutes = 60
         case .None:
-            minutes = 0
-        default:
             minutes = 0
         }
         
@@ -60,11 +58,13 @@ class PZMinhag {
         var minutes = 0
         
         switch dairyMinhag {
+        case .SixFullHours:
+            minutes = 6*60
         case .OneHour:
             minutes = 60
+        case .HalfHour:
+            minutes = 30
         case .None:
-            minutes = 0
-        default:
             minutes = 0
         }
         
@@ -78,17 +78,21 @@ enum PZMeatWaitMinhag : String {
     case TwentyFourHours = "24 Hours"
     case SixFullHours = "6 Hours"
     case SixthHour = "6th Hour"
-    case FourHalachicHours = "4 Halachic Hours"
+    //case FourHalachicHours = "4 Halachic Hours"
     case ThreeHours = "3 Hours"
     case OneHour = "1 Hour"
     case None = "None"
     
-    static let allValues = [TwentyFourHours, SixFullHours, SixthHour, FourHalachicHours, ThreeHours, OneHour, None]
+    static let allValues = [TwentyFourHours, SixFullHours, SixthHour, ThreeHours, OneHour, None //,FourHalachicHours
+    ]
 }
 
 enum PZDairyWaitMinhag : String {
+    case SixFullHours = "6 Hours"
     case OneHour = "1 Hour"
+    case HalfHour = "1/2 Hour"
     case None = "None"
     
-    static let allValues = [OneHour, None]
+    static let allValues = [SixFullHours, OneHour, HalfHour, None
+    ]
 }

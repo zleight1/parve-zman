@@ -2,5 +2,10 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'ParveZman' do
-  pod 'KosherCocoa', '~> 2.0.8'
+  pod 'GaugeKit'
+  pod 'CZPicker'
+  pod 'SCLAlertView'
+  pod 'JTImageButton'
 end
+
+link_with 'ParveZman', 'ParveZmanTests'

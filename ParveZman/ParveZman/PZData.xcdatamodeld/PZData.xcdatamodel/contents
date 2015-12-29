@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 4.3">
     <entity name="PZSettings" representedClassName="ParveZman.PZSettings" syncable="YES">
         <attribute name="dairyMinhag" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" attributeType="Integer 16" minValueString="0" maxValueString="1" defaultValueString="1" indexed="YES" syncable="YES"/>
         <attribute name="meatMinhag" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="PZTimer" representedClassName="ParveZman.PZTimer" syncable="YES">
+        <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timerType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="PZSettings" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="PZTimer" positionX="-54" positionY="18" width="128" height="90"/>
     </elements>
 </model>

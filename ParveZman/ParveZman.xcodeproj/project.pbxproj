@@ -7,22 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FFE1EF4876AD74AC39B0912 /* Pods_ParveZman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		BB2425901B2DFB79003D3C40 /* PZHalachicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */; };
-		BB2426A01B38E1AD003D3C40 /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
-		BB2426D71B3A27CF003D3C40 /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
-		BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; };
+		3347B9C2721DE5BFD48CE91B /* Pods_ParveZman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */; };
+		BB05261E1BCF1C890026C6A4 /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
+		BB0526201BCF1C8B0026C6A4 /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; };
+		BB0526211BCF1C8E0026C6A4 /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC043C51B55DF9500CD5474 /* PZSettings.swift */; };
+		BB0526221BCF1C8E0026C6A4 /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; };
+		BB0526231BCF1C8E0026C6A4 /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
+		BB0526241BCF1C930026C6A4 /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; };
+		BB0526281BCF1C930026C6A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; };
+		BB12F4831B7044DC0087447E /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC043C51B55DF9500CD5474 /* PZSettings.swift */; };
+		BB12F4841B7044DC0087447E /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; };
+		BB12F4851B7044DC0087447E /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
+		BB12F4861B7044DC0087447E /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; };
+		BB12F48A1B7044DC0087447E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915891B1D15D000501DD2 /* AppDelegate.swift */; };
+		BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
+		BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */; };
+		BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; };
+		BB15CB7B1C2A3C88003BA02C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB15CB7A1C2A3C88003BA02C /* UIViewControllerExtension.swift */; };
+		BB15CB7C1C2C7017003BA02C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB15CB7A1C2A3C88003BA02C /* UIViewControllerExtension.swift */; };
+		BB6D071B1C022B700072B4AD /* ColorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6D071A1C022B700072B4AD /* ColorHelpers.swift */; };
+		BB6D071C1C022B700072B4AD /* ColorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6D071A1C022B700072B4AD /* ColorHelpers.swift */; };
+		BB72233B1BF2E07800EE547C /* PZHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233A1BF2E07800EE547C /* PZHomeTableViewController.swift */; };
+		BB72233C1BF2E49000EE547C /* PZHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233A1BF2E07800EE547C /* PZHomeTableViewController.swift */; };
+		BB7223401BF4247500EE547C /* PZHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */; };
+		BB7223411BF4247900EE547C /* PZHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */; };
+		BB7F00891B81448600C7613D /* BeepNoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7F00881B81448600C7613D /* BeepNoise.mp3 */; };
 		BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99158D1B1D15D000501DD2 /* Main.storyboard */; };
 		BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9915901B1D15D000501DD2 /* Images.xcassets */; };
 		BB9915941B1D15D000501DD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9915921B1D15D000501DD2 /* LaunchScreen.xib */; };
 		BB9915A01B1D15D000501DD2 /* ParveZmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99159F1B1D15D000501DD2 /* ParveZmanTests.swift */; };
-		BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */; };
-		BBC043C61B55DF9500CD5474 /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC043C51B55DF9500CD5474 /* PZSettings.swift */; };
-		BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */; };
-		BBE611811B24AD7B00B0B800 /* PZNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */; };
-		BBE611831B24AD9A00B0B800 /* PZSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */; };
-		BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */; };
-		BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE611861B24DFA200B0B800 /* PZMinhag.swift */; };
+		BBDB846E1C307F270020709A /* PZTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDB846D1C307F270020709A /* PZTimer.swift */; };
+		BBDB84701C3223A30020709A /* PZTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDB846F1C3223A30020709A /* PZTimerManager.swift */; };
+		BBDB84711C3234F50020709A /* PZTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDB846F1C3223A30020709A /* PZTimerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +54,16 @@
 /* Begin PBXFileReference section */
 		26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.debug.xcconfig"; sourceTree = "<group>"; };
-		BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHalachicHelper.swift; sourceTree = "<group>"; };
+		BB01D4441B6EC3810067C028 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParveZman.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParveZman.framework"; sourceTree = "<group>"; };
+		BB01D4461B703AB60067C028 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParveZman.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParveZman.framework"; sourceTree = "<group>"; };
+		BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZTimerViewController.swift; sourceTree = "<group>"; };
+		BB15CB7A1C2A3C88003BA02C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		BB24269F1B38E1AD003D3C40 /* PZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZUtils.swift; sourceTree = "<group>"; };
 		BB2426D61B3A27CF003D3C40 /* PZData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PZData.xcdatamodel; sourceTree = "<group>"; };
+		BB6D071A1C022B700072B4AD /* ColorHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelpers.swift; sourceTree = "<group>"; };
+		BB72233A1BF2E07800EE547C /* PZHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHomeTableViewController.swift; sourceTree = "<group>"; };
+		BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZHomeTableViewCell.swift; sourceTree = "<group>"; };
+		BB7F00881B81448600C7613D /* BeepNoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeepNoise.mp3; sourceTree = "<group>"; };
 		BB9915841B1D15D000501DD2 /* ParveZman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParveZman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9915881B1D15D000501DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9915891B1D15D000501DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,10 +73,9 @@
 		BB9915991B1D15D000501DD2 /* ParveZmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParveZmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB99159E1B1D15D000501DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB99159F1B1D15D000501DD2 /* ParveZmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParveZmanTests.swift; sourceTree = "<group>"; };
-		BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMainViewController.swift; sourceTree = "<group>"; };
 		BBC043C51B55DF9500CD5474 /* PZSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettings.swift; sourceTree = "<group>"; };
-		BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhagHistoryViewController.swift; sourceTree = "<group>"; };
-		BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZNotificationHandler.swift; sourceTree = "<group>"; };
+		BBDB846D1C307F270020709A /* PZTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZTimer.swift; sourceTree = "<group>"; };
+		BBDB846F1C3223A30020709A /* PZTimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZTimerManager.swift; sourceTree = "<group>"; };
 		BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsManager.swift; sourceTree = "<group>"; };
 		BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsViewController.swift; sourceTree = "<group>"; };
 		BBE611861B24DFA200B0B800 /* PZMinhag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhag.swift; sourceTree = "<group>"; };
@@ -66,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FFE1EF4876AD74AC39B0912 /* Pods_ParveZman.framework in Frameworks */,
+				3347B9C2721DE5BFD48CE91B /* Pods_ParveZman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,14 +105,60 @@
 		8CDFB675EC2B23D7B51FF2C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB01D4461B703AB60067C028 /* Pods_ParveZman.framework */,
+				BB01D4441B6EC3810067C028 /* Pods_ParveZman.framework */,
 				26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BB12F5A11B72EAC30087447E /* PZTimer */ = {
+			isa = PBXGroup;
+			children = (
+				BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */,
+				BBDB846D1C307F270020709A /* PZTimer.swift */,
+				BBDB846F1C3223A30020709A /* PZTimerManager.swift */,
+			);
+			name = PZTimer;
+			sourceTree = "<group>";
+		};
+		BB7223391BF2DD7C00EE547C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				BB6D071A1C022B700072B4AD /* ColorHelpers.swift */,
+				BB15CB7A1C2A3C88003BA02C /* UIViewControllerExtension.swift */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		BB72233E1BF4244800EE547C /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				BB72233F1BF4247500EE547C /* PZHomeTableViewCell.swift */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
+		BB74D7061BA90E2400BF9BC2 /* PZUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BB24269F1B38E1AD003D3C40 /* PZUtils.swift */,
+			);
+			name = PZUtils;
+			sourceTree = "<group>";
+		};
+		BB7F00871B81448600C7613D /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BB7F00881B81448600C7613D /* BeepNoise.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		BB99157B1B1D15D000501DD2 = {
 			isa = PBXGroup;
 			children = (
+				BB7F00871B81448600C7613D /* sounds */,
 				BB9915861B1D15D000501DD2 /* ParveZman */,
 				BB99159C1B1D15D000501DD2 /* ParveZmanTests */,
 				BB9915851B1D15D000501DD2 /* Products */,
@@ -111,21 +179,19 @@
 		BB9915861B1D15D000501DD2 /* ParveZman */ = {
 			isa = PBXGroup;
 			children = (
+				BB72233E1BF4244800EE547C /* TableCells */,
+				BB7223391BF2DD7C00EE547C /* Libraries */,
+				BB74D7061BA90E2400BF9BC2 /* PZUtils */,
+				BB12F5A11B72EAC30087447E /* PZTimer */,
+				BBE65D301B607DF0001AF18F /* PZSettings */,
+				BBE65D2F1B607DE4001AF18F /* PZMinhag */,
 				BB9915891B1D15D000501DD2 /* AppDelegate.swift */,
 				BBE6129D1B2A6D8D00B0B800 /* PZBridgingHeader.h */,
 				BB99158D1B1D15D000501DD2 /* Main.storyboard */,
 				BB9915901B1D15D000501DD2 /* Images.xcassets */,
 				BB9915921B1D15D000501DD2 /* LaunchScreen.xib */,
 				BB9915871B1D15D000501DD2 /* Supporting Files */,
-				BB9915B11B1D36FC00501DD2 /* PZMainViewController.swift */,
-				BBE6117C1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift */,
-				BBE611801B24AD7B00B0B800 /* PZNotificationHandler.swift */,
-				BBC043C51B55DF9500CD5474 /* PZSettings.swift */,
-				BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */,
-				BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */,
-				BBE611861B24DFA200B0B800 /* PZMinhag.swift */,
-				BB24258F1B2DFB79003D3C40 /* PZHalachicHelper.swift */,
-				BB24269F1B38E1AD003D3C40 /* PZUtils.swift */,
+				BB72233A1BF2E07800EE547C /* PZHomeTableViewController.swift */,
 				BB2426D51B3A27CF003D3C40 /* PZData.xcdatamodeld */,
 			);
 			path = ParveZman;
@@ -156,6 +222,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BBE65D2F1B607DE4001AF18F /* PZMinhag */ = {
+			isa = PBXGroup;
+			children = (
+				BBE611861B24DFA200B0B800 /* PZMinhag.swift */,
+			);
+			name = PZMinhag;
+			sourceTree = "<group>";
+		};
+		BBE65D301B607DF0001AF18F /* PZSettings */ = {
+			isa = PBXGroup;
+			children = (
+				BBC043C51B55DF9500CD5474 /* PZSettings.swift */,
+				BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */,
+				BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */,
+			);
+			name = PZSettings;
+			sourceTree = "<group>";
+		};
 		C7498970632CEBC4F0E98FB0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,12 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB9915A31B1D15D000501DD2 /* Build configuration list for PBXNativeTarget "ParveZman" */;
 			buildPhases = (
-				D9F34FC0B05745BD48838060 /* Check Pods Manifest.lock */,
-				BB9915801B1D15D000501DD2 /* Sources */,
+				898CAFB2183CAC97FF7A6886 /* Check Pods Manifest.lock */,
 				BB9915811B1D15D000501DD2 /* Frameworks */,
+				BB12F4821B7044B20087447E /* Sources */,
 				BB9915821B1D15D000501DD2 /* Resources */,
-				A6E07028529FBA2DADB6C423 /* Copy Pods Resources */,
-				9AA2062BAEFA18D4FEE8B5D3 /* Embed Pods Frameworks */,
+				E454AD80245B47425CEDB75D /* Embed Pods Frameworks */,
+				B1F7ACDF2CB651423C5873E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,11 +296,14 @@
 		BB99157C1B1D15D000501DD2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Zachary Leighton";
 				TargetAttributes = {
 					BB9915831B1D15D000501DD2 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 4Y2Y4X6BS7;
 					};
 					BB9915981B1D15D000501DD2 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -249,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB99158F1B1D15D000501DD2 /* Main.storyboard in Resources */,
+				BB7F00891B81448600C7613D /* BeepNoise.mp3 in Resources */,
 				BB9915941B1D15D000501DD2 /* LaunchScreen.xib in Resources */,
 				BB9915911B1D15D000501DD2 /* Images.xcassets in Resources */,
 			);
@@ -264,37 +352,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9AA2062BAEFA18D4FEE8B5D3 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6E07028529FBA2DADB6C423 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D9F34FC0B05745BD48838060 /* Check Pods Manifest.lock */ = {
+		898CAFB2183CAC97FF7A6886 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,24 +367,57 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		B1F7ACDF2CB651423C5873E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E454AD80245B47425CEDB75D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BB9915801B1D15D000501DD2 /* Sources */ = {
+		BB12F4821B7044B20087447E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2425901B2DFB79003D3C40 /* PZHalachicHelper.swift in Sources */,
-				BB99158A1B1D15D000501DD2 /* AppDelegate.swift in Sources */,
-				BBE6117D1B24A82F00B0B800 /* PZMinhagHistoryViewController.swift in Sources */,
-				BBE611811B24AD7B00B0B800 /* PZNotificationHandler.swift in Sources */,
-				BBC043C61B55DF9500CD5474 /* PZSettings.swift in Sources */,
-				BBE611851B24B6AE00B0B800 /* PZSettingsViewController.swift in Sources */,
-				BB9915B21B1D36FC00501DD2 /* PZMainViewController.swift in Sources */,
-				BBE611871B24DFA200B0B800 /* PZMinhag.swift in Sources */,
-				BBE611831B24AD9A00B0B800 /* PZSettingsManager.swift in Sources */,
-				BB2426A01B38E1AD003D3C40 /* PZUtils.swift in Sources */,
-				BB2426D71B3A27CF003D3C40 /* PZData.xcdatamodeld in Sources */,
+				BB15CB7B1C2A3C88003BA02C /* UIViewControllerExtension.swift in Sources */,
+				BB12F4831B7044DC0087447E /* PZSettings.swift in Sources */,
+				BB12F4841B7044DC0087447E /* PZSettingsManager.swift in Sources */,
+				BBDB84701C3223A30020709A /* PZTimerManager.swift in Sources */,
+				BB12F4851B7044DC0087447E /* PZSettingsViewController.swift in Sources */,
+				BB7223401BF4247500EE547C /* PZHomeTableViewCell.swift in Sources */,
+				BB12F4861B7044DC0087447E /* PZMinhag.swift in Sources */,
+				BB72233B1BF2E07800EE547C /* PZHomeTableViewController.swift in Sources */,
+				BB12F48A1B7044DC0087447E /* AppDelegate.swift in Sources */,
+				BB12F48E1B7044DC0087447E /* PZUtils.swift in Sources */,
+				BB12F5A31B72EADF0087447E /* PZTimerViewController.swift in Sources */,
+				BB12F48F1B7044DC0087447E /* PZData.xcdatamodeld in Sources */,
+				BBDB846E1C307F270020709A /* PZTimer.swift in Sources */,
+				BB6D071B1C022B700072B4AD /* ColorHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +425,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7223411BF4247900EE547C /* PZHomeTableViewCell.swift in Sources */,
+				BB0526221BCF1C8E0026C6A4 /* PZSettingsManager.swift in Sources */,
+				BB0526281BCF1C930026C6A4 /* AppDelegate.swift in Sources */,
+				BB6D071C1C022B700072B4AD /* ColorHelpers.swift in Sources */,
 				BB9915A01B1D15D000501DD2 /* ParveZmanTests.swift in Sources */,
+				BB72233C1BF2E49000EE547C /* PZHomeTableViewController.swift in Sources */,
+				BB0526231BCF1C8E0026C6A4 /* PZSettingsViewController.swift in Sources */,
+				BB05261E1BCF1C890026C6A4 /* PZUtils.swift in Sources */,
+				BB0526241BCF1C930026C6A4 /* PZMinhag.swift in Sources */,
+				BB0526201BCF1C8B0026C6A4 /* PZTimerViewController.swift in Sources */,
+				BB15CB7C1C2C7017003BA02C /* UIViewControllerExtension.swift in Sources */,
+				BB0526211BCF1C8E0026C6A4 /* PZSettings.swift in Sources */,
+				BBDB84711C3234F50020709A /* PZTimerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +492,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -404,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -442,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -454,14 +558,20 @@
 			baseConfigurationReference = 633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"${PODS_ROOT}/KosherCocoa\"/**",
 				);
 				INFOPLIST_FILE = ParveZman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zl.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = ParveZman/PZBridgingHeader.h;
 			};
 			name = Debug;
@@ -471,14 +581,20 @@
 			baseConfigurationReference = CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"${PODS_ROOT}/KosherCocoa\"/**",
 				);
 				INFOPLIST_FILE = ParveZman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zl.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = ParveZman/PZBridgingHeader.h;
 			};
 			name = Release;
@@ -497,6 +613,7 @@
 				);
 				INFOPLIST_FILE = ParveZmanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zl.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParveZman.app/ParveZman";
 			};
@@ -512,6 +629,7 @@
 				);
 				INFOPLIST_FILE = ParveZmanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zl.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParveZman.app/ParveZman";
 			};

@@ -7,698 +7,958 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		007728F9C39C6A15264494C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1939A74655C3E9B4D11EF5E4 /* Foundation.framework */; };
-		2AF9CFBD91F57CADAABD8C01 /* Pods-ParveZman-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9CCC250BDFB39412A99405 /* Pods-ParveZman-dummy.m */; };
-		2EE05ECAD41FC0996E8FDB64 /* Pods-ParveZman-EDSunriseSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5CE47D108B3447B612942E /* Pods-ParveZman-EDSunriseSet-dummy.m */; };
-		4E405D5EA7331EC27391A348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1939A74655C3E9B4D11EF5E4 /* Foundation.framework */; };
-		5D12AAF93506CF3CE4E73A80 /* Pods-ParveZman-EDSunriseSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DCBEA77E6DB26C586E1AFF /* Pods-ParveZman-EDSunriseSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F8DE50EB5BF0A379037D782 /* EDSunriseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A685BFB8BBA7AB789FE64079 /* EDSunriseSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A41711259F6F5C4EBCD2514D /* Pods-ParveZman-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3036209DD1EB1FD6B1555361 /* Pods-ParveZman-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB2425E71B2E042C003D3C40 /* MBCalendarCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425941B2E042C003D3C40 /* MBCalendarCategories.h */; };
-		BB2425E81B2E042C003D3C40 /* NSCalendar+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425961B2E042C003D3C40 /* NSCalendar+Components.h */; };
-		BB2425E91B2E042C003D3C40 /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425971B2E042C003D3C40 /* NSCalendar+Components.m */; };
-		BB2425EA1B2E042C003D3C40 /* NSCalendar+DateComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425981B2E042C003D3C40 /* NSCalendar+DateComparison.h */; };
-		BB2425EB1B2E042C003D3C40 /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425991B2E042C003D3C40 /* NSCalendar+DateComparison.m */; };
-		BB2425EC1B2E042C003D3C40 /* NSCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = BB24259A1B2E042C003D3C40 /* NSCalendar+DateManipulation.h */; };
-		BB2425ED1B2E042C003D3C40 /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB24259B1B2E042C003D3C40 /* NSCalendar+DateManipulation.m */; };
-		BB2425EE1B2E042C003D3C40 /* NSCalendar+hebrewYearTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = BB24259C1B2E042C003D3C40 /* NSCalendar+hebrewYearTypes.h */; };
-		BB2425EF1B2E042C003D3C40 /* NSCalendar+hebrewYearTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = BB24259D1B2E042C003D3C40 /* NSCalendar+hebrewYearTypes.m */; };
-		BB2425F01B2E042C003D3C40 /* NSCalendar+Juncture.h in Headers */ = {isa = PBXBuildFile; fileRef = BB24259E1B2E042C003D3C40 /* NSCalendar+Juncture.h */; };
-		BB2425F11B2E042C003D3C40 /* NSCalendar+Juncture.m in Sources */ = {isa = PBXBuildFile; fileRef = BB24259F1B2E042C003D3C40 /* NSCalendar+Juncture.m */; };
-		BB2425F21B2E042C003D3C40 /* NSCalendar+Ranges.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425A01B2E042C003D3C40 /* NSCalendar+Ranges.h */; };
-		BB2425F31B2E042C003D3C40 /* NSCalendar+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425A11B2E042C003D3C40 /* NSCalendar+Ranges.m */; };
-		BB2425F41B2E042C003D3C40 /* NSDate+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425A31B2E042C003D3C40 /* NSDate+Components.h */; };
-		BB2425F51B2E042C003D3C40 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425A41B2E042C003D3C40 /* NSDate+Components.m */; };
-		BB2425F61B2E042C003D3C40 /* NSDate+ConvenientDates.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425A51B2E042C003D3C40 /* NSDate+ConvenientDates.h */; };
-		BB2425F71B2E042C003D3C40 /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425A61B2E042C003D3C40 /* NSDate+ConvenientDates.m */; };
-		BB2425F81B2E042C003D3C40 /* NSDate+Description.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425A71B2E042C003D3C40 /* NSDate+Description.h */; };
-		BB2425F91B2E042C003D3C40 /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425A81B2E042C003D3C40 /* NSDate+Description.m */; };
-		BB2425FA1B2E042C003D3C40 /* NSDateComponents+AllComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425AA1B2E042C003D3C40 /* NSDateComponents+AllComponents.h */; };
-		BB2425FB1B2E042C003D3C40 /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425AB1B2E042C003D3C40 /* NSDateComponents+AllComponents.m */; };
-		BB2425FC1B2E042C003D3C40 /* KCAstronomicalCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425AD1B2E042C003D3C40 /* KCAstronomicalCalendar+DateManipulation.h */; };
-		BB2425FD1B2E042C003D3C40 /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425AE1B2E042C003D3C40 /* KCAstronomicalCalendar+DateManipulation.m */; };
-		BB2425FE1B2E042C003D3C40 /* Calendar.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425B11B2E042C003D3C40 /* Calendar.h */; };
-		BB2425FF1B2E042C003D3C40 /* KCJewishCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425B31B2E042C003D3C40 /* KCJewishCalendar.h */; };
-		BB2426001B2E042C003D3C40 /* KCJewishCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425B41B2E042C003D3C40 /* KCJewishCalendar.m */; };
-		BB2426011B2E042C003D3C40 /* KCJewishHoliday.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425B51B2E042C003D3C40 /* KCJewishHoliday.h */; };
-		BB2426021B2E042C003D3C40 /* KCJewishHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425B61B2E042C003D3C40 /* KCJewishHoliday.m */; };
-		BB2426031B2E042C003D3C40 /* KCDaf.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425B81B2E042C003D3C40 /* KCDaf.h */; };
-		BB2426041B2E042C003D3C40 /* KCDaf.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425B91B2E042C003D3C40 /* KCDaf.m */; };
-		BB2426051B2E042C003D3C40 /* KCDafYomiCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425BA1B2E042C003D3C40 /* KCDafYomiCalculator.h */; };
-		BB2426061B2E042C003D3C40 /* KCDafYomiCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425BB1B2E042C003D3C40 /* KCDafYomiCalculator.m */; };
-		BB2426071B2E042C003D3C40 /* KCParasha.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425BD1B2E042C003D3C40 /* KCParasha.h */; };
-		BB2426081B2E042C003D3C40 /* KCParasha.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425BE1B2E042C003D3C40 /* KCParasha.m */; };
-		BB2426091B2E042C003D3C40 /* KCParashatHashavuaCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425BF1B2E042C003D3C40 /* KCParashatHashavuaCalculator.h */; };
-		BB24260A1B2E042C003D3C40 /* KCParashatHashavuaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425C01B2E042C003D3C40 /* KCParashatHashavuaCalculator.m */; };
-		BB24260B1B2E042C003D3C40 /* KCSefiraFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425C21B2E042C003D3C40 /* KCSefiraFormatter.h */; };
-		BB24260C1B2E042C003D3C40 /* KCSefiraFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425C31B2E042C003D3C40 /* KCSefiraFormatter.m */; };
-		BB24260D1B2E042C003D3C40 /* KCSefiratHaomerCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425C41B2E042C003D3C40 /* KCSefiratHaomerCalculator.h */; };
-		BB24260E1B2E042C003D3C40 /* KCSefiratHaomerCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425C51B2E042C003D3C40 /* KCSefiratHaomerCalculator.m */; };
-		BB24260F1B2E042C003D3C40 /* KCComplexZmanimCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425C71B2E042C003D3C40 /* KCComplexZmanimCalendar.h */; };
-		BB2426101B2E042C003D3C40 /* KCComplexZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425C81B2E042C003D3C40 /* KCComplexZmanimCalendar.m */; };
-		BB2426111B2E042C003D3C40 /* KCZman.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425C91B2E042C003D3C40 /* KCZman.h */; };
-		BB2426121B2E042C003D3C40 /* KCZman.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425CA1B2E042C003D3C40 /* KCZman.m */; };
-		BB2426131B2E042C003D3C40 /* KCZmanimCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425CB1B2E042C003D3C40 /* KCZmanimCalendar.h */; };
-		BB2426141B2E042C003D3C40 /* KCZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425CC1B2E042C003D3C40 /* KCZmanimCalendar.m */; };
-		BB2426151B2E042C003D3C40 /* KCAstronomicalCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425CE1B2E042C003D3C40 /* KCAstronomicalCalculator.h */; };
-		BB2426161B2E042C003D3C40 /* KCAstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425CF1B2E042C003D3C40 /* KCAstronomicalCalculator.m */; };
-		BB2426171B2E042C003D3C40 /* KCAstronomicalCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425D01B2E042C003D3C40 /* KCAstronomicalCalendar.h */; };
-		BB2426181B2E042C003D3C40 /* KCAstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425D11B2E042C003D3C40 /* KCAstronomicalCalendar.m */; };
-		BB2426191B2E042C003D3C40 /* KCGeoLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425D21B2E042C003D3C40 /* KCGeoLocation.h */; };
-		BB24261A1B2E042C003D3C40 /* KCGeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425D31B2E042C003D3C40 /* KCGeoLocation.m */; };
-		BB24261B1B2E042C003D3C40 /* KCSunriseAndSunsetCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425D41B2E042C003D3C40 /* KCSunriseAndSunsetCalculator.h */; };
-		BB24261C1B2E042C003D3C40 /* KCSunriseAndSunsetCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2425D51B2E042C003D3C40 /* KCSunriseAndSunsetCalculator.m */; };
-		BB24261D1B2E042C003D3C40 /* Solar.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425D61B2E042C003D3C40 /* Solar.h */; };
-		BB24261E1B2E042C003D3C40 /* trigonometry.c in Sources */ = {isa = PBXBuildFile; fileRef = BB2425D81B2E042C003D3C40 /* trigonometry.c */; };
-		BB24261F1B2E042C003D3C40 /* trigonometry.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425D91B2E042C003D3C40 /* trigonometry.h */; };
-		BB2426201B2E042C003D3C40 /* KCAstronomical.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425DB1B2E042C003D3C40 /* KCAstronomical.h */; };
-		BB2426211B2E042C003D3C40 /* KCBearing.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425DC1B2E042C003D3C40 /* KCBearing.h */; };
-		BB2426221B2E042C003D3C40 /* KCConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425DD1B2E042C003D3C40 /* KCConstants.h */; };
-		BB2426231B2E042C003D3C40 /* KCHebrewYear.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425DE1B2E042C003D3C40 /* KCHebrewYear.h */; };
-		BB2426241B2E042C003D3C40 /* KCJewishHolidays.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425DF1B2E042C003D3C40 /* KCJewishHolidays.h */; };
-		BB2426251B2E042C003D3C40 /* KCMolad.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425E01B2E042C003D3C40 /* KCMolad.h */; };
-		BB2426261B2E042C003D3C40 /* KCParashaReadings.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425E11B2E042C003D3C40 /* KCParashaReadings.h */; };
-		BB2426271B2E042C003D3C40 /* KCSunCalculationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425E21B2E042C003D3C40 /* KCSunCalculationTypes.h */; };
-		BB2426281B2E042C003D3C40 /* KCTractates.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425E31B2E042C003D3C40 /* KCTractates.h */; };
-		BB2426291B2E042C003D3C40 /* KCZenith.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425E41B2E042C003D3C40 /* KCZenith.h */; };
-		BB24262A1B2E042C003D3C40 /* KCZenithExtended.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425E51B2E042C003D3C40 /* KCZenithExtended.h */; };
-		BB24262B1B2E042C003D3C40 /* KosherCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2425E61B2E042C003D3C40 /* KosherCocoa.h */; };
-		F06D2FC7DB7324F8359F159C /* EDSunriseSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 288E77ED54D09D1B5480D7F0 /* EDSunriseSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D93EFA894107FFB253D2995B81A840 /* GaugeKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1EE1234F11027CC5597E14791E9830F /* GaugeKit.bundle */; };
+		1B6045E6F6B79480B4142A801DC60279 /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADC52A29C6C29991D01F16A0FBC0489 /* SCLAlertView-dummy.m */; };
+		22144A61ABE2507ED567CB58EEB5B8EA /* Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1449EA06BFA0273D05AB2F1FF9208B5A /* Gauge.swift */; };
+		3A86D02786AD0101EF5A0094DB288DB1 /* GaugeHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B18A88177B24C62550B14B22889FE /* GaugeHalf.swift */; };
+		44F36E55986897ECDC78F993379B616B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		49EB7E1D9D812A6C1F874FFD09F539C7 /* CZPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0808625132D1B88B6D33B91D8F6A467 /* CZPickerView.m */; };
+		4B9AD2A07F35B4EFBEC9ED6DB102D738 /* CZPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23AC6BE3967679D1F6528B36F868E3D7 /* CZPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F8313831A7E1644B0A32DE708A1CE0C /* CZPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C5BAC69F519F047826BC1ACBB065BE4 /* CZPicker.bundle */; };
+		5FA31C016F5A2EE5AF78A7E0D3B648B5 /* Pods-ParveZman-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE2A9D440F8E4C69B29780F9B8D06AB /* Pods-ParveZman-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BB4EEEAA5BBC9DBA3F98D2C2CB897F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
+		74454A7C2F4CA246676125341140153D /* JTImageButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E6AFF3CC7DB813EC6C3E92A578D2C8 /* JTImageButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A5E8EDC6B377F8D46EBA292E6488168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		84D576164464385B66E692BC716DC742 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 64D59756CEC6A34DBAB946F7476448A5 /* Info.plist */; };
+		853FD59257E2DFD0D006C0DAEBA2D009 /* GaugeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 219E46165C2693B98EA78DDFD726AF56 /* GaugeKit-dummy.m */; };
+		887D58B4A1C069D527D695C96BF356DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		8F2B270EEDA89753B3EA2F15D0AAB68C /* CZPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 945B7B1B5640C097FC39EAE08B278F00 /* CZPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FF4267E80A7229490D365E526B931B0 /* GaugeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7251D6F8D081F661D5BD90DE2CA1B778 /* GaugeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928C49250301FBF75EFFC60116C61C66 /* CZPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F01B44AABBB4F2E66EA76FD1D36B28 /* CZPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9351B85BF6D4D393DEA4DF373F792CDF /* Pods-ParveZman-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB20462FBE00181CCCB4FC4ECC5CE57 /* Pods-ParveZman-dummy.m */; };
+		96F65403631B8CF3D5A02C9192A0F1E4 /* GaugeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941D1C02728BBE97997517579A2DEE66 /* GaugeLine.swift */; };
+		9998BEB2638E5E9A1C2168B9690064BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		9A3732A7C4F06D56AE9920B3603402ED /* JTImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C6021AA34753B3FC3F9782AFDEACEC /* JTImageButton.m */; };
+		BA33A0EFC44A66E028FD2FF54A10B6EF /* JTImageButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ACD5844607DEB58CD768DDE2227029 /* JTImageButton-dummy.m */; };
+		BD9F65FDC73B0B391F5D4E7755E78899 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C738DBD1ACF0FBA8BA84DC7C75A8E2 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE6E64D0DFA65078EAEDC10813D47C6B /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7FFE97F44EFD46568E9A158876A33 /* SCLAlertView.swift */; };
+		CB85831F79527BD561865D128CDA5C72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
+		CD3D54BD25D1A0609BB643339156884A /* CAShapeLayer+oval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8498211A6F64C03E8A7EDC42BAEF0EF /* CAShapeLayer+oval.swift */; };
+		D76D672430C164D358E7F1DD16792C9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		DB3F3D8A4AABFF84F7BA02A35E7C7A03 /* CZPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8651AA988D745A4A1EC83B92879A307C /* CZPicker-dummy.m */; };
+		DF0D633E2EA46B1775DAD3B53380F87C /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 876B0E0028B7BC404FA00FC5FD9F2CC6 /* Info.plist */; };
+		E20A69ADF2A866D868BD89D66F8F23B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */; };
+		E5DC7AC2E3438DEAD43C67E3793F3E68 /* JTImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A624AE98692C59A89D6435BD6421654D /* JTImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7A24E164487408C42D482535B9CAD99 /* GaugeCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DB0142024D5A8E127E361FA2D2B25A /* GaugeCircle.swift */; };
+		E93B45C6A23A9173A1EEE2F28ECA9195 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
+		FBBEA0562BCAF2CD38F51C8914859513 /* GaugeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 27AEFE1158DACA14F27BD62BEBD5DBAC /* GaugeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C7DD1EE204744CAB978BD09F /* PBXContainerItemProxy */ = {
+		06B58222B643BC95CEEB5721E1BEDBE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 925CB98F83940223C3816E2B /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B2CE6C169EBA4744883C6245;
-			remoteInfo = "Pods-ParveZman-EDSunriseSet";
+			remoteGlobalIDString = 157D8DC93B2E33660E5BEC1446DABCFA;
+			remoteInfo = "CZPicker-CZPicker";
+		};
+		50FB10005E55214E775DA50149E17257 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 122253C62F330ED922A7C46D47CF8DC2;
+			remoteInfo = GaugeKit;
+		};
+		7179AC65D2C8CE9BAE78B84CC3C4A988 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B38196094D89A204B9791BB283B5F7F3;
+			remoteInfo = SCLAlertView;
+		};
+		B5ADCE650C2307A175FAC92F89179ACE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98E6C2103FDC77D30FCCF6B40146DEB8;
+			remoteInfo = JTImageButton;
+		};
+		BCE3C900C71165D23D28B353AF7E3A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CC3AC85291D76DF4348A46011097C3C;
+			remoteInfo = "GaugeKit-GaugeKit";
+		};
+		DBF98EA8CD29D798FE49CA33E75023EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77452F41F3A2A4DFB7A064F03CCC6E2C;
+			remoteInfo = CZPicker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02E37BE2F421FD1B0503D8D3 /* Pods-ParveZman-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParveZman-frameworks.sh"; sourceTree = "<group>"; };
-		131399F4774AC67A22CCEBB1 /* Pods-ParveZman-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParveZman-environment.h"; sourceTree = "<group>"; };
-		1939A74655C3E9B4D11EF5E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		1A186F6823DDD37C466A6BCF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E75949F63366C0B868A435A /* Pods-ParveZman-EDSunriseSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParveZman-EDSunriseSet-prefix.pch"; sourceTree = "<group>"; };
-		230866909C4348867DAFC1CF /* Pods-ParveZman-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParveZman-acknowledgements.plist"; sourceTree = "<group>"; };
-		288E77ED54D09D1B5480D7F0 /* EDSunriseSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EDSunriseSet.h; sourceTree = "<group>"; };
-		3036209DD1EB1FD6B1555361 /* Pods-ParveZman-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParveZman-umbrella.h"; sourceTree = "<group>"; };
-		37DCBEA77E6DB26C586E1AFF /* Pods-ParveZman-EDSunriseSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParveZman-EDSunriseSet-umbrella.h"; sourceTree = "<group>"; };
-		457CF8AB3B80A969A00D2B3B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A336F43A8483FF5B39F06D3 /* Pods-ParveZman-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParveZman-resources.sh"; sourceTree = "<group>"; };
-		4D095A61837B442D7F21678E /* Pods_ParveZman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50232557B0F6CF1E73F72CEA /* Pods-ParveZman.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParveZman.modulemap"; sourceTree = "<group>"; };
-		6C7065ACE9550DBB17E231C3 /* Pods-ParveZman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParveZman.release.xcconfig"; sourceTree = "<group>"; };
-		80CFDB413B9E545E6F2F9262 /* Pods-ParveZman-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParveZman-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8955F2F45BFA2134EFA2654E /* Pods-ParveZman-EDSunriseSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParveZman-EDSunriseSet.xcconfig"; sourceTree = "<group>"; };
-		93A099B24C0284DBA21DD57B /* Pods-ParveZman-EDSunriseSet-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParveZman-EDSunriseSet-Private.xcconfig"; sourceTree = "<group>"; };
-		A5F63565A3373A1B6AAB4BFD /* EDSunriseSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDSunriseSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A685BFB8BBA7AB789FE64079 /* EDSunriseSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EDSunriseSet.m; sourceTree = "<group>"; };
-		BA0C7917C7759C89DA0B7328 /* Pods-ParveZman-EDSunriseSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParveZman-EDSunriseSet.modulemap"; sourceTree = "<group>"; };
-		BB2425941B2E042C003D3C40 /* MBCalendarCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCalendarCategories.h; sourceTree = "<group>"; };
-		BB2425961B2E042C003D3C40 /* NSCalendar+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Components.h"; sourceTree = "<group>"; };
-		BB2425971B2E042C003D3C40 /* NSCalendar+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Components.m"; sourceTree = "<group>"; };
-		BB2425981B2E042C003D3C40 /* NSCalendar+DateComparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+DateComparison.h"; sourceTree = "<group>"; };
-		BB2425991B2E042C003D3C40 /* NSCalendar+DateComparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+DateComparison.m"; sourceTree = "<group>"; };
-		BB24259A1B2E042C003D3C40 /* NSCalendar+DateManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+DateManipulation.h"; sourceTree = "<group>"; };
-		BB24259B1B2E042C003D3C40 /* NSCalendar+DateManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+DateManipulation.m"; sourceTree = "<group>"; };
-		BB24259C1B2E042C003D3C40 /* NSCalendar+hebrewYearTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+hebrewYearTypes.h"; sourceTree = "<group>"; };
-		BB24259D1B2E042C003D3C40 /* NSCalendar+hebrewYearTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+hebrewYearTypes.m"; sourceTree = "<group>"; };
-		BB24259E1B2E042C003D3C40 /* NSCalendar+Juncture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Juncture.h"; sourceTree = "<group>"; };
-		BB24259F1B2E042C003D3C40 /* NSCalendar+Juncture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Juncture.m"; sourceTree = "<group>"; };
-		BB2425A01B2E042C003D3C40 /* NSCalendar+Ranges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Ranges.h"; sourceTree = "<group>"; };
-		BB2425A11B2E042C003D3C40 /* NSCalendar+Ranges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Ranges.m"; sourceTree = "<group>"; };
-		BB2425A31B2E042C003D3C40 /* NSDate+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Components.h"; sourceTree = "<group>"; };
-		BB2425A41B2E042C003D3C40 /* NSDate+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Components.m"; sourceTree = "<group>"; };
-		BB2425A51B2E042C003D3C40 /* NSDate+ConvenientDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ConvenientDates.h"; sourceTree = "<group>"; };
-		BB2425A61B2E042C003D3C40 /* NSDate+ConvenientDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ConvenientDates.m"; sourceTree = "<group>"; };
-		BB2425A71B2E042C003D3C40 /* NSDate+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Description.h"; sourceTree = "<group>"; };
-		BB2425A81B2E042C003D3C40 /* NSDate+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Description.m"; sourceTree = "<group>"; };
-		BB2425AA1B2E042C003D3C40 /* NSDateComponents+AllComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+AllComponents.h"; sourceTree = "<group>"; };
-		BB2425AB1B2E042C003D3C40 /* NSDateComponents+AllComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+AllComponents.m"; sourceTree = "<group>"; };
-		BB2425AD1B2E042C003D3C40 /* KCAstronomicalCalendar+DateManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KCAstronomicalCalendar+DateManipulation.h"; sourceTree = "<group>"; };
-		BB2425AE1B2E042C003D3C40 /* KCAstronomicalCalendar+DateManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KCAstronomicalCalendar+DateManipulation.m"; sourceTree = "<group>"; };
-		BB2425B11B2E042C003D3C40 /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
-		BB2425B31B2E042C003D3C40 /* KCJewishCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishCalendar.h; sourceTree = "<group>"; };
-		BB2425B41B2E042C003D3C40 /* KCJewishCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishCalendar.m; sourceTree = "<group>"; };
-		BB2425B51B2E042C003D3C40 /* KCJewishHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHoliday.h; sourceTree = "<group>"; };
-		BB2425B61B2E042C003D3C40 /* KCJewishHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishHoliday.m; sourceTree = "<group>"; };
-		BB2425B81B2E042C003D3C40 /* KCDaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCDaf.h; sourceTree = "<group>"; };
-		BB2425B91B2E042C003D3C40 /* KCDaf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCDaf.m; sourceTree = "<group>"; };
-		BB2425BA1B2E042C003D3C40 /* KCDafYomiCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCDafYomiCalculator.h; sourceTree = "<group>"; };
-		BB2425BB1B2E042C003D3C40 /* KCDafYomiCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCDafYomiCalculator.m; sourceTree = "<group>"; };
-		BB2425BD1B2E042C003D3C40 /* KCParasha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParasha.h; sourceTree = "<group>"; };
-		BB2425BE1B2E042C003D3C40 /* KCParasha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParasha.m; sourceTree = "<group>"; };
-		BB2425BF1B2E042C003D3C40 /* KCParashatHashavuaCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashatHashavuaCalculator.h; sourceTree = "<group>"; };
-		BB2425C01B2E042C003D3C40 /* KCParashatHashavuaCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParashatHashavuaCalculator.m; sourceTree = "<group>"; };
-		BB2425C21B2E042C003D3C40 /* KCSefiraFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiraFormatter.h; sourceTree = "<group>"; };
-		BB2425C31B2E042C003D3C40 /* KCSefiraFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiraFormatter.m; sourceTree = "<group>"; };
-		BB2425C41B2E042C003D3C40 /* KCSefiratHaomerCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiratHaomerCalculator.h; sourceTree = "<group>"; };
-		BB2425C51B2E042C003D3C40 /* KCSefiratHaomerCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiratHaomerCalculator.m; sourceTree = "<group>"; };
-		BB2425C71B2E042C003D3C40 /* KCComplexZmanimCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCComplexZmanimCalendar.h; sourceTree = "<group>"; };
-		BB2425C81B2E042C003D3C40 /* KCComplexZmanimCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCComplexZmanimCalendar.m; sourceTree = "<group>"; };
-		BB2425C91B2E042C003D3C40 /* KCZman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZman.h; sourceTree = "<group>"; };
-		BB2425CA1B2E042C003D3C40 /* KCZman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCZman.m; sourceTree = "<group>"; };
-		BB2425CB1B2E042C003D3C40 /* KCZmanimCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZmanimCalendar.h; sourceTree = "<group>"; };
-		BB2425CC1B2E042C003D3C40 /* KCZmanimCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCZmanimCalendar.m; sourceTree = "<group>"; };
-		BB2425CE1B2E042C003D3C40 /* KCAstronomicalCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAstronomicalCalculator.h; sourceTree = "<group>"; };
-		BB2425CF1B2E042C003D3C40 /* KCAstronomicalCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalculator.m; sourceTree = "<group>"; };
-		BB2425D01B2E042C003D3C40 /* KCAstronomicalCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAstronomicalCalendar.h; sourceTree = "<group>"; };
-		BB2425D11B2E042C003D3C40 /* KCAstronomicalCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalendar.m; sourceTree = "<group>"; };
-		BB2425D21B2E042C003D3C40 /* KCGeoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGeoLocation.h; sourceTree = "<group>"; };
-		BB2425D31B2E042C003D3C40 /* KCGeoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCGeoLocation.m; sourceTree = "<group>"; };
-		BB2425D41B2E042C003D3C40 /* KCSunriseAndSunsetCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSunriseAndSunsetCalculator.h; sourceTree = "<group>"; };
-		BB2425D51B2E042C003D3C40 /* KCSunriseAndSunsetCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSunriseAndSunsetCalculator.m; sourceTree = "<group>"; };
-		BB2425D61B2E042C003D3C40 /* Solar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solar.h; sourceTree = "<group>"; };
-		BB2425D81B2E042C003D3C40 /* trigonometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trigonometry.c; sourceTree = "<group>"; };
-		BB2425D91B2E042C003D3C40 /* trigonometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trigonometry.h; sourceTree = "<group>"; };
-		BB2425DB1B2E042C003D3C40 /* KCAstronomical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAstronomical.h; sourceTree = "<group>"; };
-		BB2425DC1B2E042C003D3C40 /* KCBearing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBearing.h; sourceTree = "<group>"; };
-		BB2425DD1B2E042C003D3C40 /* KCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCConstants.h; sourceTree = "<group>"; };
-		BB2425DE1B2E042C003D3C40 /* KCHebrewYear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCHebrewYear.h; sourceTree = "<group>"; };
-		BB2425DF1B2E042C003D3C40 /* KCJewishHolidays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHolidays.h; sourceTree = "<group>"; };
-		BB2425E01B2E042C003D3C40 /* KCMolad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMolad.h; sourceTree = "<group>"; };
-		BB2425E11B2E042C003D3C40 /* KCParashaReadings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashaReadings.h; sourceTree = "<group>"; };
-		BB2425E21B2E042C003D3C40 /* KCSunCalculationTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSunCalculationTypes.h; sourceTree = "<group>"; };
-		BB2425E31B2E042C003D3C40 /* KCTractates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTractates.h; sourceTree = "<group>"; };
-		BB2425E41B2E042C003D3C40 /* KCZenith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZenith.h; sourceTree = "<group>"; };
-		BB2425E51B2E042C003D3C40 /* KCZenithExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZenithExtended.h; sourceTree = "<group>"; };
-		BB2425E61B2E042C003D3C40 /* KosherCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KosherCocoa.h; sourceTree = "<group>"; };
-		BCCBCF7EC38E767566462B63 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EEEC0EA50E714CAAB01ED706 /* Pods-ParveZman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParveZman.debug.xcconfig"; sourceTree = "<group>"; };
-		FC9CCC250BDFB39412A99405 /* Pods-ParveZman-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParveZman-dummy.m"; sourceTree = "<group>"; };
-		FD5CE47D108B3447B612942E /* Pods-ParveZman-EDSunriseSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParveZman-EDSunriseSet-dummy.m"; sourceTree = "<group>"; };
+		047B18A88177B24C62550B14B22889FE /* GaugeHalf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeHalf.swift; path = GaugeKit/GaugeHalf.swift; sourceTree = "<group>"; };
+		05ABC3FB4A1996718A71741EEEFA8B44 /* JTImageButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTImageButton.modulemap; sourceTree = "<group>"; };
+		1449EA06BFA0273D05AB2F1FF9208B5A /* Gauge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gauge.swift; path = GaugeKit/Gauge.swift; sourceTree = "<group>"; };
+		18DB0142024D5A8E127E361FA2D2B25A /* GaugeCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeCircle.swift; path = GaugeKit/GaugeCircle.swift; sourceTree = "<group>"; };
+		1C5BAC69F519F047826BC1ACBB065BE4 /* CZPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB20462FBE00181CCCB4FC4ECC5CE57 /* Pods-ParveZman-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParveZman-dummy.m"; sourceTree = "<group>"; };
+		219E46165C2693B98EA78DDFD726AF56 /* GaugeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GaugeKit-dummy.m"; sourceTree = "<group>"; };
+		23AC6BE3967679D1F6528B36F868E3D7 /* CZPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CZPicker-umbrella.h"; sourceTree = "<group>"; };
+		2433C78F8B16A0A90516975CEB93B5B4 /* Pods-ParveZman.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParveZman.modulemap"; sourceTree = "<group>"; };
+		27AEFE1158DACA14F27BD62BEBD5DBAC /* GaugeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GaugeKit.h; path = GaugeKit/GaugeKit.h; sourceTree = "<group>"; };
+		2A18269803A264513A9CD83CC18C5EFC /* JTImageButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTImageButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3FAC27DD3EB01A5DE3ED1B62457C42 /* Pods-ParveZman-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParveZman-acknowledgements.plist"; sourceTree = "<group>"; };
+		327BED687F214AF00052DE91C9CFFA2E /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DF4124ABD52351B5A6BADE6C70AF08 /* Pods-ParveZman-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParveZman-frameworks.sh"; sourceTree = "<group>"; };
+		36A199A4FCD647F5BA7DF92B93998E6C /* Pods_ParveZman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ADC52A29C6C29991D01F16A0FBC0489 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		427E97C51AEE10032D53E5CD0CAA3EDE /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		4764A9362357869E1431ECB28FB07A20 /* Pods-ParveZman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParveZman.debug.xcconfig"; sourceTree = "<group>"; };
+		4F9A93242DC6671CCFFE5C64C617FF22 /* CZPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CZPicker.modulemap; sourceTree = "<group>"; };
+		50DB74B68AA7BE482E69F0A56507EB11 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
+		54E6AFF3CC7DB813EC6C3E92A578D2C8 /* JTImageButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTImageButton-umbrella.h"; sourceTree = "<group>"; };
+		5EE2A9D440F8E4C69B29780F9B8D06AB /* Pods-ParveZman-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParveZman-umbrella.h"; sourceTree = "<group>"; };
+		6422607AF2D3936A0FA01F9926C83BBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64D59756CEC6A34DBAB946F7476448A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SCLAlertView/Info.plist; sourceTree = "<group>"; };
+		6ACFD199AD980CEF14EC6680E019150F /* Pods-ParveZman-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParveZman-resources.sh"; sourceTree = "<group>"; };
+		6B5AD475A110C98A91C8DEF33EB9675B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7251D6F8D081F661D5BD90DE2CA1B778 /* GaugeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GaugeKit-umbrella.h"; sourceTree = "<group>"; };
+		74D7FFE97F44EFD46568E9A158876A33 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		77BA0C7827E120347D8DC2D82A70BAC2 /* CZPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CZPicker.xcconfig; sourceTree = "<group>"; };
+		7BB6C6117D011B92824E8BBC60639460 /* GaugeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GaugeKit.modulemap; sourceTree = "<group>"; };
+		7C61DD0851AC7E381A073FCB988C737A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80C6021AA34753B3FC3F9782AFDEACEC /* JTImageButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JTImageButton.m; path = JTImageButton/JTImageButton.m; sourceTree = "<group>"; };
+		82691D48D4C66DB5CA30AC1470ADAE92 /* Pods-ParveZman-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParveZman-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8651AA988D745A4A1EC83B92879A307C /* CZPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CZPicker-dummy.m"; sourceTree = "<group>"; };
+		876B0E0028B7BC404FA00FC5FD9F2CC6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = GaugeKit/Info.plist; sourceTree = "<group>"; };
+		877A7D7AAB9D0B3A22B4A4B8C08737D7 /* CZPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CZPicker-prefix.pch"; sourceTree = "<group>"; };
+		91413329813FA6FE5A78842159E69621 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		92F01B44AABBB4F2E66EA76FD1D36B28 /* CZPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZPicker.h; path = Pod/Classes/CZPicker.h; sourceTree = "<group>"; };
+		941D1C02728BBE97997517579A2DEE66 /* GaugeLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeLine.swift; path = GaugeKit/GaugeLine.swift; sourceTree = "<group>"; };
+		945B7B1B5640C097FC39EAE08B278F00 /* CZPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZPickerView.h; path = Pod/Classes/CZPickerView.h; sourceTree = "<group>"; };
+		94ADBB4037CB083B053B4FDB3B324ADF /* GaugeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GaugeKit-prefix.pch"; sourceTree = "<group>"; };
+		A265F57C62B4874E2FA397540057785D /* JTImageButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTImageButton-prefix.pch"; sourceTree = "<group>"; };
+		A624AE98692C59A89D6435BD6421654D /* JTImageButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JTImageButton.h; path = JTImageButton/JTImageButton.h; sourceTree = "<group>"; };
+		A666FFDFFBB17358E4932450AC4A9EB8 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE052FE0A75FCF5F4DC542284C98B926 /* CZPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0808625132D1B88B6D33B91D8F6A467 /* CZPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CZPickerView.m; path = Pod/Classes/CZPickerView.m; sourceTree = "<group>"; };
+		C6FB1E623F7765E78380D02AEAC8D7A9 /* JTImageButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTImageButton.xcconfig; sourceTree = "<group>"; };
+		C8ACD5844607DEB58CD768DDE2227029 /* JTImageButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTImageButton-dummy.m"; sourceTree = "<group>"; };
+		CD896D4DC68C9CA58EBD5450C9063CAB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C738DBD1ACF0FBA8BA84DC7C75A8E2 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		D8498211A6F64C03E8A7EDC42BAEF0EF /* CAShapeLayer+oval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAShapeLayer+oval.swift"; path = "GaugeKit/CAShapeLayer+oval.swift"; sourceTree = "<group>"; };
+		D9D5E31F399183F77E9B17D4DF0ED30E /* Pods-ParveZman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParveZman.release.xcconfig"; sourceTree = "<group>"; };
+		D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1EE1234F11027CC5597E14791E9830F /* GaugeKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaugeKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E9A1B2CFA42C9D6D127B3528AE50F0DE /* GaugeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GaugeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA022D72C2E95C419F0253B64E22FABD /* GaugeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GaugeKit.xcconfig; sourceTree = "<group>"; };
+		FD85657D5A77B04686F35E94C9038BE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B7793F76A9AA0C8008754352 /* Frameworks */ = {
+		0E349974183DACC4B0E5CFD61AA80ECA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E405D5EA7331EC27391A348 /* Foundation.framework in Frameworks */,
+				D76D672430C164D358E7F1DD16792C9A /* Foundation.framework in Frameworks */,
+				CB85831F79527BD561865D128CDA5C72 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1DC59BCB351B0199BE5E7DE /* Frameworks */ = {
+		1A961071EAC3E4620606E2224AC585FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				007728F9C39C6A15264494C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45061B6CA1C6DF0DF28C071DFA62656A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9998BEB2638E5E9A1C2168B9690064BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758D1C612B31FFFBBB30D3E3CCCBACEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F36E55986897ECDC78F993379B616B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D5824E1298F6CDB9A722195699BA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A5E8EDC6B377F8D46EBA292E6488168 /* Foundation.framework in Frameworks */,
+				E20A69ADF2A866D868BD89D66F8F23B2 /* QuartzCore.framework in Frameworks */,
+				6BB4EEEAA5BBC9DBA3F98D2C2CB897F8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFB50D933F9A851CD9EC4A885C539A72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887D58B4A1C069D527D695C96BF356DC /* Foundation.framework in Frameworks */,
+				E93B45C6A23A9173A1EEE2F28ECA9195 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB29FD44B62A904A91DFD10616D1FAB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30BAE7301B8AC81FC20F8463 /* Support Files */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				457CF8AB3B80A969A00D2B3B /* Info.plist */,
-				BA0C7917C7759C89DA0B7328 /* Pods-ParveZman-EDSunriseSet.modulemap */,
-				8955F2F45BFA2134EFA2654E /* Pods-ParveZman-EDSunriseSet.xcconfig */,
-				93A099B24C0284DBA21DD57B /* Pods-ParveZman-EDSunriseSet-Private.xcconfig */,
-				FD5CE47D108B3447B612942E /* Pods-ParveZman-EDSunriseSet-dummy.m */,
-				1E75949F63366C0B868A435A /* Pods-ParveZman-EDSunriseSet-prefix.pch */,
-				37DCBEA77E6DB26C586E1AFF /* Pods-ParveZman-EDSunriseSet-umbrella.h */,
+				DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2103A0397750042CCB6A3E5FDF9F83C5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6422607AF2D3936A0FA01F9926C83BBD /* Info.plist */,
+				05ABC3FB4A1996718A71741EEEFA8B44 /* JTImageButton.modulemap */,
+				C6FB1E623F7765E78380D02AEAC8D7A9 /* JTImageButton.xcconfig */,
+				C8ACD5844607DEB58CD768DDE2227029 /* JTImageButton-dummy.m */,
+				A265F57C62B4874E2FA397540057785D /* JTImageButton-prefix.pch */,
+				54E6AFF3CC7DB813EC6C3E92A578D2C8 /* JTImageButton-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pods-ParveZman-EDSunriseSet";
+			path = "../Target Support Files/JTImageButton";
 			sourceTree = "<group>";
 		};
-		69FBE607F4C7088D7E4E7F93 /* Targets Support Files */ = {
+		272E9036619B92D7D23159B27F5D823D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7AECABCD55547B9406CC59FC /* Pods-ParveZman */,
+				7BB6C6117D011B92824E8BBC60639460 /* GaugeKit.modulemap */,
+				EA022D72C2E95C419F0253B64E22FABD /* GaugeKit.xcconfig */,
+				219E46165C2693B98EA78DDFD726AF56 /* GaugeKit-dummy.m */,
+				94ADBB4037CB083B053B4FDB3B324ADF /* GaugeKit-prefix.pch */,
+				7251D6F8D081F661D5BD90DE2CA1B778 /* GaugeKit-umbrella.h */,
+				6B5AD475A110C98A91C8DEF33EB9675B /* Info.plist */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/GaugeKit";
 			sourceTree = "<group>";
 		};
-		7AECABCD55547B9406CC59FC /* Pods-ParveZman */ = {
+		4539946EBEB45383EF6FE0D984CF5AA5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1A186F6823DDD37C466A6BCF /* Info.plist */,
-				50232557B0F6CF1E73F72CEA /* Pods-ParveZman.modulemap */,
-				80CFDB413B9E545E6F2F9262 /* Pods-ParveZman-acknowledgements.markdown */,
-				230866909C4348867DAFC1CF /* Pods-ParveZman-acknowledgements.plist */,
-				FC9CCC250BDFB39412A99405 /* Pods-ParveZman-dummy.m */,
-				131399F4774AC67A22CCEBB1 /* Pods-ParveZman-environment.h */,
-				02E37BE2F421FD1B0503D8D3 /* Pods-ParveZman-frameworks.sh */,
-				4A336F43A8483FF5B39F06D3 /* Pods-ParveZman-resources.sh */,
-				3036209DD1EB1FD6B1555361 /* Pods-ParveZman-umbrella.h */,
-				EEEC0EA50E714CAAB01ED706 /* Pods-ParveZman.debug.xcconfig */,
-				6C7065ACE9550DBB17E231C3 /* Pods-ParveZman.release.xcconfig */,
+				CD896D4DC68C9CA58EBD5450C9063CAB /* Info.plist */,
+				A666FFDFFBB17358E4932450AC4A9EB8 /* SCLAlertView.modulemap */,
+				50DB74B68AA7BE482E69F0A56507EB11 /* SCLAlertView.xcconfig */,
+				3ADC52A29C6C29991D01F16A0FBC0489 /* SCLAlertView-dummy.m */,
+				427E97C51AEE10032D53E5CD0CAA3EDE /* SCLAlertView-prefix.pch */,
+				D7C738DBD1ACF0FBA8BA84DC7C75A8E2 /* SCLAlertView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView";
+			sourceTree = "<group>";
+		};
+		5C9B0A362ECD2510B9C2D8D3FF2A4B6A /* Pods-ParveZman */ = {
+			isa = PBXGroup;
+			children = (
+				7C61DD0851AC7E381A073FCB988C737A /* Info.plist */,
+				2433C78F8B16A0A90516975CEB93B5B4 /* Pods-ParveZman.modulemap */,
+				82691D48D4C66DB5CA30AC1470ADAE92 /* Pods-ParveZman-acknowledgements.markdown */,
+				2E3FAC27DD3EB01A5DE3ED1B62457C42 /* Pods-ParveZman-acknowledgements.plist */,
+				1FB20462FBE00181CCCB4FC4ECC5CE57 /* Pods-ParveZman-dummy.m */,
+				35DF4124ABD52351B5A6BADE6C70AF08 /* Pods-ParveZman-frameworks.sh */,
+				6ACFD199AD980CEF14EC6680E019150F /* Pods-ParveZman-resources.sh */,
+				5EE2A9D440F8E4C69B29780F9B8D06AB /* Pods-ParveZman-umbrella.h */,
+				4764A9362357869E1431ECB28FB07A20 /* Pods-ParveZman.debug.xcconfig */,
+				D9D5E31F399183F77E9B17D4DF0ED30E /* Pods-ParveZman.release.xcconfig */,
 			);
 			name = "Pods-ParveZman";
 			path = "Target Support Files/Pods-ParveZman";
 			sourceTree = "<group>";
 		};
-		8C0A8A9AF703DC747A1ED9D4 /* Pods */ = {
+		6FCF337B43B60985E836C146E898EA6D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B1D3F4F195DC4CE21FE4A07C /* EDSunriseSet */,
+				4F9A93242DC6671CCFFE5C64C617FF22 /* CZPicker.modulemap */,
+				77BA0C7827E120347D8DC2D82A70BAC2 /* CZPicker.xcconfig */,
+				8651AA988D745A4A1EC83B92879A307C /* CZPicker-dummy.m */,
+				877A7D7AAB9D0B3A22B4A4B8C08737D7 /* CZPicker-prefix.pch */,
+				23AC6BE3967679D1F6528B36F868E3D7 /* CZPicker-umbrella.h */,
+				FD85657D5A77B04686F35E94C9038BE8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CZPicker";
+			sourceTree = "<group>";
+		};
+		74D4ED6FDEA741BA95091FAF379100FD /* JTImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				A624AE98692C59A89D6435BD6421654D /* JTImageButton.h */,
+				80C6021AA34753B3FC3F9782AFDEACEC /* JTImageButton.m */,
+				2103A0397750042CCB6A3E5FDF9F83C5 /* Support Files */,
+			);
+			path = JTImageButton;
+			sourceTree = "<group>";
+		};
+		7D08AD85008F551F3F85DFE53AC47BF3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C9B0A362ECD2510B9C2D8D3FF2A4B6A /* Pods-ParveZman */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				96A49D1FEB74DC87C2E8C64929675587 /* Pods */,
+				EF58B60F73F1887C908F665F65CBCE93 /* Products */,
+				7D08AD85008F551F3F85DFE53AC47BF3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81ECDD5F6A4CE3C02F72489E611DA941 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				64D59756CEC6A34DBAB946F7476448A5 /* Info.plist */,
+				74D7FFE97F44EFD46568E9A158876A33 /* SCLAlertView.swift */,
+				4539946EBEB45383EF6FE0D984CF5AA5 /* Support Files */,
+			);
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
+		96A49D1FEB74DC87C2E8C64929675587 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5AC4F7F0C978993EF974B44EE2CEDD7 /* CZPicker */,
+				B8F07737E51F3F074999BD175AE97131 /* GaugeKit */,
+				74D4ED6FDEA741BA95091FAF379100FD /* JTImageButton */,
+				81ECDD5F6A4CE3C02F72489E611DA941 /* SCLAlertView */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A2EE3B1BD4A74903D9F23D16 /* Frameworks */ = {
+		A5AC4F7F0C978993EF974B44EE2CEDD7 /* CZPicker */ = {
 			isa = PBXGroup;
 			children = (
-				E730FB0510F8955A169FD869 /* iOS */,
+				92F01B44AABBB4F2E66EA76FD1D36B28 /* CZPicker.h */,
+				945B7B1B5640C097FC39EAE08B278F00 /* CZPickerView.h */,
+				C0808625132D1B88B6D33B91D8F6A467 /* CZPickerView.m */,
+				6FCF337B43B60985E836C146E898EA6D /* Support Files */,
 			);
-			name = Frameworks;
+			path = CZPicker;
 			sourceTree = "<group>";
 		};
-		A40D8A896F95B6B780A7749C /* Products */ = {
+		B8F07737E51F3F074999BD175AE97131 /* GaugeKit */ = {
 			isa = PBXGroup;
 			children = (
-				A5F63565A3373A1B6AAB4BFD /* EDSunriseSet.framework */,
-				4D095A61837B442D7F21678E /* Pods_ParveZman.framework */,
+				D8498211A6F64C03E8A7EDC42BAEF0EF /* CAShapeLayer+oval.swift */,
+				1449EA06BFA0273D05AB2F1FF9208B5A /* Gauge.swift */,
+				18DB0142024D5A8E127E361FA2D2B25A /* GaugeCircle.swift */,
+				047B18A88177B24C62550B14B22889FE /* GaugeHalf.swift */,
+				27AEFE1158DACA14F27BD62BEBD5DBAC /* GaugeKit.h */,
+				941D1C02728BBE97997517579A2DEE66 /* GaugeLine.swift */,
+				876B0E0028B7BC404FA00FC5FD9F2CC6 /* Info.plist */,
+				272E9036619B92D7D23159B27F5D823D /* Support Files */,
 			);
-			name = Products;
+			path = GaugeKit;
 			sourceTree = "<group>";
 		};
-		B1D3F4F195DC4CE21FE4A07C /* EDSunriseSet */ = {
+		DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				288E77ED54D09D1B5480D7F0 /* EDSunriseSet.h */,
-				A685BFB8BBA7AB789FE64079 /* EDSunriseSet.m */,
-				30BAE7301B8AC81FC20F8463 /* Support Files */,
-			);
-			path = EDSunriseSet;
-			sourceTree = "<group>";
-		};
-		B69F21ABA71728FB9CEB7D3F = {
-			isa = PBXGroup;
-			children = (
-				BB2425911B2E042C003D3C40 /* KosherCocoa */,
-				BCCBCF7EC38E767566462B63 /* Podfile */,
-				A2EE3B1BD4A74903D9F23D16 /* Frameworks */,
-				8C0A8A9AF703DC747A1ED9D4 /* Pods */,
-				A40D8A896F95B6B780A7749C /* Products */,
-				69FBE607F4C7088D7E4E7F93 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		BB2425911B2E042C003D3C40 /* KosherCocoa */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425921B2E042C003D3C40 /* Categories */,
-				BB2425AF1B2E042C003D3C40 /* Core */,
-				BB2425DA1B2E042C003D3C40 /* Headers */,
-				BB2425E61B2E042C003D3C40 /* KosherCocoa.h */,
-			);
-			path = KosherCocoa;
-			sourceTree = "<group>";
-		};
-		BB2425921B2E042C003D3C40 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425931B2E042C003D3C40 /* Foundation */,
-				BB2425AC1B2E042C003D3C40 /* KosherCocoa */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		BB2425931B2E042C003D3C40 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425941B2E042C003D3C40 /* MBCalendarCategories.h */,
-				BB2425951B2E042C003D3C40 /* NSCalendar */,
-				BB2425A21B2E042C003D3C40 /* NSDate */,
-				BB2425A91B2E042C003D3C40 /* NSDateComponents */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		BB2425951B2E042C003D3C40 /* NSCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425961B2E042C003D3C40 /* NSCalendar+Components.h */,
-				BB2425971B2E042C003D3C40 /* NSCalendar+Components.m */,
-				BB2425981B2E042C003D3C40 /* NSCalendar+DateComparison.h */,
-				BB2425991B2E042C003D3C40 /* NSCalendar+DateComparison.m */,
-				BB24259A1B2E042C003D3C40 /* NSCalendar+DateManipulation.h */,
-				BB24259B1B2E042C003D3C40 /* NSCalendar+DateManipulation.m */,
-				BB24259C1B2E042C003D3C40 /* NSCalendar+hebrewYearTypes.h */,
-				BB24259D1B2E042C003D3C40 /* NSCalendar+hebrewYearTypes.m */,
-				BB24259E1B2E042C003D3C40 /* NSCalendar+Juncture.h */,
-				BB24259F1B2E042C003D3C40 /* NSCalendar+Juncture.m */,
-				BB2425A01B2E042C003D3C40 /* NSCalendar+Ranges.h */,
-				BB2425A11B2E042C003D3C40 /* NSCalendar+Ranges.m */,
-			);
-			path = NSCalendar;
-			sourceTree = "<group>";
-		};
-		BB2425A21B2E042C003D3C40 /* NSDate */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425A31B2E042C003D3C40 /* NSDate+Components.h */,
-				BB2425A41B2E042C003D3C40 /* NSDate+Components.m */,
-				BB2425A51B2E042C003D3C40 /* NSDate+ConvenientDates.h */,
-				BB2425A61B2E042C003D3C40 /* NSDate+ConvenientDates.m */,
-				BB2425A71B2E042C003D3C40 /* NSDate+Description.h */,
-				BB2425A81B2E042C003D3C40 /* NSDate+Description.m */,
-			);
-			path = NSDate;
-			sourceTree = "<group>";
-		};
-		BB2425A91B2E042C003D3C40 /* NSDateComponents */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425AA1B2E042C003D3C40 /* NSDateComponents+AllComponents.h */,
-				BB2425AB1B2E042C003D3C40 /* NSDateComponents+AllComponents.m */,
-			);
-			path = NSDateComponents;
-			sourceTree = "<group>";
-		};
-		BB2425AC1B2E042C003D3C40 /* KosherCocoa */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425AD1B2E042C003D3C40 /* KCAstronomicalCalendar+DateManipulation.h */,
-				BB2425AE1B2E042C003D3C40 /* KCAstronomicalCalendar+DateManipulation.m */,
-			);
-			path = KosherCocoa;
-			sourceTree = "<group>";
-		};
-		BB2425AF1B2E042C003D3C40 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425B01B2E042C003D3C40 /* Calendar */,
-				BB2425CD1B2E042C003D3C40 /* Solar */,
-				BB2425D71B2E042C003D3C40 /* Utilities */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		BB2425B01B2E042C003D3C40 /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425B11B2E042C003D3C40 /* Calendar.h */,
-				BB2425B21B2E042C003D3C40 /* Chagim */,
-				BB2425B71B2E042C003D3C40 /* Daf Yomi */,
-				BB2425BC1B2E042C003D3C40 /* Parasha */,
-				BB2425C11B2E042C003D3C40 /* Sefira */,
-				BB2425C61B2E042C003D3C40 /* Zmanim */,
-			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
-		BB2425B21B2E042C003D3C40 /* Chagim */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425B31B2E042C003D3C40 /* KCJewishCalendar.h */,
-				BB2425B41B2E042C003D3C40 /* KCJewishCalendar.m */,
-				BB2425B51B2E042C003D3C40 /* KCJewishHoliday.h */,
-				BB2425B61B2E042C003D3C40 /* KCJewishHoliday.m */,
-			);
-			path = Chagim;
-			sourceTree = "<group>";
-		};
-		BB2425B71B2E042C003D3C40 /* Daf Yomi */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425B81B2E042C003D3C40 /* KCDaf.h */,
-				BB2425B91B2E042C003D3C40 /* KCDaf.m */,
-				BB2425BA1B2E042C003D3C40 /* KCDafYomiCalculator.h */,
-				BB2425BB1B2E042C003D3C40 /* KCDafYomiCalculator.m */,
-			);
-			path = "Daf Yomi";
-			sourceTree = "<group>";
-		};
-		BB2425BC1B2E042C003D3C40 /* Parasha */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425BD1B2E042C003D3C40 /* KCParasha.h */,
-				BB2425BE1B2E042C003D3C40 /* KCParasha.m */,
-				BB2425BF1B2E042C003D3C40 /* KCParashatHashavuaCalculator.h */,
-				BB2425C01B2E042C003D3C40 /* KCParashatHashavuaCalculator.m */,
-			);
-			path = Parasha;
-			sourceTree = "<group>";
-		};
-		BB2425C11B2E042C003D3C40 /* Sefira */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425C21B2E042C003D3C40 /* KCSefiraFormatter.h */,
-				BB2425C31B2E042C003D3C40 /* KCSefiraFormatter.m */,
-				BB2425C41B2E042C003D3C40 /* KCSefiratHaomerCalculator.h */,
-				BB2425C51B2E042C003D3C40 /* KCSefiratHaomerCalculator.m */,
-			);
-			path = Sefira;
-			sourceTree = "<group>";
-		};
-		BB2425C61B2E042C003D3C40 /* Zmanim */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425C71B2E042C003D3C40 /* KCComplexZmanimCalendar.h */,
-				BB2425C81B2E042C003D3C40 /* KCComplexZmanimCalendar.m */,
-				BB2425C91B2E042C003D3C40 /* KCZman.h */,
-				BB2425CA1B2E042C003D3C40 /* KCZman.m */,
-				BB2425CB1B2E042C003D3C40 /* KCZmanimCalendar.h */,
-				BB2425CC1B2E042C003D3C40 /* KCZmanimCalendar.m */,
-			);
-			path = Zmanim;
-			sourceTree = "<group>";
-		};
-		BB2425CD1B2E042C003D3C40 /* Solar */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425CE1B2E042C003D3C40 /* KCAstronomicalCalculator.h */,
-				BB2425CF1B2E042C003D3C40 /* KCAstronomicalCalculator.m */,
-				BB2425D01B2E042C003D3C40 /* KCAstronomicalCalendar.h */,
-				BB2425D11B2E042C003D3C40 /* KCAstronomicalCalendar.m */,
-				BB2425D21B2E042C003D3C40 /* KCGeoLocation.h */,
-				BB2425D31B2E042C003D3C40 /* KCGeoLocation.m */,
-				BB2425D41B2E042C003D3C40 /* KCSunriseAndSunsetCalculator.h */,
-				BB2425D51B2E042C003D3C40 /* KCSunriseAndSunsetCalculator.m */,
-				BB2425D61B2E042C003D3C40 /* Solar.h */,
-			);
-			path = Solar;
-			sourceTree = "<group>";
-		};
-		BB2425D71B2E042C003D3C40 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425D81B2E042C003D3C40 /* trigonometry.c */,
-				BB2425D91B2E042C003D3C40 /* trigonometry.h */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		BB2425DA1B2E042C003D3C40 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				BB2425DB1B2E042C003D3C40 /* KCAstronomical.h */,
-				BB2425DC1B2E042C003D3C40 /* KCBearing.h */,
-				BB2425DD1B2E042C003D3C40 /* KCConstants.h */,
-				BB2425DE1B2E042C003D3C40 /* KCHebrewYear.h */,
-				BB2425DF1B2E042C003D3C40 /* KCJewishHolidays.h */,
-				BB2425E01B2E042C003D3C40 /* KCMolad.h */,
-				BB2425E11B2E042C003D3C40 /* KCParashaReadings.h */,
-				BB2425E21B2E042C003D3C40 /* KCSunCalculationTypes.h */,
-				BB2425E31B2E042C003D3C40 /* KCTractates.h */,
-				BB2425E41B2E042C003D3C40 /* KCZenith.h */,
-				BB2425E51B2E042C003D3C40 /* KCZenithExtended.h */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		E730FB0510F8955A169FD869 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				1939A74655C3E9B4D11EF5E4 /* Foundation.framework */,
+				91413329813FA6FE5A78842159E69621 /* Foundation.framework */,
+				E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */,
+				D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		EF58B60F73F1887C908F665F65CBCE93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C5BAC69F519F047826BC1ACBB065BE4 /* CZPicker.bundle */,
+				BE052FE0A75FCF5F4DC542284C98B926 /* CZPicker.framework */,
+				E1EE1234F11027CC5597E14791E9830F /* GaugeKit.bundle */,
+				E9A1B2CFA42C9D6D127B3528AE50F0DE /* GaugeKit.framework */,
+				2A18269803A264513A9CD83CC18C5EFC /* JTImageButton.framework */,
+				36A199A4FCD647F5BA7DF92B93998E6C /* Pods_ParveZman.framework */,
+				327BED687F214AF00052DE91C9CFFA2E /* SCLAlertView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6ED5A38DA624D1454CE5823D /* Headers */ = {
+		12B6A862C868F9B88D8DE1F3F6E55247 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F06D2FC7DB7324F8359F159C /* EDSunriseSet.h in Headers */,
-				5D12AAF93506CF3CE4E73A80 /* Pods-ParveZman-EDSunriseSet-umbrella.h in Headers */,
+				74454A7C2F4CA246676125341140153D /* JTImageButton-umbrella.h in Headers */,
+				E5DC7AC2E3438DEAD43C67E3793F3E68 /* JTImageButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F383938BA175049A2E786B4E /* Headers */ = {
+		7811F2D3BA378B502AE564515DBF67C4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2426201B2E042C003D3C40 /* KCAstronomical.h in Headers */,
-				BB24261D1B2E042C003D3C40 /* Solar.h in Headers */,
-				BB2426221B2E042C003D3C40 /* KCConstants.h in Headers */,
-				BB2426171B2E042C003D3C40 /* KCAstronomicalCalendar.h in Headers */,
-				BB2426291B2E042C003D3C40 /* KCZenith.h in Headers */,
-				BB2425EC1B2E042C003D3C40 /* NSCalendar+DateManipulation.h in Headers */,
-				BB2426241B2E042C003D3C40 /* KCJewishHolidays.h in Headers */,
-				BB24260F1B2E042C003D3C40 /* KCComplexZmanimCalendar.h in Headers */,
-				BB2426191B2E042C003D3C40 /* KCGeoLocation.h in Headers */,
-				BB2425EA1B2E042C003D3C40 /* NSCalendar+DateComparison.h in Headers */,
-				BB2425FA1B2E042C003D3C40 /* NSDateComponents+AllComponents.h in Headers */,
-				BB24261B1B2E042C003D3C40 /* KCSunriseAndSunsetCalculator.h in Headers */,
-				BB2425E81B2E042C003D3C40 /* NSCalendar+Components.h in Headers */,
-				BB24261F1B2E042C003D3C40 /* trigonometry.h in Headers */,
-				BB24262B1B2E042C003D3C40 /* KosherCocoa.h in Headers */,
-				BB2426071B2E042C003D3C40 /* KCParasha.h in Headers */,
-				BB2426231B2E042C003D3C40 /* KCHebrewYear.h in Headers */,
-				BB2425EE1B2E042C003D3C40 /* NSCalendar+hebrewYearTypes.h in Headers */,
-				A41711259F6F5C4EBCD2514D /* Pods-ParveZman-umbrella.h in Headers */,
-				BB2426051B2E042C003D3C40 /* KCDafYomiCalculator.h in Headers */,
-				BB2425FF1B2E042C003D3C40 /* KCJewishCalendar.h in Headers */,
-				BB2425FE1B2E042C003D3C40 /* Calendar.h in Headers */,
-				BB2426281B2E042C003D3C40 /* KCTractates.h in Headers */,
-				BB2425F81B2E042C003D3C40 /* NSDate+Description.h in Headers */,
-				BB24262A1B2E042C003D3C40 /* KCZenithExtended.h in Headers */,
-				BB2426011B2E042C003D3C40 /* KCJewishHoliday.h in Headers */,
-				BB2426031B2E042C003D3C40 /* KCDaf.h in Headers */,
-				BB2426091B2E042C003D3C40 /* KCParashatHashavuaCalculator.h in Headers */,
-				BB2425F41B2E042C003D3C40 /* NSDate+Components.h in Headers */,
-				BB2425E71B2E042C003D3C40 /* MBCalendarCategories.h in Headers */,
-				BB2425F01B2E042C003D3C40 /* NSCalendar+Juncture.h in Headers */,
-				BB2426251B2E042C003D3C40 /* KCMolad.h in Headers */,
-				BB2426261B2E042C003D3C40 /* KCParashaReadings.h in Headers */,
-				BB2426211B2E042C003D3C40 /* KCBearing.h in Headers */,
-				BB2426111B2E042C003D3C40 /* KCZman.h in Headers */,
-				BB2425F61B2E042C003D3C40 /* NSDate+ConvenientDates.h in Headers */,
-				BB24260B1B2E042C003D3C40 /* KCSefiraFormatter.h in Headers */,
-				BB2425F21B2E042C003D3C40 /* NSCalendar+Ranges.h in Headers */,
-				BB2425FC1B2E042C003D3C40 /* KCAstronomicalCalendar+DateManipulation.h in Headers */,
-				BB24260D1B2E042C003D3C40 /* KCSefiratHaomerCalculator.h in Headers */,
-				BB2426151B2E042C003D3C40 /* KCAstronomicalCalculator.h in Headers */,
-				BB2426131B2E042C003D3C40 /* KCZmanimCalendar.h in Headers */,
-				BB2426271B2E042C003D3C40 /* KCSunCalculationTypes.h in Headers */,
+				BD9F65FDC73B0B391F5D4E7755E78899 /* SCLAlertView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28F27A6A301AEAC7E4372FA411FBC25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FF4267E80A7229490D365E526B931B0 /* GaugeKit-umbrella.h in Headers */,
+				FBBEA0562BCAF2CD38F51C8914859513 /* GaugeKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD639B849BC2DFC06AABFA4EC2F663FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9AD2A07F35B4EFBEC9ED6DB102D738 /* CZPicker-umbrella.h in Headers */,
+				928C49250301FBF75EFFC60116C61C66 /* CZPicker.h in Headers */,
+				8F2B270EEDA89753B3EA2F15D0AAB68C /* CZPickerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F346518EEA2B9190BD4B372457D43932 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA31C016F5A2EE5AF78A7E0D3B648B5 /* Pods-ParveZman-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B2CE6C169EBA4744883C6245 /* Pods-ParveZman-EDSunriseSet */ = {
+		0CC3AC85291D76DF4348A46011097C3C /* GaugeKit-GaugeKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4D9B06BE06C1E4EAC4D3BF6 /* Build configuration list for PBXNativeTarget "Pods-ParveZman-EDSunriseSet" */;
+			buildConfigurationList = 58ACB7777887A696C8ACC03D1E4A8066 /* Build configuration list for PBXNativeTarget "GaugeKit-GaugeKit" */;
 			buildPhases = (
-				8AFA8EB428D49FF2FFE292BB /* Sources */,
-				B7793F76A9AA0C8008754352 /* Frameworks */,
-				6ED5A38DA624D1454CE5823D /* Headers */,
+				B8EA1B8AD1003B451DF423DEF9FF68F8 /* Sources */,
+				1A961071EAC3E4620606E2224AC585FB /* Frameworks */,
+				CCB30AC230D653CC39C3553823C3CEEB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ParveZman-EDSunriseSet";
-			productName = "Pods-ParveZman-EDSunriseSet";
-			productReference = A5F63565A3373A1B6AAB4BFD /* EDSunriseSet.framework */;
+			name = "GaugeKit-GaugeKit";
+			productName = "GaugeKit-GaugeKit";
+			productReference = E1EE1234F11027CC5597E14791E9830F /* GaugeKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		122253C62F330ED922A7C46D47CF8DC2 /* GaugeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89BE5476222EF5031D4579387C734484 /* Build configuration list for PBXNativeTarget "GaugeKit" */;
+			buildPhases = (
+				D02CF7AA3C49471B0E1249B5D216C88A /* Sources */,
+				A0D5824E1298F6CDB9A722195699BA0B /* Frameworks */,
+				24F136C24175624D5695BD6DFD648FE3 /* Resources */,
+				A28F27A6A301AEAC7E4372FA411FBC25 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC9E55DB0CDC4ADD5FB0D59DF1F0D6C3 /* PBXTargetDependency */,
+			);
+			name = GaugeKit;
+			productName = GaugeKit;
+			productReference = E9A1B2CFA42C9D6D127B3528AE50F0DE /* GaugeKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B5721262BE16CBBDCD51C7E8 /* Pods-ParveZman */ = {
+		157D8DC93B2E33660E5BEC1446DABCFA /* CZPicker-CZPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00814F9B5D70DA146F82D0E7 /* Build configuration list for PBXNativeTarget "Pods-ParveZman" */;
+			buildConfigurationList = 5F44F06DEA82191AB1D4F5BF989AA76F /* Build configuration list for PBXNativeTarget "CZPicker-CZPicker" */;
 			buildPhases = (
-				E74BAF58100CF07FCE9D2CAE /* Sources */,
-				F1DC59BCB351B0199BE5E7DE /* Frameworks */,
-				F383938BA175049A2E786B4E /* Headers */,
+				475B8EABD52954EDDACFF6E27275FA71 /* Sources */,
+				EB29FD44B62A904A91DFD10616D1FAB5 /* Frameworks */,
+				81219C44460539DF0741A8D727530D6B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FEA1AC0B79DC7A539B4E73EF /* PBXTargetDependency */,
+			);
+			name = "CZPicker-CZPicker";
+			productName = "CZPicker-CZPicker";
+			productReference = 1C5BAC69F519F047826BC1ACBB065BE4 /* CZPicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		77452F41F3A2A4DFB7A064F03CCC6E2C /* CZPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B43654AD8532097074460AABAB00EE /* Build configuration list for PBXNativeTarget "CZPicker" */;
+			buildPhases = (
+				1012292531E03988CC8F6491430C037E /* Sources */,
+				AFB50D933F9A851CD9EC4A885C539A72 /* Frameworks */,
+				75DB3209AE4906DB9FD1880554065078 /* Resources */,
+				BD639B849BC2DFC06AABFA4EC2F663FB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F81207C791DAAF752F2B8BA0FB39698 /* PBXTargetDependency */,
+			);
+			name = CZPicker;
+			productName = CZPicker;
+			productReference = BE052FE0A75FCF5F4DC542284C98B926 /* CZPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98E6C2103FDC77D30FCCF6B40146DEB8 /* JTImageButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B08D87BAFEBF01842DEF2A39FA9247 /* Build configuration list for PBXNativeTarget "JTImageButton" */;
+			buildPhases = (
+				FCA708EF4ABA00FD2C3CF48B844B04FF /* Sources */,
+				0E349974183DACC4B0E5CFD61AA80ECA /* Frameworks */,
+				12B6A862C868F9B88D8DE1F3F6E55247 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTImageButton;
+			productName = JTImageButton;
+			productReference = 2A18269803A264513A9CD83CC18C5EFC /* JTImageButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B38196094D89A204B9791BB283B5F7F3 /* SCLAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2728365B429F1A8FBF32331C9EBC5C2A /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildPhases = (
+				23666970D5B5A0543B97ACD79B59E14E /* Sources */,
+				758D1C612B31FFFBBB30D3E3CCCBACEC /* Frameworks */,
+				7811F2D3BA378B502AE564515DBF67C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = 327BED687F214AF00052DE91C9CFFA2E /* SCLAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E5190443A194CC9C1796DAB9BFC939CB /* Pods-ParveZman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23E9C6768114EAEA2960D63D626F4C22 /* Build configuration list for PBXNativeTarget "Pods-ParveZman" */;
+			buildPhases = (
+				D5F95C5160CA3669A9792E4B3D4AF303 /* Sources */,
+				45061B6CA1C6DF0DF28C071DFA62656A /* Frameworks */,
+				F346518EEA2B9190BD4B372457D43932 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B2EEE617AC875AD95A57F2E76FEFF95 /* PBXTargetDependency */,
+				3F9BDC672C0EFF718C3EFF26BA850770 /* PBXTargetDependency */,
+				C0794D94DE0A15592077BB839979270B /* PBXTargetDependency */,
+				32E68482D90B7BAB75AC4EBF56631451 /* PBXTargetDependency */,
 			);
 			name = "Pods-ParveZman";
 			productName = "Pods-ParveZman";
-			productReference = 4D095A61837B442D7F21678E /* Pods_ParveZman.framework */;
+			productReference = 36A199A4FCD647F5BA7DF92B93998E6C /* Pods_ParveZman.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		925CB98F83940223C3816E2B /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 71AA552BF1B78E118345BABD /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B69F21ABA71728FB9CEB7D3F;
-			productRefGroup = A40D8A896F95B6B780A7749C /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EF58B60F73F1887C908F665F65CBCE93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5721262BE16CBBDCD51C7E8 /* Pods-ParveZman */,
-				B2CE6C169EBA4744883C6245 /* Pods-ParveZman-EDSunriseSet */,
+				77452F41F3A2A4DFB7A064F03CCC6E2C /* CZPicker */,
+				157D8DC93B2E33660E5BEC1446DABCFA /* CZPicker-CZPicker */,
+				122253C62F330ED922A7C46D47CF8DC2 /* GaugeKit */,
+				0CC3AC85291D76DF4348A46011097C3C /* GaugeKit-GaugeKit */,
+				98E6C2103FDC77D30FCCF6B40146DEB8 /* JTImageButton */,
+				E5190443A194CC9C1796DAB9BFC939CB /* Pods-ParveZman */,
+				B38196094D89A204B9791BB283B5F7F3 /* SCLAlertView */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		8AFA8EB428D49FF2FFE292BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		24F136C24175624D5695BD6DFD648FE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F8DE50EB5BF0A379037D782 /* EDSunriseSet.m in Sources */,
-				2EE05ECAD41FC0996E8FDB64 /* Pods-ParveZman-EDSunriseSet-dummy.m in Sources */,
+				09D93EFA894107FFB253D2995B81A840 /* GaugeKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E74BAF58100CF07FCE9D2CAE /* Sources */ = {
+		75DB3209AE4906DB9FD1880554065078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8313831A7E1644B0A32DE708A1CE0C /* CZPicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81219C44460539DF0741A8D727530D6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB30AC230D653CC39C3553823C3CEEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1012292531E03988CC8F6491430C037E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB24260E1B2E042C003D3C40 /* KCSefiratHaomerCalculator.m in Sources */,
-				BB2426161B2E042C003D3C40 /* KCAstronomicalCalculator.m in Sources */,
-				BB2426181B2E042C003D3C40 /* KCAstronomicalCalendar.m in Sources */,
-				BB2425E91B2E042C003D3C40 /* NSCalendar+Components.m in Sources */,
-				BB2426061B2E042C003D3C40 /* KCDafYomiCalculator.m in Sources */,
-				BB2425ED1B2E042C003D3C40 /* NSCalendar+DateManipulation.m in Sources */,
-				BB2425FD1B2E042C003D3C40 /* KCAstronomicalCalendar+DateManipulation.m in Sources */,
-				BB24260A1B2E042C003D3C40 /* KCParashatHashavuaCalculator.m in Sources */,
-				BB2426041B2E042C003D3C40 /* KCDaf.m in Sources */,
-				BB2426121B2E042C003D3C40 /* KCZman.m in Sources */,
-				BB2425F71B2E042C003D3C40 /* NSDate+ConvenientDates.m in Sources */,
-				BB2425F91B2E042C003D3C40 /* NSDate+Description.m in Sources */,
-				BB24261A1B2E042C003D3C40 /* KCGeoLocation.m in Sources */,
-				BB2425F31B2E042C003D3C40 /* NSCalendar+Ranges.m in Sources */,
-				BB24261E1B2E042C003D3C40 /* trigonometry.c in Sources */,
-				BB2426021B2E042C003D3C40 /* KCJewishHoliday.m in Sources */,
-				BB2425F11B2E042C003D3C40 /* NSCalendar+Juncture.m in Sources */,
-				BB2425EB1B2E042C003D3C40 /* NSCalendar+DateComparison.m in Sources */,
-				2AF9CFBD91F57CADAABD8C01 /* Pods-ParveZman-dummy.m in Sources */,
-				BB2426101B2E042C003D3C40 /* KCComplexZmanimCalendar.m in Sources */,
-				BB2426081B2E042C003D3C40 /* KCParasha.m in Sources */,
-				BB2426141B2E042C003D3C40 /* KCZmanimCalendar.m in Sources */,
-				BB2425F51B2E042C003D3C40 /* NSDate+Components.m in Sources */,
-				BB2426001B2E042C003D3C40 /* KCJewishCalendar.m in Sources */,
-				BB2425FB1B2E042C003D3C40 /* NSDateComponents+AllComponents.m in Sources */,
-				BB24261C1B2E042C003D3C40 /* KCSunriseAndSunsetCalculator.m in Sources */,
-				BB2425EF1B2E042C003D3C40 /* NSCalendar+hebrewYearTypes.m in Sources */,
-				BB24260C1B2E042C003D3C40 /* KCSefiraFormatter.m in Sources */,
+				DB3F3D8A4AABFF84F7BA02A35E7C7A03 /* CZPicker-dummy.m in Sources */,
+				49EB7E1D9D812A6C1F874FFD09F539C7 /* CZPickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23666970D5B5A0543B97ACD79B59E14E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D576164464385B66E692BC716DC742 /* Info.plist in Sources */,
+				1B6045E6F6B79480B4142A801DC60279 /* SCLAlertView-dummy.m in Sources */,
+				BE6E64D0DFA65078EAEDC10813D47C6B /* SCLAlertView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		475B8EABD52954EDDACFF6E27275FA71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8EA1B8AD1003B451DF423DEF9FF68F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D02CF7AA3C49471B0E1249B5D216C88A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3D54BD25D1A0609BB643339156884A /* CAShapeLayer+oval.swift in Sources */,
+				22144A61ABE2507ED567CB58EEB5B8EA /* Gauge.swift in Sources */,
+				E7A24E164487408C42D482535B9CAD99 /* GaugeCircle.swift in Sources */,
+				3A86D02786AD0101EF5A0094DB288DB1 /* GaugeHalf.swift in Sources */,
+				853FD59257E2DFD0D006C0DAEBA2D009 /* GaugeKit-dummy.m in Sources */,
+				96F65403631B8CF3D5A02C9192A0F1E4 /* GaugeLine.swift in Sources */,
+				DF0D633E2EA46B1775DAD3B53380F87C /* Info.plist in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F95C5160CA3669A9792E4B3D4AF303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9351B85BF6D4D393DEA4DF373F792CDF /* Pods-ParveZman-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA708EF4ABA00FD2C3CF48B844B04FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA33A0EFC44A66E028FD2FF54A10B6EF /* JTImageButton-dummy.m in Sources */,
+				9A3732A7C4F06D56AE9920B3603402ED /* JTImageButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FEA1AC0B79DC7A539B4E73EF /* PBXTargetDependency */ = {
+		32E68482D90B7BAB75AC4EBF56631451 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-ParveZman-EDSunriseSet";
-			target = B2CE6C169EBA4744883C6245 /* Pods-ParveZman-EDSunriseSet */;
-			targetProxy = C7DD1EE204744CAB978BD09F /* PBXContainerItemProxy */;
+			name = SCLAlertView;
+			target = B38196094D89A204B9791BB283B5F7F3 /* SCLAlertView */;
+			targetProxy = 7179AC65D2C8CE9BAE78B84CC3C4A988 /* PBXContainerItemProxy */;
+		};
+		3B2EEE617AC875AD95A57F2E76FEFF95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZPicker;
+			target = 77452F41F3A2A4DFB7A064F03CCC6E2C /* CZPicker */;
+			targetProxy = DBF98EA8CD29D798FE49CA33E75023EC /* PBXContainerItemProxy */;
+		};
+		3F9BDC672C0EFF718C3EFF26BA850770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GaugeKit;
+			target = 122253C62F330ED922A7C46D47CF8DC2 /* GaugeKit */;
+			targetProxy = 50FB10005E55214E775DA50149E17257 /* PBXContainerItemProxy */;
+		};
+		4F81207C791DAAF752F2B8BA0FB39698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CZPicker-CZPicker";
+			target = 157D8DC93B2E33660E5BEC1446DABCFA /* CZPicker-CZPicker */;
+			targetProxy = 06B58222B643BC95CEEB5721E1BEDBE2 /* PBXContainerItemProxy */;
+		};
+		C0794D94DE0A15592077BB839979270B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JTImageButton;
+			target = 98E6C2103FDC77D30FCCF6B40146DEB8 /* JTImageButton */;
+			targetProxy = B5ADCE650C2307A175FAC92F89179ACE /* PBXContainerItemProxy */;
+		};
+		EC9E55DB0CDC4ADD5FB0D59DF1F0D6C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GaugeKit-GaugeKit";
+			target = 0CC3AC85291D76DF4348A46011097C3C /* GaugeKit-GaugeKit */;
+			targetProxy = BCE3C900C71165D23D28B353AF7E3A0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		33B300A3395CEC1F488970EB /* Release */ = {
+		026E83CA27108E59C816F215826C32A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C7065ACE9550DBB17E231C3 /* Pods-ParveZman.release.xcconfig */;
+			baseConfigurationReference = EA022D72C2E95C419F0253B64E22FABD /* GaugeKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = GaugeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		24FE5FE058C9C53E31DFA4527649E061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DB74B68AA7BE482E69F0A56507EB11 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CEE0B06E826951473CECC8AECE06439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BA0C7827E120347D8DC2D82A70BAC2 /* CZPicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CZPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		400C39A282838E15B4E54F6777260DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA022D72C2E95C419F0253B64E22FABD /* GaugeKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = GaugeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4ACD04B0B0DA13E20CE46B4D5442C764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DB74B68AA7BE482E69F0A56507EB11 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A5AF4394C603E421F2BC28AA02642D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6FB1E623F7765E78380D02AEAC8D7A9 /* JTImageButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JTImageButton/JTImageButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTImageButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTImageButton/JTImageButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JTImageButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D49FC6BB8CE75007BBFE1B774F84882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BA0C7827E120347D8DC2D82A70BAC2 /* CZPicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CZPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		64627AD4DDC077CCDA891E2F845EAD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6FB1E623F7765E78380D02AEAC8D7A9 /* JTImageButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JTImageButton/JTImageButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTImageButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTImageButton/JTImageButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JTImageButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B04A02A9629495216E717C7B9AC0B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA022D72C2E95C419F0253B64E22FABD /* GaugeKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GaugeKit/GaugeKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GaugeKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GaugeKit/GaugeKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GaugeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75637707BBBAE5AEFF009E584C37EDB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA022D72C2E95C419F0253B64E22FABD /* GaugeKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GaugeKit/GaugeKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GaugeKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GaugeKit/GaugeKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GaugeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A39371C41D59DB1668B2D718711FC26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D5E31F399183F77E9B17D4DF0ED30E /* Pods-ParveZman.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -711,6 +971,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ParveZman/Pods-ParveZman.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -725,68 +986,7 @@
 			};
 			name = Release;
 		};
-		34AA878FBA7326828B8FEAD9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93A099B24C0284DBA21DD57B /* Pods-ParveZman-EDSunriseSet-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ParveZman-EDSunriseSet/Pods-ParveZman-EDSunriseSet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-ParveZman-EDSunriseSet/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ParveZman-EDSunriseSet/Pods-ParveZman-EDSunriseSet.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = EDSunriseSet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		38574EB29A4675900F7129E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4C0D9501CBCFCD7214F7C9A3 /* Debug */ = {
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -825,9 +1025,9 @@
 			};
 			name = Debug;
 		};
-		5FD8316B918193BC4B4D85BD /* Debug */ = {
+		B312EDAA0C898F65F60E06FDDE4B6067 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEEC0EA50E714CAAB01ED706 /* Pods-ParveZman.debug.xcconfig */;
+			baseConfigurationReference = 4764A9362357869E1431ECB28FB07A20 /* Pods-ParveZman.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -840,6 +1040,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ParveZman/Pods-ParveZman.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -848,15 +1049,16 @@
 				PRODUCT_NAME = Pods_ParveZman;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		CF8CBACF2A04C5B142EB3BD0 /* Debug */ = {
+		F1F680114D0E7A7FB7ED99243D0B146C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93A099B24C0284DBA21DD57B /* Pods-ParveZman-EDSunriseSet-Private.xcconfig */;
+			baseConfigurationReference = 77BA0C7827E120347D8DC2D82A70BAC2 /* CZPicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -865,14 +1067,41 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ParveZman-EDSunriseSet/Pods-ParveZman-EDSunriseSet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-ParveZman-EDSunriseSet/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CZPicker/CZPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CZPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ParveZman-EDSunriseSet/Pods-ParveZman-EDSunriseSet.modulemap";
+				MODULEMAP_FILE = "Target Support Files/CZPicker/CZPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CZPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F896168609E066E772CCD055E377D4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BA0C7827E120347D8DC2D82A70BAC2 /* CZPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CZPicker/CZPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CZPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CZPicker/CZPicker.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = EDSunriseSet;
+				PRODUCT_NAME = CZPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -881,37 +1110,116 @@
 			};
 			name = Debug;
 		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00814F9B5D70DA146F82D0E7 /* Build configuration list for PBXNativeTarget "Pods-ParveZman" */ = {
+		00B43654AD8532097074460AABAB00EE /* Build configuration list for PBXNativeTarget "CZPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5FD8316B918193BC4B4D85BD /* Debug */,
-				33B300A3395CEC1F488970EB /* Release */,
+				F896168609E066E772CCD055E377D4E6 /* Debug */,
+				F1F680114D0E7A7FB7ED99243D0B146C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71AA552BF1B78E118345BABD /* Build configuration list for PBXProject "Pods" */ = {
+		23E9C6768114EAEA2960D63D626F4C22 /* Build configuration list for PBXNativeTarget "Pods-ParveZman" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C0D9501CBCFCD7214F7C9A3 /* Debug */,
-				38574EB29A4675900F7129E2 /* Release */,
+				B312EDAA0C898F65F60E06FDDE4B6067 /* Debug */,
+				7A39371C41D59DB1668B2D718711FC26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4D9B06BE06C1E4EAC4D3BF6 /* Build configuration list for PBXNativeTarget "Pods-ParveZman-EDSunriseSet" */ = {
+		2728365B429F1A8FBF32331C9EBC5C2A /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CF8CBACF2A04C5B142EB3BD0 /* Debug */,
-				34AA878FBA7326828B8FEAD9 /* Release */,
+				4ACD04B0B0DA13E20CE46B4D5442C764 /* Debug */,
+				24FE5FE058C9C53E31DFA4527649E061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58ACB7777887A696C8ACC03D1E4A8066 /* Build configuration list for PBXNativeTarget "GaugeKit-GaugeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026E83CA27108E59C816F215826C32A9 /* Debug */,
+				400C39A282838E15B4E54F6777260DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F44F06DEA82191AB1D4F5BF989AA76F /* Build configuration list for PBXNativeTarget "CZPicker-CZPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D49FC6BB8CE75007BBFE1B774F84882 /* Debug */,
+				2CEE0B06E826951473CECC8AECE06439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B08D87BAFEBF01842DEF2A39FA9247 /* Build configuration list for PBXNativeTarget "JTImageButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5AF4394C603E421F2BC28AA02642D9 /* Debug */,
+				64627AD4DDC077CCDA891E2F845EAD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89BE5476222EF5031D4579387C734484 /* Build configuration list for PBXNativeTarget "GaugeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B04A02A9629495216E717C7B9AC0B48 /* Debug */,
+				75637707BBBAE5AEFF009E584C37EDB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 925CB98F83940223C3816E2B /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

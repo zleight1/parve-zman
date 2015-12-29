@@ -9,6 +9,7 @@
 #ifndef ParveZman_PZBridgingHeader_h
 #define ParveZman_PZBridgingHeader_h
 
-#import <KosherCocoa.h>
+//#import <KosherCocoa.h>
+//#import <JTImageButton.h>
 
 #endif
