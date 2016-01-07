@@ -21,9 +21,9 @@ class PZTimerManager {
         //create end time
         let endTime = NSDate(timeIntervalSinceReferenceDate: timeToEnd)
         
-        if let _ = loadPZTimerData() {
-            self.clearPZTimer()
-        }
+        //if let _ = loadPZTimerData() {
+          //  self.clearPZTimer()
+        //}
         
         let entityDescription =  NSEntityDescription.entityForName("PZTimer",
             inManagedObjectContext:

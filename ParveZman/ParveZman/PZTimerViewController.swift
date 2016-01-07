@@ -84,8 +84,12 @@ class PZTimerViewController: UIViewController   {
         self.timerGauge.endColor = PZUtils.sharedInstance.flatGreenColor
         
         //set the max value as the minutes of the minhag
-        let currentTime = NSDate.timeIntervalSinceReferenceDate()
-        let maxTime: NSTimeInterval = self.endTime - currentTime
+        var maxTime: NSTimeInterval
+        if self.type == "meat" {
+           maxTime = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentMeatMinhag)
+        } else {
+           maxTime = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentDairyMinhag)
+        }
         
         self.timerGauge.maxValue = CGFloat(maxTime / 60.0)
         self.timerGauge.rate = CGFloat(maxTime / 60.0)
@@ -143,13 +147,10 @@ class PZTimerViewController: UIViewController   {
         
         self.timerLabel.text = "Parve Zman!"
         
-        //Set the gauge to red
+        //Set the gauge to green
         self.timerGauge.startColor = PZUtils.sharedInstance.flatGreenColor
         self.timerGauge.maxValue = 1
         self.timerGauge.rate = 1
-        
-        let timerManager = PZTimerManager()
-        timerManager.clearPZTimer()
     }
     
     override func navigationShouldPopOnBackButton() -> Bool {
