@@ -23,8 +23,7 @@ class PZSettingsManager {
     var currentMeatMinhag: PZMeatWaitMinhag;
     
     func savePZSettings() {
-        let appDelegate =
-        UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = AppDelegate().appDelegate()
         
         let managedContext = appDelegate.managedObjectContext!
         
@@ -76,8 +75,7 @@ class PZSettingsManager {
     }
     
     func loadPZSettingsData() -> NSManagedObject? {
-        let appDelegate =
-        UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = AppDelegate().appDelegate()
         
         let managedContext = appDelegate.managedObjectContext!
         

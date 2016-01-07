@@ -13,17 +13,16 @@ import Foundation
 class PZTimerManager {
     
     func savePZTimer(timeToEnd: NSTimeInterval, timerType: String) {
-        let appDelegate =
-        UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = AppDelegate().appDelegate()
         
         let managedContext = appDelegate.managedObjectContext!
         
         //create end time
         let endTime = NSDate(timeIntervalSinceReferenceDate: timeToEnd)
         
-        //if let _ = loadPZTimerData() {
-          //  self.clearPZTimer()
-        //}
+        if let _ = loadPZTimerData() {
+            self.clearPZTimer()
+        }
         
         let entityDescription =  NSEntityDescription.entityForName("PZTimer",
             inManagedObjectContext:
@@ -60,8 +59,7 @@ class PZTimerManager {
     }
     
     func loadPZTimerData() -> NSManagedObject? {
-        let appDelegate =
-        UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = AppDelegate().appDelegate()
         
         let managedContext = appDelegate.managedObjectContext!
         
@@ -97,8 +95,7 @@ class PZTimerManager {
     }
     
     func clearPZTimer() {
-        let appDelegate =
-        UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = AppDelegate().appDelegate()
         
         let managedContext = appDelegate.managedObjectContext!
         

@@ -67,7 +67,7 @@ class PZHomeTableViewController: UITableViewController {
             let endTime = endDate.timeIntervalSinceReferenceDate
             let timerType = data?.valueForKey("timerType") as! String
             
-            return showTimer(endTime, timerType: timerType)
+            return showTimer(endTime, timerType: timerType, setNotification: false)
         }
         
     }
@@ -167,16 +167,17 @@ class PZHomeTableViewController: UITableViewController {
             return
         }
         
-        return showTimer(NSDate.timeIntervalSinceReferenceDate() + time, timerType: type)
+        return showTimer(NSDate.timeIntervalSinceReferenceDate() + time, timerType: type, setNotification: true)
     }
     
-    func showTimer(endTime: NSTimeInterval, timerType: String){
+    func showTimer(endTime: NSTimeInterval, timerType: String, setNotification: Bool){
         //get the timer view
         let pzTimerViewController = storyboard!.instantiateViewControllerWithIdentifier("PZTimerViewController") as! PZTimerViewController
         
         //pass the view controller all the information it needs here
         pzTimerViewController.endTime = endTime
         pzTimerViewController.type = timerType
+        pzTimerViewController.setLocalNotification = setNotification
         
         self.navigationController?.pushViewController(pzTimerViewController, animated: true)
         

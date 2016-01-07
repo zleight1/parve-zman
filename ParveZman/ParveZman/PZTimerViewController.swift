@@ -25,6 +25,7 @@ class PZTimerViewController: UIViewController   {
     var timerUUID: String = ""
     
     var type = ""
+    var setLocalNotification: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,18 @@ class PZTimerViewController: UIViewController   {
         let aSelector : Selector = "updateTime"
         self.timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
         
+        if self.setLocalNotification {
+            setupLocalNotification()
+        }
+        
+        //save timer        
+        let timerManager = PZTimerManager()
+        timerManager.savePZTimer(self.endTime, timerType: self.type)
+        
+        self.title = "Timer"
+    }
+    
+    func setupLocalNotification() {
         //init the uuid
         self.timerUUID = NSUUID().UUIDString
         
@@ -47,12 +60,7 @@ class PZTimerViewController: UIViewController   {
         
         //schedule it
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
-        
-        //save timer        
-        let timerManager = PZTimerManager()
-        timerManager.savePZTimer(self.endTime, timerType: self.type)
-        
-        self.title = "Timer"
+
     }
 
     override func viewWillAppear(animated: Bool) {

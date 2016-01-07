@@ -120,5 +120,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func appDelegate () -> AppDelegate
+    {
+        return UIApplication.sharedApplication().delegate as! AppDelegate
+    }
 }
 
