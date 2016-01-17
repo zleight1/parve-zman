@@ -84,6 +84,7 @@ nav a:focus { color: #fff; }
     margin: 0 auto;
     text-align: left;
     color: #fff;
+    background: #63c081;
 }
 
 .inner-bg {
