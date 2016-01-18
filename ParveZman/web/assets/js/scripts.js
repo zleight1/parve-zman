@@ -165,27 +165,31 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 	    $('.contact-form form input[type="text"], .contact-form form textarea').removeClass('contact-error');
 	    var postdata = $('.contact-form form').serialize();
+
+	    var error = false;
+	    //check here for variables
+        if($('.contact-form form .contact-email').val() === '') {
+            $('.contact-form form .contact-email').addClass('contact-error');
+            error = true;
+        }
+        if($('.contact-form form .contact-subject').val() === '') {
+            $('.contact-form form .contact-subject').addClass('contact-error');
+            error = true;
+        }
+        if($('.contact-form form textarea').val() === '') {
+            $('.contact-form form textarea').addClass('contact-error');
+            error = true;
+        }
+	    if(error) return;
 	    $.ajax({
 	        type: 'POST',
-	        url: 'assets/contact.php',
+	        url: 'http://getsimpleform.com/messages/ajax?form_api_token=ccf5e6eb22a9c4fb640908bceccbfcdf',
 	        data: postdata,
-	        dataType: 'json',
-	        success: function(json) {
-	            if(json.emailMessage != '') {
-	                $('.contact-form form .contact-email').addClass('contact-error');
-	            }
-	            if(json.subjectMessage != '') {
-	                $('.contact-form form .contact-subject').addClass('contact-error');
-	            }
-	            if(json.messageMessage != '') {
-	                $('.contact-form form textarea').addClass('contact-error');
-	            }
-	            if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '') {
-	                $('.contact-form form').fadeOut('fast', function() {
+	        dataType: 'jsonp'
+	    }).done(function(){
+	    	$('.contact-form form').fadeOut('fast', function() {
 	                    $('.contact-form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
-	                });
-	            }
-	        }
+	        });
 	    });
 	});
 

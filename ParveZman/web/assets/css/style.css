@@ -660,7 +660,7 @@ nav a:focus { color: #fff; }
 }
 
 .contact-form form .contact-error {
-	border-color: #63c081;
+	border-color: ##a94442;
 }
 
 .contact-address .map {
