@@ -12,11 +12,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" android:orientation="vertical">
-
-        <Button android:id="@+id/meatButton" android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="0.5" android:text="@string/meatName" android:background="@color/flatRedColor" android:textColor="@color/flatWhite" android:textSize="40dp" />
-
-        <Button android:id="@+id/dairyButton" android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="0.5" android:text="@string/dairyName" android:background="@color/flatBlueColor" android:textColor="@color/flatWhite" android:textSize="40dp" />
-
-        <Button android:id="@+id/settingsButton" android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="0.5" android:text="@string/settingsName" android:background="@color/flatGrayColor" android:textColor="@color/flatWhite" android:textSize="40dp" />
+        <Button android:onClick="timerPressed" android:id="@+id/meatButton" android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="0.5" android:text="@string/meatName" android:background="@color/flatRedColor" android:textColor="@color/flatWhite" android:textSize="@dimen/default_button_text_size" />
+        <Button android:onClick="timerPressed" android:id="@+id/dairyButton" android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="0.5" android:text="@string/dairyName" android:background="@color/flatBlueColor" android:textColor="@color/flatWhite" android:textSize="@dimen/default_button_text_size" />
+        <Button android:onClick="settingsPressed" android:id="@+id/settingsButton" android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="0.5" android:text="@string/settingsName" android:background="@color/flatGrayColor" android:textColor="@color/flatWhite" android:textSize="@dimen/default_button_text_size" />
     </LinearLayout>
 </RelativeLayout>
