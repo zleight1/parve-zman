@@ -35,6 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         Intent i = new Intent(this, TimerActivity.class);
 
         //Set options
+        i.putExtra("minhag", minhag);
 
         //Start activity
         startActivity(i);

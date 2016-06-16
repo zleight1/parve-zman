@@ -2,6 +2,7 @@
     <string name="app_name">ParveZman</string>
     <string name="meatName">Meat</string>
     <string name="dairyName">Dairy</string>
+    <string name="timerName">Timer</string>
     <string name="settingsName">Settings</string>
     <string name="parveName">Parve</string>
     <string name="meatTitle">Meat Minhag</string>
