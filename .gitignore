@@ -31,11 +31,11 @@ Pods/
 # Carthage/Checkouts
 
 Carthage/Build
-ParveZman/.idea/.name
-ParveZman/.idea/encodings.xml
-ParveZman/.idea/modules.xml
-ParveZman/.idea/ParveZman.iml
-ParveZman/.idea/vcs.xml
-ParveZman/.idea/workspace.xml
-ParveZman/.idea/xcode.xml
-ParveZman/.idea/scopes/scope_settings.xml
+*.iml
+.gradle
+**/local.properties
+**/.idea/workspace.xml
+**/.idea/libraries
+.DS_Store
+**/build
+**/captures
