@@ -8,4 +8,5 @@
     <string name="meatTitle">Meat Minhag</string>
     <string name="dairyTitle">Dairy Minhag</string>
     <string name="dialog_text">Default dialog text</string>
+    <string name="stop_text">Stop</string>
 </resources>

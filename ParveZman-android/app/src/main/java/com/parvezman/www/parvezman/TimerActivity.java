@@ -53,20 +53,20 @@ public class TimerActivity extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         new AlertDialog.Builder(this)
-                .setTitle("Cancel Timer")
-                .setMessage("Are you sure you want to cancel the running parve timer?")
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                .setTitle("Stop Timer?")
+                .setMessage("This will stop the running timer and remove any scheduled notifications.")
+                .setPositiveButton(R.string.stop_text, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // continue with delete
                         finish();
                     }
                 })
-                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // do nothing
                     }
                 })
-                .setIcon(android.R.drawable.ic_dialog_alert)
+                //.setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
 }
