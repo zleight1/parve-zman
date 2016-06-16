@@ -6,4 +6,5 @@
     <string name="parveName">Parve</string>
     <string name="meatTitle">Meat Minhag</string>
     <string name="dairyTitle">Dairy Minhag</string>
+    <string name="dialog_text">Default dialog text</string>
 </resources>

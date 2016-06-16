@@ -8,4 +8,6 @@
     <color name="flatGreenColor">#76EE00</color>
     <color name="flatGrayColor">#A9A9A9</color>
     <color name="flatWhite">#ECF0F1</color>
+    <color name="dialog_cancel_bgcolor">#DDDDDD</color>
+    <color name="dialog_ok_bgcolor">#00A478</color>
 </resources>
