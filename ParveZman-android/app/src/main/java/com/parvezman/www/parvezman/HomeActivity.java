@@ -28,6 +28,10 @@ public class HomeActivity extends AppCompatActivity {
 
     public void settingsPressed(View view){
         Log.d("settingsPressed", "Settings was pressed.");
+        Intent i = new Intent(this, SettingsActivity.class);
+
+        //Start activity
+        startActivity(i);
     }
 
     private void navigateToTimer(Minhag minhag){
