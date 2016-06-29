@@ -6,10 +6,12 @@ import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class TimerActivity extends AppCompatActivity {
 
@@ -39,6 +41,18 @@ public class TimerActivity extends AppCompatActivity {
                 ab.setBackgroundDrawable(timerColor);
             }
         }
+
+        new CountDownTimer(30000, 1000) {
+
+            TextView timerText = (TextView) findViewById(R.id.timerText);
+            public void onTick(long millisUntilFinished) {
+                timerText.setText(String.valueOf(millisUntilFinished / 1000));
+            }
+
+            public void onFinish() {
+                timerText.setText(R.string.elapsed_time);
+            }
+        }.start();
     }
 
     @Override

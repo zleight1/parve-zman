@@ -9,4 +9,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.parvezman.www.parvezman.TimerActivity">
 
+    <TextView
+        android:text="@string/empty_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/timerText"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1" />
 </RelativeLayout>
