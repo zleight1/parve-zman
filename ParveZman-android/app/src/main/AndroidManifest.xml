@@ -25,5 +25,4 @@
                 android:value="com.parvezman.www.parvezman.HomeActivity" />
         </activity>
     </application>
-
 </manifest>
