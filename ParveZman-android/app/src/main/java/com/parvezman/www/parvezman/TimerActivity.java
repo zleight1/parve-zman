@@ -32,21 +32,21 @@ public class TimerActivity extends AppCompatActivity {
                 ColorDrawable timerColor, rimColor;
                 if(minhag == Minhag.MEAT){
                     timerTitle.append(getResources().getText(R.string.meatName));
-                    timerColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatRedColor));
-                    rimColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatLightRedColor));
+                    rimColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatRedColor));
+                    timerColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatLightRedColor));
                 } else {
                     timerTitle.append(getResources().getText(R.string.dairyName));
-                    timerColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatBlueColor));
-                    rimColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatLightBlueColor));
+                    rimColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatBlueColor));
+                    timerColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatLightBlueColor));
                 }
                 timerTitle.append(" ");
                 timerTitle.append(getResources().getText(R.string.timerName));
                 ab.setTitle(timerTitle.toString());
-                ab.setBackgroundDrawable(timerColor);
+                ab.setBackgroundDrawable(rimColor);
                 //set the colors
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                     TextView timerText = (TextView) findViewById(R.id.timerText);
-                    timerText.setTextColor(timerColor.getColor());
+                    timerText.setTextColor(rimColor.getColor());
                     ProgressWheel wheel = (ProgressWheel) findViewById(R.id.progress_wheel);
                     wheel.setBarColor(timerColor.getColor());
                     wheel.setRimColor(rimColor.getColor());
@@ -60,7 +60,7 @@ public class TimerActivity extends AppCompatActivity {
             TextView timerText = (TextView) findViewById(R.id.timerText);
             public void onTick(long millisUntilFinished) {
                 timerText.setText(String.valueOf(millisUntilFinished / 1000));
-                wheel.setInstantProgress(1.0f - ((float)(30000 - millisUntilFinished)/(30000)));
+                wheel.setInstantProgress((float)(30000 - millisUntilFinished)/(30000));
             }
 
             public void onFinish() {
