@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.pnikosis.materialishprogress.ProgressWheel;
+
 public class TimerActivity extends AppCompatActivity {
 
     @Override
@@ -39,14 +41,24 @@ public class TimerActivity extends AppCompatActivity {
                 timerTitle.append(getResources().getText(R.string.timerName));
                 ab.setTitle(timerTitle.toString());
                 ab.setBackgroundDrawable(timerColor);
+                //set the colors
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    TextView timerText = (TextView) findViewById(R.id.timerText);
+                    timerText.setTextColor(timerColor.getColor());
+                    ProgressWheel wheel = (ProgressWheel) findViewById(R.id.progress_wheel);
+                    wheel.setBarColor(timerColor.getColor());
+                    wheel.setProgress(0.0f);
+                }
             }
         }
 
         new CountDownTimer(30000, 1000) {
 
+            ProgressWheel wheel = (ProgressWheel) findViewById(R.id.progress_wheel);
             TextView timerText = (TextView) findViewById(R.id.timerText);
             public void onTick(long millisUntilFinished) {
                 timerText.setText(String.valueOf(millisUntilFinished / 1000));
+                wheel.setProgress((30000 - millisUntilFinished)/(30000));
             }
 
             public void onFinish() {
