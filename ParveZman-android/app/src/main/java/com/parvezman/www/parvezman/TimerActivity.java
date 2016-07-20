@@ -29,13 +29,15 @@ public class TimerActivity extends AppCompatActivity {
             if(extras != null){
                 Minhag minhag = (Minhag)extras.get("minhag");
                 StringBuilder timerTitle = new StringBuilder();
-                ColorDrawable timerColor;
+                ColorDrawable timerColor, rimColor;
                 if(minhag == Minhag.MEAT){
                     timerTitle.append(getResources().getText(R.string.meatName));
                     timerColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatRedColor));
+                    rimColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatLightRedColor));
                 } else {
                     timerTitle.append(getResources().getText(R.string.dairyName));
                     timerColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatBlueColor));
+                    rimColor = new ColorDrawable(ContextCompat.getColor(this, R.color.flatLightBlueColor));
                 }
                 timerTitle.append(" ");
                 timerTitle.append(getResources().getText(R.string.timerName));
@@ -47,22 +49,23 @@ public class TimerActivity extends AppCompatActivity {
                     timerText.setTextColor(timerColor.getColor());
                     ProgressWheel wheel = (ProgressWheel) findViewById(R.id.progress_wheel);
                     wheel.setBarColor(timerColor.getColor());
-                    wheel.setProgress(0.0f);
+                    wheel.setRimColor(rimColor.getColor());
+                    wheel.setProgress(0.00f);
                 }
             }
         }
 
-        new CountDownTimer(30000, 1000) {
-
+        new CountDownTimer(30000, 100) {
             ProgressWheel wheel = (ProgressWheel) findViewById(R.id.progress_wheel);
             TextView timerText = (TextView) findViewById(R.id.timerText);
             public void onTick(long millisUntilFinished) {
                 timerText.setText(String.valueOf(millisUntilFinished / 1000));
-                wheel.setProgress((30000 - millisUntilFinished)/(30000));
+                wheel.setInstantProgress(1.0f - ((float)(30000 - millisUntilFinished)/(30000)));
             }
 
             public void onFinish() {
                 timerText.setText(R.string.elapsed_time);
+                wheel.setProgress(1.0f);
             }
         }.start();
     }

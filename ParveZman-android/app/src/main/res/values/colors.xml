@@ -4,8 +4,11 @@
     <color name="colorPrimaryDark">#5DD500</color>
     <color name="colorAccent">#FF4081</color>
     <color name="flatRedColor">#F2362C</color>
+    <color name="flatLightRedColor">#ff8080</color>
     <color name="flatBlueColor">#1A7CF9</color>
+    <color name="flatLightBlueColor">#83b7fc</color>
     <color name="flatGreenColor">#76EE00</color>
+    <color name="flatLightGreenColor">#bfff80</color>
     <color name="flatGrayColor">#A9A9A9</color>
     <color name="flatWhite">#ECF0F1</color>
     <color name="dialog_cancel_bgcolor">#DDDDDD</color>
