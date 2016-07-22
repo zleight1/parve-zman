@@ -89,7 +89,7 @@ public class TimerActivity extends AppCompatActivity {
 
         int seconds = (int) timeLeft;
 
-       return String.format("%02d:%02d:%02", hours, minutes, seconds);
+       return String.format("%02d:%02d:%02d", hours, minutes, seconds);
     }
 
     @Override
