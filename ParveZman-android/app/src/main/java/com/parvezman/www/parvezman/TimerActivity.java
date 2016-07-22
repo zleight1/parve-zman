@@ -17,6 +17,8 @@ import com.pnikosis.materialishprogress.ProgressWheel;
 
 public class TimerActivity extends AppCompatActivity {
 
+    CountDownTimer timer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,11 +57,11 @@ public class TimerActivity extends AppCompatActivity {
             }
         }
 
-        new CountDownTimer(300000, 100) {
+        timer = new CountDownTimer(300000, 100) {
             ProgressWheel wheel = (ProgressWheel) findViewById(R.id.progress_wheel);
             TextView timerText = (TextView) findViewById(R.id.timerText);
             public void onTick(long millisUntilFinished) {
-                setTextTime(millisUntilFinished, timerText);
+                timerText.setText(buildTextTime(millisUntilFinished));
                 wheel.setInstantProgress((float)(300000 - millisUntilFinished)/(300000));
             }
 
@@ -70,9 +72,9 @@ public class TimerActivity extends AppCompatActivity {
         }.start();
     }
 
-    private void setTextTime(long milliseconds, TextView timerText){
+    private String buildTextTime(long milliseconds){
         if(milliseconds <= 0){
-            return; //ignore it if we have no time left
+            return "ParveZman!"; //ignore it if we have no time left
         }
         long timeLeft = milliseconds / 1000;
         int hours = (int) (timeLeft / 3600);
@@ -87,9 +89,7 @@ public class TimerActivity extends AppCompatActivity {
 
         int seconds = (int) timeLeft;
 
-        String timeString = String.format("%02d:%02d:%02", hours, minutes, seconds);
-
-        timerText.setText(timeString);
+       return String.format("%02d:%02d:%02", hours, minutes, seconds);
     }
 
     @Override
@@ -109,6 +109,7 @@ public class TimerActivity extends AppCompatActivity {
                 .setPositiveButton(R.string.stop_text, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // continue with delete
+                        timer.cancel();
                         finish();
                     }
                 })
