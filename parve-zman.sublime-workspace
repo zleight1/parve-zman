@@ -1,0 +1,570 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"at",
+				"attr	.attr() - single"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"block",
+				"blockquote	<blockquote>"
+			],
+			[
+				"html",
+				"html	html"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"tem",
+				"template"
+			],
+			[
+				"ig",
+				"ignoreDefaultsArray"
+			],
+			[
+				"ign",
+				"ignoreDefaultsArray"
+			],
+			[
+				"i",
+				"ignoreArray"
+			],
+			[
+				"ignore",
+				"ignoreDefaults"
+			],
+			[
+				"load",
+				"loadScreen"
+			],
+			[
+				"hash",
+				"replaceHash"
+			],
+			[
+				"inc",
+				"includeFile"
+			],
+			[
+				"incl",
+				"includeFile"
+			],
+			[
+				"file",
+				"fileLoaded"
+			],
+			[
+				"templ",
+				"templateName"
+			],
+			[
+				"temp",
+				"templateName"
+			],
+			[
+				"li",
+				"link	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Podfile",
+			"settings":
+			{
+				"buffer_size": 206,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"int",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"form",
+				"Format Code"
+			],
+			[
+				"for",
+				"Format Code"
+			],
+			[
+				"fo",
+				"Format Code"
+			],
+			[
+				"perl",
+				"Set Syntax: ModernPerl"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"html5",
+				"Set Syntax: HTML5"
+			],
+			[
+				"modern",
+				"Set Syntax: ModernPerl"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"mode",
+				"Set Syntax: ModernPerl"
+			],
+			[
+				"moder",
+				"Set Syntax: ModernPerl"
+			],
+			[
+				"bs3",
+				"Snippet: bs3-button-info"
+			],
+			[
+				"div",
+				"Snippet: <div>"
+			],
+			[
+				"code",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"set perl ",
+				"Set Syntax: ModernPerl"
+			],
+			[
+				"set perl",
+				"Set Syntax: Perl"
+			],
+			[
+				"mojo",
+				"Set Syntax: Mojolicious in Perl"
+			],
+			[
+				"bs3 aler",
+				"Snippet: bs3-alert-info"
+			],
+			[
+				"prett",
+				"HTMLPrettify: Set Plugin Options"
+			],
+			[
+				"moderl",
+				"Set Syntax: ModernPerl Extended YAML"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"\"perltidy_cmd\": [ \"/usr/bin/perltidy\" ]",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/zleighton/Documents/Development/Software/Git/parve-zman/ParveZman-ios/Podfile",
+		"/Users/Xedus/Desktop/Beth Israel Website",
+		"/Users/Xedus/work/transfinder/README.md",
+		"/Users/Xedus/work/transfinder/templates/layouts/default.html.ep",
+		"/Users/Xedus/work/transfinder/templates/index.html.ep",
+		"/Users/Xedus/work/transfinder/public/js/app.js",
+		"/Users/Xedus/work/transfinder/transfinder.pl",
+		"/Users/Xedus/work/transfinder/templates/main/main.html.ep",
+		"/Users/Xedus/work/transfinder2/web/index.html",
+		"/Users/Xedus/work/transfinder/transfinder/t/basic.t",
+		"/Users/Xedus/work/transfinder/templates/example/welcome.html.ep",
+		"/Users/Xedus/work/transfinder/index.html",
+		"/Users/Xedus/work/transfinder/js/app.js",
+		"/Users/Xedus/work/perl/farmingo.pl",
+		"/Users/Xedus/Library/Application Support/Sublime Text 3/Packages/User/perl.sublime-build",
+		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Users/Xedus/Library/Caches/Metadata/Safari/History/https:%2F%2Fwww.facebook.com%2Fphoto.php?fbid=4987562571598&set=a.1370650071046.2048185.1375560011&type=1&theater.webhistory",
+		"/Users/Xedus/Library/Containers/com.apple.iChat/Data/Library/Messages/Archive/2014-05-10/‪+1 (845) 853-3684‬ on 2014-05-10 at 00.06.18.ichat",
+		"/Users/Xedus/work/bcgaslease/www/new_site/mission.html",
+		"/Users/Xedus/work/bcgaslease/www/new_site/links.html",
+		"/Users/Xedus/work/bcgaslease/public_html/index.html",
+		"/Users/Xedus/work/bcgaslease/public_html/test.html",
+		"/Users/Xedus/work/bcgaslease/www/index.html",
+		"/Users/Xedus/work/bcgaslease/www/new_site/contact.html",
+		"/Users/Xedus/work/bcgaslease/www/new_site/index.html",
+		"/Users/Xedus/work/bcgaslease/www/test.html",
+		"/Users/Xedus/work/bcgaslease/public_html/new_site/css/blog.css",
+		"/Users/Xedus/work/bcgaslease/public_html/new_site/contact.html",
+		"/Users/Xedus/work/bcgaslease/public_html/new_site/links.html",
+		"/Users/Xedus/work/bcgaslease/public_html/ourmission.htm",
+		"/Users/Xedus/work/bcgaslease/public_html/new_site/mission.html",
+		"/Users/Xedus/work/bcgaslease/public_html/new_site/index.html",
+		"/Users/Xedus/work/bcgaslease/public_html/new_site/test.html",
+		"/Users/Xedus/work/bcgaslease/public_html/index.htm",
+		"/Users/Xedus/work/bcgaslease/public_html/contactus.htm",
+		"/Users/Xedus/Library/Application Support/Sublime Text 3/Packages/User/openinbrowser.sublime-settings",
+		"/Users/Xedus/Library/Application Support/Sublime Text 3/Packages/BrowserIntegration/BrowserIntegration.sublime-settings",
+		"/Users/Xedus/work/bcgaslease/public_html/cgi-bin/test.cgi",
+		"/mnt/xlinode/logs/error.log",
+		"/mnt/xlinode/public_html/lib/templatelib.pl",
+		"/mnt/xlinode/public_html/template/compass.tmpl",
+		"/mnt/xlinode/public_html/.htaccess",
+		"/mnt/xlinode/public_html/lib/weblib.pl",
+		"/mnt/xlinode/public_html/template/default.footer.tmpl",
+		"/mnt/xlinode/public_html/template/default.nav.tmpl",
+		"/mnt/xlinode/public_html/template/default.content.tmpl",
+		"/mnt/xlinode/public_html/template/default.tmpl",
+		"/mnt/xlinode/public_html/template/default.head.tmpl",
+		"/mnt/xlinode/public_html/compass.cgi",
+		"/mnt/xlinode/public_html/error.html",
+		"/mnt/xlinode/public_html/contact.cgi",
+		"/mnt/xlinode/public_html/js/jquery.knob.js",
+		"/mnt/xlinode/public_html/about.cgi",
+		"/mnt/xlinode/public_html/projects.cgi",
+		"/mnt/xlinode/public_html/home.cgi",
+		"/mnt/xlinode/public_html/template/test.tmpl",
+		"/mnt/xlinode/public_html/css/sticky-footer-navbar.css",
+		"/mnt/xlinode/143/one_forty_three/templates/layouts/head.html.ep",
+		"/mnt/xlinode/public_html/index.html",
+		"/mnt/xlinode/public_html/template/default.nav.tmpl.html",
+		"/mnt/xlinode/public_html/test.cgi",
+		"/mnt/xlinode/public_html/test",
+		"/Users/Xedus/Documents/Projects/143/one_forty_three/templates/layouts/partial/head.html.ep",
+		"/Users/Xedus/Documents/Projects/143/one_forty_three/templates/layouts/head.html.ep",
+		"/Users/Xedus/Documents/Projects/143/one_forty_three/templates/layouts/bootstrap.html.ep.html",
+		"/Users/Xedus/Documents/Projects/143/css/sticky-footer-navbar.css",
+		"/Users/Xedus/Documents/Projects/143/js/143application.js",
+		"/Users/Xedus/Documents/Projects/143/index.html",
+		"/Users/Xedus/Documents/Projects/143/cgitest.cgi",
+		"/Users/Xedus/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Users/Xedus/Desktop/bootstrap-3.0.0/examples/sticky-footer-navbar/index.html",
+		"/Users/Xedus/Documents/Projects/143/css/yeti-bootstrap.min.css",
+		"/Users/Xedus/Documents/Projects/143/css/bootstrap.css"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"~/work/git/zacharyleightondotcom/",
+			"-*.log,~/work/bcgaslease/"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<li class=\"mix category_web\">\n                                <div class=\"col-xs-12 col-sm-6 col-md-3\">\n                                    <a href=\"images/work/jquery.gif\" data-gal=\"prettyPhoto\" title=\"jQuery is a great library that changed the way we look at DOMs forever.\"><img src=\"images/thumbnails/jquery.png\" alt=\"jQuery. Life before it is a blur.\" /></a>\n                                </div>\n                            </li>",
+			"<div class=\"col-xs-10 col-xs-offset-1 col-sm-5\" id=\"intro\">\n                            <h1><i class=\"fa fa-sun-o logo-circled\"></i> <strong>Sunshine</strong> is here</h1>\n                            <br>\n                            <!-- TICKER START -->\n                            <div class=\"ticker\">\n                                <h3><strong>Clean</strong> design.</h3>\n                                <h3><strong>Bright</strong> ideas.</h3>\n                                <h3><strong>Amazing</strong> results.</h3>\n                            </div>\n                            <!-- TICKER END -->\n                            <p>A theme designed to look beautiful and work beautifully.</p>\n                            <br>\n                            <a href=\"#about\" class=\"btn btn-transparent scroll\"><strong>LEARN MORE</strong></a>\n                            <a href=\"#about\" class=\"btn btn-link btn-white scroll\">Get Sunshine <i class=\"fa fa-angle-right\"></i></a>\n                        </div>",
+			"clients",
+			"learning",
+			"clients",
+			"CLIENTS",
+			"clients",
+			"Learning",
+			"learning",
+			"LEARNING",
+			"learning",
+			"services",
+			"services.jpg",
+			"school",
+			"div",
+			"index",
+			"items",
+			"encoding",
+			"<br />",
+			"<title>Binghamton/Conklin Gas Lease Association</title>",
+			"src",
+			"*",
+			" ",
+			"  ",
+			"    ",
+			"      ",
+			"       ",
+			"\\<\\w\\>\\s*\\<\\/\\w\\>",
+			"\\<p\\>\\s*\\<\\/p\\>",
+			"<br />",
+			"         ",
+			"\\s+",
+			"<p>******</p>",
+			"<p>*****</p>",
+			"                    <",
+			"<p>*****</p>",
+			"u>",
+			"u",
+			"a real",
+			"h3",
+			"about",
+			"h2",
+			"<h2 class=\"small\">",
+			"/h2 class=\"small\">",
+			"h3",
+			"h4",
+			"<h2 class=\"blog-post-title\">New feature</h2>",
+			"</td",
+			"../../assets/",
+			"../../dist/"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<title>Binghamton/Conklin Gas Coalition</title>",
+			"%20",
+			" ",
+			"",
+			"</p><p>",
+			" ",
+			"",
+			"b",
+			"<h2>",
+			"/h2>",
+			"h2 class=\"small\"",
+			"h3",
+			"<h2 class=\"blog-post-title\">New feature</h2>\n            <p class=\"blog-post-meta\">December 14, 2013 by <a href=\"#\">Chris</a></p>",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Podfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cont",
+				"new_site/contact.html"
+			],
+			[
+				"our",
+				"public_html/ourmission.htm"
+			],
+			[
+				"nav.",
+				"public_html/template/default.nav.tmpl"
+			],
+			[
+				"head.tmpl",
+				"public_html/template/default.head.tmpl"
+			],
+			[
+				"templ",
+				"public_html/lib/templatelib.pl"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/work/crowd/crowd-local.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 255.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

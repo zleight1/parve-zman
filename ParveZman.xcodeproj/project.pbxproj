@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3347B9C2721DE5BFD48CE91B /* Pods_ParveZman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */; };
+		066531E57E0352891DCF3A2F /* Pods_ParveZmanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E671E01EDB894F1AF4997D /* Pods_ParveZmanTests.framework */; };
+		07876C8D102B5E87D76DE711 /* Pods_ParveZman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74088D8D42F0F9572A6A0A51 /* Pods_ParveZman.framework */; };
 		BB05261E1BCF1C890026C6A4 /* PZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24269F1B38E1AD003D3C40 /* PZUtils.swift */; };
 		BB0526201BCF1C8B0026C6A4 /* PZTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */; };
 		BB0526211BCF1C8E0026C6A4 /* PZSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC043C51B55DF9500CD5474 /* PZSettings.swift */; };
@@ -52,10 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.debug.xcconfig"; sourceTree = "<group>"; };
-		BB01D4441B6EC3810067C028 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParveZman.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParveZman.framework"; sourceTree = "<group>"; };
-		BB01D4461B703AB60067C028 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ParveZman.framework; path = "Pods/../build/Debug-iphoneos/Pods_ParveZman.framework"; sourceTree = "<group>"; };
+		05C1A8981C2520B31FA91D64 /* Pods-ParveZman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.debug.xcconfig"; sourceTree = "<group>"; };
+		43E671E01EDB894F1AF4997D /* Pods_ParveZmanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZmanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74088D8D42F0F9572A6A0A51 /* Pods_ParveZman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParveZman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18815361B51EE9B0426E1F6 /* Pods-ParveZmanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZmanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZmanTests/Pods-ParveZmanTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2F60D73F16D0AC71D75F0F7 /* Pods-ParveZman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.release.xcconfig"; sourceTree = "<group>"; };
+		B6817927EB6AED5BA083B411 /* Pods-ParveZmanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZmanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZmanTests/Pods-ParveZmanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB12F5A21B72EADF0087447E /* PZTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZTimerViewController.swift; sourceTree = "<group>"; };
 		BB15CB7A1C2A3C88003BA02C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		BB24269F1B38E1AD003D3C40 /* PZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZUtils.swift; sourceTree = "<group>"; };
@@ -79,7 +82,6 @@
 		BBE611821B24AD9A00B0B800 /* PZSettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsManager.swift; sourceTree = "<group>"; };
 		BBE611841B24B6AE00B0B800 /* PZSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZSettingsViewController.swift; sourceTree = "<group>"; };
 		BBE611861B24DFA200B0B800 /* PZMinhag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZMinhag.swift; sourceTree = "<group>"; };
-		CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParveZman.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3347B9C2721DE5BFD48CE91B /* Pods_ParveZman.framework in Frameworks */,
+				07876C8D102B5E87D76DE711 /* Pods_ParveZman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,20 +97,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066531E57E0352891DCF3A2F /* Pods_ParveZmanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8CDFB675EC2B23D7B51FF2C7 /* Frameworks */ = {
+		89D051DD97A1D5AAADE892AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BB01D4461B703AB60067C028 /* Pods_ParveZman.framework */,
-				BB01D4441B6EC3810067C028 /* Pods_ParveZman.framework */,
-				26569F8B7350A2FAB308A03D /* Pods_ParveZman.framework */,
+				05C1A8981C2520B31FA91D64 /* Pods-ParveZman.debug.xcconfig */,
+				B2F60D73F16D0AC71D75F0F7 /* Pods-ParveZman.release.xcconfig */,
+				B6817927EB6AED5BA083B411 /* Pods-ParveZmanTests.debug.xcconfig */,
+				B18815361B51EE9B0426E1F6 /* Pods-ParveZmanTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BB12F5A11B72EAC30087447E /* PZTimer */ = {
@@ -161,8 +165,8 @@
 				BB9915861B1D15D000501DD2 /* ParveZman */,
 				BB99159C1B1D15D000501DD2 /* ParveZmanTests */,
 				BB9915851B1D15D000501DD2 /* Products */,
-				C7498970632CEBC4F0E98FB0 /* Pods */,
-				8CDFB675EC2B23D7B51FF2C7 /* Frameworks */,
+				89D051DD97A1D5AAADE892AA /* Pods */,
+				BEB63977A012E01E71273FA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,13 +242,13 @@
 			name = PZSettings;
 			sourceTree = "<group>";
 		};
-		C7498970632CEBC4F0E98FB0 /* Pods */ = {
+		BEB63977A012E01E71273FA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */,
-				CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */,
+				74088D8D42F0F9572A6A0A51 /* Pods_ParveZman.framework */,
+				43E671E01EDB894F1AF4997D /* Pods_ParveZmanTests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,12 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB9915A31B1D15D000501DD2 /* Build configuration list for PBXNativeTarget "ParveZman" */;
 			buildPhases = (
-				898CAFB2183CAC97FF7A6886 /* Check Pods Manifest.lock */,
+				59EFA0145715E9A0398A1BAD /* [CP] Check Pods Manifest.lock */,
 				BB9915811B1D15D000501DD2 /* Frameworks */,
 				BB12F4821B7044B20087447E /* Sources */,
 				BB9915821B1D15D000501DD2 /* Resources */,
-				E454AD80245B47425CEDB75D /* Embed Pods Frameworks */,
-				B1F7ACDF2CB651423C5873E6 /* Copy Pods Resources */,
+				3C25E74CF536A25E452E2347 /* [CP] Embed Pods Frameworks */,
+				4D61C19821AE31120661A570 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,9 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB9915A61B1D15D000501DD2 /* Build configuration list for PBXNativeTarget "ParveZmanTests" */;
 			buildPhases = (
+				712BA652E5DF4D83DC16286F /* [CP] Check Pods Manifest.lock */,
 				BB9915951B1D15D000501DD2 /* Sources */,
 				BB9915961B1D15D000501DD2 /* Frameworks */,
 				BB9915971B1D15D000501DD2 /* Resources */,
+				373703923DA2488843C83417 /* [CP] Embed Pods Frameworks */,
+				F86E6F4DBE915D75A4FD4F79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -350,29 +357,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		898CAFB2183CAC97FF7A6886 /* Check Pods Manifest.lock */ = {
+		373703923DA2488843C83417 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZmanTests/Pods-ParveZmanTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B1F7ACDF2CB651423C5873E6 /* Copy Pods Resources */ = {
+		3C25E74CF536A25E452E2347 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D61C19821AE31120661A570 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,19 +402,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E454AD80245B47425CEDB75D /* Embed Pods Frameworks */ = {
+		59EFA0145715E9A0398A1BAD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZman/Pods-ParveZman-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		712BA652E5DF4D83DC16286F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F86E6F4DBE915D75A4FD4F79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParveZmanTests/Pods-ParveZmanTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -553,7 +605,7 @@
 		};
 		BB9915A41B1D15D000501DD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 633577895282399478347BF1 /* Pods-ParveZman.debug.xcconfig */;
+			baseConfigurationReference = 05C1A8981C2520B31FA91D64 /* Pods-ParveZman.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -576,7 +628,7 @@
 		};
 		BB9915A51B1D15D000501DD2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD6FB17F18EAA8643B93C5DC /* Pods-ParveZman.release.xcconfig */;
+			baseConfigurationReference = B2F60D73F16D0AC71D75F0F7 /* Pods-ParveZman.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -599,6 +651,7 @@
 		};
 		BB9915A71B1D15D000501DD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6817927EB6AED5BA083B411 /* Pods-ParveZmanTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -619,6 +672,7 @@
 		};
 		BB9915A81B1D15D000501DD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B18815361B51EE9B0426E1F6 /* Pods-ParveZmanTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
