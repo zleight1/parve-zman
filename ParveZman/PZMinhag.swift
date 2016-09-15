@@ -28,7 +28,7 @@ class PZMinhag {
         return dairyMinhagArray
     }
     
-    static func GetTimeFromMinhag(meatMinhag: PZMeatWaitMinhag) -> NSTimeInterval {
+    static func GetTimeFromMinhag(_ meatMinhag: PZMeatWaitMinhag) -> TimeInterval {
         var minutes: Int = 0
         
         switch meatMinhag {
@@ -49,12 +49,12 @@ class PZMinhag {
         }
         
         
-        let waitTime: NSTimeInterval = NSTimeInterval(minutes * 60)
+        let waitTime: TimeInterval = TimeInterval(minutes * 60)
         return waitTime
         
     }
     
-    static func GetTimeFromMinhag(dairyMinhag: PZDairyWaitMinhag) -> NSTimeInterval {
+    static func GetTimeFromMinhag(_ dairyMinhag: PZDairyWaitMinhag) -> TimeInterval {
         var minutes = 0
         
         switch dairyMinhag {
@@ -68,7 +68,7 @@ class PZMinhag {
             minutes = 0
         }
         
-        let waitTime: NSTimeInterval = NSTimeInterval(minutes * 60)
+        let waitTime: TimeInterval = TimeInterval(minutes * 60)
         return waitTime
     }
 }

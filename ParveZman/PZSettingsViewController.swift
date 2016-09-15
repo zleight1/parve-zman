@@ -17,7 +17,7 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
     var MeatTimeNames = PZMinhag.GetAllMeatNames();
     var DairyTimeNames = PZMinhag.GetAllDairyNames();
     
-    private struct NavItems {
+    fileprivate struct NavItems {
         static let RowsCount = 2
         static let buttons: [(String, UIColor, Int)] = [
             (   title:"Meat Minhag",
@@ -42,62 +42,62 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         self.title = "Settings"
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return NavItems.RowsCount
     }
     
-    func getButtonItemAtIndex(index: Int) -> (title:String, color:UIColor, tag:Int) {
+    func getButtonItemAtIndex(_ index: Int) -> (title:String, color:UIColor, tag:Int) {
         return NavItems.buttons[index]
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(pzCellIdentifier, forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: pzCellIdentifier, for: indexPath)
         
-        let colorIndex = indexPath.row % NavItems.buttons.count
+        let colorIndex = (indexPath as NSIndexPath).row % NavItems.buttons.count
         
         let item = self.getButtonItemAtIndex(colorIndex)
         cell.backgroundColor = item.color
         cell.textLabel?.text = item.title
-        cell.textLabel?.textColor = UIColor.whiteColor()
-        cell.textLabel?.font = UIFont.systemFontOfSize(CGFloat(36.0))
+        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.font = UIFont.systemFont(ofSize: CGFloat(36.0))
         cell.tag = item.tag
         return cell
     }
 
-    func navCellAtIndexPath(indexPath:NSIndexPath) -> PZHomeTableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(pzCellIdentifier) as! PZHomeTableViewCell
+    func navCellAtIndexPath(_ indexPath:IndexPath) -> PZHomeTableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: pzCellIdentifier) as! PZHomeTableViewCell
         setTitleForCell(cell, indexPath: indexPath)
         setColorForCell(cell, indexPath: indexPath)
         return cell
     }
     
-    func setTitleForCell(cell:PZHomeTableViewCell, indexPath:NSIndexPath) {
-        let item = self.getButtonItemAtIndex(indexPath.row)
+    func setTitleForCell(_ cell:PZHomeTableViewCell, indexPath:IndexPath) {
+        let item = self.getButtonItemAtIndex((indexPath as NSIndexPath).row)
         cell.titleLabel.text = item.title
     }
     
-    func setColorForCell(cell:PZHomeTableViewCell, indexPath:NSIndexPath) {
-        let item = self.getButtonItemAtIndex(indexPath.row)
+    func setColorForCell(_ cell:PZHomeTableViewCell, indexPath:IndexPath) {
+        let item = self.getButtonItemAtIndex((indexPath as NSIndexPath).row)
         cell.backgroundColor = item.color
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = self.tableView(tableView, cellForRowAt: indexPath)
         
         showSettings(cell.tag)
         
         return
     }
 
-    func showSettings(tag: Int) {
+    func showSettings(_ tag: Int) {
         var title = ""
         
         //create colors
-        var headerBackgroundColor: UIColor = UIColor.clearColor()
+        var headerBackgroundColor: UIColor = UIColor.clear
         
         if tag == 0 {
             title = "Meat Minhag"
@@ -108,19 +108,19 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         }
         
         let picker = CZPickerView(headerTitle: title, cancelButtonTitle: "Cancel", confirmButtonTitle: "Confirm")
-        picker.delegate = self
-        picker.dataSource = self
-        picker.needFooterView = true
-        picker.tag = tag
-        picker.allowMultipleSelection = false
-        picker.headerBackgroundColor = headerBackgroundColor
+        picker?.delegate = self
+        picker?.dataSource = self
+        picker?.needFooterView = true
+        picker?.tag = tag
+        picker?.allowMultipleSelection = false
+        picker?.headerBackgroundColor = headerBackgroundColor
         
         loadSettings(picker)
         
-        picker.show()
+        picker?.show()
     }
     
-    func numberOfRowsInPickerView(pickerView: CZPickerView!) -> Int {
+    func numberOfRows(in pickerView: CZPickerView!) -> Int {
         if pickerView.tag == 0 {
             return self.MeatTimeNames.count
         } else {
@@ -128,7 +128,7 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         }
     }
     
-    func czpickerView(pickerView: CZPickerView!, titleForRow row: Int) -> String! {
+    func czpickerView(_ pickerView: CZPickerView!, titleForRow row: Int) -> String! {
         if pickerView.tag == 0 {
             return self.MeatTimeNames[row]
         } else {
@@ -136,7 +136,7 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         }
     }
     
-    func czpickerView(pickerView: CZPickerView!, didConfirmWithItemAtRow row: Int){
+    func czpickerView(_ pickerView: CZPickerView!, didConfirmWithItemAtRow row: Int){
          NSLog("Clicked \(row)")
         if pickerView.tag == 0 {
             //meat
@@ -150,12 +150,12 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         PZSettingsManager.sharedInstance.savePZSettings()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.navigationController!.navigationBar.backgroundColor = PZUtils.sharedInstance.flatGrayColor
         self.navigationController!.navigationBar.barTintColor = PZUtils.sharedInstance.flatGrayColor
     }
     
-    override func viewDidDisappear(animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         //Save!
         PZSettingsManager.sharedInstance.savePZSettings()
     }
@@ -165,7 +165,7 @@ class PZSettingsViewController: UITableViewController, CZPickerViewDelegate, CZP
         // Dispose of any resources that can be recreated.
     }
     
-    func loadSettings(picker: CZPickerView!) {
+    func loadSettings(_ picker: CZPickerView!) {
         PZSettingsManager.sharedInstance.loadPZSettings()
         let meatIndex: Int = MeatTimeNames.find { $0 == PZSettingsManager.sharedInstance.currentMeatMinhag.rawValue }!
         

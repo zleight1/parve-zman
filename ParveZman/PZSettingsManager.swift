@@ -39,12 +39,12 @@ class PZSettingsManager {
             
         } else {
             
-            let entityDescription =  NSEntityDescription.entityForName("PZSettings",
-                inManagedObjectContext:
+            let entityDescription =  NSEntityDescription.entity(forEntityName: "PZSettings",
+                in:
                 managedContext)
             
             let settings = NSManagedObject(entity: entityDescription!,
-                insertIntoManagedObjectContext:managedContext)
+                insertInto:managedContext)
             
             
             settings.setValue(self.currentMeatMinhag.rawValue, forKey: "meatMinhag")
@@ -65,8 +65,8 @@ class PZSettingsManager {
     
     func loadPZSettings() {
         if let PZSettings = loadPZSettingsData() {
-            let dairyMinhag = PZSettings.valueForKey("dairyMinhag") as! String
-            let meatMinhag = PZSettings.valueForKey("meatMinhag") as! String
+            let dairyMinhag = PZSettings.value(forKey: "dairyMinhag") as! String
+            let meatMinhag = PZSettings.value(forKey: "meatMinhag") as! String
             
             NSLog("%@ %@", dairyMinhag, meatMinhag)
             PZSettingsManager.sharedInstance.currentMeatMinhag = PZMeatWaitMinhag(rawValue: meatMinhag)!
@@ -79,9 +79,9 @@ class PZSettingsManager {
         
         let managedContext = appDelegate.managedObjectContext!
         
-        let entity = NSEntityDescription.entityForName("PZSettings", inManagedObjectContext: managedContext)
+        let entity = NSEntityDescription.entity(forEntityName: "PZSettings", in: managedContext)
         
-        let fetchRequest = NSFetchRequest()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
         fetchRequest.entity = entity
         
         let pred = NSPredicate(format: "(id = 1)")
@@ -91,7 +91,7 @@ class PZSettingsManager {
         
         let fetchedResults: [AnyObject]?
         do {
-            fetchedResults = try managedContext.executeFetchRequest(fetchRequest)
+            fetchedResults = try managedContext.fetch(fetchRequest)
         } catch let error1 as NSError {
             error = error1
             fetchedResults = nil

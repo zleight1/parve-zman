@@ -20,8 +20,8 @@ class PZTimerViewController: UIViewController   {
     @IBOutlet weak var timerGauge: Gauge!
     
     //variables
-    var endTime = NSTimeInterval()
-    var timer = NSTimer()
+    var endTime = TimeInterval()
+    var timer = Timer()
     var timerUUID: String = ""
     
     var type = ""
@@ -31,8 +31,8 @@ class PZTimerViewController: UIViewController   {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let aSelector : Selector = "updateTime"
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
+        let aSelector : Selector = #selector(PZTimerViewController.updateTime)
+        self.timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
         
         if self.setLocalNotification {
             setupLocalNotification()
@@ -47,23 +47,23 @@ class PZTimerViewController: UIViewController   {
     
     func setupLocalNotification() {
         //init the uuid
-        self.timerUUID = NSUUID().UUIDString
+        self.timerUUID = UUID().uuidString
         
         //init the notification
         let notification = UILocalNotification()
         notification.alertBody = "Congrats, you're now Parve!"
         notification.alertTitle = "Parve Zman!"
-        notification.fireDate = NSDate(timeIntervalSinceReferenceDate: self.endTime)
+        notification.fireDate = Date(timeIntervalSinceReferenceDate: self.endTime)
         notification.soundName = UILocalNotificationDefaultSoundName // default sound
         notification.userInfo = [ "UUID" : timerUUID ]
         notification.category = "PARVE_CATEGORY"
         
         //schedule it
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        UIApplication.shared.scheduleLocalNotification(notification)
 
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         var color: UIColor
         
         if self.type == "meat" {
@@ -77,22 +77,22 @@ class PZTimerViewController: UIViewController   {
         self.setupGauge(color)
     }
     
-    func setupNavigationBar(color: UIColor) {
+    func setupNavigationBar(_ color: UIColor) {
         self.navigationController!.navigationBar.backgroundColor = color
         self.navigationController!.navigationBar.barTintColor = color
         
         self.navigationController!.navigationBar.titleTextAttributes = [
-            NSForegroundColorAttributeName : UIColor.whiteColor(),
-            NSFontAttributeName: UIFont.boldSystemFontOfSize(CGFloat(24.0))
+            NSForegroundColorAttributeName : UIColor.white,
+            NSFontAttributeName: UIFont.boldSystemFont(ofSize: CGFloat(24.0))
         ]
     }
     
-    func setupGauge(color: UIColor){
+    func setupGauge(_ color: UIColor){
         self.timerGauge.startColor = color
         self.timerGauge.endColor = PZUtils.sharedInstance.flatGreenColor
         
         //set the max value as the minutes of the minhag
-        var maxTime: NSTimeInterval
+        var maxTime: TimeInterval
         if self.type == "meat" {
            maxTime = PZMinhag.GetTimeFromMinhag(PZSettingsManager.sharedInstance.currentMeatMinhag)
         } else {
@@ -105,15 +105,15 @@ class PZTimerViewController: UIViewController   {
     }
     
     func updateTime() {
-        if !self.timer.valid {
+        if !self.timer.isValid {
             return
         }
         
-        let currentTime = NSDate.timeIntervalSinceReferenceDate()
+        let currentTime = Date.timeIntervalSinceReferenceDate
         
         //Find the difference between current time and end time.
         
-        var elapsedTime: NSTimeInterval = self.endTime - currentTime
+        var elapsedTime: TimeInterval = self.endTime - currentTime
         
         if elapsedTime <= 0 {
             return timerDidEnd(self.timer)
@@ -125,13 +125,13 @@ class PZTimerViewController: UIViewController   {
         
         let hours = UInt8(elapsedTime / 60.0 / 60.0)
         
-        elapsedTime -= NSTimeInterval(CDouble(hours) * 3600)
+        elapsedTime -= TimeInterval(CDouble(hours) * 3600)
         
         //calculate the minutes in elapsed time.
         
         let minutes = UInt8(elapsedTime / 60.0)
         
-        elapsedTime -= NSTimeInterval(CDouble(minutes) * 60)
+        elapsedTime -= TimeInterval(CDouble(minutes) * 60)
         
         //seconds to be displayed.
         
@@ -149,7 +149,7 @@ class PZTimerViewController: UIViewController   {
         
     }
     
-    func timerDidEnd(timer: NSTimer) {
+    func timerDidEnd(_ timer: Timer) {
         timer.invalidate()
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
         
@@ -163,7 +163,7 @@ class PZTimerViewController: UIViewController   {
     
     override func navigationShouldPopOnBackButton() -> Bool {
         //Check if the timer is finished
-        if !self.timer.valid {
+        if !self.timer.isValid {
             return true
         }
         
@@ -171,7 +171,7 @@ class PZTimerViewController: UIViewController   {
         let alert = SCLAlertView()
         alert.showCloseButton = false
         alert.addButton("Yes"){
-            self.navigationController!.popViewControllerAnimated(true)
+            self.navigationController!.popViewController(animated: true)
             return
         }
         alert.addButton("No"){
@@ -183,7 +183,7 @@ class PZTimerViewController: UIViewController   {
         return false
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         self.timer.invalidate()
         
         //clear the timer
@@ -191,9 +191,9 @@ class PZTimerViewController: UIViewController   {
         timerManager.clearPZTimer()
         
         //cancel the notification
-        for notification in (UIApplication.sharedApplication().scheduledLocalNotifications as [UILocalNotification]?)! { // loop through notifications...
+        for notification in (UIApplication.shared.scheduledLocalNotifications as [UILocalNotification]?)! { // loop through notifications...
             if (notification.userInfo!["UUID"] as! String == self.timerUUID) { // ...and cancel the notification when you find it...
-                UIApplication.sharedApplication().cancelLocalNotification(notification)
+                UIApplication.shared.cancelLocalNotification(notification)
                 break
             }
         }

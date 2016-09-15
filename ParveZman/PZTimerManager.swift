@@ -12,24 +12,24 @@ import Foundation
 
 class PZTimerManager {
     
-    func savePZTimer(timeToEnd: NSTimeInterval, timerType: String) {
+    func savePZTimer(_ timeToEnd: TimeInterval, timerType: String) {
         let appDelegate = AppDelegate().appDelegate()
         
         let managedContext = appDelegate.managedObjectContext!
         
         //create end time
-        let endTime = NSDate(timeIntervalSinceReferenceDate: timeToEnd)
+        let endTime = Date(timeIntervalSinceReferenceDate: timeToEnd)
         
         if let _ = loadPZTimerData() {
             self.clearPZTimer()
         }
         
-        let entityDescription =  NSEntityDescription.entityForName("PZTimer",
-            inManagedObjectContext:
+        let entityDescription =  NSEntityDescription.entity(forEntityName: "PZTimer",
+            in:
             managedContext)
         
         let timer = NSManagedObject(entity: entityDescription!,
-            insertIntoManagedObjectContext:managedContext)
+            insertInto:managedContext)
         
         
         timer.setValue(endTime, forKey: "endTime")
@@ -49,9 +49,9 @@ class PZTimerManager {
     
     func isTimerActive() -> Bool {
         if let data = loadPZTimerData() {
-            let endTime: NSDate = data.valueForKey("endTime") as! NSDate;
+            let endTime: Date = data.value(forKey: "endTime") as! Date;
             //is is after now
-            return endTime.timeIntervalSinceDate(NSDate()) > 0
+            return endTime.timeIntervalSince(Date()) > 0
             
         } else {
             return false
@@ -63,9 +63,9 @@ class PZTimerManager {
         
         let managedContext = appDelegate.managedObjectContext!
         
-        let entity = NSEntityDescription.entityForName("PZTimer", inManagedObjectContext: managedContext)
+        let entity = NSEntityDescription.entity(forEntityName: "PZTimer", in: managedContext)
         
-        let fetchRequest = NSFetchRequest()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
         fetchRequest.entity = entity
         let pred = NSPredicate(format: "(id = 1)")
         fetchRequest.predicate = pred
@@ -74,7 +74,7 @@ class PZTimerManager {
         
         let fetchedResults: [AnyObject]?
         do {
-            fetchedResults = try managedContext.executeFetchRequest(fetchRequest)
+            fetchedResults = try managedContext.fetch(fetchRequest)
         } catch let error1 as NSError {
             error = error1
             fetchedResults = nil
@@ -99,13 +99,13 @@ class PZTimerManager {
         
         let managedContext = appDelegate.managedObjectContext!
         
-        let fetchRequest: NSFetchRequest = NSFetchRequest()
-        let entity: NSEntityDescription = NSEntityDescription.entityForName("PZTimer", inManagedObjectContext: managedContext)!
+        let fetchRequest: NSFetchRequest = NSFetchRequest<NSFetchRequestResult>()
+        let entity: NSEntityDescription = NSEntityDescription.entity(forEntityName: "PZTimer", in: managedContext)!
         fetchRequest.entity = entity
         
         let fetchedResults: [AnyObject]?
         do {
-            fetchedResults = try managedContext.executeFetchRequest(fetchRequest)
+            fetchedResults = try managedContext.fetch(fetchRequest)
         } catch _ {
             //sink 'er cap'n
             fetchedResults = nil
@@ -119,7 +119,7 @@ class PZTimerManager {
             //unwrap the results, Happy Channukah!
             if results.count > 0 {
                 for currentObject in results {
-                    managedContext.deleteObject(currentObject as! NSManagedObject)
+                    managedContext.delete(currentObject as! NSManagedObject)
                 }
             }
         }

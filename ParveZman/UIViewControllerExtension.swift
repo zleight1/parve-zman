@@ -22,25 +22,25 @@ extension UIViewController: BackButtonHandlerProtocol {
 }
 
 extension UINavigationController {
-    func navigationBar(navigationBar: UINavigationBar, shouldPopItem item: UINavigationItem) -> Bool {
+    func navigationBar(_ navigationBar: UINavigationBar, shouldPopItem item: UINavigationItem) -> Bool {
         if self.viewControllers.count < navigationBar.items!.count {
             return true
         }
         var shouldPop: Bool = true
         let vc: UIViewController = self.topViewController!
-        if vc.respondsToSelector("navigationShouldPopOnBackButton") {
+        if vc.responds(to: #selector(UIViewController.navigationShouldPopOnBackButton)) {
             shouldPop = vc.navigationShouldPopOnBackButton()
         }
         if shouldPop {
-            dispatch_async(dispatch_get_main_queue(), {() -> Void in
-                self.popViewControllerAnimated(true)
+            DispatchQueue.main.async(execute: {() -> Void in
+                self.popViewController(animated: true)
             })
         }
         else {
             // Workaround for iOS7.1. Thanks to @boliva - http://stackoverflow.com/posts/comments/34452906
             for subview: UIView in navigationBar.subviews {
                 if subview.alpha < 1.0 {
-                    UIView.animateWithDuration(0.25, animations: {() -> Void in
+                    UIView.animate(withDuration: 0.25, animations: {() -> Void in
                         subview.alpha = 1.0
                     })
                 }

@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 extension Array {
-    func find(includedElement: Element -> Bool) -> Int? {
-        for (idx, element) in self.enumerate() {
+    func find(_ includedElement: (Element) -> Bool) -> Int? {
+        for (idx, element) in self.enumerated() {
             if includedElement(element) {
                 return idx
             }
