@@ -11,6 +11,7 @@ import JTImageButton
 import AudioToolbox
 import SCLAlertView
 import GaugeKit
+import UserNotifications
 
 class PZTimerViewController: UIViewController   {
     
@@ -50,16 +51,41 @@ class PZTimerViewController: UIViewController   {
         self.timerUUID = UUID().uuidString
         
         //init the notification
-        let notification = UILocalNotification()
-        notification.alertBody = "Congrats, you're now Parve!"
-        notification.alertTitle = "Parve Zman!"
-        notification.fireDate = Date(timeIntervalSinceReferenceDate: self.endTime)
-        notification.soundName = UILocalNotificationDefaultSoundName // default sound
-        notification.userInfo = [ "UUID" : timerUUID ]
-        notification.category = "PARVE_CATEGORY"
-        
-        //schedule it
-        UIApplication.shared.scheduleLocalNotification(notification)
+        if #available(iOS 10.0, *) {
+          
+            let content = UNMutableNotificationContent()
+            content.title = "Parve Zman!"
+            content.body = "Congrats, you're now Parve!"
+            content.categoryIdentifier = "PARVE_CATEGORY"
+            content.userInfo = ["UUID": self.timerUUID]
+            content.sound = UNNotificationSound.default()
+          
+            let endDate = Date(timeIntervalSinceReferenceDate: self.endTime)
+            let calendar = Calendar(identifier: .gregorian)
+            let desiredComponents: Set<Calendar.Component> = [Calendar.Component.year, Calendar.Component.month,
+                                                              Calendar.Component.day, Calendar.Component.hour,
+                                                              Calendar.Component.minute, Calendar.Component.second]
+            let endDateComponents = calendar.dateComponents(desiredComponents, from: endDate)
+            let trigger = UNCalendarNotificationTrigger(dateMatching: endDateComponents, repeats: false)
+
+            let request = UNNotificationRequest(identifier: self.timerUUID, content: content, trigger: trigger)
+          
+            let center = UNUserNotificationCenter.current()
+            center.add(request)
+        }
+        else {
+          // Fallback on earlier versions
+          let notification = UILocalNotification()
+          notification.alertBody = "Congrats, you're now Parve!"
+          notification.alertTitle = "Parve Zman!"
+          notification.fireDate = Date(timeIntervalSinceReferenceDate: self.endTime)
+          notification.soundName = UILocalNotificationDefaultSoundName // default sound
+          notification.userInfo = [ "UUID" : timerUUID ]
+          notification.category = "PARVE_CATEGORY"
+          
+          //schedule it
+          UIApplication.shared.scheduleLocalNotification(notification)
+        }
 
     }
 
@@ -168,8 +194,8 @@ class PZTimerViewController: UIViewController   {
         }
         
         //Confirm
-        let alert = SCLAlertView()
-        alert.showCloseButton = false
+        let appearance = SCLAlertView.SCLAppearance(showCloseButton: false)
+        let alert = SCLAlertView(appearance: appearance)
         alert.addButton("Yes"){
             self.navigationController!.popViewController(animated: true)
             return
@@ -191,11 +217,20 @@ class PZTimerViewController: UIViewController   {
         timerManager.clearPZTimer()
         
         //cancel the notification
-        for notification in (UIApplication.shared.scheduledLocalNotifications as [UILocalNotification]?)! { // loop through notifications...
+      
+        if #available(iOS 10.0, *) {
+          
+          let center = UNUserNotificationCenter.current()
+          center.removePendingNotificationRequests(withIdentifiers: [self.timerUUID])
+        }
+        else {
+          
+          for notification in (UIApplication.shared.scheduledLocalNotifications as [UILocalNotification]?)! { // loop through notifications...
             if (notification.userInfo!["UUID"] as! String == self.timerUUID) { // ...and cancel the notification when you find it...
-                UIApplication.shared.cancelLocalNotification(notification)
-                break
+              UIApplication.shared.cancelLocalNotification(notification)
+              break
             }
+          }
         }
         
         //quit the view

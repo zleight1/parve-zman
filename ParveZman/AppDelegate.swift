@@ -8,17 +8,28 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)) // types are UIUserNotificationType members
+      
+        if #available(iOS 10.0, *) {
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (granted, error) in
+              
+            })
+        }
+        else {
+          // Fallback on earlier versions
+            application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)) // types are UIUserNotificationType members
+        }
+      
 
         return true
     }
@@ -45,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         
         //Save on termination
-        self.saveContext()
+        saveContext()
     }
 
     // MARK: - Core Data stack
@@ -124,6 +135,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func appDelegate () -> AppDelegate
     {
         return UIApplication.shared.delegate as! AppDelegate
+    }
+  
+    private func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: () -> Void) {
+      print("Tapped in notification")
+      let actionIdentifier = response.actionIdentifier
+      if actionIdentifier == "com.apple.UNNotificationDefaultActionIdentifier" || actionIdentifier == "com.apple.UNNotificationDismissActionIdentifier" {
+        return;
+      }
+      
+      // Must be called when finished
+      completionHandler();
     }
 }
 
