@@ -183,7 +183,7 @@ jQuery(document).ready(function() {
 	    if(error) return;
 	    $.ajax({
 	        type: 'POST',
-	        url: 'http://getsimpleform.com/messages/ajax?form_api_token=ccf5e6eb22a9c4fb640908bceccbfcdf',
+	        url: 'https://getsimpleform.com/messages/ajax?form_api_token=ccf5e6eb22a9c4fb640908bceccbfcdf',
 	        data: postdata,
 	        dataType: 'jsonp'
 	    }).done(function(){

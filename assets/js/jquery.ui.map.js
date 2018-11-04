@@ -1,8 +1,8 @@
  /*!
  * jQuery FN Google Map 3.0-rc
- * http://code.google.com/p/jquery-ui-map/
+ * https://code.google.com/p/jquery-ui-map/
  * Copyright (c) 2010 - 2012 Johan Säll Larsson
- * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+ * Licensed under the MIT license: https://www.opensource.org/licenses/mit-license.php
  */
 ( function($) {
 	
@@ -57,7 +57,7 @@
 		
 		/**
 		 * Map options
-		 * @see http://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#MapOptions
+		 * @see https://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#MapOptions
 		 */
 		options: {
 			mapTypeId: 'roadmap',
@@ -126,7 +126,7 @@
 		 * Adds a custom control to the map
 		 * @param panel:jquery/node/string	
 		 * @param position:google.maps.ControlPosition	 
-		 * @see http://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#ControlPosition
+		 * @see https://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#ControlPosition
 		 */
 		addControl: function(panel, position) {
 			this.get('map').controls[position].push(this._unwrap(panel));
@@ -138,7 +138,7 @@
 		 * @param markerOptions:google.maps.MarkerOptions
 		 * @param callback:function(map:google.maps.Map, marker:google.maps.Marker) (optional)
 		 * @return $(google.maps.Marker)
-		 * @see http://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#MarkerOptions
+		 * @see https://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#MarkerOptions
 		 */
 		addMarker: function(markerOptions, callback) {
 			markerOptions.map = this.get('map');
@@ -244,7 +244,7 @@
 		 * @param infoWindowOptions:google.maps.InfoWindowOptions
 		 * @param marker:google.maps.Marker (optional)
 		 * @param callback:function (optional)
-		 * @see http://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#InfoWindowOptions
+		 * @see https://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#InfoWindowOptions
 		 */
 		openInfoWindow: function(infoWindowOptions, marker, callback) {
 			var iw = this.get('iw', infoWindowOptions.infoWindow || new google.maps.InfoWindow);

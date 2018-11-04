@@ -62,7 +62,7 @@ class tmhOAuth {
         // for security this should always be set to true.
         'curl_ssl_verifypeer'        => true,
 
-        // you can get the latest cacert.pem from here http://curl.haxx.se/ca/cacert.pem
+        // you can get the latest cacert.pem from here https://curl.haxx.se/ca/cacert.pem
         'curl_cainfo'                => dirname(__FILE__) . DIRECTORY_SEPARATOR . 'cacert.pem',
         'curl_capath'                => dirname(__FILE__),
 

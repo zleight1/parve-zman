@@ -1,4 +1,4 @@
-// jquery.tweet.js - See http://tweet.seaofclouds.com/ or https://github.com/seaofclouds/tweet for more info
+// jquery.tweet.js - See https://tweet.seaofclouds.com/ or https://github.com/seaofclouds/tweet for more info
 // Copyright (c) 2008-2012 Todd Matthews & Steve Purcell
 // Modified by Stan Scates for https://github.com/StanScates/Tweet.js-Mod
 
@@ -15,7 +15,7 @@
 			list_id: null,                            // [integer]  ID of list to fetch when using list functionality
 			list: null,                               // [string]   optional slug of list belonging to username
 			favorites: false,                         // [boolean]  display the user's favorites instead of his tweets
-			query: null,                              // [string]   optional search query (see also: http://search.twitter.com/operators)
+			query: null,                              // [string]   optional search query (see also: https://search.twitter.com/operators)
 			avatar_size: null,                        // [integer]  height and width of avatar if displayed (48px max)
 			count: 3,                                 // [integer]  how many tweets to display?
 			fetch: null,                              // [integer]  how many tweets to fetch via the API (set this higher than 'count' if using the 'filter' option)
@@ -45,7 +45,7 @@
 		//   "loaded" -- triggered when tweets have been fetched and rendered
 		}, o);
 
-		// See http://daringfireball.net/2010/07/improved_regex_for_matching_urls
+		// See https://daringfireball.net/2010/07/improved_regex_for_matching_urls
 		var url_regexp = /\b((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/gi;
 
 		// Expand values inside simple string templates with {placeholders}
@@ -77,7 +77,7 @@
 		}
 
 		$.fn.extend({
-			linkUser: replacer(/(^|[\W])@(\w+)/gi, "$1<span class=\"at\">@</span><a href=\"http://"+s.twitter_url+"/$2\">$2</a>"),
+			linkUser: replacer(/(^|[\W])@(\w+)/gi, "$1<span class=\"at\">@</span><a href=\"https://"+s.twitter_url+"/$2\">$2</a>"),
 			// Support various latin1 (\u00**) and arabic (\u06**) alphanumeric chars
 			linkHash: replacer(/(?:^| )[\#]+([\w\u00c0-\u00d6\u00d8-\u00f6\u00f8-\u00ff\u0600-\u06ff]+)/gi,
 				' <a href="https://twitter.com/search?q=%23$1'+((s.username && s.username.length == 1 && !s.list) ? '&from='+s.username.join("%2BOR%2B") : '')+'" class="tweet_hashtag">#$1</a>'),
@@ -86,7 +86,7 @@
 
 		function linkURLs(text, entities) {
 			return text.replace(url_regexp, function(match) {
-				var url = (/^[a-z]+:/i).test(match) ? match : "http://"+match;
+				var url = (/^[a-z]+:/i).test(match) ? match : "https://"+match;
 				var text = match;
 				for(var i = 0; i < entities.length; ++i) {
 					var entity = entities[i];
@@ -226,7 +226,7 @@
 			o.tweet_time = parse_date(item.created_at);
 			o.join_text = s.join_text == "auto" ? build_auto_join_text(item.text) : s.join_text;
 			o.tweet_id = item.id_str;
-			o.twitter_base = "http://"+s.twitter_url+"/";
+			o.twitter_base = "https://"+s.twitter_url+"/";
 			o.user_url = o.twitter_base+o.screen_name;
 			o.tweet_url = o.user_url+"/status/"+o.tweet_id;
 			o.reply_url = o.twitter_base+"intent/tweet?in_reply_to="+o.tweet_id;
